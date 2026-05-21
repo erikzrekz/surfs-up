@@ -60,38 +60,44 @@
       gap:18px;
     }
 
-    /* ---------- Header / brand bar ------------------------------------ */
+    /* ---------- Header / brand (no container — floats on ocean) -------- */
     .header{
       display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
       gap:14px;
-      padding:14px 18px;
-      border-radius:18px;
-      background:var(--glass);
-      backdrop-filter: blur(14px) saturate(140%);
-      -webkit-backdrop-filter: blur(14px) saturate(140%);
-      border:1px solid var(--stroke);
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
     }
     .brand{ display:flex; flex-direction:column; gap:4px; }
     .brand .name{
       font-family: "Original Surfer", cursive;
       font-weight:400; letter-spacing:0; font-size:42px; line-height:1;
-      text-shadow: 0 2px 8px rgba(0,0,0,.35);
+      text-shadow: 0 2px 12px rgba(0,0,0,.55), 0 1px 0 rgba(0,0,0,.4);
       display:flex; align-items:center; gap:12px;
+      white-space: nowrap;
     }
     .brand .name .pixel-surfer{
       width:1em; height:1em; flex:0 0 auto;
       image-rendering: pixelated;
       filter: drop-shadow(0 2px 0 rgba(0,0,0,.45));
     }
+    .header-controls{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
     .pill{
       display:inline-flex; align-items:center; gap:10px; padding:10px 14px;
       border-radius:999px;
-      background:var(--glass-strong);
+      background:var(--glass);
       border:1px solid var(--stroke);
-      font-weight:850; text-transform:uppercase; letter-spacing:.05em; font-size:12px;
+      color:#fff;
+      font-weight:600; text-transform:uppercase; letter-spacing:.05em; font-size:12px;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
+    }
+
+    /* Mobile: shrink title + give pill/button distinct styling */
+    @media (max-width: 860px){
+      .brand .name{ font-size: 30px; gap:8px; }
+    }
+    @media (max-width: 420px){
+      .brand .name{ font-size: 24px; gap:6px; }
     }
 
     /* ---------- Cards (glass) ----------------------------------------- */
@@ -139,11 +145,18 @@
     .toggle-all{
       display:none; align-items:center; gap:8px;
       padding:10px 14px; border-radius:14px;
-      background:var(--glass-strong); border:1px solid var(--stroke);
-      color:#fff; font-weight:900; text-transform:uppercase;
-      letter-spacing:.06em; font-size:12px; cursor:pointer;
-      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      /* solid accent so it reads as an actionable button, not a data badge */
+      background:#ffd166; border:1px solid rgba(0,0,0,.25);
+      color:#0b0b10; font-weight:700; text-transform:uppercase;
+      letter-spacing:.04em; font-size:12px; cursor:pointer;
+      box-shadow: 0 4px 14px rgba(0,0,0,.35);
     }
+    .toggle-all:hover{ transform: translateY(-1px); }
+    .toggle-all .chev-icon{
+      font-size:14px; line-height:1; display:inline-block;
+      transition: transform .2s ease;
+    }
+    .toggle-all.is-collapsed .chev-icon{ transform: rotate(-90deg); }
     @media (max-width: 860px){
       .toggle-all{ display:inline-flex; }
     }
@@ -263,8 +276,9 @@
           <span>Should We Surf?</span>
         </div>
       </div>
-      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+      <div class="header-controls">
         <button class="toggle-all" id="toggleAllBtn" type="button" aria-label="Show or hide all data cards">
+          <span class="chev-icon" aria-hidden="true">▾</span>
           <span id="toggleAllLabel">Hide cards</span>
         </button>
         <div class="pill" id="ruleLabel">Loading rules…</div>
@@ -502,6 +516,7 @@
     function updateToggleAllLabel(){
       const anyOpen = cards().some(c => !c.classList.contains('collapsed'));
       el('toggleAllLabel').textContent = anyOpen ? 'Hide cards' : 'Show cards';
+      el('toggleAllBtn').classList.toggle('is-collapsed', !anyOpen);
     }
 
     function applyCardState(){
