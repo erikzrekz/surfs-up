@@ -102,10 +102,42 @@
       backdrop-filter: blur(14px) saturate(140%);
       -webkit-backdrop-filter: blur(14px) saturate(140%);
       color:#fff;
+      transition: padding .2s ease;
     }
     .label{
       font-weight:900; text-transform:uppercase; letter-spacing:.10em;
       font-size:11px; color:rgba(255,255,255,.75); margin-bottom:10px;
+    }
+    /* Collapsible cards — label becomes the toggle */
+    .card .label{
+      display:flex; align-items:center; justify-content:space-between;
+      cursor:pointer; user-select:none; gap:10px;
+    }
+    .card .label .chev{
+      display:inline-block; transition:transform .25s ease;
+      opacity:.7; font-size:14px;
+    }
+    .card.collapsed{ padding:14px 18px; }
+    .card.collapsed .label{ margin-bottom:0; }
+    .card.collapsed .label .chev{ transform:rotate(-90deg); }
+    .card .body{
+      overflow:hidden;
+      transition: max-height .3s ease, opacity .25s ease, margin-top .25s ease;
+      max-height: 2000px; opacity:1;
+    }
+    .card.collapsed .body{
+      max-height:0; opacity:0; margin-top:0; pointer-events:none;
+    }
+    .toggle-all{
+      display:none; align-items:center; gap:8px;
+      padding:10px 14px; border-radius:14px;
+      background:var(--glass-strong); border:1px solid var(--stroke);
+      color:#fff; font-weight:900; text-transform:uppercase;
+      letter-spacing:.06em; font-size:12px; cursor:pointer;
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    }
+    @media (max-width: 860px){
+      .toggle-all{ display:inline-flex; }
     }
     .big{
       font-size:54px; font-weight:1000; letter-spacing:-0.03em; line-height:1;
@@ -192,45 +224,65 @@
         <div class="name">Surfs Up RI</div>
         <div class="tag">Buoy 44097 · Open-Meteo · live</div>
       </div>
-      <div class="pill" id="ruleLabel">Loading rules…</div>
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <button class="toggle-all" id="toggleAllBtn" type="button" aria-label="Show or hide all data cards">
+          <span id="toggleAllLabel">Hide cards</span>
+        </button>
+        <div class="pill" id="ruleLabel">Loading rules…</div>
+      </div>
     </div>
 
     <div class="grid">
-      <section class="card">
-        <div class="label">Right now — Block Island 44097</div>
-        <div>
-          <span id="nowWvht" class="big">—</span><span class="unit">ft</span>
-          <span id="nowDpd" style="margin-left:14px; font-size:24px; font-weight:900;">— s</span>
+      <section class="card" data-card="now">
+        <div class="label">
+          <span>Right now — Block Island 44097</span>
+          <span class="chev" aria-hidden="true">▾</span>
         </div>
-        <div class="row">
-          <div class="stat"><div class="k">Wind</div><div class="v" id="nowWind">—</div></div>
-          <div class="stat"><div class="k">APD</div><div class="v" id="nowApd">—</div></div>
-          <div class="stat"><div class="k">Observed</div><div class="v" id="nowObs">—</div></div>
-        </div>
-        <div id="nowStatus" class="status">
-          <div class="dot"></div>
+        <div class="body">
           <div>
-            <div id="nowStatusTitle">Loading…</div>
-            <div id="nowStatusText" class="status-sub">Reading buoy.</div>
+            <span id="nowWvht" class="big">—</span><span class="unit">ft</span>
+            <span id="nowDpd" style="margin-left:14px; font-size:24px; font-weight:900;">— s</span>
+          </div>
+          <div class="row">
+            <div class="stat"><div class="k">Wind</div><div class="v" id="nowWind">—</div></div>
+            <div class="stat"><div class="k">APD</div><div class="v" id="nowApd">—</div></div>
+            <div class="stat"><div class="k">Observed</div><div class="v" id="nowObs">—</div></div>
+          </div>
+          <div id="nowStatus" class="status">
+            <div class="dot"></div>
+            <div>
+              <div id="nowStatusTitle">Loading…</div>
+              <div id="nowStatusText" class="status-sub">Reading buoy.</div>
+            </div>
           </div>
         </div>
       </section>
 
-      <aside class="card">
-        <div class="label">Next forecast window (72h)</div>
-        <div id="nextWhen" style="font-weight:1000; font-size:22px; line-height:1.2;">—</div>
-        <div class="row">
-          <div class="stat"><div class="k">Swell</div><div class="v" id="nextSwell">—</div></div>
-          <div class="stat"><div class="k">Period</div><div class="v" id="nextPeriod">—</div></div>
-          <div class="stat"><div class="k">Wind</div><div class="v" id="nextWind">—</div></div>
+      <aside class="card" data-card="next">
+        <div class="label">
+          <span>Next forecast window (72h)</span>
+          <span class="chev" aria-hidden="true">▾</span>
         </div>
-        <div class="fineprint" id="nextNote">Forecast source: Open-Meteo Marine + wind 10m.</div>
+        <div class="body">
+          <div id="nextWhen" style="font-weight:1000; font-size:22px; line-height:1.2;">—</div>
+          <div class="row">
+            <div class="stat"><div class="k">Swell</div><div class="v" id="nextSwell">—</div></div>
+            <div class="stat"><div class="k">Period</div><div class="v" id="nextPeriod">—</div></div>
+            <div class="stat"><div class="k">Wind</div><div class="v" id="nextWind">—</div></div>
+          </div>
+          <div class="fineprint" id="nextNote">Forecast source: Open-Meteo Marine + wind 10m.</div>
+        </div>
       </aside>
     </div>
 
-    <section class="card">
-      <div class="label">All good windows, next 72 hours</div>
-      <div id="windowList" class="windowlist"><div class="fineprint">Loading…</div></div>
+    <section class="card" data-card="all">
+      <div class="label">
+        <span>All good windows, next 72 hours</span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </div>
+      <div class="body">
+        <div id="windowList" class="windowlist"><div class="fineprint">Loading…</div></div>
+      </div>
     </section>
 
     <div class="btnrow">
@@ -404,6 +456,52 @@
     document.addEventListener('visibilitychange', () => {
       if(document.visibilityState === 'visible') load();
     });
+
+    /* --------------- Collapsible cards --------------------------------------- */
+    const cards = () => Array.from(document.querySelectorAll('.card'));
+
+    function updateToggleAllLabel(){
+      const anyOpen = cards().some(c => !c.classList.contains('collapsed'));
+      el('toggleAllLabel').textContent = anyOpen ? 'Hide cards' : 'Show cards';
+    }
+
+    function applyCardState(){
+      try {
+        const saved = JSON.parse(localStorage.getItem('surfsup.cards') || 'null');
+        if(saved && typeof saved === 'object'){
+          for(const c of cards()){
+            const k = c.dataset.card;
+            if(k in saved) c.classList.toggle('collapsed', !!saved[k]);
+          }
+        } else if(window.matchMedia('(max-width: 860px)').matches){
+          // Mobile default: collapse all so the ocean shows through
+          for(const c of cards()) c.classList.add('collapsed');
+        }
+      } catch {}
+      updateToggleAllLabel();
+    }
+
+    function persistCardState(){
+      const state = {};
+      for(const c of cards()) state[c.dataset.card] = c.classList.contains('collapsed');
+      try { localStorage.setItem('surfsup.cards', JSON.stringify(state)); } catch {}
+    }
+
+    for(const c of cards()){
+      c.querySelector('.label').addEventListener('click', () => {
+        c.classList.toggle('collapsed');
+        persistCardState();
+        updateToggleAllLabel();
+      });
+    }
+    el('toggleAllBtn').addEventListener('click', () => {
+      const anyOpen = cards().some(c => !c.classList.contains('collapsed'));
+      for(const c of cards()) c.classList.toggle('collapsed', anyOpen);
+      persistCardState();
+      updateToggleAllLabel();
+    });
+    applyCardState();
+    /* ------------------------------------------------------------------------- */
   </script>
 </body>
 </html>
