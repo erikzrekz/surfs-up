@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Should We Surf?</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --ink:#0b0b10;
@@ -21,7 +25,7 @@
     body{
       margin:0;
       color:#fff;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      font-family: "Original Surfer", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, cursive;
       background:#0a1e2e;  /* fallback while iframe loads */
       overflow-x:hidden;
       min-height:100vh;
@@ -69,19 +73,14 @@
     }
     .brand{ display:flex; flex-direction:column; gap:4px; }
     .brand .name{
-      font-weight:950; letter-spacing:-0.02em; font-size:30px; line-height:1;
-      text-transform:uppercase;
+      font-weight:400; letter-spacing:0; font-size:38px; line-height:1;
       text-shadow: 0 2px 8px rgba(0,0,0,.35);
-      display:flex; align-items:center; gap:10px;
+      display:flex; align-items:center; gap:12px;
     }
     .brand .name .pixel-surfer{
-      width:1.1em; height:1.1em; flex:0 0 auto;
+      width:1em; height:1em; flex:0 0 auto;
       image-rendering: pixelated;
       filter: drop-shadow(0 2px 0 rgba(0,0,0,.45));
-    }
-    .brand .tag{
-      font-weight:800; color:rgba(255,255,255,.78); letter-spacing:.06em;
-      text-transform:uppercase; font-size:11px;
     }
     .pill{
       display:inline-flex; align-items:center; gap:10px; padding:10px 14px;
@@ -261,7 +260,6 @@
           </svg>
           <span>Should We Surf?</span>
         </div>
-        <div class="tag">Buoy 44097 · Open-Meteo · live</div>
       </div>
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <button class="toggle-all" id="toggleAllBtn" type="button" aria-label="Show or hide all data cards">
