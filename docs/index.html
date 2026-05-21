@@ -74,9 +74,20 @@
       white-space: nowrap;
     }
     .brand .name .pixel-surfer{
-      width:1em; height:1em; flex:0 0 auto;
+      width: 1.5em; height: 1.1em; flex:0 0 auto;
       image-rendering: pixelated;
       filter: drop-shadow(0 2px 0 rgba(0,0,0,.45));
+      animation: surfer-bob 2.2s ease-in-out infinite;
+      transform-origin: 50% 70%;
+    }
+    @keyframes surfer-bob{
+      0%,100% { transform: translateY(0)    rotate(0deg); }
+      25%     { transform: translateY(-1px) rotate(-1deg); }
+      50%     { transform: translateY(0)    rotate(0deg); }
+      75%     { transform: translateY(-1px) rotate(1deg); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .brand .name .pixel-surfer{ animation: none; }
     }
     .header-controls{
       display:flex; gap:10px; align-items:center; flex-wrap:wrap;
@@ -243,35 +254,65 @@
     <div class="header">
       <div class="brand">
         <div class="name">
-          <svg class="pixel-surfer" viewBox="0 0 14 14" shape-rendering="crispEdges" aria-hidden="true">
-            <!-- head -->
-            <rect x="6" y="1"  width="2" height="2" fill="#ffd9a8"/>
-            <!-- hair -->
-            <rect x="5" y="0"  width="4" height="1" fill="#3a2a1a"/>
-            <rect x="5" y="1"  width="1" height="1" fill="#3a2a1a"/>
-            <rect x="8" y="1"  width="1" height="1" fill="#3a2a1a"/>
-            <!-- torso (red shirt) -->
-            <rect x="5" y="3"  width="4" height="3" fill="#e11d48"/>
-            <!-- arms out -->
-            <rect x="3" y="4"  width="2" height="1" fill="#ffd9a8"/>
-            <rect x="9" y="4"  width="2" height="1" fill="#ffd9a8"/>
-            <!-- shorts -->
-            <rect x="5" y="6"  width="4" height="1" fill="#1a7f37"/>
-            <!-- legs -->
-            <rect x="5" y="7"  width="1" height="2" fill="#ffd9a8"/>
-            <rect x="8" y="7"  width="1" height="2" fill="#ffd9a8"/>
-            <!-- board (white with yellow stripe) -->
-            <rect x="1" y="9"  width="12" height="1" fill="#fff"/>
-            <rect x="2" y="10" width="10" height="1" fill="#ffd166"/>
-            <!-- wave spray -->
-            <rect x="0" y="10" width="1" height="1" fill="#118ab2"/>
-            <rect x="13" y="10" width="1" height="1" fill="#118ab2"/>
-            <rect x="2" y="12" width="1" height="1" fill="#118ab2"/>
-            <rect x="6" y="12" width="2" height="1" fill="#118ab2"/>
-            <rect x="11" y="12" width="1" height="1" fill="#118ab2"/>
-            <rect x="0" y="13" width="3" height="1" fill="#118ab2"/>
-            <rect x="5" y="13" width="4" height="1" fill="#118ab2"/>
-            <rect x="11" y="13" width="3" height="1" fill="#118ab2"/>
+          <svg class="pixel-surfer" viewBox="0 0 22 16" shape-rendering="crispEdges" aria-hidden="true">
+            <!-- Wave spray behind (upper-left) -->
+            <rect x="0"  y="3" width="2" height="1" fill="#fff"/>
+            <rect x="1"  y="4" width="3" height="1" fill="#fff"/>
+            <rect x="0"  y="5" width="5" height="1" fill="#e6f1f7"/>
+            <rect x="2"  y="6" width="5" height="1" fill="#cfe2ed"/>
+            <rect x="3"  y="7" width="4" height="1" fill="#b3d9e8"/>
+            <rect x="0"  y="8" width="3" height="1" fill="#7fb3cf"/>
+            <rect x="2"  y="9" width="5" height="1" fill="#5b9bbe"/>
+
+            <!-- Hair (back of head + top) -->
+            <rect x="11" y="0" width="3" height="1" fill="#1f1a17"/>
+            <rect x="10" y="1" width="5" height="1" fill="#1f1a17"/>
+            <rect x="10" y="2" width="3" height="1" fill="#1f1a17"/>
+
+            <!-- Face / head (facing right) -->
+            <rect x="13" y="2" width="2" height="1" fill="#f5d3a6"/>
+            <rect x="12" y="3" width="3" height="1" fill="#f5d3a6"/>
+            <rect x="14" y="3" width="1" height="1" fill="#1f1a17"/> <!-- eye/sunglasses hint -->
+            <rect x="12" y="4" width="2" height="1" fill="#f5d3a6"/>
+
+            <!-- Back arm (going up-left, balance) -->
+            <rect x="9"  y="4" width="3" height="1" fill="#f5d3a6"/>
+            <rect x="7"  y="5" width="3" height="1" fill="#f5d3a6"/>
+
+            <!-- Torso (shirtless, tan) -->
+            <rect x="11" y="5" width="3" height="1" fill="#f5d3a6"/>
+            <rect x="11" y="6" width="3" height="1" fill="#f5d3a6"/>
+            <rect x="14" y="5" width="1" height="1" fill="#d9a674"/>  <!-- side shading -->
+            <rect x="14" y="6" width="1" height="1" fill="#d9a674"/>
+
+            <!-- Front arm (reaching forward-right) -->
+            <rect x="14" y="6" width="3" height="1" fill="#f5d3a6"/>
+            <rect x="16" y="7" width="2" height="1" fill="#f5d3a6"/>
+
+            <!-- Shorts (red) -->
+            <rect x="10" y="7" width="5" height="1" fill="#d63148"/>
+            <rect x="9"  y="8" width="6" height="1" fill="#d63148"/>
+            <rect x="14" y="8" width="1" height="1" fill="#9b1f33"/>  <!-- shadow under -->
+
+            <!-- Legs — wide stance, bent knees -->
+            <rect x="9"  y="9"  width="2" height="1" fill="#f5d3a6"/>  <!-- back thigh -->
+            <rect x="13" y="9"  width="2" height="1" fill="#f5d3a6"/>  <!-- front thigh -->
+            <rect x="8"  y="10" width="2" height="1" fill="#f5d3a6"/>  <!-- back calf out -->
+            <rect x="14" y="10" width="2" height="1" fill="#f5d3a6"/>  <!-- front calf out -->
+            <rect x="7"  y="11" width="2" height="1" fill="#f5d3a6"/>  <!-- back foot -->
+            <rect x="15" y="11" width="2" height="1" fill="#f5d3a6"/>  <!-- front foot -->
+
+            <!-- Surfboard -->
+            <rect x="5"  y="12" width="14" height="1" fill="#ffffff"/>
+            <rect x="6"  y="13" width="12" height="1" fill="#d6dde2"/>
+
+            <!-- Wave breaking under board (right side, splash) -->
+            <rect x="18" y="12" width="1" height="1" fill="#cfe2ed"/>
+            <rect x="19" y="13" width="2" height="1" fill="#b3d9e8"/>
+            <rect x="4"  y="13" width="1" height="1" fill="#e6f1f7"/>
+            <rect x="3"  y="14" width="3" height="1" fill="#7fb3cf"/>
+            <rect x="17" y="14" width="4" height="1" fill="#5b9bbe"/>
+            <rect x="6"  y="15" width="10" height="1" fill="#5b9bbe"/>
           </svg>
           <span>Should We Surf?</span>
         </div>
