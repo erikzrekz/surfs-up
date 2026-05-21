@@ -1,4 +1,4 @@
-# Rory Surf Alerts
+# Should We Surf?
 
 Tells you when the surf will be good on the Rhode Island coast, before it happens.
 

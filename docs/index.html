@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Surfs Up RI</title>
+  <title>Should We Surf?</title>
 
   <style>
     :root{
@@ -72,6 +72,12 @@
       font-weight:950; letter-spacing:-0.02em; font-size:30px; line-height:1;
       text-transform:uppercase;
       text-shadow: 0 2px 8px rgba(0,0,0,.35);
+      display:flex; align-items:center; gap:10px;
+    }
+    .brand .name .pixel-surfer{
+      width:1.1em; height:1.1em; flex:0 0 auto;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 2px 0 rgba(0,0,0,.45));
     }
     .brand .tag{
       font-weight:800; color:rgba(255,255,255,.78); letter-spacing:.06em;
@@ -221,7 +227,39 @@
   <div class="wrap">
     <div class="header">
       <div class="brand">
-        <div class="name">Surfs Up RI</div>
+        <div class="name">
+          <svg class="pixel-surfer" viewBox="0 0 14 14" shape-rendering="crispEdges" aria-hidden="true">
+            <!-- head -->
+            <rect x="6" y="1"  width="2" height="2" fill="#ffd9a8"/>
+            <!-- hair -->
+            <rect x="5" y="0"  width="4" height="1" fill="#3a2a1a"/>
+            <rect x="5" y="1"  width="1" height="1" fill="#3a2a1a"/>
+            <rect x="8" y="1"  width="1" height="1" fill="#3a2a1a"/>
+            <!-- torso (red shirt) -->
+            <rect x="5" y="3"  width="4" height="3" fill="#e11d48"/>
+            <!-- arms out -->
+            <rect x="3" y="4"  width="2" height="1" fill="#ffd9a8"/>
+            <rect x="9" y="4"  width="2" height="1" fill="#ffd9a8"/>
+            <!-- shorts -->
+            <rect x="5" y="6"  width="4" height="1" fill="#1a7f37"/>
+            <!-- legs -->
+            <rect x="5" y="7"  width="1" height="2" fill="#ffd9a8"/>
+            <rect x="8" y="7"  width="1" height="2" fill="#ffd9a8"/>
+            <!-- board (white with yellow stripe) -->
+            <rect x="1" y="9"  width="12" height="1" fill="#fff"/>
+            <rect x="2" y="10" width="10" height="1" fill="#ffd166"/>
+            <!-- wave spray -->
+            <rect x="0" y="10" width="1" height="1" fill="#118ab2"/>
+            <rect x="13" y="10" width="1" height="1" fill="#118ab2"/>
+            <rect x="2" y="12" width="1" height="1" fill="#118ab2"/>
+            <rect x="6" y="12" width="2" height="1" fill="#118ab2"/>
+            <rect x="11" y="12" width="1" height="1" fill="#118ab2"/>
+            <rect x="0" y="13" width="3" height="1" fill="#118ab2"/>
+            <rect x="5" y="13" width="4" height="1" fill="#118ab2"/>
+            <rect x="11" y="13" width="3" height="1" fill="#118ab2"/>
+          </svg>
+          <span>Should We Surf?</span>
+        </div>
         <div class="tag">Buoy 44097 · Open-Meteo · live</div>
       </div>
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
