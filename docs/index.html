@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
@@ -25,7 +25,8 @@
     body{
       margin:0;
       color:#fff;
-      font-family: "Original Surfer", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, cursive;
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-feature-settings: "tnum" 1, "ss01" 1;
       background:#0a1e2e;  /* fallback while iframe loads */
       overflow-x:hidden;
       min-height:100vh;
@@ -73,7 +74,8 @@
     }
     .brand{ display:flex; flex-direction:column; gap:4px; }
     .brand .name{
-      font-weight:400; letter-spacing:0; font-size:38px; line-height:1;
+      font-family: "Original Surfer", cursive;
+      font-weight:400; letter-spacing:0; font-size:42px; line-height:1;
       text-shadow: 0 2px 8px rgba(0,0,0,.35);
       display:flex; align-items:center; gap:12px;
     }
