@@ -1,0 +1,48 @@
+name: surf-alerts
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Skip sending notifications"
+        type: boolean
+        default: false
+
+concurrency:
+  group: surf-alerts
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run surf checker
+        env:
+          AGENTMAIL_API_KEY:  ${{ secrets.AGENTMAIL_API_KEY }}
+          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
+          NTFY_TOPIC:         ${{ secrets.NTFY_TOPIC }}
+          ALERT_TO:           ${{ vars.ALERT_TO }}
+          DRY_RUN:            ${{ inputs.dry_run && '1' || '' }}
+        run: python scripts/check_surf.py
+
+      - name: Commit state + data
+        run: |
+          if [[ -z "$(git status --porcelain state.json site/data.json)" ]]; then
+            echo "no changes"
+            exit 0
+          fi
+          git config user.name  "surf-alerts-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json site/data.json
+          git commit -m "tick: $(date -u +%FT%TZ)"
+          git push

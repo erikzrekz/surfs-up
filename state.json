@@ -1,0 +1,7 @@
+{
+  "forecast_last_sent_at": null,
+  "forecast_last_window_id": null,
+  "forecast_last_window_score": null,
+  "nowcast_last_sent_day_utc": null,
+  "nowcast_was_good": false
+}

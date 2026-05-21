@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surfs Up RI</title>
+
+  <style>
+    :root{
+      --ink:#0b0b10;
+      --paper:rgba(255,255,255,.78);
+      --muted:rgba(0,0,0,.62);
+      --ok:#1a7f37;
+      --bad:#e11d48;
+      --stroke:rgba(255,255,255,.35);
+      --glass: rgba(255,255,255,.22);
+      --glass-strong: rgba(255,255,255,.34);
+    }
+
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      color:#fff;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:#0a1e2e;  /* fallback while iframe loads */
+      overflow-x:hidden;
+      min-height:100vh;
+    }
+
+    /* Full-bleed 3D ocean background */
+    #oceanFrame{
+      position:fixed;
+      inset:0;
+      width:100vw;
+      height:100vh;
+      border:0;
+      z-index:0;
+      pointer-events:none;
+    }
+
+    /* Soft vignette + slight darkening for content legibility */
+    .veil{
+      position:fixed; inset:0; pointer-events:none; z-index:1;
+      background:
+        radial-gradient(120% 80% at 50% 10%, rgba(0,0,0,0) 0%, rgba(0,0,0,.35) 80%),
+        linear-gradient(180deg, rgba(0,0,0,.20) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,.35) 100%);
+    }
+
+    .wrap{
+      position:relative;
+      z-index:2;
+      min-height:100vh;
+      display:flex; flex-direction:column;
+      padding:24px 16px;
+      gap:18px;
+    }
+
+    /* ---------- Header / brand bar ------------------------------------ */
+    .header{
+      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:14px 18px;
+      border-radius:18px;
+      background:var(--glass);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border:1px solid var(--stroke);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .brand{ display:flex; flex-direction:column; gap:4px; }
+    .brand .name{
+      font-weight:950; letter-spacing:-0.02em; font-size:30px; line-height:1;
+      text-transform:uppercase;
+      text-shadow: 0 2px 8px rgba(0,0,0,.35);
+    }
+    .brand .tag{
+      font-weight:800; color:rgba(255,255,255,.78); letter-spacing:.06em;
+      text-transform:uppercase; font-size:11px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:10px; padding:10px 14px;
+      border-radius:999px;
+      background:var(--glass-strong);
+      border:1px solid var(--stroke);
+      font-weight:850; text-transform:uppercase; letter-spacing:.05em; font-size:12px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    /* ---------- Cards (glass) ----------------------------------------- */
+    .grid{
+      display:grid; grid-template-columns:1fr 1fr; gap:16px;
+    }
+    @media (max-width: 860px){ .grid{ grid-template-columns:1fr; } }
+
+    .card{
+      border-radius:18px;
+      background:var(--glass);
+      border:1px solid var(--stroke);
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      color:#fff;
+    }
+    .label{
+      font-weight:900; text-transform:uppercase; letter-spacing:.10em;
+      font-size:11px; color:rgba(255,255,255,.75); margin-bottom:10px;
+    }
+    .big{
+      font-size:54px; font-weight:1000; letter-spacing:-0.03em; line-height:1;
+      text-shadow: 0 2px 12px rgba(0,0,0,.45);
+    }
+    .unit{
+      font-size:14px; font-weight:900; color:rgba(255,255,255,.7);
+      margin-left:8px; text-transform:uppercase; letter-spacing:.06em;
+    }
+    .row{
+      display:flex; flex-wrap:wrap; gap:14px; margin-top:10px;
+    }
+    .stat{ flex:1 1 120px; }
+    .stat .k{
+      font-size:11px; color:rgba(255,255,255,.7); text-transform:uppercase;
+      letter-spacing:.06em; font-weight:800;
+    }
+    .stat .v{ font-size:20px; font-weight:900; }
+
+    .status{
+      margin-top:14px; font-weight:950; text-transform:uppercase;
+      letter-spacing:.06em; font-size:13px;
+      display:flex; align-items:flex-start; gap:10px;
+    }
+    .dot{
+      width:12px; height:12px; border-radius:999px; margin-top:4px;
+      background:var(--bad);
+      box-shadow: 0 0 0 6px rgba(225,29,72,.30);
+      flex:0 0 auto;
+    }
+    .status.good .dot{
+      background:var(--ok);
+      box-shadow: 0 0 0 6px rgba(26,127,55,.30);
+    }
+    .status-sub{
+      font-weight:700; color:rgba(255,255,255,.78); margin-top:3px;
+      text-transform:none; letter-spacing:0;
+    }
+
+    .fineprint{ margin-top:10px; color:rgba(255,255,255,.72); font-size:13px; }
+
+    button{
+      appearance:none; border:1px solid var(--stroke); border-radius:14px;
+      padding:10px 14px; cursor:pointer;
+      background:var(--glass-strong); color:#fff;
+      font-weight:900; text-transform:uppercase; letter-spacing:.06em; font-size:12px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    button:hover{ transform: translateY(-1px); }
+    .btnrow{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      margin-top:6px;
+    }
+
+    .windowlist{
+      margin-top:10px; display:flex; flex-direction:column; gap:8px;
+    }
+    .window{
+      border:1px solid var(--stroke); border-radius:12px;
+      background:rgba(255,255,255,.10);
+      padding:10px 12px; display:flex; justify-content:space-between;
+      gap:10px; align-items:center;
+    }
+    .window .when{ font-weight:900; }
+    .window .meta{ color:rgba(255,255,255,.7); font-size:13px; }
+
+    .footnote{
+      position:fixed; right:14px; bottom:10px; z-index:2;
+      font-size:10px; color:rgba(255,255,255,.55); letter-spacing:.04em;
+    }
+    .footnote a{ color:inherit; }
+  </style>
+</head>
+
+<body>
+  <!-- Full-screen 3D ocean background -->
+  <iframe id="oceanFrame" src="3d-ocean/simulation.html" title="3D ocean background" loading="eager"></iframe>
+  <div class="veil"></div>
+
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <div class="name">Surfs Up RI</div>
+        <div class="tag">Buoy 44097 · Open-Meteo · live</div>
+      </div>
+      <div class="pill" id="ruleLabel">Loading rules…</div>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <div class="label">Right now — Block Island 44097</div>
+        <div>
+          <span id="nowWvht" class="big">—</span><span class="unit">ft</span>
+          <span id="nowDpd" style="margin-left:14px; font-size:24px; font-weight:900;">— s</span>
+        </div>
+        <div class="row">
+          <div class="stat"><div class="k">Wind</div><div class="v" id="nowWind">—</div></div>
+          <div class="stat"><div class="k">APD</div><div class="v" id="nowApd">—</div></div>
+          <div class="stat"><div class="k">Observed</div><div class="v" id="nowObs">—</div></div>
+        </div>
+        <div id="nowStatus" class="status">
+          <div class="dot"></div>
+          <div>
+            <div id="nowStatusTitle">Loading…</div>
+            <div id="nowStatusText" class="status-sub">Reading buoy.</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="label">Next forecast window (72h)</div>
+        <div id="nextWhen" style="font-weight:1000; font-size:22px; line-height:1.2;">—</div>
+        <div class="row">
+          <div class="stat"><div class="k">Swell</div><div class="v" id="nextSwell">—</div></div>
+          <div class="stat"><div class="k">Period</div><div class="v" id="nextPeriod">—</div></div>
+          <div class="stat"><div class="k">Wind</div><div class="v" id="nextWind">—</div></div>
+        </div>
+        <div class="fineprint" id="nextNote">Forecast source: Open-Meteo Marine + wind 10m.</div>
+      </aside>
+    </div>
+
+    <section class="card">
+      <div class="label">All good windows, next 72 hours</div>
+      <div id="windowList" class="windowlist"><div class="fineprint">Loading…</div></div>
+    </section>
+
+    <div class="btnrow">
+      <button id="refreshBtn" type="button">Refresh</button>
+      <div class="fineprint" style="margin-left:auto;">
+        Last fetch: <span id="lastFetch">—</span> · Live ocean → <span id="legendVis">syncing…</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote">
+    3D ocean by <a href="https://github.com/Seth-arc/3D-Ocean" target="_blank" rel="noopener">Seth-arc</a>
+  </div>
+
+  <script>
+    const el = (id) => document.getElementById(id);
+
+    /* --------------- 3D ocean control bridge --------------------------------- */
+    const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+
+    function liveToOceanParams(nowcast, forecast){
+      const fc = forecast?.next_window;
+      const wvht_ft = (nowcast?.wvht_ft) ?? (fc?.peak_swell_ft) ?? 1.0;
+      const dpd_s   = (nowcast?.dpd_s)   ?? (fc?.peak_period_s) ?? 6.0;
+      const wind_kt = (nowcast?.wind_speed_kt) ?? (fc?.peak_wind_kt) ?? 5.0;
+      return {
+        waveHeight:   clamp(0.15 + wvht_ft * 0.18, 0.1, 2.0),
+        waveSpeed:    clamp(3.0 - dpd_s * 0.16,   0.4, 3.0),
+        waveLength:   clamp(dpd_s * 5,            10,  80),
+        windStrength: clamp(wind_kt / 25,         0.0, 1.0),
+      };
+    }
+
+    function hideSimUI(){
+      const doc = el('oceanFrame').contentDocument;
+      if(!doc) return false;
+      let style = doc.getElementById('surfsup-injected-style');
+      if(!style){
+        style = doc.createElement('style');
+        style.id = 'surfsup-injected-style';
+        style.textContent = `
+          #controls, #info { display:none !important; visibility:hidden !important; }
+          body { background: transparent !important; }
+        `;
+        doc.head.appendChild(style);
+      }
+      return true;
+    }
+
+    function setOceanParams(params){
+      const doc = el('oceanFrame').contentDocument;
+      if(!doc) return false;
+      let any = false;
+      for(const [id, value] of Object.entries(params)){
+        const input = doc.getElementById(id);
+        if(!input) continue;
+        input.value = String(value);
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        any = true;
+      }
+      return any;
+    }
+
+    function describeOcean(p){
+      return `swell ${p.waveHeight.toFixed(2)} · chop ${p.waveSpeed.toFixed(2)} · λ ${p.waveLength.toFixed(0)} · wind ${p.windStrength.toFixed(2)}`;
+    }
+
+    let _lastParams = null;
+    function pushOcean(){
+      if(!_lastParams) return;
+      hideSimUI();
+      const ok = setOceanParams(_lastParams);
+      if(!ok){ setTimeout(pushOcean, 400); return; }
+      el('legendVis').textContent = describeOcean(_lastParams);
+    }
+    el('oceanFrame').addEventListener('load', () => setTimeout(pushOcean, 200));
+    /* ------------------------------------------------------------------------- */
+
+    function fmtTime(d){
+      try { return d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}); }
+      catch { return d.toISOString(); }
+    }
+    function fmtWhen(localIso){
+      if(!localIso) return '—';
+      const d = new Date(localIso);
+      return d.toLocaleDateString([], {weekday:'short', month:'short', day:'numeric'})
+        + ' ' + d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+    }
+    function setNowStatus(good, title, text){
+      const s = el('nowStatus');
+      s.classList.toggle('good', good);
+      el('nowStatusTitle').textContent = title;
+      el('nowStatusText').textContent = text;
+    }
+
+    async function load(){
+      el('refreshBtn').disabled = true;
+      el('refreshBtn').textContent = 'Refreshing…';
+      try {
+        const res = await fetch(`data.json?ts=${Date.now()}`, { cache: 'no-store' });
+        if(!res.ok) throw new Error(`data.json ${res.status}`);
+        const data = await res.json();
+
+        const t = data.thresholds || {};
+        el('ruleLabel').textContent =
+          `Alert ≥ ${t.now_wvht_ft ?? '?'}ft @ ${t.now_dpd_s ?? '?'}s, wind ≤ ${t.now_wind_kt_max ?? '?'}kt`;
+
+        const n = data.nowcast;
+        if(n){
+          el('nowWvht').textContent = n.wvht_ft ?? '—';
+          el('nowDpd').textContent  = (n.dpd_s ?? '—') + ' s';
+          el('nowWind').textContent =
+            (n.wind_speed_kt ?? '—') + ' kt ' + (n.wind_dir ?? '');
+          el('nowApd').textContent = (n.apd_s ?? '—') + ' s';
+          el('nowObs').textContent = n.observed_at ? fmtTime(new Date(n.observed_at)) : '—';
+          if(n.is_good){
+            setNowStatus(true, '🔥 Go get it', `Conditions meet the bar at 44097.`);
+          } else {
+            const why = (n.reasons && n.reasons.length) ? n.reasons.join('; ') : 'Below threshold.';
+            setNowStatus(false, n.stale ? 'Stale buoy data' : 'Not yet', why);
+          }
+        } else {
+          setNowStatus(false, 'No buoy data', 'Could not parse NDBC RSS.');
+        }
+
+        const f = data.forecast;
+        if(f && f.next_window){
+          const w = f.next_window;
+          el('nextWhen').textContent = fmtWhen(w.start_local) + '  →  ' + fmtWhen(w.end_local);
+          el('nextSwell').textContent  = (w.peak_swell_ft ?? '—') + ' ft';
+          el('nextPeriod').textContent = (w.peak_period_s ?? '—') + ' s';
+          el('nextWind').textContent   = (w.peak_wind_kt ?? '—') + ' kt ' + (w.wind_dir ?? '');
+          el('nextNote').textContent   = `Window length: ${w.duration_h}h. Open-Meteo Marine + wind.`;
+        } else {
+          el('nextWhen').textContent = 'No good windows in the next 72h';
+          el('nextSwell').textContent = el('nextPeriod').textContent = el('nextWind').textContent = '—';
+          el('nextNote').textContent = 'Forecast source: Open-Meteo Marine + wind 10m.';
+        }
+
+        const list = el('windowList');
+        list.innerHTML = '';
+        const windows = (f && f.all_windows_72h) || [];
+        if(!windows.length){
+          list.innerHTML = '<div class="fineprint">None.</div>';
+        } else {
+          for(const w of windows){
+            const row = document.createElement('div');
+            row.className = 'window';
+            row.innerHTML = `
+              <div class="when">${fmtWhen(w.start_local)} – ${fmtWhen(w.end_local)} <span class="meta">(${w.duration_h}h)</span></div>
+              <div class="meta">${w.peak_swell_ft}ft @ ${w.peak_period_s}s · wind ${w.peak_wind_kt}kt ${w.wind_dir}</div>`;
+            list.appendChild(row);
+          }
+        }
+
+        el('lastFetch').textContent = fmtTime(new Date(data.fetched_at));
+
+        _lastParams = liveToOceanParams(data.nowcast, data.forecast);
+        pushOcean();
+      } catch (err) {
+        console.error(err);
+        setNowStatus(false, 'Loading issue', String(err.message || err));
+      } finally {
+        el('refreshBtn').disabled = false;
+        el('refreshBtn').textContent = 'Refresh';
+      }
+    }
+
+    el('refreshBtn').addEventListener('click', load);
+    window.addEventListener('load', load);
+    document.addEventListener('visibilitychange', () => {
+      if(document.visibilityState === 'visible') load();
+    });
+  </script>
+</body>
+</html>

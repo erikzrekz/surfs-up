@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Ocean 3D Simulation</title>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+        }
+    }
+    </script>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #E6F3FF 0%, #B8E0FF 30%, #87CEEB 70%, #4682B4 100%);
+        }
+        canvas { display: block; }
+        
+        /* Back button */
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 100;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        #backButton:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-1px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        #controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 18px;
+            border-radius: 16px;
+            min-width: 220px;
+            z-index: 100;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        #controls:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-1px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        .control-group {
+            margin-bottom: 16px;
+        }
+        .control-group:last-child {
+            margin-bottom: 0;
+        }
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.85;
+        }
+        input[type="range"] {
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.25);
+            outline: none;
+            -webkit-appearance: none;
+            margin: 0;
+            cursor: pointer;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.6);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            cursor: pointer;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+        }
+        #info {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 11px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        #info:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .value {
+            color: #60a5fa;
+            font-weight: 600;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 11px;
+        }
+        h3 {
+            margin: 0 0 14px 0;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            opacity: 0.9;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .minimize-btn {
+            font-size: 14px;
+            font-weight: normal;
+            opacity: 0.7;
+            transition: opacity 0.2s ease, transform 0.3s ease;
+            margin-left: 10px;
+        }
+        .minimize-btn:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .controls-content {
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+        }
+        .controls-content.minimized {
+            max-height: 0;
+            opacity: 0;
+        }
+        #controls.minimized {
+            min-width: 180px;
+        }
+    </style>
+</head>
+<body>  
+    <div id="controls">
+        <h3 id="controlsHeader">
+            <span>Water Physics</span>
+            <span class="minimize-btn" id="minimizeBtn">−</span>
+        </h3>
+        <div class="controls-content" id="controlsContent">
+            <div class="control-group">
+                <label>Wave Height: <span class="value" id="waveHeightValue">0.8</span></label>
+                <input type="range" id="waveHeight" min="0.1" max="2.0" step="0.1" value="0.8">
+            </div>
+            <div class="control-group">
+                <label>Wave Speed: <span class="value" id="waveSpeedValue">1.0</span></label>
+                <input type="range" id="waveSpeed" min="0.2" max="3.0" step="0.1" value="1.0">
+            </div>
+            <div class="control-group">
+                <label>Wave Length: <span class="value" id="waveLengthValue">25.0</span></label>
+                <input type="range" id="waveLength" min="10.0" max="80.0" step="2.0" value="25.0">
+            </div>
+            <div class="control-group">
+                <label>Wind Strength: <span class="value" id="windStrengthValue">0.5</span></label>
+                <input type="range" id="windStrength" min="0.0" max="1.0" step="0.05" value="0.5">
+            </div>
+            <div class="control-group">
+                <label>Surface Detail: <span class="value" id="surfaceDetailValue">0.3</span></label>
+                <input type="range" id="surfaceDetail" min="0.0" max="1.0" step="0.05" value="0.3">
+            </div>
+            <div class="control-group">
+                <label>FPS: <span class="value" id="fpsInControls">60</span></label>
+            </div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <div style="font-size: 10px; opacity: 0.7;">
+            <div><strong>Controls:</strong></div>
+            <div>Arrow Keys/WASD: Move</div>
+            <div>Space: Up | Shift: Down</div>
+            <div>Click + Mouse: Look around</div>
+            <div>C: Toggle camera mode</div>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { Water } from 'three/addons/objects/Water.js';
+        import { Sky } from 'three/addons/objects/Sky.js';
+
+        // Performance monitoring
+        let frameCount = 0;
+        let lastTime = performance.now();
+        let fpsHistory = [];
+
+        // Keyboard movement state
+        const keys = {
+            forward: false,
+            backward: false,
+            left: false,
+            right: false,
+            up: false,
+            down: false
+        };
+
+        // Movement settings
+        const moveSpeed = 50;
+        const lookSpeed = 0.002;
+
+        // Water interaction settings
+        let previousPosition = new THREE.Vector3();
+        let velocity = new THREE.Vector3();
+        let ripples = [];
+        const maxRipples = 10;
+        const waterLevel = 0; // Y position of water surface
+
+        // ## OPTIMIZED SCENE SETUP ##
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 500);
+        
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            powerPreference: "high-performance",
+            stencil: false,
+            depth: true,
+            alpha: false,
+            premultipliedAlpha: false
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        
+        // Enhanced rendering settings
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.0;
+        renderer.outputEncoding = THREE.sRGBEncoding;
+        
+        // Clear to sky gradient (handled by CSS background)
+        renderer.setClearColor(0x000000, 0);
+        renderer.setClearAlpha(0);
+        document.body.appendChild(renderer.domElement);
+
+        // Enhanced camera controls - hybrid system
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.03;
+        controls.minDistance = 1;
+        controls.maxDistance = 150;
+        controls.maxPolarAngle = Math.PI / 2 + 0.1;
+        controls.target.set(0, 0, 0);
+        controls.enabled = false; // Start with keyboard controls
+
+        camera.position.set(12, 6, 18);
+        previousPosition.copy(camera.position); // Initialize previous position
+
+        // Camera orientation for first-person movement
+        let pitch = 0;
+        let yaw = 0;
+        let isFirstPerson = true;
+
+        // Enhanced sun lighting
+        const sunLight = new THREE.DirectionalLight(0xfff4e6, 1.2);
+        sunLight.position.set(-40, 60, 30);
+        sunLight.castShadow = true;
+        sunLight.shadow.mapSize.width = 2048;
+        sunLight.shadow.mapSize.height = 2048;
+        sunLight.shadow.camera.near = 0.1;
+        sunLight.shadow.camera.far = 200;
+        sunLight.shadow.camera.left = -100;
+        sunLight.shadow.camera.right = 100;
+        sunLight.shadow.camera.top = 100;
+        sunLight.shadow.camera.bottom = -100;
+        scene.add(sunLight);
+        
+        // Ambient lighting for realism
+        const ambientLight = new THREE.AmbientLight(0x4a5568, 0.3);
+        scene.add(ambientLight);
+
+        // Additional fill light
+        const fillLight = new THREE.DirectionalLight(0x87ceeb, 0.2);
+        fillLight.position.set(40, 30, -30);
+        scene.add(fillLight);
+
+        // Function to update all lighting relative to camera
+        function updateLighting() {
+            // Update fill light position relative to camera
+            const fillLightOffset = new THREE.Vector3(40, 30, -30);
+            fillLight.position.copy(camera.position.clone().add(fillLightOffset));
+        }
+        
+               
+
+        // ## THREE.JS WATER ##
+        const waterGeometry = new THREE.PlaneGeometry(10000, 10000);
+
+        const water = new Water(
+            waterGeometry,
+            {
+                textureWidth: 512,
+                textureHeight: 512,
+                waterNormals: new THREE.TextureLoader().load('https://threejs.org/examples/textures/waternormals.jpg', function (texture) {
+                    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+                }),
+                sunDirection: new THREE.Vector3(),
+                sunColor: 0xffffff,
+                waterColor: 0x001e0f,
+                distortionScale: 3.7,
+                fog: scene.fog !== undefined
+            }
+        );
+
+        // Add custom uniforms for interaction
+        water.material.uniforms.userPosition = { value: new THREE.Vector3() };
+        water.material.uniforms.userVelocity = { value: 0.0 };
+        water.material.uniforms.ripplePositions = { value: [] };
+        water.material.uniforms.rippleTimes = { value: [] };
+        water.material.uniforms.rippleCount = { value: 0 };
+
+        // Enhance the water shader to include user interaction
+        const originalVertexShader = water.material.vertexShader;
+        const originalFragmentShader = water.material.fragmentShader;
+
+        // Add interaction to vertex shader
+        water.material.vertexShader = water.material.vertexShader.replace(
+            'void main() {',
+            `
+            uniform vec3 userPosition;
+            uniform float userVelocity;
+            uniform vec3 ripplePositions[10];
+            uniform float rippleTimes[10];
+            uniform int rippleCount;
+            
+            float calculateUserWave(vec3 worldPos) {
+                float wave = 0.0;
+                
+                // User proximity wave
+                float dist = distance(worldPos.xz, userPosition.xz);
+                float userWave = 0.0;
+                
+                if (dist < 50.0) {
+                    float falloff = 1.0 - (dist / 50.0);
+                    userWave = sin(dist * 0.5 - time * 4.0) * userVelocity * 0.5 * falloff;
+                }
+                
+                // Ripple effects
+                for (int i = 0; i < 10; i++) {
+                    if (i >= rippleCount) break;
+                    
+                    float rippleDist = distance(worldPos.xz, ripplePositions[i].xz);
+                    float rippleAge = time - rippleTimes[i];
+                    
+                    if (rippleAge > 0.0 && rippleAge < 3.0 && rippleDist < 30.0) {
+                        float rippleSpeed = 15.0;
+                        float expectedPos = rippleAge * rippleSpeed;
+                        float wavefront = abs(rippleDist - expectedPos);
+                        
+                        if (wavefront < 2.0) {
+                            float intensity = (1.0 - rippleAge / 3.0) * (1.0 - wavefront / 2.0);
+                            wave += sin(rippleDist * 0.8 - time * 3.0) * intensity * 0.8;
+                        }
+                    }
+                }
+                
+                return wave;
+            }
+            
+            void main() {`
+        );
+
+        // Modify the vertex position calculation
+        water.material.vertexShader = water.material.vertexShader.replace(
+            'vec4 worldPosition = modelMatrix * vec4( transformed, 1.0 );',
+            `
+            vec4 worldPosition = modelMatrix * vec4( transformed, 1.0 );
+            float userWave = calculateUserWave(worldPosition.xyz);
+            worldPosition.y += userWave;
+            `
+        );
+
+        water.rotation.x = -Math.PI / 2;
+        scene.add(water);
+
+        // Add Sky
+        const sky = new Sky();
+        sky.scale.setScalar(10000);
+        scene.add(sky);
+
+        const skyUniforms = sky.material.uniforms;
+        skyUniforms['turbidity'].value = 10;
+        skyUniforms['rayleigh'].value = 2;
+        skyUniforms['mieCoefficient'].value = 0.005;
+        skyUniforms['mieDirectionalG'].value = 0.8;
+
+        // Sun setup
+        const sun = new THREE.Vector3();
+        const pmremGenerator = new THREE.PMREMGenerator(renderer);
+        
+        const parameters = {
+            elevation: 2,
+            azimuth: 180
+        };
+
+        function updateSun() {
+            const phi = THREE.MathUtils.degToRad(90 - parameters.elevation);
+            const theta = THREE.MathUtils.degToRad(parameters.azimuth);
+            sun.setFromSphericalCoords(1, phi, theta);
+            
+            // Update sun position relative to camera
+            const sunWorldPosition = camera.position.clone().add(sun.clone().multiplyScalar(1000));
+            sunLight.position.copy(sunWorldPosition);
+            
+            sky.material.uniforms['sunPosition'].value.copy(sun);
+            water.material.uniforms['sunDirection'].value.copy(sun).normalize();
+        }
+        updateSun();
+
+        // ## PERFORMANCE OPTIMIZATION ##
+        const clock = new THREE.Clock();
+        let adaptiveQuality = 1.0;
+
+        function updatePerformance() {
+            const currentTime = performance.now();
+            const deltaTime = currentTime - lastTime;
+            const fps = 1000 / deltaTime;
+            
+            fpsHistory.push(fps);
+            if (fpsHistory.length > 60) fpsHistory.shift();
+            
+            const avgFps = fpsHistory.reduce((a, b) => a + b, 0) / fpsHistory.length;
+            
+            // Adaptive quality based on performance
+            if (avgFps < 45 && adaptiveQuality > 0.5) {
+                adaptiveQuality = Math.max(0.5, adaptiveQuality - 0.1);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio * adaptiveQuality, 1));
+            } else if (avgFps > 55 && adaptiveQuality < 1.0) {
+                adaptiveQuality = Math.min(1.0, adaptiveQuality + 0.05);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio * adaptiveQuality, 2));
+            }
+            
+            lastTime = currentTime;
+            
+            // Update FPS display every 30 frames
+            if (frameCount % 30 === 0) {
+                const roundedFps = Math.round(avgFps);
+                document.getElementById('fpsInControls').textContent = roundedFps;
+            }
+        }
+
+                 // Create ripple effect
+         function createRipple(position) {
+             if (ripples.length >= maxRipples) {
+                 ripples.shift(); // Remove oldest ripple
+             }
+             
+             ripples.push({
+                 position: position.clone(),
+                 time: water.material.uniforms.time.value
+             });
+             
+             // Update shader uniforms
+             const positions = ripples.map(r => r.position);
+             const times = ripples.map(r => r.time);
+             
+             water.material.uniforms.ripplePositions.value = positions;
+             water.material.uniforms.rippleTimes.value = times;
+             water.material.uniforms.rippleCount.value = ripples.length;
+         }
+
+         // Movement function with water interaction
+         function updateMovement(deltaTime) {
+             if (!isFirstPerson) return;
+
+             // Store previous position for velocity calculation
+             previousPosition.copy(camera.position);
+
+             const moveVector = new THREE.Vector3();
+             const cameraDirection = new THREE.Vector3();
+             
+             // Get camera's forward direction
+             camera.getWorldDirection(cameraDirection);
+             const right = new THREE.Vector3().crossVectors(cameraDirection, camera.up).normalize();
+             const forward = cameraDirection.clone();
+             forward.y = 0; // Keep movement horizontal
+             forward.normalize();
+
+             // Calculate movement based on keys
+             if (keys.forward) moveVector.add(forward);
+             if (keys.backward) moveVector.sub(forward);
+             if (keys.left) moveVector.sub(right);
+             if (keys.right) moveVector.add(right);
+             if (keys.up) moveVector.add(camera.up);
+             if (keys.down) moveVector.sub(camera.up);
+
+             // Apply movement
+             if (moveVector.length() > 0) {
+                 moveVector.normalize();
+                 moveVector.multiplyScalar(moveSpeed * deltaTime);
+                 camera.position.add(moveVector);
+             }
+
+             // Calculate velocity for water interaction
+             velocity.subVectors(camera.position, previousPosition).divideScalar(deltaTime);
+             const speed = velocity.length();
+
+             // Update water interaction uniforms
+             water.material.uniforms.userPosition.value.copy(camera.position);
+             water.material.uniforms.userVelocity.value = Math.min(speed / 50, 1.0); // Normalize velocity
+
+             // Create ripples when moving fast near water surface
+             const distanceToWater = Math.abs(camera.position.y - waterLevel);
+             if (speed > 20 && distanceToWater < 10) {
+                 // Only create ripples occasionally to avoid spam
+                 if (Math.random() < 0.1) {
+                     createRipple(camera.position);
+                 }
+             }
+
+             // Create ripples when crossing water surface
+             const prevDistToWater = Math.abs(previousPosition.y - waterLevel);
+             const currDistToWater = Math.abs(camera.position.y - waterLevel);
+             
+             if ((previousPosition.y > waterLevel && camera.position.y <= waterLevel) ||
+                 (previousPosition.y < waterLevel && camera.position.y >= waterLevel)) {
+                 // Crossed water surface - create ripple
+                 const crossingPoint = new THREE.Vector3(camera.position.x, waterLevel, camera.position.z);
+                 createRipple(crossingPoint);
+             }
+         }
+
+         // ## ANIMATION LOOP ##
+        function animate() {
+            requestAnimationFrame(animate);
+             frameCount++;
+
+             const currentTime = performance.now();
+             const deltaTime = (currentTime - lastTime) / 1000;
+
+            const elapsedTime = clock.getElapsedTime();
+             
+             // Update water time
+             water.material.uniforms['time'].value = elapsedTime;
+
+             // Update movement
+             updateMovement(deltaTime);
+
+             // Update sun position relative to camera
+             updateSun();
+
+             // Update all lighting relative to camera
+             updateLighting();
+
+             // Update controls (only if not in first person mode)
+             if (!isFirstPerson) {
+            controls.update();
+             }
+
+             // Performance monitoring
+             updatePerformance();
+
+             // Render
+            renderer.render(scene, camera);
+        }
+
+        // ## CONTROLS ##
+        document.getElementById('waveHeight').addEventListener('input', (e) => {
+            const value = parseFloat(e.target.value);
+            water.material.uniforms['size'].value = value;
+            document.getElementById('waveHeightValue').textContent = value;
+        });
+
+        document.getElementById('waveSpeed').addEventListener('input', (e) => {
+            const value = parseFloat(e.target.value);
+            // Speed is handled in animation loop
+            document.getElementById('waveSpeedValue').textContent = value;
+        });
+
+        document.getElementById('waveLength').addEventListener('input', (e) => {
+            const value = parseFloat(e.target.value);
+            water.material.uniforms['distortionScale'].value = value * 0.15;
+            document.getElementById('waveLengthValue').textContent = value;
+        });
+
+        document.getElementById('windStrength').addEventListener('input', (e) => {
+            const value = parseFloat(e.target.value);
+            water.material.uniforms['alpha'].value = 1.0 - value * 0.3;
+            document.getElementById('windStrengthValue').textContent = value;
+        });
+
+                 document.getElementById('surfaceDetail').addEventListener('input', (e) => {
+             const value = parseFloat(e.target.value);
+             water.material.uniforms['distortionScale'].value = value * 5.0;
+             document.getElementById('surfaceDetailValue').textContent = value;
+         });
+
+         // ## MINIMIZE/EXPAND CONTROLS ##
+         let isControlsMinimized = false;
+         const controlsContent = document.getElementById('controlsContent');
+         const minimizeBtn = document.getElementById('minimizeBtn');
+         const controlsPanel = document.getElementById('controls');
+         
+         // Set initial max-height for smooth animation
+         controlsContent.style.maxHeight = controlsContent.scrollHeight + 'px';
+         
+         document.getElementById('controlsHeader').addEventListener('click', () => {
+             isControlsMinimized = !isControlsMinimized;
+             
+             if (isControlsMinimized) {
+                 controlsContent.style.maxHeight = '0px';
+                 controlsContent.classList.add('minimized');
+                 controlsPanel.classList.add('minimized');
+                 minimizeBtn.textContent = '+';
+             } else {
+                 controlsContent.style.maxHeight = controlsContent.scrollHeight + 'px';
+                 controlsContent.classList.remove('minimized');
+                 controlsPanel.classList.remove('minimized');
+                 minimizeBtn.textContent = '−';
+             }
+         });
+
+         // ## KEYBOARD AND MOUSE CONTROLS ##
+         
+         // Keyboard event listeners
+         document.addEventListener('keydown', (event) => {
+             switch(event.code) {
+                 case 'ArrowUp':
+                 case 'KeyW':
+                     keys.forward = true;
+                     break;
+                 case 'ArrowDown':
+                 case 'KeyS':
+                     keys.backward = true;
+                     break;
+                 case 'ArrowLeft':
+                 case 'KeyA':
+                     keys.left = true;
+                     break;
+                 case 'ArrowRight':
+                 case 'KeyD':
+                     keys.right = true;
+                     break;
+                 case 'Space':
+                     keys.up = true;
+                     event.preventDefault();
+                     break;
+                 case 'ShiftLeft':
+                 case 'ShiftRight':
+                     keys.down = true;
+                     break;
+                 case 'KeyC':
+                     // Toggle between first-person and orbit controls
+                     isFirstPerson = !isFirstPerson;
+                     controls.enabled = !isFirstPerson;
+                     if (!isFirstPerson) {
+                         controls.target.copy(camera.position.clone().add(new THREE.Vector3(0, 0, -10)));
+                     }
+                     break;
+             }
+         });
+
+         document.addEventListener('keyup', (event) => {
+             switch(event.code) {
+                 case 'ArrowUp':
+                 case 'KeyW':
+                     keys.forward = false;
+                     break;
+                 case 'ArrowDown':
+                 case 'KeyS':
+                     keys.backward = false;
+                     break;
+                 case 'ArrowLeft':
+                 case 'KeyA':
+                     keys.left = false;
+                     break;
+                 case 'ArrowRight':
+                 case 'KeyD':
+                     keys.right = false;
+                     break;
+                 case 'Space':
+                     keys.up = false;
+                     break;
+                 case 'ShiftLeft':
+                 case 'ShiftRight':
+                     keys.down = false;
+                     break;
+             }
+         });
+
+         // Mouse look controls
+         let isMouseLocked = false;
+         
+         // Request pointer lock on click (for mouse look)
+         renderer.domElement.addEventListener('click', () => {
+             if (isFirstPerson) {
+                 renderer.domElement.requestPointerLock();
+             }
+         });
+
+         // Handle pointer lock change
+         document.addEventListener('pointerlockchange', () => {
+             isMouseLocked = document.pointerLockElement === renderer.domElement;
+         });
+
+         // Mouse movement for looking around
+         document.addEventListener('mousemove', (event) => {
+             if (isMouseLocked && isFirstPerson) {
+                 yaw -= event.movementX * lookSpeed;
+                 pitch -= event.movementY * lookSpeed;
+                 
+                 // Clamp pitch to prevent flipping
+                 pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
+                 
+                 // Apply rotation to camera
+                 camera.rotation.order = 'YXZ';
+                 camera.rotation.y = yaw;
+                 camera.rotation.x = pitch;
+             }
+         });
+
+        // Handle window resizing
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Start animation
+        animate();
+    </script>
+</body>
+</html>
