@@ -1,0 +1,44 @@
+name: test-alert
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: "Body text for the test alert (optional)"
+        type: string
+        required: false
+        default: "If you got this from the GitHub Actions cloud, the deployed alert path works end-to-end."
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send test alert
+        env:
+          AGENTMAIL_API_KEY:  ${{ secrets.AGENTMAIL_API_KEY }}
+          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
+          NTFY_TOPIC:         ${{ secrets.NTFY_TOPIC }}
+          ALERT_TO:           ${{ vars.ALERT_TO }}
+          MESSAGE:            ${{ inputs.message }}
+        run: |
+          python - <<'PY'
+          import os, sys
+          sys.path.insert(0, "scripts")
+          from notify import notify_all
+          r = notify_all(
+              subject="🌊 Test alert — Surfs Up RI (deployed)",
+              body=os.environ.get("MESSAGE", "Test"),
+              push_title="🌊 Test alert (deployed)",
+          )
+          print(f"email_sent={r.email_sent} email_error={r.email_error}")
+          print(f"push_sent={r.push_sent}  push_error={r.push_error}")
+          if not (r.email_sent or r.push_sent):
+              print("nothing was sent", file=sys.stderr)
+              sys.exit(1)
+          PY
