@@ -15,7 +15,7 @@ Runs entirely on GitHub Actions (free), no servers.
 NDBC buoy 44097 ──┐
                   ├─► rules engine ─► AgentMail (email) + ntfy.sh (push)
 Open-Meteo Marine ┘                    │
-+ wind 10m                             └─► site/data.json (static frontend)
++ wind 10m                             └─► docs/data.json (static frontend)
 ```
 
 - `scripts/check_surf.py` — runs every 15 min via Actions cron
@@ -24,7 +24,7 @@ Open-Meteo Marine ┘                    │
 - `scripts/open_meteo.py` — marine + wind forecast client
 - `scripts/notify.py` — AgentMail + ntfy senders
 - `state.json` — debounce state, committed back to repo each tick
-- `site/` — static frontend reading `site/data.json`
+- `docs/` — static frontend reading `docs/data.json`
 
 ## Setup
 
@@ -54,7 +54,7 @@ Push this repo to GitHub. The workflow `.github/workflows/surf-alerts.yml` runs 
 
 ### 5. Frontend (optional)
 
-Publish `site/` via the `here-now` skill or any static host. It will show the current buoy reading and the next forecast window.
+Publish `docs/` via the `here-now` skill or any static host. It will show the current buoy reading and the next forecast window.
 
 ## Tuning
 
@@ -83,7 +83,7 @@ python -m unittest tests.test_rules -v
 
 # Dry-run against live APIs (no emails sent)
 DRY_RUN=1 python scripts/check_surf.py
-cat site/data.json
+cat docs/data.json
 ```
 
 ## Notes

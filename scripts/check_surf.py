@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Main runner: fetch nowcast + forecast, evaluate, alert, write site/data.json.
+"""Main runner: fetch nowcast + forecast, evaluate, alert, write docs/data.json.
 
 Designed for GitHub Actions cron. Idempotent: if no alert conditions change,
 no notifications fire. State is read from and written to STATE_PATH so the
@@ -26,7 +26,7 @@ from notify import notify_all
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = Path(os.environ.get("STATE_PATH", REPO_ROOT / "state.json"))
-DATA_PATH = Path(os.environ.get("DATA_PATH", REPO_ROOT / "site" / "data.json"))
+DATA_PATH = Path(os.environ.get("DATA_PATH", REPO_ROOT / "docs" / "data.json"))
 
 STALE_NOWCAST_MAX_AGE = timedelta(hours=3)
 NOWCAST_SAME_DAY_UTC_CAP = True
@@ -142,7 +142,7 @@ def run() -> int:
         print(f"nowcast-error: {e}", file=sys.stderr)
         traceback.print_exc(file=sys.stderr)
 
-    # ---- Write site/data.json --------------------------------------------
+    # ---- Write docs/data.json --------------------------------------------
     data_payload = {
         "fetched_at": now_utc.isoformat(),
         "nowcast": nowcast_payload,
