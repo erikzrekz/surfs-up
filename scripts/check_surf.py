@@ -20,6 +20,7 @@ from pathlib import Path
 import ndbc
 import open_meteo
 import rules
+import spots as spots_mod
 import state as state_mod
 from notify import notify_all
 
@@ -27,6 +28,7 @@ from notify import notify_all
 REPO_ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = Path(os.environ.get("STATE_PATH", REPO_ROOT / "state.json"))
 DATA_PATH = Path(os.environ.get("DATA_PATH", REPO_ROOT / "docs" / "data.json"))
+SPOTS_DIR = Path(os.environ.get("SPOTS_DIR", REPO_ROOT / "docs" / "spots"))
 
 STALE_NOWCAST_MAX_AGE = timedelta(hours=3)
 NOWCAST_SAME_DAY_UTC_CAP = True
@@ -57,6 +59,121 @@ def face_height_ft(swell_ft: float | None, period_s: float | None) -> float | No
 
 def _today_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def build_spot_payload(spot: spots_mod.Spot, now_utc: datetime) -> dict:
+    """Fetch Open-Meteo at the spot's coords and return a display payload.
+
+    No buoy involved — Matunuck-area spots are inside Block Island's shadow for
+    some swell directions, so the model at the actual coords is more honest
+    than re-using buoy 44097. Same rules engine, evaluated against model wind.
+    """
+    payload: dict = {
+        "fetched_at": now_utc.isoformat(),
+        "spot": {
+            "slug": spot.slug, "name": spot.name, "subtitle": spot.subtitle,
+            "lat": spot.lat, "lon": spot.lon,
+        },
+        "thresholds": rules.THRESHOLDS,
+        "now": None,
+        "forecast": None,
+    }
+    try:
+        fc = open_meteo.fetch_forecast(lat=spot.lat, lon=spot.lon, hours=120)
+    except Exception as e:
+        print(f"spot-{spot.slug} forecast-error: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        return payload
+
+    # ---- current-hour reading at the spot --------------------------------
+    best_i = None
+    for i, t in enumerate(fc.times_utc):
+        if t <= now_utc:
+            best_i = i
+        else:
+            break
+    if best_i is None and fc.times_utc:
+        best_i = 0
+
+    if best_i is not None:
+        swell_m = fc.swell_height_m[best_i]
+        period_s = fc.swell_period_s[best_i]
+        swell_dir_deg = fc.swell_dir_deg[best_i]
+        wind_ms = fc.wind_speed_ms[best_i]
+        wind_dir_deg = fc.wind_dir_deg[best_i]
+
+        swell_ft = _m_to_ft(swell_m)
+        wind_kt = _ms_to_kt(wind_ms)
+
+        verdict = rules.evaluate_nowcast(
+            wvht_ft=swell_ft, dpd_s=period_s,
+            wind_speed_kt=wind_kt, wind_dir_deg=wind_dir_deg,
+        )
+
+        payload["now"] = {
+            "model_hour_utc": fc.times_utc[best_i].isoformat(),
+            "swell_ft": swell_ft,
+            "face_ft": face_height_ft(swell_ft, period_s),
+            "period_s": round(period_s, 1) if period_s is not None else None,
+            "swell_dir_deg": swell_dir_deg,
+            "swell_dir": ndbc.deg_to_compass(swell_dir_deg),
+            "wind_speed_kt": wind_kt,
+            "wind_dir_deg": wind_dir_deg,
+            "wind_dir": ndbc.deg_to_compass(wind_dir_deg),
+            "is_good": verdict.is_good,
+            "tier": verdict.tier,
+            "reasons": verdict.reasons,
+        }
+
+    # ---- forecast windows at the spot ------------------------------------
+    try:
+        windows = rules.find_forecast_windows(fc)
+        next_win = rules.next_window(windows, now_utc)
+
+        def serialize_window(w):
+            swell_ft = _m_to_ft(w.peak_swell_m)
+            return {
+                "start_utc": w.start_utc.isoformat(),
+                "end_utc": w.end_utc.isoformat(),
+                "start_local": w.start_local.isoformat(),
+                "end_local": w.end_local.isoformat(),
+                "duration_h": w.duration_h,
+                "peak_swell_ft": swell_ft,
+                "peak_face_ft": face_height_ft(swell_ft, w.peak_period_s),
+                "peak_period_s": round(w.peak_period_s, 1),
+                "peak_wind_kt": _ms_to_kt(w.peak_wind_ms),
+                "wind_dir": ndbc.deg_to_compass(w.representative_wind_dir_deg),
+                "id": w.id_hash(),
+                "score": round(w.score, 2),
+                "tier": w.tier,
+            }
+
+        payload["forecast"] = {
+            "lat": fc.lat,
+            "lon": fc.lon,
+            "next_window": serialize_window(next_win) if next_win else None,
+            "all_windows_120h": [serialize_window(w) for w in windows],
+        }
+    except Exception as e:
+        print(f"spot-{spot.slug} windows-error: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+
+    return payload
+
+
+def write_spots(now_utc: datetime) -> None:
+    SPOTS_DIR.mkdir(parents=True, exist_ok=True)
+    for spot in spots_mod.SPOTS:
+        payload = build_spot_payload(spot, now_utc)
+        out = SPOTS_DIR / f"{spot.slug}.json"
+        with out.open("w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, sort_keys=True)
+            f.write("\n")
+        n = payload.get("now") or {}
+        fc = payload.get("forecast") or {}
+        nw = (fc.get("next_window") or {}) if fc else {}
+        print(f"spot-{spot.slug} swell={n.get('swell_ft')}ft@{n.get('period_s')}s "
+              f"wind={n.get('wind_speed_kt')}kt next={nw.get('start_local') or 'none'}")
 
 
 def run() -> int:
@@ -249,6 +366,13 @@ def run() -> int:
     else:
         new_state["forecast_last_window_id"] = None
         new_state["forecast_last_window_score"] = None
+
+    # ---- Per-spot pages (display only) -----------------------------------
+    try:
+        write_spots(now_utc)
+    except Exception as e:
+        print(f"spots-error: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
 
     state_mod.save_state(STATE_PATH, new_state)
     return 0

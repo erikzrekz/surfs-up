@@ -1,0 +1,82 @@
+{
+  "fetched_at": "2026-05-22T18:04:37.110112+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 12,
+        "end_local": "2026-05-25T18:00:00-04:00",
+        "end_utc": "2026-05-25T22:00:00+00:00",
+        "id": "98f37b3e4b22",
+        "peak_face_ft": 2.1,
+        "peak_period_s": 5.7,
+        "peak_swell_ft": 4.5,
+        "peak_wind_kt": 4.5,
+        "score": 92.21,
+        "start_local": "2026-05-25T06:00:00-04:00",
+        "start_utc": "2026-05-25T10:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "N"
+      }
+    ],
+    "lat": 41.291664,
+    "lon": -71.54166,
+    "next_window": {
+      "duration_h": 12,
+      "end_local": "2026-05-25T18:00:00-04:00",
+      "end_utc": "2026-05-25T22:00:00+00:00",
+      "id": "98f37b3e4b22",
+      "peak_face_ft": 2.1,
+      "peak_period_s": 5.7,
+      "peak_swell_ft": 4.5,
+      "peak_wind_kt": 4.5,
+      "score": 92.21,
+      "start_local": "2026-05-25T06:00:00-04:00",
+      "start_utc": "2026-05-25T10:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "N"
+    }
+  },
+  "now": {
+    "face_ft": 0.5,
+    "is_good": false,
+    "model_hour_utc": "2026-05-22T18:00:00+00:00",
+    "period_s": 5.1,
+    "reasons": [
+      "WVHT 1.2 < 3.0ft",
+      "DPD 5.1 < 7.0s"
+    ],
+    "swell_dir": "S",
+    "swell_dir_deg": 172,
+    "swell_ft": 1.2,
+    "tier": null,
+    "wind_dir": "E",
+    "wind_dir_deg": 82,
+    "wind_speed_kt": 12.4
+  },
+  "spot": {
+    "lat": 41.37378,
+    "lon": -71.5447,
+    "name": "Ocean Mist",
+    "slug": "ocean-mist",
+    "subtitle": "Matunuck, RI"
+  },
+  "thresholds": {
+    "clean_dpd_s": 5.0,
+    "clean_period_s": 5.0,
+    "clean_swell_m": 0.9,
+    "clean_wind_kt_max": 6.0,
+    "clean_wind_ms_max": 3.0,
+    "clean_wvht_ft": 3.0,
+    "fc_daylight_end_h": 18,
+    "fc_daylight_start_h": 6,
+    "fc_min_window_h": 3,
+    "fc_offshore_ms_max": 11.0,
+    "fc_period_s": 7.0,
+    "fc_swell_m": 0.9,
+    "fc_wind_ms_max": 7.0,
+    "now_dpd_s": 7.0,
+    "now_offshore_kt_max": 25.0,
+    "now_wind_kt_max": 15.0,
+    "now_wvht_ft": 3.0
+  }
+}
