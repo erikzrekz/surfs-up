@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-22T21:42:42.540325+00:00",
+  "fetched_at": "2026-05-22T22:42:51.269087+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -37,21 +37,21 @@
     }
   },
   "now": {
-    "face_ft": 0.8,
+    "face_ft": 0.7,
     "is_good": false,
-    "model_hour_utc": "2026-05-22T21:00:00+00:00",
-    "period_s": 3.4,
+    "model_hour_utc": "2026-05-22T22:00:00+00:00",
+    "period_s": 3.2,
     "reasons": [
-      "WVHT 1.7 < 3.0ft",
-      "DPD 3.4 < 7.0s"
+      "WVHT 1.6 < 3.0ft",
+      "DPD 3.25 < 7.0s"
     ],
     "swell_dir": "E",
-    "swell_dir_deg": 84,
-    "swell_ft": 1.7,
+    "swell_dir_deg": 88,
+    "swell_ft": 1.6,
     "tier": null,
-    "wind_dir": "ESE",
-    "wind_dir_deg": 103,
-    "wind_speed_kt": 9.6
+    "wind_dir": "E",
+    "wind_dir_deg": 97,
+    "wind_speed_kt": 8.2
   },
   "spot": {
     "lat": 41.37378,

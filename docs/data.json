@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-22T21:42:42.540325+00:00",
+  "fetched_at": "2026-05-22T22:42:51.269087+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -37,25 +37,25 @@
     }
   },
   "nowcast": {
-    "apd_s": null,
-    "dpd_s": 5.0,
-    "face_ft": 1.5,
+    "apd_s": 3.9,
+    "dpd_s": 4.0,
+    "face_ft": 1.4,
     "is_good": false,
-    "observed_at": "2026-05-22T21:40:27+00:00",
+    "observed_at": "2026-05-22T22:10:49+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s"
+      "DPD 4.0 < 7.0s"
     ],
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": null,
-    "swell_dir_deg": null,
+    "swell_dir": "ENE",
+    "swell_dir_deg": 73.0,
     "tier": null,
-    "wind_dir": "ESE",
-    "wind_dir_deg": 104,
+    "wind_dir": "E",
+    "wind_dir_deg": 98,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.0,
-    "wvht_ft": 3.3
+    "wind_speed_kt": 12.8,
+    "wvht_ft": 3.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
