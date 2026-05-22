@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-22T17:51:42.769966+00:00",
+  "fetched_at": "2026-05-22T18:24:04.896019+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -37,11 +37,11 @@
     }
   },
   "nowcast": {
-    "apd_s": 3.9,
+    "apd_s": 4.0,
     "dpd_s": 5.0,
-    "face_ft": 1.6,
+    "face_ft": 1.9,
     "is_good": false,
-    "observed_at": "2026-05-22T17:40:26+00:00",
+    "observed_at": "2026-05-22T18:10:49+00:00",
     "reasons": [
       "DPD 5.0 < 7.0s"
     ],
@@ -49,13 +49,13 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "ENE",
-    "swell_dir_deg": 59.0,
+    "swell_dir_deg": 61.0,
     "tier": null,
     "wind_dir": "ENE",
-    "wind_dir_deg": 65,
+    "wind_dir_deg": 73,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 13.9,
-    "wvht_ft": 3.6
+    "wind_speed_kt": 16.3,
+    "wvht_ft": 4.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
