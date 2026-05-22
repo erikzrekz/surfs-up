@@ -1,22 +1,65 @@
 {
+<<<<<<< Updated upstream
   "fetched_at": "2026-05-22T16:37:27.649462+00:00",
+=======
+  "fetched_at": "2026-05-22T17:47:56.422588+00:00",
+>>>>>>> Stashed changes
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 8,
+        "end_local": "2026-05-25T18:00:00-04:00",
+        "end_utc": "2026-05-25T22:00:00+00:00",
+        "id": "e4d1d3c5bf06",
+        "peak_face_ft": 1.7,
+        "peak_period_s": 5.6,
+        "peak_swell_ft": 3.7,
+        "peak_wind_kt": 5.4,
+        "score": 50.18,
+        "start_local": "2026-05-25T10:00:00-04:00",
+        "start_utc": "2026-05-25T14:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 8,
+      "end_local": "2026-05-25T18:00:00-04:00",
+      "end_utc": "2026-05-25T22:00:00+00:00",
+      "id": "e4d1d3c5bf06",
+      "peak_face_ft": 1.7,
+      "peak_period_s": 5.6,
+      "peak_swell_ft": 3.7,
+      "peak_wind_kt": 5.4,
+      "score": 50.18,
+      "start_local": "2026-05-25T10:00:00-04:00",
+      "start_utc": "2026-05-25T14:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "NNE"
+    }
   },
   "nowcast": {
+<<<<<<< Updated upstream
     "apd_s": 4.0,
     "dpd_s": 5.0,
     "is_good": false,
     "observed_at": "2026-05-22T16:10:49+00:00",
+=======
+    "apd_s": 3.9,
+    "dpd_s": 5.0,
+    "face_ft": 1.6,
+    "is_good": false,
+    "observed_at": "2026-05-22T17:40:26+00:00",
+>>>>>>> Stashed changes
     "reasons": [
       "DPD 5.0 < 7.0s"
     ],
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
+<<<<<<< Updated upstream
     "swell_dir": "NE",
     "swell_dir_deg": 51.0,
     "tier": null,
@@ -25,6 +68,16 @@
     "wind_source": "open-meteo",
     "wind_speed_kt": 14.0,
     "wvht_ft": 4.3
+=======
+    "swell_dir": "ENE",
+    "swell_dir_deg": 59.0,
+    "tier": null,
+    "wind_dir": "ENE",
+    "wind_dir_deg": 61,
+    "wind_source": "open-meteo",
+    "wind_speed_kt": 14.4,
+    "wvht_ft": 3.6
+>>>>>>> Stashed changes
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

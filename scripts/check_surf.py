@@ -41,6 +41,20 @@ def _m_to_ft(v: float | None) -> float | None:
     return None if v is None else round(v * 3.28084, 1)
 
 
+def face_height_ft(swell_ft: float | None, period_s: float | None) -> float | None:
+    """Estimate surfable face height at the beach from offshore swell height.
+
+    Rough shoaling rule: short-period wind swell dissipates a lot of its
+    height before breaking; long-period groundswell amplifies as it shoals.
+    Factor of period_s/12 (clamped 0.45–1.0) lands in the right ballpark
+    for RI based on cross-checking model output vs. local surf reports.
+    """
+    if swell_ft is None or period_s is None:
+        return None
+    factor = max(0.45, min(1.0, period_s / 12.0))
+    return round(swell_ft * factor, 1)
+
+
 def _today_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
@@ -60,13 +74,15 @@ def run() -> int:
         next_win = rules.next_window(windows, now_utc)
 
         def serialize_window(w):
+            swell_ft = _m_to_ft(w.peak_swell_m)
             return {
                 "start_utc": w.start_utc.isoformat(),
                 "end_utc": w.end_utc.isoformat(),
                 "start_local": w.start_local.isoformat(),
                 "end_local": w.end_local.isoformat(),
                 "duration_h": w.duration_h,
-                "peak_swell_ft": _m_to_ft(w.peak_swell_m),
+                "peak_swell_ft": swell_ft,
+                "peak_face_ft": face_height_ft(swell_ft, w.peak_period_s),
                 "peak_period_s": round(w.peak_period_s, 1),
                 "peak_wind_kt": _ms_to_kt(w.peak_wind_ms),
                 "wind_dir": ndbc.deg_to_compass(w.representative_wind_dir_deg),
@@ -124,6 +140,7 @@ def run() -> int:
             "station": obs.station,
             "observed_at": obs.observed_at.isoformat() if obs.observed_at else None,
             "wvht_ft": obs.wvht_ft,
+            "face_ft": face_height_ft(obs.wvht_ft, obs.dpd_s),
             "dpd_s": obs.dpd_s,
             "apd_s": obs.apd_s,
             "swell_dir_deg": obs.swell_dir_deg,

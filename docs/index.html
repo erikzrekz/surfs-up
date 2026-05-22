@@ -334,8 +334,11 @@
         </div>
         <div class="body">
           <div>
-            <span id="nowWvht" class="big">—</span><span class="unit">ft</span>
+            <span id="nowFace" class="big">—</span><span class="unit">ft face</span>
             <span id="nowDpd" style="margin-left:14px; font-size:24px; font-weight:900;">— s</span>
+          </div>
+          <div class="fineprint" style="margin-top:4px;">
+            <span id="nowOffshore">—</span> ft offshore @ Buoy 44097
           </div>
           <div class="row">
             <div class="stat"><div class="k">Wind</div><div class="v" id="nowWind">—</div></div>
@@ -360,7 +363,7 @@
         <div class="body">
           <div id="nextWhen" style="font-weight:1000; font-size:22px; line-height:1.2;">—</div>
           <div class="row">
-            <div class="stat"><div class="k">Swell</div><div class="v" id="nextSwell">—</div></div>
+            <div class="stat"><div class="k">Face</div><div class="v" id="nextFace">—</div></div>
             <div class="stat"><div class="k">Period</div><div class="v" id="nextPeriod">—</div></div>
             <div class="stat"><div class="k">Wind</div><div class="v" id="nextWind">—</div></div>
           </div>
@@ -388,7 +391,8 @@
   </div>
 
   <div class="footnote">
-    3D ocean by <a href="https://github.com/Seth-arc/3D-Ocean" target="_blank" rel="noopener">Seth-arc</a>
+    Heights shown as estimated surfable face (offshore swell × period factor).
+    3D ocean by <a href="https://github.com/Seth-arc/3D-Ocean" target="_blank" rel="noopener">Seth-arc</a>.
   </div>
 
   <script>
@@ -477,7 +481,8 @@
 
         const n = data.nowcast;
         if(n){
-          el('nowWvht').textContent = n.wvht_ft ?? '—';
+          el('nowFace').textContent = (n.face_ft ?? n.wvht_ft ?? '—');
+          el('nowOffshore').textContent = (n.wvht_ft ?? '—');
           el('nowDpd').textContent  = (n.dpd_s ?? '—') + ' s';
           el('nowWind').textContent =
             (n.wind_speed_kt ?? '—') + ' kt ' + (n.wind_dir ?? '');
@@ -497,13 +502,13 @@
         if(f && f.next_window){
           const w = f.next_window;
           el('nextWhen').textContent = fmtWhen(w.start_local) + '  →  ' + fmtWhen(w.end_local);
-          el('nextSwell').textContent  = (w.peak_swell_ft ?? '—') + ' ft';
+          el('nextFace').textContent  = (w.peak_face_ft ?? w.peak_swell_ft ?? '—') + ' ft';
           el('nextPeriod').textContent = (w.peak_period_s ?? '—') + ' s';
           el('nextWind').textContent   = (w.peak_wind_kt ?? '—') + ' kt ' + (w.wind_dir ?? '');
-          el('nextNote').textContent   = `Window length: ${w.duration_h}h. Open-Meteo Marine + wind.`;
+          el('nextNote').textContent   = `${w.duration_h}h window · ${w.peak_swell_ft}ft offshore · Open-Meteo Marine + wind.`;
         } else {
-          el('nextWhen').textContent = 'No good windows in the next 72h';
-          el('nextSwell').textContent = el('nextPeriod').textContent = el('nextWind').textContent = '—';
+          el('nextWhen').textContent = 'No good windows in the next 120h';
+          el('nextFace').textContent = el('nextPeriod').textContent = el('nextWind').textContent = '—';
           el('nextNote').textContent = 'Forecast source: Open-Meteo Marine + wind 10m.';
         }
 
@@ -516,9 +521,10 @@
           for(const w of windows){
             const row = document.createElement('div');
             row.className = 'window';
+            const face = w.peak_face_ft ?? w.peak_swell_ft;
             row.innerHTML = `
               <div class="when">${fmtWhen(w.start_local)} – ${fmtWhen(w.end_local)} <span class="meta">(${w.duration_h}h)</span></div>
-              <div class="meta">${w.peak_swell_ft}ft @ ${w.peak_period_s}s · wind ${w.peak_wind_kt}kt ${w.wind_dir}</div>`;
+              <div class="meta">~${face}ft face · ${w.peak_swell_ft}ft @ ${w.peak_period_s}s offshore · wind ${w.peak_wind_kt}kt ${w.wind_dir}</div>`;
             list.appendChild(row);
           }
         }
