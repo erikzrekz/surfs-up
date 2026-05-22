@@ -28,13 +28,13 @@ def _env_float(name: str, default: float) -> float:
 THRESHOLDS = {
     # Nowcast (NDBC 44097)
     "now_wvht_ft":      _env_float("NOW_WVHT_FT_MIN", 3.0),
-    "now_dpd_s":        _env_float("NOW_DPD_S_MIN", 9.0),
+    "now_dpd_s":        _env_float("NOW_DPD_S_MIN", 7.0),
     "now_wind_kt_max":  _env_float("NOW_WIND_KT_MAX", 15.0),
     "now_offshore_kt_max": _env_float("NOW_OFFSHORE_KT_MAX", 25.0),
 
     # Forecast (Open-Meteo)
     "fc_swell_m":       _env_float("FC_SWELL_M_MIN", 0.9),
-    "fc_period_s":      _env_float("FC_PERIOD_S_MIN", 9.0),
+    "fc_period_s":      _env_float("FC_PERIOD_S_MIN", 7.0),
     "fc_wind_ms_max":   _env_float("FC_WIND_MS_MAX", 7.0),
     "fc_offshore_ms_max": _env_float("FC_OFFSHORE_MS_MAX", 11.0),
     "fc_min_window_h":  _env_float("FC_MIN_WINDOW_H", 3),

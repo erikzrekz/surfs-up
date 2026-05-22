@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-21T23:17:27.079314+00:00",
+  "fetched_at": "2026-05-22T01:03:24.622238+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -7,22 +7,20 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.2,
+    "apd_s": 5.7,
     "dpd_s": 7.0,
-    "is_good": false,
-    "observed_at": "2026-05-21T22:40:25+00:00",
-    "reasons": [
-      "DPD 7.0 < 9.0s"
-    ],
+    "is_good": true,
+    "observed_at": "2026-05-22T00:50:42+00:00",
+    "reasons": [],
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
     "swell_dir_deg": 187.0,
-    "wind_dir": "S",
-    "wind_dir_deg": 190,
+    "wind_dir": "SSW",
+    "wind_dir_deg": 195,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 2.2,
+    "wind_speed_kt": 4.4,
     "wvht_ft": 3.0
   },
   "thresholds": {
@@ -30,10 +28,10 @@
     "fc_daylight_start_h": 6,
     "fc_min_window_h": 3,
     "fc_offshore_ms_max": 11.0,
-    "fc_period_s": 9.0,
+    "fc_period_s": 7.0,
     "fc_swell_m": 0.9,
     "fc_wind_ms_max": 7.0,
-    "now_dpd_s": 9.0,
+    "now_dpd_s": 7.0,
     "now_offshore_kt_max": 25.0,
     "now_wind_kt_max": 15.0,
     "now_wvht_ft": 3.0

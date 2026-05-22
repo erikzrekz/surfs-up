@@ -55,7 +55,7 @@ def run() -> int:
     next_win = None
     fc = None
     try:
-        fc = open_meteo.fetch_forecast(hours=72)
+        fc = open_meteo.fetch_forecast(hours=120)
         windows = rules.find_forecast_windows(fc)
         next_win = rules.next_window(windows, now_utc)
 

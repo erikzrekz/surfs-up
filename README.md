@@ -63,11 +63,11 @@ All thresholds live in `scripts/rules.py` under `THRESHOLDS`. Each is overridabl
 | Threshold | Default | Env var |
 |---|---|---|
 | Nowcast min wave height | 3.0 ft | `NOW_WVHT_FT_MIN` |
-| Nowcast min dominant period | 9.0 s | `NOW_DPD_S_MIN` |
+| Nowcast min dominant period | 7.0 s | `NOW_DPD_S_MIN` |
 | Nowcast max wind (onshore-tolerated) | 15 kt | `NOW_WIND_KT_MAX` |
 | Nowcast max wind (offshore) | 25 kt | `NOW_OFFSHORE_KT_MAX` |
 | Forecast min swell height | 0.9 m | `FC_SWELL_M_MIN` |
-| Forecast min swell period | 9.0 s | `FC_PERIOD_S_MIN` |
+| Forecast min swell period | 7.0 s | `FC_PERIOD_S_MIN` |
 | Forecast max wind | 7 m/s (~13 kt) | `FC_WIND_MS_MAX` |
 | Forecast min window length | 3 h | `FC_MIN_WINDOW_H` |
 | Daylight start (local) | 06:00 | `FC_DAYLIGHT_START_H` |

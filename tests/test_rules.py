@@ -34,7 +34,7 @@ class NowcastTests(unittest.TestCase):
         self.assertTrue(v.is_good, v.reasons)
 
     def test_low_period_fails(self):
-        v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=7, wind_speed_kt=8, wind_dir_deg=315)
+        v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=5, wind_speed_kt=8, wind_dir_deg=315)
         self.assertFalse(v.is_good)
 
     def test_low_height_fails(self):
