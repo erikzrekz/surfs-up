@@ -12,6 +12,9 @@
         }
     }
     </script>
+    <!-- Surfs-Up: hide built-in controls before first paint (we drive params from parent) -->
+    <style>#controls, #info { display: none !important; visibility: hidden !important; }
+           body { background: transparent !important; }</style>
     <style>
         body { 
             margin: 0; 
@@ -584,9 +587,12 @@
              const deltaTime = (currentTime - lastTime) / 1000;
 
             const elapsedTime = clock.getElapsedTime();
-             
-             // Update water time
-             water.material.uniforms['time'].value = elapsedTime;
+
+             // Surfs-Up: integrate scaled time so 'Wave Speed' actually has an effect.
+             // Default speed multiplier = 1.0; updated by the waveSpeed input below.
+             if (typeof window.__surfsupTime === 'undefined') window.__surfsupTime = 0;
+             window.__surfsupTime += deltaTime * (window.__surfsupSpeed ?? 1.0);
+             water.material.uniforms['time'].value = window.__surfsupTime;
 
              // Update movement
              updateMovement(deltaTime);
@@ -618,7 +624,8 @@
 
         document.getElementById('waveSpeed').addEventListener('input', (e) => {
             const value = parseFloat(e.target.value);
-            // Speed is handled in animation loop
+            // Surfs-Up: actually use this in the animation loop's time integration
+            window.__surfsupSpeed = value;
             document.getElementById('waveSpeedValue').textContent = value;
         });
 
@@ -630,7 +637,9 @@
 
         document.getElementById('windStrength').addEventListener('input', (e) => {
             const value = parseFloat(e.target.value);
-            water.material.uniforms['alpha'].value = 1.0 - value * 0.3;
+            // Surfs-Up: wind should add surface chop, not change transparency.
+            // Distortion scale goes from ~1 (glassy) to ~8 (textured/choppy) as wind grows.
+            water.material.uniforms['distortionScale'].value = 1.0 + value * 7.0;
             document.getElementById('windStrengthValue').textContent = value;
         });
 

@@ -402,28 +402,20 @@
       const wvht_ft = (nowcast?.wvht_ft) ?? (fc?.peak_swell_ft) ?? 1.0;
       const dpd_s   = (nowcast?.dpd_s)   ?? (fc?.peak_period_s) ?? 6.0;
       const wind_kt = (nowcast?.wind_speed_kt) ?? (fc?.peak_wind_kt) ?? 5.0;
-      return {
-        waveHeight:   clamp(0.15 + wvht_ft * 0.18, 0.1, 2.0),
-        waveSpeed:    clamp(3.0 - dpd_s * 0.16,   0.4, 3.0),
-        waveLength:   clamp(dpd_s * 5,            10,  80),
-        windStrength: clamp(wind_kt / 25,         0.0, 1.0),
-      };
-    }
 
-    function hideSimUI(){
-      const doc = el('oceanFrame').contentDocument;
-      if(!doc) return false;
-      let style = doc.getElementById('surfsup-injected-style');
-      if(!style){
-        style = doc.createElement('style');
-        style.id = 'surfsup-injected-style';
-        style.textContent = `
-          #controls, #info { display:none !important; visibility:hidden !important; }
-          body { background: transparent !important; }
-        `;
-        doc.head.appendChild(style);
-      }
-      return true;
+      // Mappings tuned so each parameter has visible effect:
+      // - waveHeight → 'size' uniform (clearly visible). 0.5ft→0.2, 3ft→0.9, 6ft→1.7, 10ft+→2.0
+      // - waveSpeed → animation time multiplier. Short period = faster animation.
+      //   DPD 4s→2.5, 7s→1.6, 10s→1.0, 14s→0.6.
+      // - waveLength → distortion scale (subtle, but adds detail). Kept moderate so
+      //   wind dominates the chop knob.
+      // - windStrength → wind-driven chop. 0kt→0 (glassy), 15kt→0.6, 25kt+→1.0
+      return {
+        waveHeight:   clamp(0.18 + wvht_ft * 0.20, 0.1, 2.0),
+        waveSpeed:    clamp(3.6 - dpd_s * 0.22,    0.3, 3.0),
+        waveLength:   clamp(dpd_s * 3,             10,  80),
+        windStrength: clamp(wind_kt / 25,          0.0, 1.0),
+      };
     }
 
     function setOceanParams(params){
@@ -447,7 +439,6 @@
     let _lastParams = null;
     function pushOcean(){
       if(!_lastParams) return;
-      hideSimUI();
       const ok = setOceanParams(_lastParams);
       if(!ok){ setTimeout(pushOcean, 400); return; }
       el('legendVis').textContent = describeOcean(_lastParams);
