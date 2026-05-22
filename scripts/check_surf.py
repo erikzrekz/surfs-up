@@ -72,6 +72,7 @@ def run() -> int:
                 "wind_dir": ndbc.deg_to_compass(w.representative_wind_dir_deg),
                 "id": w.id_hash(),
                 "score": round(w.score, 2),
+                "tier": w.tier,
             }
 
         forecast_payload = {
@@ -132,6 +133,7 @@ def run() -> int:
             "wind_dir": ndbc.deg_to_compass(wind_dir),
             "wind_source": wind_source,
             "is_good": nowcast_is_good,
+            "tier": verdict.tier,
             "stale": stale,
             "reasons": verdict.reasons,
             "source_url": obs.raw_url,
@@ -168,7 +170,8 @@ def run() -> int:
 
     if fire_nowcast:
         n = nowcast_payload
-        subject = f"🌊 Surf is firing at 44097 — {n['wvht_ft']}ft @ {n['dpd_s']}s"
+        tier_label = "Clean small day" if n.get("tier") == "clean" else "Surf is firing"
+        subject = f"🌊 {tier_label} at 44097 — {n['wvht_ft']}ft @ {n['dpd_s']}s"
         body = (
             f"Block Island buoy 44097 is showing surfable conditions right now.\n\n"
             f"• Wave height: {n['wvht_ft']} ft\n"
@@ -208,7 +211,8 @@ def run() -> int:
         wind_dir = ndbc.deg_to_compass(next_win.representative_wind_dir_deg)
         when = local_start.strftime("%a %b %d, %I:%M%p").lstrip("0")
         until = local_end.strftime("%I:%M%p").lstrip("0")
-        subject = f"🏄 Forecast: surf window {when}–{until} ({swell_ft}ft @ {next_win.peak_period_s:.0f}s)"
+        tier_tag = "Clean day" if next_win.tier == "clean" else "Surf window"
+        subject = f"🏄 {tier_tag} forecast {when}–{until} ({swell_ft}ft @ {next_win.peak_period_s:.0f}s)"
         body = (
             f"Open-Meteo is forecasting a good RI surf window:\n\n"
             f"• When: {when} – {until} ({next_win.duration_h}h)\n"

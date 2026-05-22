@@ -48,6 +48,23 @@ class NowcastTests(unittest.TestCase):
     def test_strong_offshore_ok(self):
         v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=11, wind_speed_kt=22, wind_dir_deg=315)
         self.assertTrue(v.is_good, v.reasons)
+        self.assertEqual(v.tier, "groundswell")
+
+    def test_clean_small_day_qualifies(self):
+        # Monday-style: 4ft @ 5.5s, light N wind
+        v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=5.5, wind_speed_kt=5, wind_dir_deg=0)
+        self.assertTrue(v.is_good, v.reasons)
+        self.assertEqual(v.tier, "clean")
+
+    def test_clean_tier_requires_offshore(self):
+        # Same height/period but onshore wind — should NOT pass clean tier
+        v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=5.5, wind_speed_kt=5, wind_dir_deg=180)
+        self.assertFalse(v.is_good)
+
+    def test_clean_tier_requires_low_wind(self):
+        # Offshore but 10kt — too windy for the clean tier
+        v = rules.evaluate_nowcast(wvht_ft=4.0, dpd_s=5.5, wind_speed_kt=10, wind_dir_deg=0)
+        self.assertFalse(v.is_good)
 
 
 class ForecastTests(unittest.TestCase):

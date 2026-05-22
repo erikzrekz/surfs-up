@@ -1,10 +1,38 @@
 {
-  "fetched_at": "2026-05-22T01:03:24.622238+00:00",
+  "fetched_at": "2026-05-22T01:08:38.927841+00:00",
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 7,
+        "end_local": "2026-05-25T19:00:00-04:00",
+        "end_utc": "2026-05-25T23:00:00+00:00",
+        "id": "6b75687d87fc",
+        "peak_period_s": 5.8,
+        "peak_swell_ft": 3.4,
+        "peak_wind_kt": 5.4,
+        "score": 42.22,
+        "start_local": "2026-05-25T12:00:00-04:00",
+        "start_utc": "2026-05-25T16:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "N"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 7,
+      "end_local": "2026-05-25T19:00:00-04:00",
+      "end_utc": "2026-05-25T23:00:00+00:00",
+      "id": "6b75687d87fc",
+      "peak_period_s": 5.8,
+      "peak_swell_ft": 3.4,
+      "peak_wind_kt": 5.4,
+      "score": 42.22,
+      "start_local": "2026-05-25T12:00:00-04:00",
+      "start_utc": "2026-05-25T16:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "N"
+    }
   },
   "nowcast": {
     "apd_s": 5.7,
@@ -17,6 +45,7 @@
     "station": 44097,
     "swell_dir": "S",
     "swell_dir_deg": 187.0,
+    "tier": "groundswell",
     "wind_dir": "SSW",
     "wind_dir_deg": 195,
     "wind_source": "open-meteo",
@@ -24,6 +53,12 @@
     "wvht_ft": 3.0
   },
   "thresholds": {
+    "clean_dpd_s": 5.0,
+    "clean_period_s": 5.0,
+    "clean_swell_m": 0.9,
+    "clean_wind_kt_max": 6.0,
+    "clean_wind_ms_max": 3.0,
+    "clean_wvht_ft": 3.0,
     "fc_daylight_end_h": 18,
     "fc_daylight_start_h": 6,
     "fc_min_window_h": 3,
