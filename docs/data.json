@@ -1,47 +1,17 @@
 {
-  "fetched_at": "2026-05-23T20:06:03.097874+00:00",
+  "fetched_at": "2026-05-23T21:08:01.490561+00:00",
   "forecast": {
-    "all_windows_72h": [
-      {
-        "duration_h": 8,
-        "end_local": "2026-05-25T16:00:00-04:00",
-        "end_utc": "2026-05-25T20:00:00+00:00",
-        "id": "a9835ad3d1c1",
-        "peak_face_ft": 2.1,
-        "peak_period_s": 5.5,
-        "peak_swell_ft": 4.6,
-        "peak_wind_kt": 5.6,
-        "score": 62.16,
-        "start_local": "2026-05-25T08:00:00-04:00",
-        "start_utc": "2026-05-25T12:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NW"
-      }
-    ],
+    "all_windows_72h": [],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 8,
-      "end_local": "2026-05-25T16:00:00-04:00",
-      "end_utc": "2026-05-25T20:00:00+00:00",
-      "id": "a9835ad3d1c1",
-      "peak_face_ft": 2.1,
-      "peak_period_s": 5.5,
-      "peak_swell_ft": 4.6,
-      "peak_wind_kt": 5.6,
-      "score": 62.16,
-      "start_local": "2026-05-25T08:00:00-04:00",
-      "start_utc": "2026-05-25T12:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "NW"
-    }
+    "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.3,
+    "apd_s": 4.7,
     "dpd_s": 9.0,
     "face_ft": 2.2,
     "is_good": true,
-    "observed_at": "2026-05-23T19:40:28+00:00",
+    "observed_at": "2026-05-23T20:40:25+00:00",
     "reasons": [],
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
@@ -49,10 +19,10 @@
     "swell_dir": "SE",
     "swell_dir_deg": 145.0,
     "tier": "groundswell",
-    "wind_dir": "SE",
-    "wind_dir_deg": 131,
+    "wind_dir": "SSE",
+    "wind_dir_deg": 161,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 3.6,
+    "wind_speed_kt": 6.0,
     "wvht_ft": 3.0
   },
   "thresholds": {
