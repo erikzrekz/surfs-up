@@ -1,47 +1,47 @@
 {
-  "fetched_at": "2026-05-23T02:57:54.418616+00:00",
+  "fetched_at": "2026-05-23T06:17:02.115902+00:00",
   "forecast": {
     "all_windows_72h": [
       {
         "duration_h": 5,
-        "end_local": "2026-05-25T19:00:00-04:00",
-        "end_utc": "2026-05-25T23:00:00+00:00",
-        "id": "c9b2d2087aa8",
-        "peak_face_ft": 2.1,
+        "end_local": "2026-05-25T16:00:00-04:00",
+        "end_utc": "2026-05-25T20:00:00+00:00",
+        "id": "56584787d160",
+        "peak_face_ft": 2.2,
         "peak_period_s": 6.0,
-        "peak_swell_ft": 4.2,
-        "peak_wind_kt": 4.9,
-        "score": 38.4,
-        "start_local": "2026-05-25T14:00:00-04:00",
-        "start_utc": "2026-05-25T18:00:00+00:00",
+        "peak_swell_ft": 4.5,
+        "peak_wind_kt": 5.6,
+        "score": 40.46,
+        "start_local": "2026-05-25T11:00:00-04:00",
+        "start_utc": "2026-05-25T15:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NNW"
+        "wind_dir": "N"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
       "duration_h": 5,
-      "end_local": "2026-05-25T19:00:00-04:00",
-      "end_utc": "2026-05-25T23:00:00+00:00",
-      "id": "c9b2d2087aa8",
-      "peak_face_ft": 2.1,
+      "end_local": "2026-05-25T16:00:00-04:00",
+      "end_utc": "2026-05-25T20:00:00+00:00",
+      "id": "56584787d160",
+      "peak_face_ft": 2.2,
       "peak_period_s": 6.0,
-      "peak_swell_ft": 4.2,
-      "peak_wind_kt": 4.9,
-      "score": 38.4,
-      "start_local": "2026-05-25T14:00:00-04:00",
-      "start_utc": "2026-05-25T18:00:00+00:00",
+      "peak_swell_ft": 4.5,
+      "peak_wind_kt": 5.6,
+      "score": 40.46,
+      "start_local": "2026-05-25T11:00:00-04:00",
+      "start_utc": "2026-05-25T15:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NNW"
+      "wind_dir": "N"
     }
   },
   "nowcast": {
-    "apd_s": 4.2,
-    "dpd_s": 8.0,
-    "face_ft": 1.5,
+    "apd_s": 4.4,
+    "dpd_s": 10.0,
+    "face_ft": 1.9,
     "is_good": false,
-    "observed_at": "2026-05-23T02:40:47+00:00",
+    "observed_at": "2026-05-23T06:10:50+00:00",
     "reasons": [
       "WVHT 2.3 < 3.0ft"
     ],
@@ -49,12 +49,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 145.0,
+    "swell_dir_deg": 139.0,
     "tier": null,
-    "wind_dir": "E",
-    "wind_dir_deg": 80,
+    "wind_dir": "N",
+    "wind_dir_deg": 356,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 6.5,
+    "wind_speed_kt": 2.5,
     "wvht_ft": 2.3
   },
   "thresholds": {
