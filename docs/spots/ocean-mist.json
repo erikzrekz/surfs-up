@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-23T17:44:50.102664+00:00",
+  "fetched_at": "2026-05-23T18:45:29.613799+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -39,19 +39,19 @@
   "now": {
     "face_ft": 0.6,
     "is_good": false,
-    "model_hour_utc": "2026-05-23T17:00:00+00:00",
+    "model_hour_utc": "2026-05-23T18:00:00+00:00",
     "period_s": 4.4,
     "reasons": [
       "WVHT 1.4 < 3.0ft",
       "DPD 4.4 < 7.0s"
     ],
     "swell_dir": "SE",
-    "swell_dir_deg": 137,
+    "swell_dir_deg": 138,
     "swell_ft": 1.4,
     "tier": null,
-    "wind_dir": "SE",
-    "wind_dir_deg": 124,
-    "wind_speed_kt": 6.6
+    "wind_dir": "SSE",
+    "wind_dir_deg": 161,
+    "wind_speed_kt": 7.6
   },
   "spot": {
     "lat": 41.37378,
