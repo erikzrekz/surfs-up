@@ -1,61 +1,61 @@
 {
-  "fetched_at": "2026-05-23T16:41:46.208390+00:00",
+  "fetched_at": "2026-05-23T17:44:50.102664+00:00",
   "forecast": {
     "all_windows_72h": [
       {
-        "duration_h": 3,
+        "duration_h": 8,
         "end_local": "2026-05-25T16:00:00-04:00",
         "end_utc": "2026-05-25T20:00:00+00:00",
-        "id": "218c553c07e3",
-        "peak_face_ft": 1.8,
+        "id": "a9835ad3d1c1",
+        "peak_face_ft": 2.1,
         "peak_period_s": 5.5,
-        "peak_swell_ft": 3.9,
-        "peak_wind_kt": 5.1,
-        "score": 19.62,
-        "start_local": "2026-05-25T13:00:00-04:00",
-        "start_utc": "2026-05-25T17:00:00+00:00",
+        "peak_swell_ft": 4.6,
+        "peak_wind_kt": 5.6,
+        "score": 62.16,
+        "start_local": "2026-05-25T08:00:00-04:00",
+        "start_utc": "2026-05-25T12:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NNW"
+        "wind_dir": "NW"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
-      "duration_h": 3,
+      "duration_h": 8,
       "end_local": "2026-05-25T16:00:00-04:00",
       "end_utc": "2026-05-25T20:00:00+00:00",
-      "id": "218c553c07e3",
-      "peak_face_ft": 1.8,
+      "id": "a9835ad3d1c1",
+      "peak_face_ft": 2.1,
       "peak_period_s": 5.5,
-      "peak_swell_ft": 3.9,
-      "peak_wind_kt": 5.1,
-      "score": 19.62,
-      "start_local": "2026-05-25T13:00:00-04:00",
-      "start_utc": "2026-05-25T17:00:00+00:00",
+      "peak_swell_ft": 4.6,
+      "peak_wind_kt": 5.6,
+      "score": 62.16,
+      "start_local": "2026-05-25T08:00:00-04:00",
+      "start_utc": "2026-05-25T12:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NNW"
+      "wind_dir": "NW"
     }
   },
   "nowcast": {
-    "apd_s": 4.4,
-    "dpd_s": 8.0,
-    "face_ft": 1.7,
+    "apd_s": 4.1,
+    "dpd_s": 6.0,
+    "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-05-23T16:10:50+00:00",
+    "observed_at": "2026-05-23T17:40:26+00:00",
     "reasons": [
-      "WVHT 2.6 < 3.0ft"
+      "DPD 6.0 < 7.0s"
     ],
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 145.0,
+    "swell_dir_deg": 142.0,
     "tier": null,
-    "wind_dir": "E",
-    "wind_dir_deg": 82,
+    "wind_dir": "ESE",
+    "wind_dir_deg": 119,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 9.4,
-    "wvht_ft": 2.6
+    "wind_speed_kt": 7.1,
+    "wvht_ft": 3.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
