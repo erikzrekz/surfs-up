@@ -1,47 +1,47 @@
 {
-  "fetched_at": "2026-05-23T08:35:15.373598+00:00",
+  "fetched_at": "2026-05-23T11:41:32.412619+00:00",
   "forecast": {
     "all_windows_72h": [
       {
-        "duration_h": 5,
+        "duration_h": 3,
         "end_local": "2026-05-25T16:00:00-04:00",
         "end_utc": "2026-05-25T20:00:00+00:00",
-        "id": "56584787d160",
-        "peak_face_ft": 2.2,
+        "id": "218c553c07e3",
+        "peak_face_ft": 2.1,
         "peak_period_s": 6.0,
-        "peak_swell_ft": 4.5,
-        "peak_wind_kt": 5.6,
-        "score": 40.46,
-        "start_local": "2026-05-25T11:00:00-04:00",
-        "start_utc": "2026-05-25T15:00:00+00:00",
+        "peak_swell_ft": 4.3,
+        "peak_wind_kt": 5.1,
+        "score": 23.21,
+        "start_local": "2026-05-25T13:00:00-04:00",
+        "start_utc": "2026-05-25T17:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "N"
+        "wind_dir": "NNW"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
-      "duration_h": 5,
+      "duration_h": 3,
       "end_local": "2026-05-25T16:00:00-04:00",
       "end_utc": "2026-05-25T20:00:00+00:00",
-      "id": "56584787d160",
-      "peak_face_ft": 2.2,
+      "id": "218c553c07e3",
+      "peak_face_ft": 2.1,
       "peak_period_s": 6.0,
-      "peak_swell_ft": 4.5,
-      "peak_wind_kt": 5.6,
-      "score": 40.46,
-      "start_local": "2026-05-25T11:00:00-04:00",
-      "start_utc": "2026-05-25T15:00:00+00:00",
+      "peak_swell_ft": 4.3,
+      "peak_wind_kt": 5.1,
+      "score": 23.21,
+      "start_local": "2026-05-25T13:00:00-04:00",
+      "start_utc": "2026-05-25T17:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "N"
+      "wind_dir": "NNW"
     }
   },
   "nowcast": {
-    "apd_s": 4.7,
-    "dpd_s": 9.0,
-    "face_ft": 1.5,
+    "apd_s": 4.1,
+    "dpd_s": 8.0,
+    "face_ft": 1.3,
     "is_good": false,
-    "observed_at": "2026-05-23T08:10:49+00:00",
+    "observed_at": "2026-05-23T11:10:50+00:00",
     "reasons": [
       "WVHT 2.0 < 3.0ft"
     ],
@@ -51,10 +51,10 @@
     "swell_dir": "SE",
     "swell_dir_deg": 146.0,
     "tier": null,
-    "wind_dir": "N",
-    "wind_dir_deg": 355,
+    "wind_dir": "NE",
+    "wind_dir_deg": 46,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 6.8,
+    "wind_speed_kt": 7.8,
     "wvht_ft": 2.0
   },
   "thresholds": {
