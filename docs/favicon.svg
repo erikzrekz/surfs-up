@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" shape-rendering="crispEdges">
+  <rect width="22" height="16" fill="#0a1e2e"/>
+  <!-- spray -->
+  <rect x="0"  y="3" width="2" height="1" fill="#fff"/>
+  <rect x="1"  y="4" width="3" height="1" fill="#fff"/>
+  <rect x="0"  y="5" width="5" height="1" fill="#e6f1f7"/>
+  <rect x="2"  y="6" width="5" height="1" fill="#cfe2ed"/>
+  <rect x="3"  y="7" width="4" height="1" fill="#b3d9e8"/>
+  <rect x="0"  y="8" width="3" height="1" fill="#7fb3cf"/>
+  <rect x="2"  y="9" width="5" height="1" fill="#5b9bbe"/>
+  <!-- hair -->
+  <rect x="11" y="0" width="3" height="1" fill="#1f1a17"/>
+  <rect x="10" y="1" width="5" height="1" fill="#1f1a17"/>
+  <rect x="10" y="2" width="3" height="1" fill="#1f1a17"/>
+  <!-- face -->
+  <rect x="13" y="2" width="2" height="1" fill="#f5d3a6"/>
+  <rect x="12" y="3" width="3" height="1" fill="#f5d3a6"/>
+  <rect x="14" y="3" width="1" height="1" fill="#1f1a17"/>
+  <rect x="12" y="4" width="2" height="1" fill="#f5d3a6"/>
+  <!-- back arm -->
+  <rect x="9"  y="4" width="3" height="1" fill="#f5d3a6"/>
+  <rect x="7"  y="5" width="3" height="1" fill="#f5d3a6"/>
+  <!-- torso -->
+  <rect x="11" y="5" width="3" height="1" fill="#f5d3a6"/>
+  <rect x="11" y="6" width="3" height="1" fill="#f5d3a6"/>
+  <rect x="14" y="5" width="1" height="1" fill="#d9a674"/>
+  <rect x="14" y="6" width="1" height="1" fill="#d9a674"/>
+  <!-- front arm -->
+  <rect x="14" y="6" width="3" height="1" fill="#f5d3a6"/>
+  <rect x="16" y="7" width="2" height="1" fill="#f5d3a6"/>
+  <!-- shorts -->
+  <rect x="10" y="7" width="5" height="1" fill="#d63148"/>
+  <rect x="9"  y="8" width="6" height="1" fill="#d63148"/>
+  <rect x="14" y="8" width="1" height="1" fill="#9b1f33"/>
+  <!-- legs -->
+  <rect x="9"  y="9"  width="2" height="1" fill="#f5d3a6"/>
+  <rect x="13" y="9"  width="2" height="1" fill="#f5d3a6"/>
+  <rect x="8"  y="10" width="2" height="1" fill="#f5d3a6"/>
+  <rect x="14" y="10" width="2" height="1" fill="#f5d3a6"/>
+  <rect x="7"  y="11" width="2" height="1" fill="#f5d3a6"/>
+  <rect x="15" y="11" width="2" height="1" fill="#f5d3a6"/>
+  <!-- board -->
+  <rect x="5"  y="12" width="14" height="1" fill="#ffffff"/>
+  <rect x="6"  y="13" width="12" height="1" fill="#d6dde2"/>
+  <!-- wave under -->
+  <rect x="18" y="12" width="1" height="1" fill="#cfe2ed"/>
+  <rect x="19" y="13" width="2" height="1" fill="#b3d9e8"/>
+  <rect x="4"  y="13" width="1" height="1" fill="#e6f1f7"/>
+  <rect x="3"  y="14" width="3" height="1" fill="#7fb3cf"/>
+  <rect x="17" y="14" width="4" height="1" fill="#5b9bbe"/>
+  <rect x="6"  y="15" width="10" height="1" fill="#5b9bbe"/>
+</svg>
