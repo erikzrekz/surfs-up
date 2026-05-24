@@ -2,77 +2,77 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 7h37 (5:19 AM)",
+    "note": "Sunrise in 7h35 (5:17 AM)",
     "status": "night",
-    "sunrise_local": "5:20 AM",
-    "sunset_local": "8:05 PM"
+    "sunrise_local": "5:18 AM",
+    "sunset_local": "8:04 PM"
   },
   "fetched_at": "2026-05-24T01:41:49.873883+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 4,
-        "end_local": "2026-05-25T10:00:00-04:00",
-        "end_utc": "2026-05-25T14:00:00+00:00",
-        "id": "61135d9182f0",
+        "duration_h": 3,
+        "end_local": "2026-05-25T09:00:00-04:00",
+        "end_utc": "2026-05-25T13:00:00+00:00",
+        "id": "8df26792dbe9",
         "peak_face_ft": 2.4,
         "peak_period_s": 6.0,
-        "peak_swell_ft": 4.8,
-        "peak_wind_kt": 5.5,
-        "score": 35.04,
+        "peak_swell_ft": 4.9,
+        "peak_wind_kt": 5.0,
+        "score": 26.78,
         "start_local": "2026-05-25T06:00:00-04:00",
         "start_utc": "2026-05-25T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "ENE"
+        "wind_dir": "NNW"
       }
     ],
-    "lat": 41.291664,
-    "lon": -71.54166,
+    "lat": 41.458336,
+    "lon": -71.20833,
     "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-05-25T10:00:00-04:00",
-      "end_utc": "2026-05-25T14:00:00+00:00",
-      "id": "61135d9182f0",
+      "duration_h": 3,
+      "end_local": "2026-05-25T09:00:00-04:00",
+      "end_utc": "2026-05-25T13:00:00+00:00",
+      "id": "8df26792dbe9",
       "peak_face_ft": 2.4,
       "peak_period_s": 6.0,
-      "peak_swell_ft": 4.8,
-      "peak_wind_kt": 5.5,
-      "score": 35.04,
+      "peak_swell_ft": 4.9,
+      "peak_wind_kt": 5.0,
+      "score": 26.78,
       "start_local": "2026-05-25T06:00:00-04:00",
       "start_utc": "2026-05-25T10:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "ENE"
+      "wind_dir": "NNW"
     }
   },
   "now": {
-    "face_ft": 0.8,
+    "face_ft": 0.9,
     "is_good": false,
     "model_hour_utc": "2026-05-24T01:00:00+00:00",
-    "period_s": 4.3,
+    "period_s": 5.6,
     "reasons": [
-      "WVHT 1.8 < 3.0ft",
-      "DPD 4.3 < 7.0s"
+      "WVHT 2.0 < 3.0ft",
+      "DPD 5.6 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.8ft face. Nothing to ride. Coffee instead."
+      "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 135,
-    "swell_ft": 1.8,
+    "swell_dir_deg": 144,
+    "swell_ft": 2.0,
     "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 55,
-    "wind_speed_kt": 6.4
+    "wind_dir": "ENE",
+    "wind_dir_deg": 65,
+    "wind_speed_kt": 2.8
   },
   "spot": {
-    "lat": 41.37378,
-    "lon": -71.5447,
-    "name": "Ocean Mist",
-    "slug": "ocean-mist",
-    "subtitle": "Matunuck, RI"
+    "lat": 41.4824,
+    "lon": -71.2533,
+    "name": "Second Beach",
+    "slug": "sachuest",
+    "subtitle": "Sachuest \u00b7 Middletown, RI"
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

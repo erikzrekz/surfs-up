@@ -4,7 +4,7 @@
     "label": "Dark",
     "note": "Sunrise in 7h37 (5:19 AM)",
     "status": "night",
-    "sunrise_local": "5:20 AM",
+    "sunrise_local": "5:19 AM",
     "sunset_local": "8:05 PM"
   },
   "fetched_at": "2026-05-24T01:41:49.873883+00:00",
@@ -15,64 +15,64 @@
         "end_local": "2026-05-25T10:00:00-04:00",
         "end_utc": "2026-05-25T14:00:00+00:00",
         "id": "61135d9182f0",
-        "peak_face_ft": 2.4,
+        "peak_face_ft": 2.7,
         "peak_period_s": 6.0,
-        "peak_swell_ft": 4.8,
-        "peak_wind_kt": 5.5,
-        "score": 35.04,
+        "peak_swell_ft": 5.4,
+        "peak_wind_kt": 4.5,
+        "score": 39.03,
         "start_local": "2026-05-25T06:00:00-04:00",
         "start_utc": "2026-05-25T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "ENE"
+        "wind_dir": "NE"
       }
     ],
-    "lat": 41.291664,
-    "lon": -71.54166,
+    "lat": 41.375,
+    "lon": -71.37499,
     "next_window": {
       "duration_h": 4,
       "end_local": "2026-05-25T10:00:00-04:00",
       "end_utc": "2026-05-25T14:00:00+00:00",
       "id": "61135d9182f0",
-      "peak_face_ft": 2.4,
+      "peak_face_ft": 2.7,
       "peak_period_s": 6.0,
-      "peak_swell_ft": 4.8,
-      "peak_wind_kt": 5.5,
-      "score": 35.04,
+      "peak_swell_ft": 5.4,
+      "peak_wind_kt": 4.5,
+      "score": 39.03,
       "start_local": "2026-05-25T06:00:00-04:00",
       "start_utc": "2026-05-25T10:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "ENE"
+      "wind_dir": "NE"
     }
   },
   "now": {
-    "face_ft": 0.8,
+    "face_ft": 1.0,
     "is_good": false,
     "model_hour_utc": "2026-05-24T01:00:00+00:00",
-    "period_s": 4.3,
+    "period_s": 5.5,
     "reasons": [
-      "WVHT 1.8 < 3.0ft",
-      "DPD 4.3 < 7.0s"
+      "WVHT 2.2 < 3.0ft",
+      "DPD 5.55 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.8ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.0ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 135,
-    "swell_ft": 1.8,
+    "swell_dir_deg": 140,
+    "swell_ft": 2.2,
     "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 55,
-    "wind_speed_kt": 6.4
+    "wind_dir": "ENE",
+    "wind_dir_deg": 61,
+    "wind_speed_kt": 4.4
   },
   "spot": {
-    "lat": 41.37378,
-    "lon": -71.5447,
-    "name": "Ocean Mist",
-    "slug": "ocean-mist",
-    "subtitle": "Matunuck, RI"
+    "lat": 41.4324,
+    "lon": -71.4567,
+    "name": "Narragansett Town Beach",
+    "slug": "narragansett",
+    "subtitle": "Narragansett, RI"
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

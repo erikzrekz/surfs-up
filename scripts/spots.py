@@ -26,4 +26,18 @@ SPOTS: list[Spot] = [
         lat=41.37378,
         lon=-71.54470,
     ),
+    Spot(
+        slug="narragansett",
+        name="Narragansett Town Beach",
+        subtitle="Narragansett, RI",
+        lat=41.4324,
+        lon=-71.4567,
+    ),
+    Spot(
+        slug="sachuest",
+        name="Second Beach",
+        subtitle="Sachuest · Middletown, RI",
+        lat=41.4824,
+        lon=-71.2533,
+    ),
 ]
