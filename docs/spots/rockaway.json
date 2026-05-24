@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 2 min ago \u2014 golden hour",
-    "status": "dawn",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:13 PM",
+    "status": "day",
     "sunrise_local": "5:30 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-05-24T09:32:05.001281+00:00",
+  "fetched_at": "2026-05-24T11:02:42.075568+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 1.8,
         "peak_period_s": 7.2,
         "peak_swell_ft": 3.1,
-        "peak_wind_kt": 15.7,
+        "peak_wind_kt": 17.4,
         "score": 20.16,
         "start_local": "2026-05-24T06:00:00-04:00",
         "start_utc": "2026-05-24T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 1.8,
       "peak_period_s": 7.2,
       "peak_swell_ft": 3.1,
-      "peak_wind_kt": 15.7,
+      "peak_wind_kt": 17.4,
       "score": 20.16,
       "start_local": "2026-05-24T06:00:00-04:00",
       "start_utc": "2026-05-24T10:00:00+00:00",
@@ -45,26 +45,24 @@
     }
   },
   "now": {
-    "face_ft": 1.7,
-    "is_good": false,
-    "model_hour_utc": "2026-05-24T09:00:00+00:00",
+    "face_ft": 1.8,
+    "is_good": true,
+    "model_hour_utc": "2026-05-24T11:00:00+00:00",
     "period_s": 7.0,
-    "reasons": [
-      "DPD 6.95 < 7.0s"
-    ],
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
       "level": "marginal",
-      "note": "1.7ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 136,
-    "swell_ft": 3.0,
-    "tier": null,
+    "swell_dir_deg": 137,
+    "swell_ft": 3.1,
+    "tier": "groundswell",
     "wind_dir": "ENE",
-    "wind_dir_deg": 72,
-    "wind_speed_kt": 13.5
+    "wind_dir_deg": 77,
+    "wind_speed_kt": 16.8
   },
   "spot": {
     "lat": 40.5817,
