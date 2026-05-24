@@ -1,7 +1,72 @@
 {
-  "fetched_at": "2026-05-24T04:41:07.471968+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 1h48 (5:30 AM)",
+    "status": "night",
+    "sunrise_local": "5:30 AM",
+    "sunset_local": "8:13 PM"
+  },
+  "fetched_at": "2026-05-24T07:41:43.238532+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 3,
+        "end_local": "2026-05-24T09:00:00-04:00",
+        "end_utc": "2026-05-24T13:00:00+00:00",
+        "id": "1b1782000878",
+        "peak_face_ft": 1.8,
+        "peak_period_s": 7.2,
+        "peak_swell_ft": 3.1,
+        "peak_wind_kt": 18.9,
+        "score": 20.16,
+        "start_local": "2026-05-24T06:00:00-04:00",
+        "start_utc": "2026-05-24T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "E"
+      }
+    ],
+    "lat": 40.541664,
+    "lon": -73.87499,
+    "next_window": {
+      "duration_h": 3,
+      "end_local": "2026-05-24T09:00:00-04:00",
+      "end_utc": "2026-05-24T13:00:00+00:00",
+      "id": "1b1782000878",
+      "peak_face_ft": 1.8,
+      "peak_period_s": 7.2,
+      "peak_swell_ft": 3.1,
+      "peak_wind_kt": 18.9,
+      "score": 20.16,
+      "start_local": "2026-05-24T06:00:00-04:00",
+      "start_utc": "2026-05-24T10:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "E"
+    }
+  },
+  "now": {
+    "face_ft": 1.6,
+    "is_good": false,
+    "model_hour_utc": "2026-05-24T07:00:00+00:00",
+    "period_s": 6.9,
+    "reasons": [
+      "WVHT 2.8 < 3.0ft",
+      "DPD 6.9 < 7.0s"
+    ],
+    "skill": {
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.6ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
+    },
+    "swell_dir": "SE",
+    "swell_dir_deg": 136,
+    "swell_ft": 2.8,
+    "tier": null,
+    "wind_dir": "ENE",
+    "wind_dir_deg": 74,
+    "wind_speed_kt": 13.5
+  },
   "spot": {
     "lat": 40.5817,
     "lon": -73.8358,
