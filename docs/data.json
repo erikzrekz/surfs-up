@@ -1,73 +1,43 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 1h37 (5:19 AM)",
-    "status": "night",
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 13 min ago \u2014 golden hour",
+    "status": "dawn",
     "sunrise_local": "5:19 AM",
     "sunset_local": "8:06 PM"
   },
-  "fetched_at": "2026-05-24T07:41:43.238532+00:00",
+  "fetched_at": "2026-05-24T09:32:05.001281+00:00",
   "forecast": {
-    "all_windows_72h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-05-25T09:00:00-04:00",
-        "end_utc": "2026-05-25T13:00:00+00:00",
-        "id": "8df26792dbe9",
-        "peak_face_ft": 2.4,
-        "peak_period_s": 6.0,
-        "peak_swell_ft": 4.8,
-        "peak_wind_kt": 5.1,
-        "score": 26.28,
-        "start_local": "2026-05-25T06:00:00-04:00",
-        "start_utc": "2026-05-25T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NE"
-      }
-    ],
+    "all_windows_72h": [],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-05-25T09:00:00-04:00",
-      "end_utc": "2026-05-25T13:00:00+00:00",
-      "id": "8df26792dbe9",
-      "peak_face_ft": 2.4,
-      "peak_period_s": 6.0,
-      "peak_swell_ft": 4.8,
-      "peak_wind_kt": 5.1,
-      "score": 26.28,
-      "start_local": "2026-05-25T06:00:00-04:00",
-      "start_utc": "2026-05-25T10:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "NE"
-    }
+    "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.5,
+    "apd_s": 4.4,
     "dpd_s": 8.0,
-    "face_ft": 2.6,
+    "face_ft": 2.9,
     "is_good": true,
-    "observed_at": "2026-05-24T07:40:27+00:00",
+    "observed_at": "2026-05-24T09:10:51+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 20kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SE",
-    "swell_dir_deg": 145.0,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 149.0,
     "tier": "groundswell",
     "wind_dir": "E",
-    "wind_dir_deg": 81,
+    "wind_dir_deg": 80,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 16.7,
-    "wvht_ft": 3.9
+    "wind_speed_kt": 19.7,
+    "wvht_ft": 4.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
