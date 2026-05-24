@@ -56,6 +56,8 @@ class HourlyForecast:
     wind_dir_deg: list[float | None]
     lat: float
     lon: float
+    sunrises_utc: list[datetime]
+    sunsets_utc: list[datetime]
 
 
 def _http_json(url: str, params: dict, timeout: float = 30.0) -> dict:
@@ -89,9 +91,13 @@ def fetch_forecast(
         "latitude": lat,
         "longitude": lon,
         "hourly": "wind_speed_10m,wind_direction_10m",
+        "daily": "sunrise,sunset",
         "wind_speed_unit": "ms",
         "timezone": "UTC",
         "forecast_days": max(2, (hours + 23) // 24),
+        # `past_days=1` gives us yesterday's sunrise/sunset so evening lookups
+        # (current UTC date != current local date) still have a recent anchor.
+        "past_days": 1,
     })
 
     m_hourly = marine.get("hourly", {})
@@ -118,6 +124,10 @@ def fetch_forecast(
         ws.append(w_hourly["wind_speed_10m"][wi])
         wd.append(w_hourly["wind_direction_10m"][wi])
 
+    daily = weather.get("daily", {})
+    sunrises = _parse_times(daily.get("sunrise", []))
+    sunsets = _parse_times(daily.get("sunset", []))
+
     return HourlyForecast(
         times_utc=times,
         swell_height_m=sh,
@@ -128,4 +138,6 @@ def fetch_forecast(
         wind_dir_deg=wd,
         lat=marine.get("latitude", lat),
         lon=marine.get("longitude", lon),
+        sunrises_utc=sunrises,
+        sunsets_utc=sunsets,
     )

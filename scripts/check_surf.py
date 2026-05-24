@@ -17,9 +17,11 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import daylight as daylight_mod
 import ndbc
 import open_meteo
 import rules
+import skill as skill_mod
 import spots as spots_mod
 import state as state_mod
 from notify import notify_all
@@ -110,10 +112,13 @@ def build_spot_payload(spot: spots_mod.Spot, now_utc: datetime) -> dict:
             wind_speed_kt=wind_kt, wind_dir_deg=wind_dir_deg,
         )
 
+        face = face_height_ft(swell_ft, period_s)
+        skill_v = skill_mod.evaluate_skill(face, period_s, wind_kt)
+
         payload["now"] = {
             "model_hour_utc": fc.times_utc[best_i].isoformat(),
             "swell_ft": swell_ft,
-            "face_ft": face_height_ft(swell_ft, period_s),
+            "face_ft": face,
             "period_s": round(period_s, 1) if period_s is not None else None,
             "swell_dir_deg": swell_dir_deg,
             "swell_dir": ndbc.deg_to_compass(swell_dir_deg),
@@ -123,6 +128,20 @@ def build_spot_payload(spot: spots_mod.Spot, now_utc: datetime) -> dict:
             "is_good": verdict.is_good,
             "tier": verdict.tier,
             "reasons": verdict.reasons,
+            "skill": {
+                "level": skill_v.level, "emoji": skill_v.emoji,
+                "label": skill_v.label, "note": skill_v.note,
+            },
+        }
+
+    # ---- daylight at the spot --------------------------------------------
+    daylight_v = daylight_mod.evaluate_daylight(now_utc, fc.sunrises_utc, fc.sunsets_utc)
+    if daylight_v is not None:
+        payload["daylight"] = {
+            "status": daylight_v.status, "emoji": daylight_v.emoji,
+            "label": daylight_v.label, "note": daylight_v.note,
+            "sunrise_local": daylight_v.sunrise_local,
+            "sunset_local": daylight_v.sunset_local,
         }
 
     # ---- forecast windows at the spot ------------------------------------
@@ -253,11 +272,13 @@ def run() -> int:
             wind_speed_kt=wind_kt, wind_dir_deg=wind_dir,
         )
         nowcast_is_good = (not stale) and verdict.is_good
+        face = face_height_ft(obs.wvht_ft, obs.dpd_s)
+        skill_v = skill_mod.evaluate_skill(face, obs.dpd_s, wind_kt)
         nowcast_payload = {
             "station": obs.station,
             "observed_at": obs.observed_at.isoformat() if obs.observed_at else None,
             "wvht_ft": obs.wvht_ft,
-            "face_ft": face_height_ft(obs.wvht_ft, obs.dpd_s),
+            "face_ft": face,
             "dpd_s": obs.dpd_s,
             "apd_s": obs.apd_s,
             "swell_dir_deg": obs.swell_dir_deg,
@@ -271,6 +292,10 @@ def run() -> int:
             "stale": stale,
             "reasons": verdict.reasons,
             "source_url": obs.raw_url,
+            "skill": {
+                "level": skill_v.level, "emoji": skill_v.emoji,
+                "label": skill_v.label, "note": skill_v.note,
+            },
         }
         print(f"nowcast wvht={obs.wvht_ft} dpd={obs.dpd_s} "
               f"wind={wind_kt}kt@{wind_dir}° ({wind_source}) good={nowcast_is_good}")
@@ -278,11 +303,24 @@ def run() -> int:
         print(f"nowcast-error: {e}", file=sys.stderr)
         traceback.print_exc(file=sys.stderr)
 
+    # ---- daylight (shared across home + spots; same RI time zone) --------
+    daylight_payload: dict | None = None
+    if fc is not None:
+        dv = daylight_mod.evaluate_daylight(now_utc, fc.sunrises_utc, fc.sunsets_utc)
+        if dv is not None:
+            daylight_payload = {
+                "status": dv.status, "emoji": dv.emoji,
+                "label": dv.label, "note": dv.note,
+                "sunrise_local": dv.sunrise_local,
+                "sunset_local": dv.sunset_local,
+            }
+
     # ---- Write docs/data.json --------------------------------------------
     data_payload = {
         "fetched_at": now_utc.isoformat(),
         "nowcast": nowcast_payload,
         "forecast": forecast_payload,
+        "daylight": daylight_payload,
         "thresholds": rules.THRESHOLDS,
     }
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)

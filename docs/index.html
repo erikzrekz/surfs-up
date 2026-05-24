@@ -322,6 +322,8 @@
           <span class="chev-icon" aria-hidden="true">▾</span>
           <span id="toggleAllLabel">Hide cards</span>
         </button>
+        <div class="pill" id="dayPill" title="Daylight status">⌛ —</div>
+        <div class="pill" id="skillPill" title="Beginner read">⌛ —</div>
         <div class="pill" id="ruleLabel">Loading rules…</div>
       </div>
     </div>
@@ -479,6 +481,17 @@
         const t = data.thresholds || {};
         el('ruleLabel').textContent =
           `Alert ≥ ${t.now_wvht_ft ?? '?'}ft @ ${t.now_dpd_s ?? '?'}s, wind ≤ ${t.now_wind_kt_max ?? '?'}kt`;
+
+        const dl = data.daylight;
+        if(dl){
+          el('dayPill').textContent = `${dl.emoji} ${dl.label}`;
+          el('dayPill').title = dl.note + (dl.sunrise_local ? ` · sunrise ${dl.sunrise_local}, sunset ${dl.sunset_local}` : '');
+        }
+        const sk = (data.nowcast && data.nowcast.skill) || null;
+        if(sk){
+          el('skillPill').textContent = `${sk.emoji} ${sk.label}`;
+          el('skillPill').title = sk.note;
+        }
 
         const n = data.nowcast;
         if(n){

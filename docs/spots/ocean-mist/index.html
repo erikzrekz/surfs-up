@@ -90,6 +90,31 @@
       font-weight:600; text-transform:uppercase; letter-spacing:.05em; font-size:12px;
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     }
+    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .pill-big{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:14px;
+      background:var(--glass); border:1px solid var(--stroke); color:#fff;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    }
+    .pill-big .emoji{ font-size:24px; line-height:1; }
+    .pill-big .pl{ display:flex; flex-direction:column; gap:1px; min-width:0; }
+    .pill-big .pl .pl-label{
+      font-weight:900; text-transform:uppercase; letter-spacing:.06em; font-size:12px;
+    }
+    .pill-big .pl .pl-note{
+      font-size:12px; color:rgba(255,255,255,.78); font-weight:600;
+      white-space: normal;
+    }
+    .pill-big.skill-out-of-range{ background:rgba(225,29,72,.18); border-color:rgba(225,29,72,.5); }
+    .pill-big.skill-worked{       background:rgba(245,158,11,.16); border-color:rgba(245,158,11,.5); }
+    .pill-big.skill-manageable{   background:rgba(26,127,55,.20); border-color:rgba(26,127,55,.55); }
+    .pill-big.skill-marginal{     background:rgba(56,189,248,.14); border-color:rgba(56,189,248,.45); }
+    .pill-big.skill-flat{         background:rgba(255,255,255,.10); }
+    .pill-big.day-night{          background:rgba(15,23,42,.45); }
+    .pill-big.day-dawn,
+    .pill-big.day-dusk{           background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5); }
 
     .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
     @media (max-width: 860px){ .grid{ grid-template-columns:1fr; } }
@@ -254,6 +279,22 @@
             <div class="stat"><div class="k">Swell dir</div><div class="v" id="nowSwellDirDeg">—</div></div>
             <div class="stat"><div class="k">Model hour</div><div class="v" id="nowHour">—</div></div>
           </div>
+          <div class="pillrow" id="pillRow">
+            <div class="pill-big" id="skillPill">
+              <span class="emoji" id="skillEmoji">⌛</span>
+              <div class="pl">
+                <div class="pl-label" id="skillLabel">Reading…</div>
+                <div class="pl-note" id="skillNote">Evaluating conditions.</div>
+              </div>
+            </div>
+            <div class="pill-big" id="dayPill">
+              <span class="emoji" id="dayEmoji">⌛</span>
+              <div class="pl">
+                <div class="pl-label" id="dayLabel">Reading…</div>
+                <div class="pl-note" id="dayNote">Checking sun times.</div>
+              </div>
+            </div>
+          </div>
           <div id="nowStatus" class="status">
             <div class="dot"></div>
             <div>
@@ -377,6 +418,20 @@
         const t = data.thresholds || {};
         el('ruleLabel').textContent =
           `Bar ≥ ${t.now_wvht_ft ?? '?'}ft @ ${t.now_dpd_s ?? '?'}s, wind ≤ ${t.now_wind_kt_max ?? '?'}kt`;
+
+        const sk = (data.now && data.now.skill) || null;
+        const skillPill = el('skillPill');
+        skillPill.className = 'pill-big' + (sk ? ' skill-' + sk.level : '');
+        el('skillEmoji').textContent = sk ? sk.emoji : '❓';
+        el('skillLabel').textContent = sk ? sk.label : 'No read';
+        el('skillNote').textContent  = sk ? sk.note  : '—';
+
+        const dl = data.daylight || null;
+        const dayPill = el('dayPill');
+        dayPill.className = 'pill-big' + (dl ? ' day-' + dl.status : '');
+        el('dayEmoji').textContent = dl ? dl.emoji : '⌛';
+        el('dayLabel').textContent = dl ? dl.label : 'No read';
+        el('dayNote').textContent  = dl ? dl.note  : '—';
 
         const n = data.now;
         if(n){
