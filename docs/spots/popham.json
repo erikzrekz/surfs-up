@@ -2,26 +2,25 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 6h53 (5:17 AM)",
+    "note": "Sunrise in 6h41 (5:05 AM)",
     "status": "night",
-    "sunrise_local": "5:18 AM",
-    "sunset_local": "8:04 PM"
+    "sunrise_local": "5:05 AM",
+    "sunset_local": "8:05 PM"
   },
   "fetched_at": "2026-05-24T02:23:43.764303+00:00",
   "forecast": {
     "all_windows_120h": [],
-    "lat": 41.458336,
-    "lon": -71.20833,
+    "lat": 43.708336,
+    "lon": -69.79166,
     "next_window": null
   },
   "now": {
     "face_ft": 0.9,
     "is_good": false,
     "model_hour_utc": "2026-05-24T02:00:00+00:00",
-    "period_s": 5.5,
+    "period_s": 8.0,
     "reasons": [
-      "WVHT 2.0 < 3.0ft",
-      "DPD 5.55 < 7.0s"
+      "WVHT 1.4 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
@@ -30,19 +29,19 @@
       "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 143,
-    "swell_ft": 2.0,
+    "swell_dir_deg": 146,
+    "swell_ft": 1.4,
     "tier": null,
-    "wind_dir": "ENE",
-    "wind_dir_deg": 74,
-    "wind_speed_kt": 6.5
+    "wind_dir": "ESE",
+    "wind_dir_deg": 104,
+    "wind_speed_kt": 1.6
   },
   "spot": {
-    "lat": 41.4824,
-    "lon": -71.2533,
-    "name": "Second Beach",
-    "slug": "sachuest",
-    "subtitle": "Sachuest \u00b7 Middletown, RI"
+    "lat": 43.7378,
+    "lon": -69.7872,
+    "name": "Popham Beach",
+    "slug": "popham",
+    "subtitle": "Phippsburg, ME"
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

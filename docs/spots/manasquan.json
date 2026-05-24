@@ -1,0 +1,95 @@
+{
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 7h09 (5:33 AM)",
+    "status": "night",
+    "sunrise_local": "5:33 AM",
+    "sunset_local": "8:12 PM"
+  },
+  "fetched_at": "2026-05-24T02:23:43.764303+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-05-24T19:00:00-04:00",
+        "end_utc": "2026-05-24T23:00:00+00:00",
+        "id": "2abe12769fdb",
+        "peak_face_ft": 3.8,
+        "peak_period_s": 7.5,
+        "peak_swell_ft": 6.0,
+        "peak_wind_kt": 5.6,
+        "score": 54.96,
+        "start_local": "2026-05-24T15:00:00-04:00",
+        "start_utc": "2026-05-24T19:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "N"
+      }
+    ],
+    "lat": 40.125,
+    "lon": -73.87499,
+    "next_window": {
+      "duration_h": 4,
+      "end_local": "2026-05-24T19:00:00-04:00",
+      "end_utc": "2026-05-24T23:00:00+00:00",
+      "id": "2abe12769fdb",
+      "peak_face_ft": 3.8,
+      "peak_period_s": 7.5,
+      "peak_swell_ft": 6.0,
+      "peak_wind_kt": 5.6,
+      "score": 54.96,
+      "start_local": "2026-05-24T15:00:00-04:00",
+      "start_utc": "2026-05-24T19:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "N"
+    }
+  },
+  "now": {
+    "face_ft": 2.0,
+    "is_good": false,
+    "model_hour_utc": "2026-05-24T02:00:00+00:00",
+    "period_s": 6.2,
+    "reasons": [
+      "DPD 6.25 < 7.0s"
+    ],
+    "skill": {
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "2.0ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+    },
+    "swell_dir": "SE",
+    "swell_dir_deg": 126,
+    "swell_ft": 3.9,
+    "tier": null,
+    "wind_dir": "ENE",
+    "wind_dir_deg": 76,
+    "wind_speed_kt": 16.8
+  },
+  "spot": {
+    "lat": 40.1018,
+    "lon": -74.0337,
+    "name": "Manasquan",
+    "slug": "manasquan",
+    "subtitle": "Manasquan, NJ"
+  },
+  "thresholds": {
+    "clean_dpd_s": 5.0,
+    "clean_period_s": 5.0,
+    "clean_swell_m": 0.9,
+    "clean_wind_kt_max": 6.0,
+    "clean_wind_ms_max": 3.0,
+    "clean_wvht_ft": 3.0,
+    "fc_daylight_end_h": 18,
+    "fc_daylight_start_h": 6,
+    "fc_min_window_h": 3,
+    "fc_offshore_ms_max": 11.0,
+    "fc_period_s": 7.0,
+    "fc_swell_m": 0.9,
+    "fc_wind_ms_max": 7.0,
+    "now_dpd_s": 7.0,
+    "now_offshore_kt_max": 25.0,
+    "now_wind_kt_max": 15.0,
+    "now_wvht_ft": 3.0
+  }
+}

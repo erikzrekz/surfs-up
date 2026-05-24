@@ -115,9 +115,10 @@
 
     /* ---------- Cards (glass) ----------------------------------------- */
     .grid{
-      display:grid; grid-template-columns:1fr 1fr; gap:16px;
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;
     }
-    @media (max-width: 860px){ .grid{ grid-template-columns:1fr; } }
+    @media (max-width: 1100px){ .grid{ grid-template-columns:1fr 1fr; } }
+    @media (max-width: 720px){ .grid{ grid-template-columns:1fr; } }
 
     .card{
       border-radius:18px;
@@ -227,6 +228,41 @@
       margin-top:6px;
     }
 
+    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .pill-big{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:12px;
+      background:var(--glass); border:1px solid var(--stroke); color:#fff;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      font-weight:800; text-transform:uppercase; letter-spacing:.05em; font-size:11px;
+    }
+    .pill-big .emoji{ font-size:18px; line-height:1; }
+    .pill-big.skill-out-of-range{ background:rgba(225,29,72,.20); border-color:rgba(225,29,72,.5); }
+    .pill-big.skill-worked{       background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5); }
+    .pill-big.skill-manageable{   background:rgba(26,127,55,.22); border-color:rgba(26,127,55,.55); }
+    .pill-big.skill-marginal{     background:rgba(56,189,248,.16); border-color:rgba(56,189,248,.45); }
+    .pill-big.skill-flat{         background:rgba(255,255,255,.10); }
+    .pill-big.day-night{          background:rgba(15,23,42,.5); }
+    .pill-big.day-dawn,
+    .pill-big.day-dusk{           background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5); }
+
+    .spot-card{
+      display:flex; flex-direction:column; gap:8px;
+      text-decoration:none; color:inherit;
+    }
+    .spot-card .spot-name{
+      font-family:"Original Surfer", cursive; font-weight:400;
+      font-size:22px; line-height:1.1;
+    }
+    .spot-card .spot-sub{
+      font-size:12px; color:rgba(255,255,255,.7);
+      text-transform:uppercase; letter-spacing:.06em; font-weight:700;
+    }
+    .spot-card .spot-note{
+      font-size:13px; color:rgba(255,255,255,.78); margin-top:4px;
+    }
+    .spot-card:hover{ transform: translateY(-2px); transition: transform .15s ease; }
+
     .windowlist{
       margin-top:10px; display:flex; flex-direction:column; gap:8px;
     }
@@ -244,6 +280,25 @@
       font-size:10px; color:rgba(255,255,255,.55); letter-spacing:.04em;
     }
     .footnote a{ color:inherit; }
+
+    #globalDay{
+      position:fixed; left:14px; bottom:10px; z-index:2;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:12px;
+      background:var(--glass); border:1px solid var(--stroke); color:#fff;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      font-weight:800; text-transform:uppercase; letter-spacing:.05em; font-size:11px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    }
+    #globalDay .emoji{ font-size:18px; line-height:1; }
+    #globalDay .sub{
+      font-size:10px; font-weight:600; color:rgba(255,255,255,.7);
+      text-transform:none; letter-spacing:0; margin-left:6px;
+    }
+    #globalDay.day-night{ background:rgba(15,23,42,.5); }
+    #globalDay.day-dawn, #globalDay.day-dusk{
+      background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5);
+    }
   </style>
 </head>
 
@@ -320,81 +375,23 @@
         </div>
       </div>
       <div class="header-controls">
-        <button class="toggle-all" id="toggleAllBtn" type="button" aria-label="Show or hide all data cards">
-          <span class="chev-icon" aria-hidden="true">▾</span>
-          <span id="toggleAllLabel">Hide cards</span>
-        </button>
-        <div class="pill" id="dayPill" title="Daylight status">⌛ —</div>
-        <div class="pill" id="skillPill" title="Beginner read">⌛ —</div>
-        <div class="pill" id="ruleLabel">Loading rules…</div>
+        <button id="refreshBtn" type="button">Refresh</button>
       </div>
     </div>
 
-    <div class="grid">
-      <section class="card" data-card="now">
-        <div class="label">
-          <span>Right now — Block Island 44097</span>
-          <span class="chev" aria-hidden="true">▾</span>
-        </div>
-        <div class="body">
-          <div>
-            <span id="nowFace" class="big">—</span><span class="unit">ft face</span>
-            <span id="nowDpd" style="margin-left:14px; font-size:24px; font-weight:900;">— s</span>
-          </div>
-          <div class="fineprint" style="margin-top:4px;">
-            <span id="nowOffshore">—</span> ft offshore @ Buoy 44097
-          </div>
-          <div class="row">
-            <div class="stat"><div class="k">Wind</div><div class="v" id="nowWind">—</div></div>
-            <div class="stat"><div class="k">APD</div><div class="v" id="nowApd">—</div></div>
-            <div class="stat"><div class="k">Observed</div><div class="v" id="nowObs">—</div></div>
-          </div>
-          <div id="nowStatus" class="status">
-            <div class="dot"></div>
-            <div>
-              <div id="nowStatusTitle">Loading…</div>
-              <div id="nowStatusText" class="status-sub">Reading buoy.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="card" data-card="next">
-        <div class="label">
-          <span>Next forecast window (72h)</span>
-          <span class="chev" aria-hidden="true">▾</span>
-        </div>
-        <div class="body">
-          <div id="nextWhen" style="font-weight:1000; font-size:22px; line-height:1.2;">—</div>
-          <div class="row">
-            <div class="stat"><div class="k">Face</div><div class="v" id="nextFace">—</div></div>
-            <div class="stat"><div class="k">Period</div><div class="v" id="nextPeriod">—</div></div>
-            <div class="stat"><div class="k">Wind</div><div class="v" id="nextWind">—</div></div>
-          </div>
-          <div class="fineprint" id="nextNote">Forecast source: Open-Meteo Marine + wind 10m.</div>
-        </div>
-      </aside>
+    <div class="grid" id="spotGrid">
+      <div class="fineprint" style="grid-column:1/-1;">Loading spots…</div>
     </div>
-
-    <section class="card" data-card="all">
-      <div class="label">
-        <span>All good windows, next 72 hours</span>
-        <span class="chev" aria-hidden="true">▾</span>
-      </div>
-      <div class="body">
-        <div id="windowList" class="windowlist"><div class="fineprint">Loading…</div></div>
-      </div>
-    </section>
 
     <div class="btnrow">
-      <button id="refreshBtn" type="button">Refresh</button>
-      <a href="spots/ocean-mist/" class="pill" style="text-decoration:none;">Ocean Mist →</a>
-      <a href="spots/narragansett/" class="pill" style="text-decoration:none;">Narragansett →</a>
-      <a href="spots/sachuest/" class="pill" style="text-decoration:none;">Sachuest →</a>
       <div class="fineprint" style="margin-left:auto;">
         Last fetch: <span id="lastFetch">—</span> · Live ocean → <span id="legendVis">syncing…</span>
       </div>
     </div>
+  </div>
+
+  <div id="globalDay" title="Daylight">
+    <span class="emoji">⌛</span><span>—</span>
   </div>
 
   <div class="footnote">
@@ -461,99 +458,107 @@
       try { return d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}); }
       catch { return d.toISOString(); }
     }
-    function fmtWhen(localIso){
-      if(!localIso) return '—';
-      const d = new Date(localIso);
-      return d.toLocaleDateString([], {weekday:'short', month:'short', day:'numeric'})
-        + ' ' + d.toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+
+    const SPOTS = [
+      { slug: 'ocean-mist',   name: 'Ocean Mist',        sub: 'Matunuck, RI' },
+      { slug: 'narragansett', name: 'Narragansett',      sub: 'Town Beach, RI' },
+      { slug: 'sachuest',     name: 'Second Beach',      sub: 'Sachuest · Middletown' },
+      { slug: 'long-sands',   name: 'Long Sands Beach',  sub: 'York, ME' },
+      { slug: 'hampton',      name: 'Hampton Beach',     sub: 'Hampton, NH' },
+      { slug: 'nauset',       name: 'Nauset Beach',      sub: 'Orleans, MA' },
+      { slug: 'long-beach',   name: 'Long Beach',        sub: 'Long Island, NY' },
+      { slug: 'rockaway',     name: 'Rockaway Beach',    sub: 'Queens, NY' },
+      { slug: 'manasquan',    name: 'Manasquan',         sub: 'Manasquan, NJ' },
+      { slug: 'popham',       name: 'Popham Beach',      sub: 'Phippsburg, ME' },
+    ];
+
+    function renderSpotCard(spot, data){
+      const card = document.createElement('a');
+      card.className = 'card spot-card';
+      card.href = `spots/${spot.slug}/`;
+      card.dataset.card = spot.slug;
+
+      if(!data){
+        card.innerHTML = `
+          <div class="spot-name">${spot.name}</div>
+          <div class="spot-sub">${spot.sub}</div>
+          <div class="fineprint">No data yet.</div>`;
+        return card;
+      }
+
+      const n = data.now || {};
+      const sk = n.skill || null;
+      const face = n.face_ft;
+      const period = n.period_s;
+      const swell = n.swell_ft;
+      const wind = n.wind_speed_kt;
+      const windDir = n.wind_dir || '';
+      const sp = data.spot || {};
+
+      const skillPill = sk ? `<div class="pill-big skill-${sk.level}">
+        <span class="emoji">${sk.emoji}</span><span>${sk.label}</span></div>` : '';
+
+      card.innerHTML = `
+        <div class="spot-name">${sp.name || spot.name}</div>
+        <div class="spot-sub">${sp.subtitle || spot.sub}</div>
+        <div style="margin-top:8px;">
+          <span class="big">${face ?? '—'}</span><span class="unit">ft face</span>
+          <span style="margin-left:12px; font-size:20px; font-weight:900;">${period ?? '—'} s</span>
+        </div>
+        <div class="row">
+          <div class="stat"><div class="k">Swell</div><div class="v">${swell ?? '—'} ft</div></div>
+          <div class="stat"><div class="k">Wind</div><div class="v">${wind ?? '—'} kt ${windDir}</div></div>
+        </div>
+        <div class="pillrow">${skillPill}</div>
+        ${sk && sk.note ? `<div class="spot-note">${sk.note}</div>` : ''}`;
+      return card;
     }
-    function setNowStatus(good, title, text){
-      const s = el('nowStatus');
-      s.classList.toggle('good', good);
-      el('nowStatusTitle').textContent = title;
-      el('nowStatusText').textContent = text;
+
+    async function loadSpot(slug){
+      try {
+        const res = await fetch(`spots/${slug}.json?ts=${Date.now()}`, { cache: 'no-store' });
+        if(!res.ok) throw new Error(`${slug}.json ${res.status}`);
+        return await res.json();
+      } catch(err){
+        console.error(slug, err);
+        return null;
+      }
     }
 
     async function load(){
       el('refreshBtn').disabled = true;
       el('refreshBtn').textContent = 'Refreshing…';
       try {
-        const res = await fetch(`data.json?ts=${Date.now()}`, { cache: 'no-store' });
-        if(!res.ok) throw new Error(`data.json ${res.status}`);
-        const data = await res.json();
-
-        const t = data.thresholds || {};
-        el('ruleLabel').textContent =
-          `Alert ≥ ${t.now_wvht_ft ?? '?'}ft @ ${t.now_dpd_s ?? '?'}s, wind ≤ ${t.now_wind_kt_max ?? '?'}kt`;
-
-        const dl = data.daylight;
-        if(dl){
-          el('dayPill').textContent = `${dl.emoji} ${dl.label}`;
-          el('dayPill').title = dl.note + (dl.sunrise_local ? ` · sunrise ${dl.sunrise_local}, sunset ${dl.sunset_local}` : '');
-        }
-        const sk = (data.nowcast && data.nowcast.skill) || null;
-        if(sk){
-          el('skillPill').textContent = `${sk.emoji} ${sk.label}`;
-          el('skillPill').title = sk.note;
+        const results = await Promise.all(SPOTS.map(s => loadSpot(s.slug)));
+        const grid = el('spotGrid');
+        grid.innerHTML = '';
+        for(let i=0; i<SPOTS.length; i++){
+          grid.appendChild(renderSpotCard(SPOTS[i], results[i]));
         }
 
-        const n = data.nowcast;
-        if(n){
-          el('nowFace').textContent = (n.face_ft ?? n.wvht_ft ?? '—');
-          el('nowOffshore').textContent = (n.wvht_ft ?? '—');
-          el('nowDpd').textContent  = (n.dpd_s ?? '—') + ' s';
-          el('nowWind').textContent =
-            (n.wind_speed_kt ?? '—') + ' kt ' + (n.wind_dir ?? '');
-          el('nowApd').textContent = (n.apd_s ?? '—') + ' s';
-          el('nowObs').textContent = n.observed_at ? fmtTime(new Date(n.observed_at)) : '—';
-          if(n.is_good){
-            setNowStatus(true, '🔥 Go get it', `Conditions meet the bar at 44097.`);
-          } else {
-            const why = (n.reasons && n.reasons.length) ? n.reasons.join('; ') : 'Below threshold.';
-            setNowStatus(false, n.stale ? 'Stale buoy data' : 'Not yet', why);
+        const primary = results[0];
+        if(primary){
+          el('lastFetch').textContent = fmtTime(new Date(primary.fetched_at));
+          const n = primary.now;
+          if(n){
+            _lastParams = liveToOceanParams(
+              { wvht_ft: n.swell_ft, dpd_s: n.period_s, wind_speed_kt: n.wind_speed_kt },
+              primary.forecast,
+            );
+            pushOcean();
           }
-        } else {
-          setNowStatus(false, 'No buoy data', 'Could not parse NDBC RSS.');
-        }
-
-        const f = data.forecast;
-        if(f && f.next_window){
-          const w = f.next_window;
-          el('nextWhen').textContent = fmtWhen(w.start_local) + '  →  ' + fmtWhen(w.end_local);
-          el('nextFace').textContent  = (w.peak_face_ft ?? w.peak_swell_ft ?? '—') + ' ft';
-          el('nextPeriod').textContent = (w.peak_period_s ?? '—') + ' s';
-          el('nextWind').textContent   = (w.peak_wind_kt ?? '—') + ' kt ' + (w.wind_dir ?? '');
-          el('nextNote').textContent   = `${w.duration_h}h window · ${w.peak_swell_ft}ft offshore · Open-Meteo Marine + wind.`;
-        } else {
-          el('nextWhen').textContent = 'No good windows in the next 120h';
-          el('nextFace').textContent = el('nextPeriod').textContent = el('nextWind').textContent = '—';
-          el('nextNote').textContent = 'Forecast source: Open-Meteo Marine + wind 10m.';
-        }
-
-        const list = el('windowList');
-        list.innerHTML = '';
-        const windows = (f && f.all_windows_72h) || [];
-        if(!windows.length){
-          list.innerHTML = '<div class="fineprint">None.</div>';
-        } else {
-          for(const w of windows){
-            const row = document.createElement('div');
-            row.className = 'window';
-            const face = w.peak_face_ft ?? w.peak_swell_ft;
-            row.innerHTML = `
-              <div class="when">${fmtWhen(w.start_local)} – ${fmtWhen(w.end_local)} <span class="meta">(${w.duration_h}h)</span></div>
-              <div class="meta">~${face}ft face · ${w.peak_swell_ft}ft @ ${w.peak_period_s}s offshore · wind ${w.peak_wind_kt}kt ${w.wind_dir}</div>`;
-            list.appendChild(row);
+          const dl = primary.daylight;
+          if(dl){
+            const g = el('globalDay');
+            g.className = 'day-' + dl.status;
+            const sub = dl.sunrise_local && dl.sunset_local
+              ? `<span class="sub">↑${dl.sunrise_local} ↓${dl.sunset_local}</span>` : '';
+            g.innerHTML = `<span class="emoji">${dl.emoji}</span><span>${dl.label}</span>${sub}`;
+            g.title = dl.note || '';
           }
         }
-
-        el('lastFetch').textContent = fmtTime(new Date(data.fetched_at));
-
-        _lastParams = liveToOceanParams(data.nowcast, data.forecast);
-        pushOcean();
       } catch (err) {
         console.error(err);
-        setNowStatus(false, 'Loading issue', String(err.message || err));
       } finally {
         el('refreshBtn').disabled = false;
         el('refreshBtn').textContent = 'Refresh';
@@ -566,52 +571,6 @@
       if(document.visibilityState === 'visible') load();
     });
 
-    /* --------------- Collapsible cards --------------------------------------- */
-    const cards = () => Array.from(document.querySelectorAll('.card'));
-
-    function updateToggleAllLabel(){
-      const anyOpen = cards().some(c => !c.classList.contains('collapsed'));
-      el('toggleAllLabel').textContent = anyOpen ? 'Hide cards' : 'Show cards';
-      el('toggleAllBtn').classList.toggle('is-collapsed', !anyOpen);
-    }
-
-    function applyCardState(){
-      try {
-        const saved = JSON.parse(localStorage.getItem('surfsup.cards') || 'null');
-        if(saved && typeof saved === 'object'){
-          for(const c of cards()){
-            const k = c.dataset.card;
-            if(k in saved) c.classList.toggle('collapsed', !!saved[k]);
-          }
-        } else if(window.matchMedia('(max-width: 860px)').matches){
-          // Mobile default: collapse all so the ocean shows through
-          for(const c of cards()) c.classList.add('collapsed');
-        }
-      } catch {}
-      updateToggleAllLabel();
-    }
-
-    function persistCardState(){
-      const state = {};
-      for(const c of cards()) state[c.dataset.card] = c.classList.contains('collapsed');
-      try { localStorage.setItem('surfsup.cards', JSON.stringify(state)); } catch {}
-    }
-
-    for(const c of cards()){
-      c.querySelector('.label').addEventListener('click', () => {
-        c.classList.toggle('collapsed');
-        persistCardState();
-        updateToggleAllLabel();
-      });
-    }
-    el('toggleAllBtn').addEventListener('click', () => {
-      const anyOpen = cards().some(c => !c.classList.contains('collapsed'));
-      for(const c of cards()) c.classList.toggle('collapsed', anyOpen);
-      persistCardState();
-      updateToggleAllLabel();
-    });
-    applyCardState();
-    /* ------------------------------------------------------------------------- */
   </script>
 </body>
 </html>
