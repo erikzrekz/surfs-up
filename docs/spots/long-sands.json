@@ -7,23 +7,23 @@
     "sunrise_local": "5:10 AM",
     "sunset_local": "8:08 PM"
   },
-  "fetched_at": "2026-05-24T12:11:53.349582+00:00",
+  "fetched_at": "2026-05-24T14:01:51.849366+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 5,
-        "end_local": "2026-05-25T13:00:00-04:00",
-        "end_utc": "2026-05-25T17:00:00+00:00",
-        "id": "60cf24fa80a6",
+        "duration_h": 6,
+        "end_local": "2026-05-25T14:00:00-04:00",
+        "end_utc": "2026-05-25T18:00:00+00:00",
+        "id": "ef29fb665809",
         "peak_face_ft": 1.9,
         "peak_period_s": 5.2,
         "peak_swell_ft": 4.3,
-        "peak_wind_kt": 5.2,
-        "score": 33.99,
+        "peak_wind_kt": 5.0,
+        "score": 40.79,
         "start_local": "2026-05-25T08:00:00-04:00",
         "start_utc": "2026-05-25T12:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NNW"
+        "wind_dir": "NW"
       },
       {
         "duration_h": 3,
@@ -33,7 +33,7 @@
         "peak_face_ft": 1.6,
         "peak_period_s": 6.2,
         "peak_swell_ft": 3.1,
-        "peak_wind_kt": 2.9,
+        "peak_wind_kt": 3.3,
         "score": 17.86,
         "start_local": "2026-05-26T06:00:00-04:00",
         "start_utc": "2026-05-26T10:00:00+00:00",
@@ -44,25 +44,25 @@
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": {
-      "duration_h": 5,
-      "end_local": "2026-05-25T13:00:00-04:00",
-      "end_utc": "2026-05-25T17:00:00+00:00",
-      "id": "60cf24fa80a6",
+      "duration_h": 6,
+      "end_local": "2026-05-25T14:00:00-04:00",
+      "end_utc": "2026-05-25T18:00:00+00:00",
+      "id": "ef29fb665809",
       "peak_face_ft": 1.9,
       "peak_period_s": 5.2,
       "peak_swell_ft": 4.3,
-      "peak_wind_kt": 5.2,
-      "score": 33.99,
+      "peak_wind_kt": 5.0,
+      "score": 40.79,
       "start_local": "2026-05-25T08:00:00-04:00",
       "start_utc": "2026-05-25T12:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NNW"
+      "wind_dir": "NW"
     }
   },
   "now": {
     "face_ft": 0.6,
     "is_good": false,
-    "model_hour_utc": "2026-05-24T12:00:00+00:00",
+    "model_hour_utc": "2026-05-24T14:00:00+00:00",
     "period_s": 7.2,
     "reasons": [
       "WVHT 1.0 < 3.0ft"
@@ -74,12 +74,12 @@
       "note": "~0.6ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 131,
+    "swell_dir_deg": 132,
     "swell_ft": 1.0,
     "tier": null,
-    "wind_dir": "E",
-    "wind_dir_deg": 99,
-    "wind_speed_kt": 6.3
+    "wind_dir": "ESE",
+    "wind_dir_deg": 117,
+    "wind_speed_kt": 5.5
   },
   "spot": {
     "lat": 43.145,
