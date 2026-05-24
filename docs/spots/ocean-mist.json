@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-23T23:11:27.731524+00:00",
+  "fetched_at": "2026-05-24T00:13:10.962052+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -7,30 +7,15 @@
         "end_local": "2026-05-25T10:00:00-04:00",
         "end_utc": "2026-05-25T14:00:00+00:00",
         "id": "61135d9182f0",
-        "peak_face_ft": 2.2,
-        "peak_period_s": 5.6,
-        "peak_swell_ft": 4.7,
+        "peak_face_ft": 2.4,
+        "peak_period_s": 6.0,
+        "peak_swell_ft": 4.8,
         "peak_wind_kt": 5.5,
-        "score": 31.81,
+        "score": 35.04,
         "start_local": "2026-05-25T06:00:00-04:00",
         "start_utc": "2026-05-25T10:00:00+00:00",
         "tier": "clean",
         "wind_dir": "ENE"
-      },
-      {
-        "duration_h": 4,
-        "end_local": "2026-05-25T19:00:00-04:00",
-        "end_utc": "2026-05-25T23:00:00+00:00",
-        "id": "ac53ce545087",
-        "peak_face_ft": 1.8,
-        "peak_period_s": 5.8,
-        "peak_swell_ft": 3.7,
-        "peak_wind_kt": 5.7,
-        "score": 25.98,
-        "start_local": "2026-05-25T15:00:00-04:00",
-        "start_utc": "2026-05-25T19:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "WNW"
       }
     ],
     "lat": 41.291664,
@@ -40,11 +25,11 @@
       "end_local": "2026-05-25T10:00:00-04:00",
       "end_utc": "2026-05-25T14:00:00+00:00",
       "id": "61135d9182f0",
-      "peak_face_ft": 2.2,
-      "peak_period_s": 5.6,
-      "peak_swell_ft": 4.7,
+      "peak_face_ft": 2.4,
+      "peak_period_s": 6.0,
+      "peak_swell_ft": 4.8,
       "peak_wind_kt": 5.5,
-      "score": 31.81,
+      "score": 35.04,
       "start_local": "2026-05-25T06:00:00-04:00",
       "start_utc": "2026-05-25T10:00:00+00:00",
       "tier": "clean",
@@ -54,19 +39,19 @@
   "now": {
     "face_ft": 0.8,
     "is_good": false,
-    "model_hour_utc": "2026-05-23T23:00:00+00:00",
-    "period_s": 4.1,
+    "model_hour_utc": "2026-05-24T00:00:00+00:00",
+    "period_s": 4.2,
     "reasons": [
-      "WVHT 1.7 < 3.0ft",
-      "DPD 4.1 < 7.0s"
+      "WVHT 1.8 < 3.0ft",
+      "DPD 4.25 < 7.0s"
     ],
     "swell_dir": "SE",
     "swell_dir_deg": 135,
-    "swell_ft": 1.7,
+    "swell_ft": 1.8,
     "tier": null,
-    "wind_dir": "SE",
-    "wind_dir_deg": 143,
-    "wind_speed_kt": 1.9
+    "wind_dir": "ENE",
+    "wind_dir_deg": 62,
+    "wind_speed_kt": 3.7
   },
   "spot": {
     "lat": 41.37378,
