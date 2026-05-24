@@ -7,67 +7,67 @@
     "sunrise_local": "5:19 AM",
     "sunset_local": "8:06 PM"
   },
-  "fetched_at": "2026-05-24T20:05:35.094074+00:00",
+  "fetched_at": "2026-05-24T21:11:41.712283+00:00",
   "forecast": {
     "all_windows_72h": [
       {
-        "duration_h": 4,
+        "duration_h": 3,
         "end_local": "2026-05-25T10:00:00-04:00",
         "end_utc": "2026-05-25T14:00:00+00:00",
-        "id": "61135d9182f0",
-        "peak_face_ft": 2.2,
+        "id": "21df3d64833e",
+        "peak_face_ft": 2.1,
         "peak_period_s": 5.7,
-        "peak_swell_ft": 4.7,
-        "peak_wind_kt": 5.5,
-        "score": 32.38,
-        "start_local": "2026-05-25T06:00:00-04:00",
-        "start_utc": "2026-05-25T10:00:00+00:00",
+        "peak_swell_ft": 4.5,
+        "peak_wind_kt": 5.7,
+        "score": 23.6,
+        "start_local": "2026-05-25T07:00:00-04:00",
+        "start_utc": "2026-05-25T11:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "N"
+        "wind_dir": "NNE"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
-      "duration_h": 4,
+      "duration_h": 3,
       "end_local": "2026-05-25T10:00:00-04:00",
       "end_utc": "2026-05-25T14:00:00+00:00",
-      "id": "61135d9182f0",
-      "peak_face_ft": 2.2,
+      "id": "21df3d64833e",
+      "peak_face_ft": 2.1,
       "peak_period_s": 5.7,
-      "peak_swell_ft": 4.7,
-      "peak_wind_kt": 5.5,
-      "score": 32.38,
-      "start_local": "2026-05-25T06:00:00-04:00",
-      "start_utc": "2026-05-25T10:00:00+00:00",
+      "peak_swell_ft": 4.5,
+      "peak_wind_kt": 5.7,
+      "score": 23.6,
+      "start_local": "2026-05-25T07:00:00-04:00",
+      "start_utc": "2026-05-25T11:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "N"
+      "wind_dir": "NNE"
     }
   },
   "nowcast": {
-    "apd_s": 5.5,
+    "apd_s": 5.7,
     "dpd_s": 7.0,
-    "face_ft": 4.2,
+    "face_ft": 4.4,
     "is_good": true,
-    "observed_at": "2026-05-24T19:40:25+00:00",
+    "observed_at": "2026-05-24T20:40:25+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 19kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 141.0,
+    "swell_dir_deg": 139.0,
     "tier": "groundswell",
-    "wind_dir": "ENE",
-    "wind_dir_deg": 78,
+    "wind_dir": "E",
+    "wind_dir_deg": 82,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.5,
-    "wvht_ft": 7.2
+    "wind_speed_kt": 19.4,
+    "wvht_ft": 7.5
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
