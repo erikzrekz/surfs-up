@@ -7,7 +7,7 @@
     "sunrise_local": "5:19 AM",
     "sunset_local": "8:06 PM"
   },
-  "fetched_at": "2026-05-24T17:44:04.105534+00:00",
+  "fetched_at": "2026-05-24T18:52:01.420210+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.2,
         "peak_period_s": 5.7,
         "peak_swell_ft": 4.7,
-        "peak_wind_kt": 5.0,
+        "peak_wind_kt": 5.5,
         "score": 32.38,
         "start_local": "2026-05-25T06:00:00-04:00",
         "start_utc": "2026-05-25T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.2,
       "peak_period_s": 5.7,
       "peak_swell_ft": 4.7,
-      "peak_wind_kt": 5.0,
+      "peak_wind_kt": 5.5,
       "score": 32.38,
       "start_local": "2026-05-25T06:00:00-04:00",
       "start_utc": "2026-05-25T10:00:00+00:00",
@@ -45,31 +45,29 @@
     }
   },
   "nowcast": {
-    "apd_s": 5.2,
-    "dpd_s": 6.0,
-    "face_ft": 3.5,
-    "is_good": false,
-    "observed_at": "2026-05-24T17:40:26+00:00",
-    "reasons": [
-      "DPD 6.0 < 7.0s"
-    ],
+    "apd_s": 5.4,
+    "dpd_s": 7.0,
+    "face_ft": 4.2,
+    "is_good": true,
+    "observed_at": "2026-05-24T18:40:26+00:00",
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "3.5ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 20kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 136.0,
-    "tier": null,
-    "wind_dir": "E",
-    "wind_dir_deg": 81,
+    "swell_dir_deg": 144.0,
+    "tier": "groundswell",
+    "wind_dir": "ENE",
+    "wind_dir_deg": 77,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 20.3,
-    "wvht_ft": 6.9
+    "wind_speed_kt": 20.4,
+    "wvht_ft": 7.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

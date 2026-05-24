@@ -7,7 +7,7 @@
     "sunrise_local": "5:19 AM",
     "sunset_local": "8:06 PM"
   },
-  "fetched_at": "2026-05-24T17:44:04.105534+00:00",
+  "fetched_at": "2026-05-24T18:52:01.420210+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.2,
         "peak_period_s": 5.7,
         "peak_swell_ft": 4.7,
-        "peak_wind_kt": 2.9,
+        "peak_wind_kt": 3.1,
         "score": 32.38,
         "start_local": "2026-05-25T06:00:00-04:00",
         "start_utc": "2026-05-25T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.2,
       "peak_period_s": 5.7,
       "peak_swell_ft": 4.7,
-      "peak_wind_kt": 2.9,
+      "peak_wind_kt": 3.1,
       "score": 32.38,
       "start_local": "2026-05-25T06:00:00-04:00",
       "start_utc": "2026-05-25T10:00:00+00:00",
@@ -47,7 +47,7 @@
   "now": {
     "face_ft": 1.6,
     "is_good": false,
-    "model_hour_utc": "2026-05-24T17:00:00+00:00",
+    "model_hour_utc": "2026-05-24T18:00:00+00:00",
     "period_s": 5.3,
     "reasons": [
       "DPD 5.3 < 7.0s"
@@ -62,9 +62,9 @@
     "swell_dir_deg": 143,
     "swell_ft": 3.5,
     "tier": null,
-    "wind_dir": "E",
-    "wind_dir_deg": 82,
-    "wind_speed_kt": 13.9
+    "wind_dir": "ENE",
+    "wind_dir_deg": 73,
+    "wind_speed_kt": 14.3
   },
   "spot": {
     "lat": 41.37378,
