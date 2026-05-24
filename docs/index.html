@@ -11,304 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --ink:#0b0b10;
-      --paper:rgba(255,255,255,.78);
-      --muted:rgba(0,0,0,.62);
-      --ok:#1a7f37;
-      --bad:#e11d48;
-      --stroke:rgba(255,255,255,.35);
-      --glass: rgba(255,255,255,.22);
-      --glass-strong: rgba(255,255,255,.34);
-    }
-
-    html,body{ height:100%; }
-    body{
-      margin:0;
-      color:#fff;
-      font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      font-feature-settings: "tnum" 1, "ss01" 1;
-      background:#0a1e2e;  /* fallback while iframe loads */
-      overflow-x:hidden;
-      min-height:100vh;
-    }
-
-    /* Full-bleed 3D ocean background */
-    #oceanFrame{
-      position:fixed;
-      inset:0;
-      width:100vw;
-      height:100vh;
-      border:0;
-      z-index:0;
-      pointer-events:none;
-    }
-
-    /* Soft vignette + slight darkening for content legibility */
-    .veil{
-      position:fixed; inset:0; pointer-events:none; z-index:1;
-      background:
-        radial-gradient(120% 80% at 50% 10%, rgba(0,0,0,0) 0%, rgba(0,0,0,.35) 80%),
-        linear-gradient(180deg, rgba(0,0,0,.20) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,.35) 100%);
-    }
-
-    .wrap{
-      position:relative;
-      z-index:2;
-      min-height:100vh;
-      display:flex; flex-direction:column;
-      padding:24px 16px;
-      gap:18px;
-    }
-
-    /* ---------- Header / brand (no container — floats on ocean) -------- */
-    .header{
-      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
-      gap:14px;
-    }
-    .brand{ display:flex; flex-direction:column; gap:4px; }
-    .brand .name{
-      font-family: "Original Surfer", cursive;
-      font-weight:400; letter-spacing:0; font-size:42px; line-height:1;
-      text-shadow: 0 2px 12px rgba(0,0,0,.55), 0 1px 0 rgba(0,0,0,.4);
-      display:flex; align-items:center; gap:12px;
-      white-space: nowrap;
-    }
-    .brand .name .pixel-surfer{
-      width: 1.5em; height: 1.1em; flex:0 0 auto;
-      image-rendering: pixelated;
-      filter: drop-shadow(0 2px 0 rgba(0,0,0,.45));
-      animation: surfer-bob 2.2s ease-in-out infinite;
-      transform-origin: 50% 70%;
-    }
-    @keyframes surfer-bob{
-      0%,100% { transform: translateY(0)    rotate(0deg); }
-      25%     { transform: translateY(-1px) rotate(-1deg); }
-      50%     { transform: translateY(0)    rotate(0deg); }
-      75%     { transform: translateY(-1px) rotate(1deg); }
-    }
-    @media (prefers-reduced-motion: reduce){
-      .brand .name .pixel-surfer{ animation: none; }
-    }
-    .header-controls{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
-    }
-    .pill{
-      display:inline-flex; align-items:center; gap:10px; padding:10px 14px;
-      border-radius:999px;
-      background:var(--glass);
-      border:1px solid var(--stroke);
-      color:#fff;
-      font-weight:600; text-transform:uppercase; letter-spacing:.05em; font-size:12px;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-
-    /* Mobile: shrink title + give pill/button distinct styling */
-    @media (max-width: 860px){
-      .brand .name{ font-size: 30px; gap:8px; }
-    }
-    @media (max-width: 420px){
-      .brand .name{ font-size: 24px; gap:6px; }
-    }
-
-    /* ---------- Cards (glass) ----------------------------------------- */
-    .grid{
-      display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;
-    }
-    @media (max-width: 1100px){ .grid{ grid-template-columns:1fr 1fr; } }
-    @media (max-width: 720px){ .grid{ grid-template-columns:1fr; } }
-
-    .card{
-      border-radius:18px;
-      background:var(--glass);
-      border:1px solid var(--stroke);
-      padding:18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.30);
-      backdrop-filter: blur(14px) saturate(140%);
-      -webkit-backdrop-filter: blur(14px) saturate(140%);
-      color:#fff;
-      transition: padding .2s ease;
-    }
-    .label{
-      font-weight:900; text-transform:uppercase; letter-spacing:.10em;
-      font-size:11px; color:rgba(255,255,255,.75); margin-bottom:10px;
-    }
-    /* Collapsible cards — label becomes the toggle */
-    .card .label{
-      display:flex; align-items:center; justify-content:space-between;
-      cursor:pointer; user-select:none; gap:10px;
-    }
-    .card .label .chev{
-      display:inline-block; transition:transform .25s ease;
-      opacity:.7; font-size:14px;
-    }
-    .card.collapsed{ padding:14px 18px; }
-    .card.collapsed .label{ margin-bottom:0; }
-    .card.collapsed .label .chev{ transform:rotate(-90deg); }
-    .card .body{
-      overflow: visible;
-      transition: max-height .3s ease, opacity .25s ease, margin-top .25s ease;
-      max-height: 2000px; opacity:1;
-    }
-    .card.collapsed .body{
-      max-height:0; opacity:0; margin-top:0; pointer-events:none;
-      overflow: hidden;
-    }
-    .toggle-all{
-      display:none; align-items:center; gap:8px;
-      padding:10px 14px; border-radius:14px;
-      /* solid accent so it reads as an actionable button, not a data badge */
-      background:#ffd166; border:1px solid rgba(0,0,0,.25);
-      color:#0b0b10; font-weight:700; text-transform:uppercase;
-      letter-spacing:.04em; font-size:12px; cursor:pointer;
-      box-shadow: 0 4px 14px rgba(0,0,0,.35);
-    }
-    .toggle-all:hover{ transform: translateY(-1px); }
-    .toggle-all .chev-icon{
-      font-size:14px; line-height:1; display:inline-block;
-      transition: transform .2s ease;
-    }
-    .toggle-all.is-collapsed .chev-icon{ transform: rotate(-90deg); }
-    @media (max-width: 860px){
-      .toggle-all{ display:inline-flex; }
-    }
-    .big{
-      font-size:54px; font-weight:1000; letter-spacing:-0.03em; line-height:1;
-      text-shadow: 0 2px 12px rgba(0,0,0,.45);
-    }
-    .unit{
-      font-size:14px; font-weight:900; color:rgba(255,255,255,.7);
-      margin-left:8px; text-transform:uppercase; letter-spacing:.06em;
-    }
-    .row{
-      display:flex; flex-wrap:wrap; gap:14px; margin-top:10px;
-    }
-    .stat{ flex:1 1 120px; }
-    .stat .k{
-      font-size:11px; color:rgba(255,255,255,.7); text-transform:uppercase;
-      letter-spacing:.06em; font-weight:800;
-    }
-    .stat .v{ font-size:20px; font-weight:900; }
-
-    .status{
-      margin-top:14px; font-weight:950; text-transform:uppercase;
-      letter-spacing:.06em; font-size:13px;
-      display:flex; align-items:flex-start; gap:10px;
-    }
-    .dot{
-      width:12px; height:12px; border-radius:999px; margin-top:4px;
-      background:var(--bad);
-      box-shadow: 0 0 0 6px rgba(225,29,72,.30);
-      flex:0 0 auto;
-    }
-    .status.good .dot{
-      background:var(--ok);
-      box-shadow: 0 0 0 6px rgba(26,127,55,.30);
-    }
-    .status-sub{
-      font-weight:700; color:rgba(255,255,255,.78); margin-top:3px;
-      text-transform:none; letter-spacing:0;
-    }
-
-    .fineprint{ margin-top:10px; color:rgba(255,255,255,.72); font-size:13px; }
-
-    button{
-      appearance:none; border:1px solid var(--stroke); border-radius:14px;
-      padding:10px 14px; cursor:pointer;
-      background:var(--glass-strong); color:#fff;
-      font-weight:900; text-transform:uppercase; letter-spacing:.06em; font-size:12px;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    button:hover{ transform: translateY(-1px); }
-    .btnrow{
-      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
-      margin-top:6px;
-    }
-
-    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
-    .pill-big{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 12px; border-radius:12px;
-      background:var(--glass); border:1px solid var(--stroke); color:#fff;
-      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-      font-weight:800; text-transform:uppercase; letter-spacing:.05em; font-size:11px;
-    }
-    .pill-big .emoji{ font-size:18px; line-height:1; }
-    .pill-big.skill-out-of-range{ background:rgba(225,29,72,.20); border-color:rgba(225,29,72,.5); }
-    .pill-big.skill-worked{       background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5); }
-    .pill-big.skill-manageable{   background:rgba(26,127,55,.22); border-color:rgba(26,127,55,.55); }
-    .pill-big.skill-marginal{     background:rgba(56,189,248,.16); border-color:rgba(56,189,248,.45); }
-    .pill-big.skill-flat{         background:rgba(255,255,255,.10); }
-    .pill-big.day-night{          background:rgba(15,23,42,.5); }
-    .pill-big.day-dawn,
-    .pill-big.day-dusk{           background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5); }
-
-    .spot-card{
-      display:flex; flex-direction:column; gap:8px;
-      text-decoration:none; color:inherit;
-    }
-    .spot-card .spot-name{
-      font-family:"Original Surfer", cursive; font-weight:400;
-      font-size:22px; line-height:1.1;
-    }
-    .spot-card .spot-sub{
-      font-size:12px; color:rgba(255,255,255,.7);
-      text-transform:uppercase; letter-spacing:.06em; font-weight:700;
-    }
-    .spot-card .spot-note{
-      font-size:13px; color:rgba(255,255,255,.78); margin-top:4px;
-    }
-    .spot-card:hover{ transform: translateY(-2px); transition: transform .15s ease; }
-
-    .windowlist{
-      margin-top:10px; display:flex; flex-direction:column; gap:8px;
-    }
-    .window{
-      border:1px solid var(--stroke); border-radius:12px;
-      background:rgba(255,255,255,.10);
-      padding:10px 12px; display:flex; justify-content:space-between;
-      gap:10px; align-items:center;
-    }
-    .window .when{ font-weight:900; }
-    .window .meta{ color:rgba(255,255,255,.7); font-size:13px; }
-
-    .footnote{
-      position:fixed; right:14px; bottom:10px; z-index:2;
-      font-size:10px; color:rgba(255,255,255,.55); letter-spacing:.04em;
-    }
-    .footnote a{ color:inherit; }
-
-    #globalDay{
-      position:fixed; left:14px; bottom:10px; z-index:2;
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 12px; border-radius:12px;
-      background:var(--glass); border:1px solid var(--stroke); color:#fff;
-      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-      font-weight:800; text-transform:uppercase; letter-spacing:.05em; font-size:11px;
-      box-shadow: 0 4px 14px rgba(0,0,0,.25);
-    }
-    #globalDay .emoji{ font-size:18px; line-height:1; }
-    #globalDay .sub{
-      font-size:10px; font-weight:600; color:rgba(255,255,255,.7);
-      text-transform:none; letter-spacing:0; margin-left:6px;
-    }
-    #globalDay.day-night{ background:rgba(15,23,42,.5); }
-    #globalDay.day-dawn, #globalDay.day-dusk{
-      background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.5);
-    }
-  </style>
+  <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-  <!-- Full-screen 3D ocean background -->
-  <iframe id="oceanFrame" src="3d-ocean/simulation.html" title="3D ocean background" loading="eager"></iframe>
-  <div class="veil"></div>
+  <!-- Decorative animated ocean. aria-hidden because content is purely visual. -->
+  <iframe id="oceanFrame" src="3d-ocean/simulation.html" title="" aria-hidden="true" tabindex="-1" loading="eager"></iframe>
+  <div class="veil" aria-hidden="true"></div>
 
-  <div class="wrap">
-    <div class="header">
+  <main class="wrap">
+    <header class="header">
       <div class="brand">
         <div class="name">
           <svg class="pixel-surfer" viewBox="0 0 22 16" shape-rendering="crispEdges" aria-hidden="true">
@@ -371,24 +83,21 @@
             <rect x="17" y="14" width="4" height="1" fill="#5b9bbe"/>
             <rect x="6"  y="15" width="10" height="1" fill="#5b9bbe"/>
           </svg>
-          <span>Should We Surf?</span>
+          <span class="sr-only">Should We Surf?</span>
         </div>
       </div>
-      <div class="header-controls">
-        <button id="refreshBtn" type="button">Refresh</button>
-      </div>
-    </div>
+    </header>
 
-    <div class="grid" id="spotGrid">
+    <section class="grid cols-3" id="spotGrid" aria-label="Surf spots" aria-busy="true">
       <div class="fineprint" style="grid-column:1/-1;">Loading spots…</div>
-    </div>
+    </section>
 
     <div class="btnrow">
-      <div class="fineprint" style="margin-left:auto;">
+      <div class="fineprint" style="margin-left:auto;" aria-live="polite">
         Last fetch: <span id="lastFetch">—</span> · Live ocean → <span id="legendVis">syncing…</span>
       </div>
     </div>
-  </div>
+  </main>
 
   <div id="globalDay" title="Daylight">
     <span class="emoji">⌛</span><span>—</span>
@@ -479,8 +188,9 @@
       card.dataset.card = spot.slug;
 
       if(!data){
+        card.setAttribute('aria-label', `${spot.name}, ${spot.sub} — no data yet`);
         card.innerHTML = `
-          <div class="spot-name">${spot.name}</div>
+          <h2 class="spot-name">${spot.name}</h2>
           <div class="spot-sub">${spot.sub}</div>
           <div class="fineprint">No data yet.</div>`;
         return card;
@@ -495,22 +205,50 @@
       const windDir = n.wind_dir || '';
       const sp = data.spot || {};
 
-      const skillPill = sk ? `<div class="pill-big skill-${sk.level}">
-        <span class="emoji">${sk.emoji}</span><span>${sk.label}</span></div>` : '';
+      const name = sp.name || spot.name;
+      const sub = sp.subtitle || spot.sub;
+
+      // Short label for the corner pill (full friendly text lives in the tooltip).
+      const LEVEL_LABELS = {
+        'out-of-range': 'Out of range',
+        'worked':       'Worked',
+        'manageable':   'Manageable',
+        'marginal':     'Mushy',
+        'flat':         'Flat',
+        'unknown':      '—',
+      };
+      const levelShort = sk ? (LEVEL_LABELS[sk.level] || sk.level) : '';
+      const tooltip = sk
+        ? `${sk.label}${sk.note ? ' — ' + sk.note : ''}`
+        : '';
+      const cornerPill = sk ? `<div class="pill-big sm corner-pill skill-${sk.level}"
+          role="img" aria-label="Beginner read: ${sk.label}. ${sk.note || ''}"
+          title="${tooltip.replace(/"/g, '&quot;')}">
+          <span class="emoji" aria-hidden="true">${sk.emoji}</span>
+          <span>${levelShort}</span></div>` : '';
+
+      // Aria-label gives screen readers a complete summary up front.
+      const summary = [
+        `${name}, ${sub}`,
+        face != null ? `${face} foot face` : null,
+        period != null ? `${period} second period` : null,
+        wind != null ? `wind ${wind} knots ${windDir}` : null,
+        sk ? `beginner read: ${sk.label}. ${sk.note || ''}` : null,
+      ].filter(Boolean).join(', ');
+      card.setAttribute('aria-label', summary);
 
       card.innerHTML = `
-        <div class="spot-name">${sp.name || spot.name}</div>
-        <div class="spot-sub">${sp.subtitle || spot.sub}</div>
-        <div style="margin-top:8px;">
+        ${cornerPill}
+        <h2 class="spot-name">${name}</h2>
+        <div class="spot-sub">${sub}</div>
+        <div style="margin-top:8px;" aria-hidden="true">
           <span class="big">${face ?? '—'}</span><span class="unit">ft face</span>
           <span style="margin-left:12px; font-size:20px; font-weight:900;">${period ?? '—'} s</span>
         </div>
-        <div class="row">
+        <div class="row" aria-hidden="true">
           <div class="stat"><div class="k">Swell</div><div class="v">${swell ?? '—'} ft</div></div>
           <div class="stat"><div class="k">Wind</div><div class="v">${wind ?? '—'} kt ${windDir}</div></div>
-        </div>
-        <div class="pillrow">${skillPill}</div>
-        ${sk && sk.note ? `<div class="spot-note">${sk.note}</div>` : ''}`;
+        </div>`;
       return card;
     }
 
@@ -526,8 +264,6 @@
     }
 
     async function load(){
-      el('refreshBtn').disabled = true;
-      el('refreshBtn').textContent = 'Refreshing…';
       try {
         const results = await Promise.all(SPOTS.map(s => loadSpot(s.slug)));
         const grid = el('spotGrid');
@@ -535,6 +271,7 @@
         for(let i=0; i<SPOTS.length; i++){
           grid.appendChild(renderSpotCard(SPOTS[i], results[i]));
         }
+        grid.setAttribute('aria-busy', 'false');
 
         const primary = results[0];
         if(primary){
@@ -559,13 +296,9 @@
         }
       } catch (err) {
         console.error(err);
-      } finally {
-        el('refreshBtn').disabled = false;
-        el('refreshBtn').textContent = 'Refresh';
       }
     }
 
-    el('refreshBtn').addEventListener('click', load);
     window.addEventListener('load', load);
     document.addEventListener('visibilitychange', () => {
       if(document.visibilityState === 'visible') load();
