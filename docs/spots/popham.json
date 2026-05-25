@@ -7,34 +7,62 @@
     "sunrise_local": "5:04 AM",
     "sunset_local": "8:07 PM"
   },
-  "fetched_at": "2026-05-25T14:08:31.554983+00:00",
+  "fetched_at": "2026-05-25T16:31:56.875302+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-05-25T16:00:00-04:00",
+        "end_utc": "2026-05-25T20:00:00+00:00",
+        "id": "fc851c9f6282",
+        "peak_face_ft": 2.7,
+        "peak_period_s": 6.0,
+        "peak_swell_ft": 5.4,
+        "peak_wind_kt": 5.7,
+        "score": 40.17,
+        "start_local": "2026-05-25T12:00:00-04:00",
+        "start_utc": "2026-05-25T16:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "WNW"
+      }
+    ],
     "lat": 43.708336,
     "lon": -69.79166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 4,
+      "end_local": "2026-05-25T16:00:00-04:00",
+      "end_utc": "2026-05-25T20:00:00+00:00",
+      "id": "fc851c9f6282",
+      "peak_face_ft": 2.7,
+      "peak_period_s": 6.0,
+      "peak_swell_ft": 5.4,
+      "peak_wind_kt": 5.7,
+      "score": 40.17,
+      "start_local": "2026-05-25T12:00:00-04:00",
+      "start_utc": "2026-05-25T16:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "WNW"
+    }
   },
   "now": {
-    "face_ft": 2.6,
-    "is_good": false,
-    "model_hour_utc": "2026-05-25T14:00:00+00:00",
-    "period_s": 5.8,
-    "reasons": [
-      "DPD 5.75 < 7.0s"
-    ],
+    "face_ft": 2.7,
+    "is_good": true,
+    "model_hour_utc": "2026-05-25T16:00:00+00:00",
+    "period_s": 5.9,
+    "reasons": [],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "2.6ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "2.7ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 152,
+    "swell_dir_deg": 151,
     "swell_ft": 5.4,
-    "tier": null,
-    "wind_dir": "SSE",
-    "wind_dir_deg": 164,
-    "wind_speed_kt": 3.4
+    "tier": "clean",
+    "wind_dir": "WNW",
+    "wind_dir_deg": 303,
+    "wind_speed_kt": 3.9
   },
   "spot": {
     "lat": 43.7378,
