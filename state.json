@@ -1,7 +1,7 @@
 {
   "forecast_last_sent_at": "2026-05-24T23:16:24.335064+00:00",
-  "forecast_last_window_id": "d69b51d74508",
-  "forecast_last_window_score": 22.914,
+  "forecast_last_window_id": null,
+  "forecast_last_window_score": null,
   "nowcast_last_sent_day_utc": "2026-05-24",
   "nowcast_was_good": true
 }
