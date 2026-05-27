@@ -7,7 +7,7 @@
     "sunrise_local": "5:17 AM",
     "sunset_local": "8:08 PM"
   },
-  "fetched_at": "2026-05-27T20:55:13.662084+00:00",
+  "fetched_at": "2026-05-27T22:41:24.312033+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,29 +15,29 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.3,
-    "dpd_s": 7.0,
-    "face_ft": 1.9,
+    "apd_s": null,
+    "dpd_s": 8.0,
+    "face_ft": 2.4,
     "is_good": true,
-    "observed_at": "2026-05-27T20:40:27+00:00",
+    "observed_at": "2026-05-27T22:35:49+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.9ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "2.4ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 151.0,
+    "swell_dir": null,
+    "swell_dir_deg": null,
     "tier": "groundswell",
-    "wind_dir": "SW",
-    "wind_dir_deg": 222,
+    "wind_dir": "SSW",
+    "wind_dir_deg": 213,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.5,
-    "wvht_ft": 3.3
+    "wind_speed_kt": 13.0,
+    "wvht_ft": 3.6
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
