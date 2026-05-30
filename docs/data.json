@@ -7,7 +7,7 @@
     "sunrise_local": "5:16 AM",
     "sunset_local": "8:11 PM"
   },
-  "fetched_at": "2026-05-30T14:55:09.663336+00:00",
+  "fetched_at": "2026-05-30T16:05:07.921996+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,28 +15,30 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.6,
+    "apd_s": 4.5,
     "dpd_s": 7.0,
     "face_ft": 2.7,
-    "is_good": true,
-    "observed_at": "2026-05-30T14:40:26+00:00",
-    "reasons": [],
+    "is_good": false,
+    "observed_at": "2026-05-30T15:40:26+00:00",
+    "reasons": [
+      "wind 30.4kt @ 352\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+    ],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 30kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SW",
-    "swell_dir_deg": 225.0,
-    "tier": "groundswell",
-    "wind_dir": "NW",
-    "wind_dir_deg": 323,
+    "swell_dir_deg": 229.0,
+    "tier": null,
+    "wind_dir": "N",
+    "wind_dir_deg": 352,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 16.5,
+    "wind_speed_kt": 30.4,
     "wvht_ft": 4.6
   },
   "thresholds": {
