@@ -7,24 +7,9 @@
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:17 PM"
   },
-  "fetched_at": "2026-05-30T18:39:11.039244+00:00",
+  "fetched_at": "2026-05-30T19:54:25.704766+00:00",
   "forecast": {
     "all_windows_120h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-05-31T09:00:00-04:00",
-        "end_utc": "2026-05-31T13:00:00+00:00",
-        "id": "5e9a38dcab4c",
-        "peak_face_ft": 2.0,
-        "peak_period_s": 6.4,
-        "peak_swell_ft": 3.7,
-        "peak_wind_kt": 5.8,
-        "score": 21.89,
-        "start_local": "2026-05-31T06:00:00-04:00",
-        "start_utc": "2026-05-31T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "WNW"
-      },
       {
         "duration_h": 8,
         "end_local": "2026-05-31T19:00:00-04:00",
@@ -44,42 +29,42 @@
     "lat": 40.125,
     "lon": -73.87499,
     "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-05-31T09:00:00-04:00",
-      "end_utc": "2026-05-31T13:00:00+00:00",
-      "id": "5e9a38dcab4c",
-      "peak_face_ft": 2.0,
-      "peak_period_s": 6.4,
+      "duration_h": 8,
+      "end_local": "2026-05-31T19:00:00-04:00",
+      "end_utc": "2026-05-31T23:00:00+00:00",
+      "id": "d5145a356068",
+      "peak_face_ft": 2.5,
+      "peak_period_s": 8.0,
       "peak_swell_ft": 3.7,
-      "peak_wind_kt": 5.8,
-      "score": 21.89,
-      "start_local": "2026-05-31T06:00:00-04:00",
-      "start_utc": "2026-05-31T10:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "WNW"
+      "peak_wind_kt": 12.8,
+      "score": 71.68,
+      "start_local": "2026-05-31T11:00:00-04:00",
+      "start_utc": "2026-05-31T15:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "SE"
     }
   },
   "now": {
-    "face_ft": 0.9,
+    "face_ft": 1.0,
     "is_good": false,
-    "model_hour_utc": "2026-05-30T18:00:00+00:00",
-    "period_s": 8.1,
+    "model_hour_utc": "2026-05-30T19:00:00+00:00",
+    "period_s": 8.3,
     "reasons": [
       "WVHT 1.4 < 3.0ft"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "E",
     "swell_dir_deg": 85,
     "swell_ft": 1.4,
     "tier": null,
-    "wind_dir": "NNW",
-    "wind_dir_deg": 343,
-    "wind_speed_kt": 17.9
+    "wind_dir": "N",
+    "wind_dir_deg": 349,
+    "wind_speed_kt": 17.8
   },
   "spot": {
     "lat": 40.1018,
