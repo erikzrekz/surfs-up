@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:11 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 8h58 (5:15 AM)",
+    "status": "night",
     "sunrise_local": "5:16 AM",
     "sunset_local": "8:11 PM"
   },
-  "fetched_at": "2026-05-30T23:15:01.785839+00:00",
+  "fetched_at": "2026-05-31T00:17:13.862309+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,14 +15,12 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.7,
+    "apd_s": 5.6,
     "dpd_s": 7.0,
-    "face_ft": 6.0,
-    "is_good": false,
-    "observed_at": "2026-05-30T22:40:26+00:00",
-    "reasons": [
-      "wind 27.6kt @ 11\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
-    ],
+    "face_ft": 5.7,
+    "is_good": true,
+    "observed_at": "2026-05-31T00:10:57+00:00",
+    "reasons": [],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
@@ -32,14 +30,14 @@
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "NNE",
-    "swell_dir_deg": 27.0,
-    "tier": null,
+    "swell_dir": "NE",
+    "swell_dir_deg": 37.0,
+    "tier": "groundswell",
     "wind_dir": "N",
-    "wind_dir_deg": 11,
+    "wind_dir_deg": 7,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 27.6,
-    "wvht_ft": 10.2
+    "wind_speed_kt": 22.4,
+    "wvht_ft": 9.8
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
