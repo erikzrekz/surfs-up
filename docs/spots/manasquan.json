@@ -7,7 +7,7 @@
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:18 PM"
   },
-  "fetched_at": "2026-05-31T20:41:51.135926+00:00",
+  "fetched_at": "2026-05-31T21:41:36.082922+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -47,8 +47,8 @@
   "now": {
     "face_ft": 2.3,
     "is_good": true,
-    "model_hour_utc": "2026-05-31T20:00:00+00:00",
-    "period_s": 7.9,
+    "model_hour_utc": "2026-05-31T21:00:00+00:00",
+    "period_s": 8.0,
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
@@ -57,11 +57,11 @@
       "note": "2.3ft @ 8s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 81,
+    "swell_dir_deg": 82,
     "swell_ft": 3.5,
     "tier": "groundswell",
-    "wind_dir": "W",
-    "wind_dir_deg": 273,
+    "wind_dir": "WSW",
+    "wind_dir_deg": 254,
     "wind_speed_kt": 9.9
   },
   "spot": {
