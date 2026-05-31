@@ -7,7 +7,7 @@
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:18 PM"
   },
-  "fetched_at": "2026-05-31T19:41:05.883803+00:00",
+  "fetched_at": "2026-05-31T20:41:51.135926+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 2.5,
         "peak_period_s": 8.1,
         "peak_swell_ft": 3.7,
-        "peak_wind_kt": 9.7,
+        "peak_wind_kt": 9.9,
         "score": 81.65,
         "start_local": "2026-05-31T10:00:00-04:00",
         "start_utc": "2026-05-31T14:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "WNW"
+        "wind_dir": "WSW"
       }
     ],
     "lat": 40.125,
@@ -36,33 +36,33 @@
       "peak_face_ft": 2.5,
       "peak_period_s": 8.1,
       "peak_swell_ft": 3.7,
-      "peak_wind_kt": 9.7,
+      "peak_wind_kt": 9.9,
       "score": 81.65,
       "start_local": "2026-05-31T10:00:00-04:00",
       "start_utc": "2026-05-31T14:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "WNW"
+      "wind_dir": "WSW"
     }
   },
   "now": {
     "face_ft": 2.3,
     "is_good": true,
-    "model_hour_utc": "2026-05-31T19:00:00+00:00",
-    "period_s": 7.8,
+    "model_hour_utc": "2026-05-31T20:00:00+00:00",
+    "period_s": 7.9,
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.3ft @ 8s, wind 8kt. Clean enough, sized right \u2014 go."
+      "note": "2.3ft @ 8s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 80,
+    "swell_dir_deg": 81,
     "swell_ft": 3.5,
     "tier": "groundswell",
     "wind_dir": "W",
-    "wind_dir_deg": 280,
-    "wind_speed_kt": 8.1
+    "wind_dir_deg": 273,
+    "wind_speed_kt": 9.9
   },
   "spot": {
     "lat": 40.1018,

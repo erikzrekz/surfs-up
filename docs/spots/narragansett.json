@@ -7,7 +7,7 @@
     "sunrise_local": "5:14 AM",
     "sunset_local": "8:12 PM"
   },
-  "fetched_at": "2026-05-31T19:41:05.883803+00:00",
+  "fetched_at": "2026-05-31T20:41:51.135926+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.375,
@@ -17,7 +17,7 @@
   "now": {
     "face_ft": 0.8,
     "is_good": false,
-    "model_hour_utc": "2026-05-31T19:00:00+00:00",
+    "model_hour_utc": "2026-05-31T20:00:00+00:00",
     "period_s": 8.1,
     "reasons": [
       "WVHT 1.2 < 3.0ft"
@@ -32,9 +32,9 @@
     "swell_dir_deg": 102,
     "swell_ft": 1.2,
     "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 237,
-    "wind_speed_kt": 7.2
+    "wind_dir": "W",
+    "wind_dir_deg": 272,
+    "wind_speed_kt": 6.4
   },
   "spot": {
     "lat": 41.4324,
