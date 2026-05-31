@@ -1,7 +1,69 @@
 {
-  "fetched_at": "2026-05-31T15:41:00.147161+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:18 PM",
+    "status": "day",
+    "sunrise_local": "5:29 AM",
+    "sunset_local": "8:18 PM"
+  },
+  "fetched_at": "2026-05-31T16:46:44.791364+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 9,
+        "end_local": "2026-05-31T19:00:00-04:00",
+        "end_utc": "2026-05-31T23:00:00+00:00",
+        "id": "40d71edfb371",
+        "peak_face_ft": 2.5,
+        "peak_period_s": 8.1,
+        "peak_swell_ft": 3.7,
+        "peak_wind_kt": 8.7,
+        "score": 81.65,
+        "start_local": "2026-05-31T10:00:00-04:00",
+        "start_utc": "2026-05-31T14:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "WNW"
+      }
+    ],
+    "lat": 40.125,
+    "lon": -73.87499,
+    "next_window": {
+      "duration_h": 9,
+      "end_local": "2026-05-31T19:00:00-04:00",
+      "end_utc": "2026-05-31T23:00:00+00:00",
+      "id": "40d71edfb371",
+      "peak_face_ft": 2.5,
+      "peak_period_s": 8.1,
+      "peak_swell_ft": 3.7,
+      "peak_wind_kt": 8.7,
+      "score": 81.65,
+      "start_local": "2026-05-31T10:00:00-04:00",
+      "start_utc": "2026-05-31T14:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "WNW"
+    }
+  },
+  "now": {
+    "face_ft": 2.3,
+    "is_good": true,
+    "model_hour_utc": "2026-05-31T16:00:00+00:00",
+    "period_s": 7.5,
+    "reasons": [],
+    "skill": {
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "2.3ft @ 8s, wind 7kt. Clean enough, sized right \u2014 go."
+    },
+    "swell_dir": "ENE",
+    "swell_dir_deg": 78,
+    "swell_ft": 3.6,
+    "tier": "groundswell",
+    "wind_dir": "WNW",
+    "wind_dir_deg": 294,
+    "wind_speed_kt": 7.2
+  },
   "spot": {
     "lat": 40.1018,
     "lon": -74.0337,
