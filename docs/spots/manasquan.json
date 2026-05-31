@@ -7,7 +7,7 @@
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:18 PM"
   },
-  "fetched_at": "2026-05-31T10:30:04.786155+00:00",
+  "fetched_at": "2026-05-31T12:02:44.167355+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.6,
         "peak_period_s": 8.1,
         "peak_swell_ft": 3.9,
-        "peak_wind_kt": 6.7,
+        "peak_wind_kt": 9.9,
         "score": 104.49,
         "start_local": "2026-05-31T08:00:00-04:00",
         "start_utc": "2026-05-31T12:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.6,
       "peak_period_s": 8.1,
       "peak_swell_ft": 3.9,
-      "peak_wind_kt": 6.7,
+      "peak_wind_kt": 9.9,
       "score": 104.49,
       "start_local": "2026-05-31T08:00:00-04:00",
       "start_utc": "2026-05-31T12:00:00+00:00",
@@ -45,26 +45,24 @@
     }
   },
   "now": {
-    "face_ft": 2.0,
-    "is_good": false,
-    "model_hour_utc": "2026-05-31T10:00:00+00:00",
-    "period_s": 6.5,
-    "reasons": [
-      "DPD 6.45 < 7.0s"
-    ],
+    "face_ft": 2.3,
+    "is_good": true,
+    "model_hour_utc": "2026-05-31T12:00:00+00:00",
+    "period_s": 7.0,
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "2.0ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "2.3ft @ 7s, wind 8kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "ENE",
-    "swell_dir_deg": 70,
-    "swell_ft": 3.8,
-    "tier": null,
+    "swell_dir_deg": 75,
+    "swell_ft": 3.9,
+    "tier": "groundswell",
     "wind_dir": "W",
-    "wind_dir_deg": 277,
-    "wind_speed_kt": 6.3
+    "wind_dir_deg": 278,
+    "wind_speed_kt": 8.2
   },
   "spot": {
     "lat": 40.1018,
