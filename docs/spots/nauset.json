@@ -7,33 +7,50 @@
     "sunrise_local": "5:07 AM",
     "sunset_local": "8:07 PM"
   },
-  "fetched_at": "2026-05-31T14:11:32.065113+00:00",
+  "fetched_at": "2026-05-31T15:41:00.147161+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-05-31T11:00:00-04:00",
+        "end_utc": "2026-05-31T15:00:00+00:00",
+        "id": "c122ed1185b1",
+        "peak_face_ft": 1.7,
+        "peak_period_s": 6.5,
+        "peak_swell_ft": 3.2,
+        "peak_wind_kt": 5.8,
+        "score": 25.48,
+        "start_local": "2026-05-31T07:00:00-04:00",
+        "start_utc": "2026-05-31T11:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "WNW"
+      }
+    ],
     "lat": 41.791664,
     "lon": -69.95833,
     "next_window": null
   },
   "now": {
-    "face_ft": 1.6,
+    "face_ft": 1.5,
     "is_good": false,
-    "model_hour_utc": "2026-05-31T14:00:00+00:00",
-    "period_s": 6.2,
+    "model_hour_utc": "2026-05-31T15:00:00+00:00",
+    "period_s": 6.3,
     "reasons": [
-      "DPD 6.2 < 7.0s"
+      "WVHT 2.9 < 3.0ft",
+      "DPD 6.3 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.6ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.5ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
-    "swell_dir": "ENE",
-    "swell_dir_deg": 78,
-    "swell_ft": 3.0,
+    "swell_dir": "E",
+    "swell_dir_deg": 80,
+    "swell_ft": 2.9,
     "tier": null,
-    "wind_dir": "W",
-    "wind_dir_deg": 279,
+    "wind_dir": "WNW",
+    "wind_dir_deg": 287,
     "wind_speed_kt": 6.1
   },
   "spot": {
