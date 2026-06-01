@@ -1,54 +1,40 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf07",
-    "label": "Last light",
-    "note": "Sunset in 27 min \u2014 burn-rate session",
-    "status": "dusk",
-    "sunrise_local": "5:06 AM",
-    "sunset_local": "8:14 PM"
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 4h57 (5:05 AM)",
+    "status": "night",
+    "sunrise_local": "5:05 AM",
+    "sunset_local": "8:15 PM"
   },
-  "fetched_at": "2026-05-31T23:46:57.454643+00:00",
+  "fetched_at": "2026-06-01T04:07:38.981288+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 4,
-        "end_local": "2026-05-31T19:00:00-04:00",
-        "end_utc": "2026-05-31T23:00:00+00:00",
-        "id": "015908485f9f",
-        "peak_face_ft": 2.1,
-        "peak_period_s": 7.2,
-        "peak_swell_ft": 3.5,
-        "peak_wind_kt": 7.2,
-        "score": 30.32,
-        "start_local": "2026-05-31T15:00:00-04:00",
-        "start_utc": "2026-05-31T19:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "SE"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": null
   },
   "now": {
-    "face_ft": 2.1,
-    "is_good": true,
-    "model_hour_utc": "2026-05-31T23:00:00+00:00",
-    "period_s": 7.2,
-    "reasons": [],
+    "face_ft": 1.8,
+    "is_good": false,
+    "model_hour_utc": "2026-06-01T04:00:00+00:00",
+    "period_s": 8.1,
+    "reasons": [
+      "WVHT 2.7 < 3.0ft"
+    ],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.1ft @ 7s, wind 5kt. Clean enough, sized right \u2014 go."
+      "note": "1.8ft @ 8s, wind 5kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 106,
-    "swell_ft": 3.5,
-    "tier": "groundswell",
-    "wind_dir": "SSE",
-    "wind_dir_deg": 165,
-    "wind_speed_kt": 5.4
+    "swell_dir_deg": 110,
+    "swell_ft": 2.7,
+    "tier": null,
+    "wind_dir": "NNW",
+    "wind_dir_deg": 332,
+    "wind_speed_kt": 4.6
   },
   "spot": {
     "lat": 43.145,
