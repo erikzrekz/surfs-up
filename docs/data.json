@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:12 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf07",
+    "label": "Last light",
+    "note": "Sunset in 13 min \u2014 burn-rate session",
+    "status": "dusk",
     "sunrise_local": "5:15 AM",
     "sunset_local": "8:12 PM"
   },
-  "fetched_at": "2026-06-01T22:36:41.207448+00:00",
+  "fetched_at": "2026-06-01T23:58:33.312073+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,28 +15,30 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.6,
-    "dpd_s": 9.0,
-    "face_ft": 2.7,
-    "is_good": true,
-    "observed_at": "2026-06-01T22:10:28+00:00",
-    "reasons": [],
+    "apd_s": null,
+    "dpd_s": 4.0,
+    "face_ft": 1.6,
+    "is_good": false,
+    "observed_at": "2026-06-01T23:40:27+00:00",
+    "reasons": [
+      "DPD 4.0 < 7.0s"
+    ],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "2.7ft @ 9s, wind 10kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.6ft @ 4s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "ESE",
-    "swell_dir_deg": 108.0,
-    "tier": "groundswell",
+    "swell_dir": null,
+    "swell_dir_deg": null,
+    "tier": null,
     "wind_dir": "ENE",
-    "wind_dir_deg": 77,
+    "wind_dir_deg": 75,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.0,
+    "wind_speed_kt": 11.7,
     "wvht_ft": 3.6
   },
   "thresholds": {
