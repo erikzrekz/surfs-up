@@ -7,34 +7,50 @@
     "sunrise_local": "5:05 AM",
     "sunset_local": "8:15 PM"
   },
-  "fetched_at": "2026-06-01T15:43:07.927745+00:00",
+  "fetched_at": "2026-06-01T20:06:19.657144+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 5,
+        "end_local": "2026-06-01T14:00:00-04:00",
+        "end_utc": "2026-06-01T18:00:00+00:00",
+        "id": "87b8f248f449",
+        "peak_face_ft": 1.9,
+        "peak_period_s": 6.8,
+        "peak_swell_ft": 3.3,
+        "peak_wind_kt": 5.8,
+        "score": 34.0,
+        "start_local": "2026-06-01T09:00:00-04:00",
+        "start_utc": "2026-06-01T13:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "ENE"
+      }
+    ],
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": null
   },
   "now": {
-    "face_ft": 1.8,
+    "face_ft": 1.6,
     "is_good": false,
-    "model_hour_utc": "2026-06-01T15:00:00+00:00",
-    "period_s": 6.6,
+    "model_hour_utc": "2026-06-01T20:00:00+00:00",
+    "period_s": 6.2,
     "reasons": [
-      "DPD 6.6 < 7.0s"
+      "DPD 6.25 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "1.8ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.6ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
-    "swell_dir": "ESE",
-    "swell_dir_deg": 102,
-    "swell_ft": 3.2,
+    "swell_dir": "E",
+    "swell_dir_deg": 100,
+    "swell_ft": 3.1,
     "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 53,
-    "wind_speed_kt": 7.1
+    "wind_dir": "SE",
+    "wind_dir_deg": 132,
+    "wind_speed_kt": 5.8
   },
   "spot": {
     "lat": 43.145,
