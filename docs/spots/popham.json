@@ -1,38 +1,56 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 37 min ago \u2014 golden hour",
-    "status": "dawn",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:14 PM",
+    "status": "day",
     "sunrise_local": "4:59 AM",
     "sunset_local": "8:14 PM"
   },
-  "fetched_at": "2026-06-01T09:35:50.305375+00:00",
+  "fetched_at": "2026-06-01T15:43:07.927745+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-06-01T10:00:00-04:00",
+        "end_utc": "2026-06-01T14:00:00+00:00",
+        "id": "d8856aecd3a8",
+        "peak_face_ft": 2.0,
+        "peak_period_s": 6.9,
+        "peak_swell_ft": 3.4,
+        "peak_wind_kt": 3.9,
+        "score": 28.7,
+        "start_local": "2026-06-01T06:00:00-04:00",
+        "start_utc": "2026-06-01T10:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 43.708336,
     "lon": -69.79166,
     "next_window": null
   },
   "now": {
-    "face_ft": 1.7,
-    "is_good": true,
-    "model_hour_utc": "2026-06-01T09:00:00+00:00",
-    "period_s": 6.5,
-    "reasons": [],
+    "face_ft": 1.6,
+    "is_good": false,
+    "model_hour_utc": "2026-06-01T15:00:00+00:00",
+    "period_s": 6.4,
+    "reasons": [
+      "DPD 6.4 < 7.0s"
+    ],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.7ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.6ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 115,
-    "swell_ft": 3.2,
-    "tier": "clean",
-    "wind_dir": "N",
-    "wind_dir_deg": 360,
-    "wind_speed_kt": 5.1
+    "swell_dir_deg": 111,
+    "swell_ft": 3.0,
+    "tier": null,
+    "wind_dir": "ESE",
+    "wind_dir_deg": 122,
+    "wind_speed_kt": 5.5
   },
   "spot": {
     "lat": 43.7378,
