@@ -7,7 +7,7 @@
     "sunrise_local": "5:27 AM",
     "sunset_local": "8:21 PM"
   },
-  "fetched_at": "2026-06-04T18:26:10.046896+00:00",
+  "fetched_at": "2026-06-04T20:33:01.047202+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.125,
@@ -17,7 +17,7 @@
   "now": {
     "face_ft": 0.9,
     "is_good": false,
-    "model_hour_utc": "2026-06-04T18:00:00+00:00",
+    "model_hour_utc": "2026-06-04T20:00:00+00:00",
     "period_s": 7.4,
     "reasons": [
       "WVHT 1.4 < 3.0ft"
@@ -29,12 +29,12 @@
       "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 94,
+    "swell_dir_deg": 95,
     "swell_ft": 1.4,
     "tier": null,
     "wind_dir": "SSE",
-    "wind_dir_deg": 148,
-    "wind_speed_kt": 9.6
+    "wind_dir_deg": 155,
+    "wind_speed_kt": 11.6
   },
   "spot": {
     "lat": 40.1018,
