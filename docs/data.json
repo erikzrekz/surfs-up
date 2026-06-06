@@ -7,7 +7,7 @@
     "sunrise_local": "5:13 AM",
     "sunset_local": "8:16 PM"
   },
-  "fetched_at": "2026-06-06T11:53:29.617381+00:00",
+  "fetched_at": "2026-06-06T13:44:04.866046+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -19,24 +19,24 @@
     "dpd_s": 8.0,
     "face_ft": 2.0,
     "is_good": true,
-    "observed_at": "2026-06-06T11:40:26+00:00",
+    "observed_at": "2026-06-06T13:40:29+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.0ft @ 8s, wind 5kt. Clean enough, sized right \u2014 go."
+      "note": "2.0ft @ 8s, wind 6kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SE",
-    "swell_dir_deg": 124.0,
+    "swell_dir": "ESE",
+    "swell_dir_deg": 115.0,
     "tier": "groundswell",
     "wind_dir": "SSW",
-    "wind_dir_deg": 199,
+    "wind_dir_deg": 205,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 4.7,
+    "wind_speed_kt": 6.4,
     "wvht_ft": 3.0
   },
   "thresholds": {
