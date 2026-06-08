@@ -1,71 +1,41 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 2h07 (5:11 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:17 PM",
+    "status": "day",
     "sunrise_local": "5:11 AM",
     "sunset_local": "8:17 PM"
   },
-  "fetched_at": "2026-06-08T07:03:42.412309+00:00",
+  "fetched_at": "2026-06-08T12:08:47.477453+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-06-12T09:00:00-04:00",
-        "end_utc": "2026-06-12T13:00:00+00:00",
-        "id": "06b9d09668a6",
-        "peak_face_ft": 1.5,
-        "peak_period_s": 5.2,
-        "peak_swell_ft": 3.3,
-        "peak_wind_kt": 5.4,
-        "score": 15.75,
-        "start_local": "2026-06-12T06:00:00-04:00",
-        "start_utc": "2026-06-12T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NE"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 41.458336,
     "lon": -71.20833,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-06-12T09:00:00-04:00",
-      "end_utc": "2026-06-12T13:00:00+00:00",
-      "id": "06b9d09668a6",
-      "peak_face_ft": 1.5,
-      "peak_period_s": 5.2,
-      "peak_swell_ft": 3.3,
-      "peak_wind_kt": 5.4,
-      "score": 15.75,
-      "start_local": "2026-06-12T06:00:00-04:00",
-      "start_utc": "2026-06-12T10:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "NE"
-    }
+    "next_window": null
   },
   "now": {
-    "face_ft": 1.0,
+    "face_ft": 0.8,
     "is_good": false,
-    "model_hour_utc": "2026-06-08T07:00:00+00:00",
-    "period_s": 6.0,
+    "model_hour_utc": "2026-06-08T12:00:00+00:00",
+    "period_s": 6.2,
     "reasons": [
-      "WVHT 2.0 < 3.0ft",
-      "DPD 5.95 < 7.0s"
+      "WVHT 1.6 < 3.0ft",
+      "DPD 6.25 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "1.0ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
+      "emoji": "\ud83e\udd71",
+      "label": "Flat",
+      "level": "flat",
+      "note": "~0.8ft face. Nothing to ride. Coffee instead."
     },
-    "swell_dir": "S",
-    "swell_dir_deg": 172,
-    "swell_ft": 2.0,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 164,
+    "swell_ft": 1.6,
     "tier": null,
-    "wind_dir": "N",
-    "wind_dir_deg": 5,
-    "wind_speed_kt": 10.1
+    "wind_dir": "NNE",
+    "wind_dir_deg": 12,
+    "wind_speed_kt": 11.3
   },
   "spot": {
     "lat": 41.4824,
