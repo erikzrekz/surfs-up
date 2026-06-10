@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 4h20 (5:12 AM)",
+    "note": "Sunrise in 23 min (5:12 AM)",
     "status": "night",
     "sunrise_local": "5:12 AM",
     "sunset_local": "8:18 PM"
   },
-  "fetched_at": "2026-06-10T04:51:32.333703+00:00",
+  "fetched_at": "2026-06-10T08:49:05.465067+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,32 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 3.9,
-    "dpd_s": 4.0,
-    "face_ft": 1.6,
+    "apd_s": 4.0,
+    "dpd_s": 5.0,
+    "face_ft": 1.8,
     "is_good": false,
-    "observed_at": "2026-06-10T04:40:26+00:00",
+    "observed_at": "2026-06-10T08:40:33+00:00",
     "reasons": [
-      "DPD 4.0 < 7.0s",
-      "wind 15.3kt @ 221\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 5.0 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
-      "level": "marginal",
-      "note": "Wind 15kt \u2014 surface will be choppy. Small and messy."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "1.8ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SW",
-    "swell_dir_deg": 234.0,
+    "swell_dir_deg": 232.0,
     "tier": null,
     "wind_dir": "SW",
-    "wind_dir_deg": 221,
+    "wind_dir_deg": 224,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 15.3,
-    "wvht_ft": 3.6
+    "wind_speed_kt": 13.9,
+    "wvht_ft": 3.9
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
