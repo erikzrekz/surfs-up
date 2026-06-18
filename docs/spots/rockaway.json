@@ -7,7 +7,7 @@
     "sunrise_local": "5:24 AM",
     "sunset_local": "8:28 PM"
   },
-  "fetched_at": "2026-06-18T14:14:14.374141+00:00",
+  "fetched_at": "2026-06-18T17:32:28.046084+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
@@ -15,28 +15,28 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 0.6,
+    "face_ft": 1.2,
     "is_good": false,
-    "model_hour_utc": "2026-06-18T14:00:00+00:00",
-    "period_s": 5.0,
+    "model_hour_utc": "2026-06-18T17:00:00+00:00",
+    "period_s": 4.8,
     "reasons": [
-      "WVHT 1.4 < 3.0ft",
-      "DPD 5.0 < 7.0s",
-      "wind 17.9kt @ 158\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "WVHT 2.7 < 3.0ft",
+      "DPD 4.75 < 7.0s",
+      "wind 17.7kt @ 178\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.6ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
     },
-    "swell_dir": "SE",
-    "swell_dir_deg": 129,
-    "swell_ft": 1.4,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 154,
+    "swell_ft": 2.7,
     "tier": null,
-    "wind_dir": "SSE",
-    "wind_dir_deg": 158,
-    "wind_speed_kt": 17.9
+    "wind_dir": "S",
+    "wind_dir_deg": 178,
+    "wind_speed_kt": 17.7
   },
   "spot": {
     "lat": 40.5817,
