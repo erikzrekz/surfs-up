@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 3h47 (5:12 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:22 PM",
+    "status": "day",
     "sunrise_local": "5:12 AM",
     "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-06-19T05:24:38.717191+00:00",
+  "fetched_at": "2026-06-19T09:58:36.352841+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.1,
         "peak_period_s": 6.1,
         "peak_swell_ft": 4.2,
-        "peak_wind_kt": 4.8,
+        "peak_wind_kt": 3.9,
         "score": 39.04,
         "start_local": "2026-06-23T06:00:00-04:00",
         "start_utc": "2026-06-23T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.1,
       "peak_period_s": 6.1,
       "peak_swell_ft": 4.2,
-      "peak_wind_kt": 4.8,
+      "peak_wind_kt": 3.9,
       "score": 39.04,
       "start_local": "2026-06-23T06:00:00-04:00",
       "start_utc": "2026-06-23T10:00:00+00:00",
@@ -45,29 +45,29 @@
     }
   },
   "nowcast": {
-    "apd_s": 5.8,
+    "apd_s": 5.9,
     "dpd_s": 8.0,
-    "face_ft": 5.0,
+    "face_ft": 4.1,
     "is_good": true,
-    "observed_at": "2026-06-19T05:10:45+00:00",
+    "observed_at": "2026-06-19T09:50:28+00:00",
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udee0",
-      "label": "Too big for you",
-      "level": "out-of-range",
-      "note": "~5ft face \u2014 sit this one out and watch."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "4.1ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 203.0,
+    "swell_dir_deg": 205.0,
     "tier": "groundswell",
-    "wind_dir": "W",
-    "wind_dir_deg": 259,
+    "wind_dir": "WSW",
+    "wind_dir_deg": 245,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.3,
-    "wvht_ft": 7.5
+    "wind_speed_kt": 12.2,
+    "wvht_ft": 6.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
