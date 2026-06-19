@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:28 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf07",
+    "label": "Last light",
+    "note": "Sunset in 27 min \u2014 burn-rate session",
+    "status": "dusk",
     "sunrise_local": "5:23 AM",
     "sunset_local": "8:28 PM"
   },
-  "fetched_at": "2026-06-18T22:13:59.386234+00:00",
+  "fetched_at": "2026-06-19T00:00:57.366065+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.625,
@@ -15,28 +15,26 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 1.1,
+    "face_ft": 1.4,
     "is_good": false,
-    "model_hour_utc": "2026-06-18T22:00:00+00:00",
-    "period_s": 6.0,
+    "model_hour_utc": "2026-06-19T00:00:00+00:00",
+    "period_s": 5.1,
     "reasons": [
-      "WVHT 2.2 < 3.0ft",
-      "DPD 5.95 < 7.0s",
-      "wind 17.7kt @ 237\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 5.1 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
       "level": "marginal",
-      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
+      "note": "1.4ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
     },
-    "swell_dir": "SSE",
-    "swell_dir_deg": 157,
-    "swell_ft": 2.2,
+    "swell_dir": "S",
+    "swell_dir_deg": 177,
+    "swell_ft": 3.1,
     "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 237,
-    "wind_speed_kt": 17.7
+    "wind_dir": "SW",
+    "wind_dir_deg": 229,
+    "wind_speed_kt": 11.9
   },
   "spot": {
     "lat": 40.586,

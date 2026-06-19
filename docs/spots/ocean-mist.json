@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:22 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf07",
+    "label": "Last light",
+    "note": "Sunset in 21 min \u2014 burn-rate session",
+    "status": "dusk",
     "sunrise_local": "5:12 AM",
     "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-06-18T22:13:59.386234+00:00",
+  "fetched_at": "2026-06-19T00:00:57.366065+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.291664,
@@ -15,28 +15,27 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 0.9,
+    "face_ft": 1.4,
     "is_good": false,
-    "model_hour_utc": "2026-06-18T22:00:00+00:00",
+    "model_hour_utc": "2026-06-19T00:00:00+00:00",
     "period_s": 5.2,
     "reasons": [
-      "WVHT 2.0 < 3.0ft",
-      "DPD 5.15 < 7.0s",
-      "wind 17.8kt @ 198\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 5.25 < 7.0s",
+      "wind 16.3kt @ 215\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
     },
-    "swell_dir": "SE",
-    "swell_dir_deg": 142,
-    "swell_ft": 2.0,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 167,
+    "swell_ft": 3.2,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 198,
-    "wind_speed_kt": 17.8
+    "wind_dir": "SW",
+    "wind_dir_deg": 215,
+    "wind_speed_kt": 16.3
   },
   "spot": {
     "lat": 41.37378,
