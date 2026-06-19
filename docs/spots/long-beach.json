@@ -1,72 +1,7 @@
 {
-  "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 36 min ago \u2014 golden hour",
-    "status": "dawn",
-    "sunrise_local": "5:23 AM",
-    "sunset_local": "8:28 PM"
-  },
-  "fetched_at": "2026-06-19T09:58:36.352841+00:00",
-  "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 4,
-        "end_local": "2026-06-23T13:00:00-04:00",
-        "end_utc": "2026-06-23T17:00:00+00:00",
-        "id": "30b1ee443011",
-        "peak_face_ft": 1.8,
-        "peak_period_s": 5.8,
-        "peak_swell_ft": 3.6,
-        "peak_wind_kt": 5.5,
-        "score": 25.74,
-        "start_local": "2026-06-23T09:00:00-04:00",
-        "start_utc": "2026-06-23T13:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "N"
-      }
-    ],
-    "lat": 40.625,
-    "lon": -73.62499,
-    "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-06-23T13:00:00-04:00",
-      "end_utc": "2026-06-23T17:00:00+00:00",
-      "id": "30b1ee443011",
-      "peak_face_ft": 1.8,
-      "peak_period_s": 5.8,
-      "peak_swell_ft": 3.6,
-      "peak_wind_kt": 5.5,
-      "score": 25.74,
-      "start_local": "2026-06-23T09:00:00-04:00",
-      "start_utc": "2026-06-23T13:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "N"
-    }
-  },
-  "now": {
-    "face_ft": 1.1,
-    "is_good": false,
-    "model_hour_utc": "2026-06-19T09:00:00+00:00",
-    "period_s": 5.8,
-    "reasons": [
-      "WVHT 2.3 < 3.0ft",
-      "DPD 5.85 < 7.0s"
-    ],
-    "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "1.1ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
-    },
-    "swell_dir": "S",
-    "swell_dir_deg": 170,
-    "swell_ft": 2.3,
-    "tier": null,
-    "wind_dir": "WNW",
-    "wind_dir_deg": 283,
-    "wind_speed_kt": 5.2
-  },
+  "fetched_at": "2026-06-19T13:40:52.445637+00:00",
+  "forecast": null,
+  "now": null,
   "spot": {
     "lat": 40.586,
     "lon": -73.6592,
