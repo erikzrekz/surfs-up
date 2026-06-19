@@ -1,45 +1,73 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf07",
-    "label": "Last light",
-    "note": "Sunset in 20 min \u2014 burn-rate session",
-    "status": "dusk",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 3h47 (5:12 AM)",
+    "status": "night",
     "sunrise_local": "5:12 AM",
-    "sunset_local": "8:21 PM"
+    "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-06-19T00:00:57.366065+00:00",
+  "fetched_at": "2026-06-19T05:24:38.717191+00:00",
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 5,
+        "end_local": "2026-06-23T11:00:00-04:00",
+        "end_utc": "2026-06-23T15:00:00+00:00",
+        "id": "a03f0aa2eeef",
+        "peak_face_ft": 2.1,
+        "peak_period_s": 6.1,
+        "peak_swell_ft": 4.2,
+        "peak_wind_kt": 4.8,
+        "score": 39.04,
+        "start_local": "2026-06-23T06:00:00-04:00",
+        "start_utc": "2026-06-23T10:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NNW"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 5,
+      "end_local": "2026-06-23T11:00:00-04:00",
+      "end_utc": "2026-06-23T15:00:00+00:00",
+      "id": "a03f0aa2eeef",
+      "peak_face_ft": 2.1,
+      "peak_period_s": 6.1,
+      "peak_swell_ft": 4.2,
+      "peak_wind_kt": 4.8,
+      "score": 39.04,
+      "start_local": "2026-06-23T06:00:00-04:00",
+      "start_utc": "2026-06-23T10:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "NNW"
+    }
   },
   "nowcast": {
-    "apd_s": 5.6,
+    "apd_s": 5.8,
     "dpd_s": 8.0,
-    "face_ft": 5.5,
-    "is_good": false,
-    "observed_at": "2026-06-18T23:40:26+00:00",
-    "reasons": [
-      "wind 24.1kt @ 209\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
-    ],
+    "face_ft": 5.0,
+    "is_good": true,
+    "observed_at": "2026-06-19T05:10:45+00:00",
+    "reasons": [],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
       "level": "out-of-range",
-      "note": "~6ft face \u2014 sit this one out and watch."
+      "note": "~5ft face \u2014 sit this one out and watch."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "S",
-    "swell_dir_deg": 191.0,
-    "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 209,
+    "swell_dir": "SSW",
+    "swell_dir_deg": 203.0,
+    "tier": "groundswell",
+    "wind_dir": "W",
+    "wind_dir_deg": 259,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 24.1,
-    "wvht_ft": 8.2
+    "wind_speed_kt": 12.3,
+    "wvht_ft": 7.5
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
