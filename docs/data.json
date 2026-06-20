@@ -7,7 +7,7 @@
     "sunrise_local": "5:12 AM",
     "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-06-20T10:20:59.236386+00:00",
+  "fetched_at": "2026-06-20T12:14:52.265751+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,14 +15,12 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.0,
+    "apd_s": 4.7,
     "dpd_s": 8.0,
     "face_ft": 3.3,
-    "is_good": false,
-    "observed_at": "2026-06-20T10:10:46+00:00",
-    "reasons": [
-      "wind 17.6kt @ 260\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
-    ],
+    "is_good": true,
+    "observed_at": "2026-06-20T12:10:45+00:00",
+    "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
@@ -34,11 +32,11 @@
     "station": 44097,
     "swell_dir": "S",
     "swell_dir_deg": 191.0,
-    "tier": null,
+    "tier": "groundswell",
     "wind_dir": "W",
-    "wind_dir_deg": 260,
+    "wind_dir_deg": 271,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.6,
+    "wind_speed_kt": 17.9,
     "wvht_ft": 4.9
   },
   "thresholds": {
