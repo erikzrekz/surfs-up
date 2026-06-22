@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 2h07 (5:13 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:22 PM",
+    "status": "day",
     "sunrise_local": "5:13 AM",
     "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-06-22T07:05:50.782396+00:00",
+  "fetched_at": "2026-06-22T13:06:09.304984+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,31 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.0,
-    "dpd_s": 8.0,
-    "face_ft": 1.5,
+    "apd_s": 5.3,
+    "dpd_s": 7.0,
+    "face_ft": 1.2,
     "is_good": false,
-    "observed_at": "2026-06-22T06:40:46+00:00",
+    "observed_at": "2026-06-22T12:40:46+00:00",
     "reasons": [
-      "WVHT 2.3 < 3.0ft"
+      "WVHT 2.0 < 3.0ft"
     ],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "1.5ft @ 8s, wind 4kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.2ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
-    "swell_dir_deg": 181.0,
+    "swell_dir_deg": 176.0,
     "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 252,
+    "wind_dir": "ENE",
+    "wind_dir_deg": 61,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 4.5,
-    "wvht_ft": 2.3
+    "wind_speed_kt": 2.4,
+    "wvht_ft": 2.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
