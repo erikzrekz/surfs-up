@@ -7,7 +7,7 @@
     "sunrise_local": "5:13 AM",
     "sunset_local": "8:23 PM"
   },
-  "fetched_at": "2026-06-23T22:15:20.614856+00:00",
+  "fetched_at": "2026-06-23T23:34:55.181198+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,14 +15,12 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.4,
+    "apd_s": 4.3,
     "dpd_s": 6.0,
     "face_ft": 1.8,
-    "is_good": false,
-    "observed_at": "2026-06-23T22:10:50+00:00",
-    "reasons": [
-      "DPD 6.0 < 7.0s"
-    ],
+    "is_good": true,
+    "observed_at": "2026-06-23T23:10:50+00:00",
+    "reasons": [],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
@@ -33,12 +31,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 207.0,
-    "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 35,
+    "swell_dir_deg": 197.0,
+    "tier": "clean",
+    "wind_dir": "NNE",
+    "wind_dir_deg": 25,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 8.8,
+    "wind_speed_kt": 5.1,
     "wvht_ft": 3.6
   },
   "thresholds": {
