@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf07",
-    "label": "Last light",
-    "note": "Sunset in 40 min \u2014 burn-rate session",
-    "status": "dusk",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 7h24 (5:14 AM)",
+    "status": "night",
     "sunrise_local": "5:13 AM",
     "sunset_local": "8:23 PM"
   },
-  "fetched_at": "2026-06-24T23:42:42.542019+00:00",
+  "fetched_at": "2026-06-25T01:50:11.951513+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,30 +15,28 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.8,
+    "apd_s": 5.0,
     "dpd_s": 8.0,
     "face_ft": 2.6,
-    "is_good": false,
-    "observed_at": "2026-06-24T23:40:49+00:00",
-    "reasons": [
-      "wind 15.9kt @ 243\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
-    ],
+    "is_good": true,
+    "observed_at": "2026-06-25T01:40:27+00:00",
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
-      "level": "marginal",
-      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "2.6ft @ 8s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSE",
-    "swell_dir_deg": 158.0,
-    "tier": null,
+    "swell_dir_deg": 160.0,
+    "tier": "groundswell",
     "wind_dir": "WSW",
-    "wind_dir_deg": 243,
+    "wind_dir_deg": 255,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 15.9,
+    "wind_speed_kt": 10.0,
     "wvht_ft": 3.9
   },
   "thresholds": {
