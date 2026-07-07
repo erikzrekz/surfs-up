@@ -7,7 +7,7 @@
     "sunrise_local": "5:10 AM",
     "sunset_local": "8:24 PM"
   },
-  "fetched_at": "2026-07-07T17:59:07.082685+00:00",
+  "fetched_at": "2026-07-07T20:07:40.874071+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 1.7,
         "peak_period_s": 5.5,
         "peak_swell_ft": 3.7,
-        "peak_wind_kt": 5.7,
+        "peak_wind_kt": 4.7,
         "score": 24.64,
         "start_local": "2026-07-08T06:00:00-04:00",
         "start_utc": "2026-07-08T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 1.7,
       "peak_period_s": 5.5,
       "peak_swell_ft": 3.7,
-      "peak_wind_kt": 5.7,
+      "peak_wind_kt": 4.7,
       "score": 24.64,
       "start_local": "2026-07-08T06:00:00-04:00",
       "start_utc": "2026-07-08T10:00:00+00:00",
@@ -45,27 +45,27 @@
     }
   },
   "now": {
-    "face_ft": 0.9,
+    "face_ft": 1.1,
     "is_good": false,
-    "model_hour_utc": "2026-07-07T17:00:00+00:00",
-    "period_s": 4.2,
+    "model_hour_utc": "2026-07-07T20:00:00+00:00",
+    "period_s": 4.4,
     "reasons": [
-      "WVHT 1.9 < 3.0ft",
-      "DPD 4.15 < 7.0s"
+      "WVHT 2.4 < 3.0ft",
+      "DPD 4.4 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.1ft @ 4s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 139,
-    "swell_ft": 1.9,
+    "swell_dir_deg": 132,
+    "swell_ft": 2.4,
     "tier": null,
     "wind_dir": "NE",
-    "wind_dir_deg": 39,
-    "wind_speed_kt": 12.2
+    "wind_dir_deg": 46,
+    "wind_speed_kt": 11.1
   },
   "spot": {
     "lat": 43.145,
