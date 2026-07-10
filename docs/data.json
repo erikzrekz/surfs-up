@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 41 min (5:22 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:20 PM",
+    "status": "day",
     "sunrise_local": "5:22 AM",
     "sunset_local": "8:20 PM"
   },
-  "fetched_at": "2026-07-10T08:40:34.377379+00:00",
+  "fetched_at": "2026-07-10T11:33:42.109943+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,33 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": null,
-    "dpd_s": 5.0,
-    "face_ft": 1.2,
+    "apd_s": 4.6,
+    "dpd_s": 9.0,
+    "face_ft": 1.7,
     "is_good": false,
-    "observed_at": "2026-07-10T08:35:37+00:00",
+    "observed_at": "2026-07-10T11:10:38+00:00",
     "reasons": [
-      "WVHT 2.6 < 3.0ft",
-      "DPD 5.0 < 7.0s",
-      "wind 16.2kt @ 197\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "WVHT 2.3 < 3.0ft"
     ],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
-      "level": "marginal",
-      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "1.7ft @ 9s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": null,
-    "swell_dir_deg": null,
+    "swell_dir": "SE",
+    "swell_dir_deg": 145.0,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 197,
+    "wind_dir": "SW",
+    "wind_dir_deg": 223,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 16.2,
-    "wvht_ft": 2.6
+    "wind_speed_kt": 9.5,
+    "wvht_ft": 2.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
