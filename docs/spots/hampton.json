@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 8h10 (5:16 AM)",
+    "note": "Sunrise in 4h36 (5:16 AM)",
     "status": "night",
-    "sunrise_local": "5:15 AM",
+    "sunrise_local": "5:16 AM",
     "sunset_local": "8:22 PM"
   },
-  "fetched_at": "2026-07-12T01:05:58.619913+00:00",
+  "fetched_at": "2026-07-12T04:39:31.990279+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 42.958336,
@@ -17,8 +17,8 @@
   "now": {
     "face_ft": 0.6,
     "is_good": false,
-    "model_hour_utc": "2026-07-12T01:00:00+00:00",
-    "period_s": 7.5,
+    "model_hour_utc": "2026-07-12T04:00:00+00:00",
+    "period_s": 7.7,
     "reasons": [
       "WVHT 1.0 < 3.0ft"
     ],
@@ -32,9 +32,9 @@
     "swell_dir_deg": 105,
     "swell_ft": 1.0,
     "tier": null,
-    "wind_dir": "SSE",
-    "wind_dir_deg": 158,
-    "wind_speed_kt": 2.1
+    "wind_dir": "W",
+    "wind_dir_deg": 261,
+    "wind_speed_kt": 3.5
   },
   "spot": {
     "lat": 42.9067,
