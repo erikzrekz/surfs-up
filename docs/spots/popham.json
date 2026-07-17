@@ -7,7 +7,7 @@
     "sunrise_local": "5:13 AM",
     "sunset_local": "8:17 PM"
   },
-  "fetched_at": "2026-07-17T14:02:55.443519+00:00",
+  "fetched_at": "2026-07-17T15:39:27.273157+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 43.708336,
@@ -17,8 +17,8 @@
   "now": {
     "face_ft": 1.2,
     "is_good": false,
-    "model_hour_utc": "2026-07-17T14:00:00+00:00",
-    "period_s": 12.4,
+    "model_hour_utc": "2026-07-17T15:00:00+00:00",
+    "period_s": 12.2,
     "reasons": [
       "WVHT 1.2 < 3.0ft"
     ],
