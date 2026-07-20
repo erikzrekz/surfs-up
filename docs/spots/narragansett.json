@@ -1,53 +1,53 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:14 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf07",
+    "label": "Last light",
+    "note": "Sunset in 33 min \u2014 burn-rate session",
+    "status": "dusk",
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:14 PM"
   },
-  "fetched_at": "2026-07-20T22:39:14.993572+00:00",
+  "fetched_at": "2026-07-20T23:40:32.518522+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 4,
-        "end_local": "2026-07-24T10:00:00-04:00",
-        "end_utc": "2026-07-24T14:00:00+00:00",
-        "id": "aca784184559",
+        "duration_h": 3,
+        "end_local": "2026-07-24T09:00:00-04:00",
+        "end_utc": "2026-07-24T13:00:00+00:00",
+        "id": "011cd5d6b6dc",
         "peak_face_ft": 1.6,
         "peak_period_s": 5.7,
         "peak_swell_ft": 3.3,
-        "peak_wind_kt": 3.9,
-        "score": 23.05,
+        "peak_wind_kt": 3.7,
+        "score": 17.29,
         "start_local": "2026-07-24T06:00:00-04:00",
         "start_utc": "2026-07-24T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NW"
+        "wind_dir": "NNE"
       }
     ],
     "lat": 41.375,
     "lon": -71.37499,
     "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-07-24T10:00:00-04:00",
-      "end_utc": "2026-07-24T14:00:00+00:00",
-      "id": "aca784184559",
+      "duration_h": 3,
+      "end_local": "2026-07-24T09:00:00-04:00",
+      "end_utc": "2026-07-24T13:00:00+00:00",
+      "id": "011cd5d6b6dc",
       "peak_face_ft": 1.6,
       "peak_period_s": 5.7,
       "peak_swell_ft": 3.3,
-      "peak_wind_kt": 3.9,
-      "score": 23.05,
+      "peak_wind_kt": 3.7,
+      "score": 17.29,
       "start_local": "2026-07-24T06:00:00-04:00",
       "start_utc": "2026-07-24T10:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NW"
+      "wind_dir": "NNE"
     }
   },
   "now": {
     "face_ft": 1.0,
     "is_good": false,
-    "model_hour_utc": "2026-07-20T22:00:00+00:00",
+    "model_hour_utc": "2026-07-20T23:00:00+00:00",
     "period_s": 5.7,
     "reasons": [
       "WVHT 2.2 < 3.0ft",
@@ -64,8 +64,8 @@
     "swell_ft": 2.2,
     "tier": null,
     "wind_dir": "SSW",
-    "wind_dir_deg": 207,
-    "wind_speed_kt": 6.8
+    "wind_dir_deg": 201,
+    "wind_speed_kt": 6.6
   },
   "spot": {
     "lat": 41.4324,
