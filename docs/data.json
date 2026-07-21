@@ -7,7 +7,7 @@
     "sunrise_local": "5:31 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-07-21T11:59:59.264036+00:00",
+  "fetched_at": "2026-07-21T14:13:38.590715+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -15,30 +15,15 @@
         "end_local": "2026-07-22T19:00:00-04:00",
         "end_utc": "2026-07-22T23:00:00+00:00",
         "id": "1e39bd852ba1",
-        "peak_face_ft": 3.1,
-        "peak_period_s": 7.2,
-        "peak_swell_ft": 5.1,
+        "peak_face_ft": 2.8,
+        "peak_period_s": 7.0,
+        "peak_swell_ft": 4.7,
         "peak_wind_kt": 13.5,
-        "score": 33.26,
+        "score": 30.03,
         "start_local": "2026-07-22T16:00:00-04:00",
         "start_utc": "2026-07-22T20:00:00+00:00",
         "tier": "groundswell",
         "wind_dir": "S"
-      },
-      {
-        "duration_h": 4,
-        "end_local": "2026-07-24T10:00:00-04:00",
-        "end_utc": "2026-07-24T14:00:00+00:00",
-        "id": "aca784184559",
-        "peak_face_ft": 1.6,
-        "peak_period_s": 6.3,
-        "peak_swell_ft": 3.1,
-        "peak_wind_kt": 5.2,
-        "score": 24.19,
-        "start_local": "2026-07-24T06:00:00-04:00",
-        "start_utc": "2026-07-24T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NE"
       }
     ],
     "lat": 41.291664,
@@ -48,11 +33,11 @@
       "end_local": "2026-07-22T19:00:00-04:00",
       "end_utc": "2026-07-22T23:00:00+00:00",
       "id": "1e39bd852ba1",
-      "peak_face_ft": 3.1,
-      "peak_period_s": 7.2,
-      "peak_swell_ft": 5.1,
+      "peak_face_ft": 2.8,
+      "peak_period_s": 7.0,
+      "peak_swell_ft": 4.7,
       "peak_wind_kt": 13.5,
-      "score": 33.26,
+      "score": 30.03,
       "start_local": "2026-07-22T16:00:00-04:00",
       "start_utc": "2026-07-22T20:00:00+00:00",
       "tier": "groundswell",
@@ -60,31 +45,31 @@
     }
   },
   "nowcast": {
-    "apd_s": 4.1,
-    "dpd_s": 8.0,
+    "apd_s": 3.8,
+    "dpd_s": 7.0,
     "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-07-21T11:50:46+00:00",
+    "observed_at": "2026-07-21T14:05:44+00:00",
     "reasons": [
-      "WVHT 2.3 < 3.0ft"
+      "WVHT 2.6 < 3.0ft"
     ],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "1.5ft @ 8s, wind 7kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.5ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSE",
-    "swell_dir_deg": 156.0,
+    "swell_dir_deg": 153.0,
     "tier": null,
     "wind_dir": "SE",
-    "wind_dir_deg": 146,
+    "wind_dir_deg": 145,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 7.3,
-    "wvht_ft": 2.3
+    "wind_speed_kt": 12.8,
+    "wvht_ft": 2.6
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
