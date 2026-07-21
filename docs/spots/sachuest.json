@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 32 min ago \u2014 golden hour",
-    "status": "dawn",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 8:13 PM",
+    "status": "day",
     "sunrise_local": "5:29 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-07-21T10:01:19.360667+00:00",
+  "fetched_at": "2026-07-21T11:59:59.264036+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -26,19 +26,19 @@
         "wind_dir": "SSW"
       },
       {
-        "duration_h": 4,
-        "end_local": "2026-07-24T10:00:00-04:00",
-        "end_utc": "2026-07-24T14:00:00+00:00",
-        "id": "aca784184559",
+        "duration_h": 5,
+        "end_local": "2026-07-24T11:00:00-04:00",
+        "end_utc": "2026-07-24T15:00:00+00:00",
+        "id": "f290649fabe7",
         "peak_face_ft": 1.9,
         "peak_period_s": 6.2,
         "peak_swell_ft": 3.7,
-        "peak_wind_kt": 3.1,
-        "score": 28.27,
+        "peak_wind_kt": 4.3,
+        "score": 35.34,
         "start_local": "2026-07-24T06:00:00-04:00",
         "start_utc": "2026-07-24T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "WNW"
+        "wind_dir": "NE"
       }
     ],
     "lat": 41.458336,
@@ -62,11 +62,11 @@
   "now": {
     "face_ft": 0.9,
     "is_good": false,
-    "model_hour_utc": "2026-07-21T10:00:00+00:00",
-    "period_s": 5.9,
+    "model_hour_utc": "2026-07-21T11:00:00+00:00",
+    "period_s": 5.8,
     "reasons": [
       "WVHT 1.8 < 3.0ft",
-      "DPD 5.9 < 7.0s"
+      "DPD 5.8 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
@@ -75,12 +75,12 @@
       "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "S",
-    "swell_dir_deg": 185,
+    "swell_dir_deg": 184,
     "swell_ft": 1.8,
     "tier": null,
     "wind_dir": "SSE",
-    "wind_dir_deg": 162,
-    "wind_speed_kt": 6.1
+    "wind_dir_deg": 156,
+    "wind_speed_kt": 6.8
   },
   "spot": {
     "lat": 41.4824,
