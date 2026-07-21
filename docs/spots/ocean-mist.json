@@ -7,7 +7,7 @@
     "sunrise_local": "5:31 AM",
     "sunset_local": "8:14 PM"
   },
-  "fetched_at": "2026-07-21T21:39:03.289869+00:00",
+  "fetched_at": "2026-07-21T22:36:18.606519+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -62,26 +62,25 @@
   "now": {
     "face_ft": 1.2,
     "is_good": false,
-    "model_hour_utc": "2026-07-21T21:00:00+00:00",
-    "period_s": 5.2,
+    "model_hour_utc": "2026-07-21T22:00:00+00:00",
+    "period_s": 5.0,
     "reasons": [
-      "WVHT 2.6 < 3.0ft",
-      "DPD 5.15 < 7.0s",
-      "wind 21.1kt @ 145\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "WVHT 2.7 < 3.0ft",
+      "DPD 5.05 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
       "level": "marginal",
-      "note": "Wind 21kt \u2014 surface will be choppy. Small and messy."
+      "note": "1.2ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 165,
-    "swell_ft": 2.6,
+    "swell_dir_deg": 160,
+    "swell_ft": 2.7,
     "tier": null,
-    "wind_dir": "SE",
-    "wind_dir_deg": 145,
-    "wind_speed_kt": 21.1
+    "wind_dir": "S",
+    "wind_dir_deg": 170,
+    "wind_speed_kt": 12.6
   },
   "spot": {
     "lat": 41.37378,
