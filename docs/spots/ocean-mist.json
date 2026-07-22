@@ -7,7 +7,7 @@
     "sunrise_local": "5:32 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-07-22T19:59:09.825117+00:00",
+  "fetched_at": "2026-07-22T21:22:04.588176+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.291664,
@@ -15,27 +15,26 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 2.2,
+    "face_ft": 2.5,
     "is_good": false,
-    "model_hour_utc": "2026-07-22T19:00:00+00:00",
-    "period_s": 6.9,
+    "model_hour_utc": "2026-07-22T21:00:00+00:00",
+    "period_s": 7.5,
     "reasons": [
-      "DPD 6.9 < 7.0s",
-      "wind 15.2kt @ 186\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "wind 16.6kt @ 198\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "2.2ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "S",
-    "swell_dir_deg": 179,
-    "swell_ft": 3.9,
+    "swell_dir_deg": 176,
+    "swell_ft": 4.1,
     "tier": null,
-    "wind_dir": "S",
-    "wind_dir_deg": 186,
-    "wind_speed_kt": 15.2
+    "wind_dir": "SSW",
+    "wind_dir_deg": 198,
+    "wind_speed_kt": 16.6
   },
   "spot": {
     "lat": 41.37378,
