@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 4h58 (5:32 AM)",
+    "note": "Sunrise in 2h10 (5:32 AM)",
     "status": "night",
     "sunrise_local": "5:32 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-07-22T04:34:07.234475+00:00",
+  "fetched_at": "2026-07-22T07:21:47.697465+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.7,
         "peak_period_s": 7.5,
         "peak_swell_ft": 4.3,
-        "peak_wind_kt": 13.0,
+        "peak_wind_kt": 13.4,
         "score": 29.5,
         "start_local": "2026-07-22T16:00:00-04:00",
         "start_utc": "2026-07-22T20:00:00+00:00",
@@ -51,7 +51,7 @@
       "peak_face_ft": 2.7,
       "peak_period_s": 7.5,
       "peak_swell_ft": 4.3,
-      "peak_wind_kt": 13.0,
+      "peak_wind_kt": 13.4,
       "score": 29.5,
       "start_local": "2026-07-22T16:00:00-04:00",
       "start_utc": "2026-07-22T20:00:00+00:00",
@@ -60,26 +60,26 @@
     }
   },
   "now": {
-    "face_ft": 1.5,
+    "face_ft": 1.6,
     "is_good": false,
-    "model_hour_utc": "2026-07-22T04:00:00+00:00",
-    "period_s": 5.3,
+    "model_hour_utc": "2026-07-22T07:00:00+00:00",
+    "period_s": 6.2,
     "reasons": [
-      "DPD 5.3 < 7.0s"
+      "DPD 6.2 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.5ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.6ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "S",
     "swell_dir_deg": 170,
-    "swell_ft": 3.3,
+    "swell_ft": 3.0,
     "tier": null,
-    "wind_dir": "S",
-    "wind_dir_deg": 170,
-    "wind_speed_kt": 11.1
+    "wind_dir": "SSW",
+    "wind_dir_deg": 198,
+    "wind_speed_kt": 13.9
   },
   "spot": {
     "lat": 41.37378,
