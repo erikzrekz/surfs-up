@@ -1,38 +1,68 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:13 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf07",
+    "label": "Last light",
+    "note": "Sunset in 32 min \u2014 burn-rate session",
+    "status": "dusk",
     "sunrise_local": "5:32 AM",
     "sunset_local": "8:13 PM"
   },
-  "fetched_at": "2026-07-22T22:33:08.155409+00:00",
+  "fetched_at": "2026-07-22T23:41:24.556697+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-07-23T15:00:00-04:00",
+        "end_utc": "2026-07-23T19:00:00+00:00",
+        "id": "59db857f4afb",
+        "peak_face_ft": 1.8,
+        "peak_period_s": 6.5,
+        "peak_swell_ft": 3.3,
+        "peak_wind_kt": 5.3,
+        "score": 26.52,
+        "start_local": "2026-07-23T11:00:00-04:00",
+        "start_utc": "2026-07-23T15:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NW"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 4,
+      "end_local": "2026-07-23T15:00:00-04:00",
+      "end_utc": "2026-07-23T19:00:00+00:00",
+      "id": "59db857f4afb",
+      "peak_face_ft": 1.8,
+      "peak_period_s": 6.5,
+      "peak_swell_ft": 3.3,
+      "peak_wind_kt": 5.3,
+      "score": 26.52,
+      "start_local": "2026-07-23T11:00:00-04:00",
+      "start_utc": "2026-07-23T15:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "NW"
+    }
   },
   "now": {
     "face_ft": 2.7,
     "is_good": true,
-    "model_hour_utc": "2026-07-22T22:00:00+00:00",
+    "model_hour_utc": "2026-07-22T23:00:00+00:00",
     "period_s": 7.5,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "2.7ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "2.7ft @ 7s, wind 12kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "S",
-    "swell_dir_deg": 177,
+    "swell_dir_deg": 178,
     "swell_ft": 4.3,
     "tier": "groundswell",
     "wind_dir": "SSW",
-    "wind_dir_deg": 206,
-    "wind_speed_kt": 14.1
+    "wind_dir_deg": 212,
+    "wind_speed_kt": 11.9
   },
   "spot": {
     "lat": 41.37378,
