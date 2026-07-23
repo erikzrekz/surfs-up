@@ -7,7 +7,7 @@
     "sunrise_local": "5:33 AM",
     "sunset_local": "8:12 PM"
   },
-  "fetched_at": "2026-07-23T15:58:55.045108+00:00",
+  "fetched_at": "2026-07-23T17:40:22.352842+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.291664,
@@ -17,7 +17,7 @@
   "now": {
     "face_ft": 1.8,
     "is_good": false,
-    "model_hour_utc": "2026-07-23T15:00:00+00:00",
+    "model_hour_utc": "2026-07-23T17:00:00+00:00",
     "period_s": 6.5,
     "reasons": [
       "DPD 6.45 < 7.0s"
@@ -29,12 +29,12 @@
       "note": "1.8ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "S",
-    "swell_dir_deg": 173,
-    "swell_ft": 3.4,
+    "swell_dir_deg": 172,
+    "swell_ft": 3.3,
     "tier": null,
-    "wind_dir": "NNW",
-    "wind_dir_deg": 347,
-    "wind_speed_kt": 6.2
+    "wind_dir": "SE",
+    "wind_dir_deg": 146,
+    "wind_speed_kt": 7.7
   },
   "spot": {
     "lat": 41.37378,
