@@ -1,72 +1,42 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:09 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 9h22 (5:36 AM)",
+    "status": "night",
     "sunrise_local": "5:35 AM",
     "sunset_local": "8:09 PM"
   },
-  "fetched_at": "2026-07-26T23:13:14.751823+00:00",
+  "fetched_at": "2026-07-27T00:14:20.488206+00:00",
   "forecast": {
-    "all_windows_72h": [
-      {
-        "duration_h": 4,
-        "end_local": "2026-07-30T10:00:00-04:00",
-        "end_utc": "2026-07-30T14:00:00+00:00",
-        "id": "7c54bd8eb8a4",
-        "peak_face_ft": 1.7,
-        "peak_period_s": 5.0,
-        "peak_swell_ft": 3.7,
-        "peak_wind_kt": 5.1,
-        "score": 22.62,
-        "start_local": "2026-07-30T06:00:00-04:00",
-        "start_utc": "2026-07-30T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NE"
-      }
-    ],
+    "all_windows_72h": [],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-07-30T10:00:00-04:00",
-      "end_utc": "2026-07-30T14:00:00+00:00",
-      "id": "7c54bd8eb8a4",
-      "peak_face_ft": 1.7,
-      "peak_period_s": 5.0,
-      "peak_swell_ft": 3.7,
-      "peak_wind_kt": 5.1,
-      "score": 22.62,
-      "start_local": "2026-07-30T06:00:00-04:00",
-      "start_utc": "2026-07-30T10:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "NE"
-    }
+    "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.3,
-    "dpd_s": 8.0,
-    "face_ft": 2.0,
+    "apd_s": 4.4,
+    "dpd_s": 7.0,
+    "face_ft": 1.8,
     "is_good": true,
-    "observed_at": "2026-07-26T23:10:51+00:00",
+    "observed_at": "2026-07-27T00:10:52+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.0ft @ 8s, wind 9kt. Clean enough, sized right \u2014 go."
+      "note": "1.8ft @ 7s, wind 4kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 148.0,
+    "swell_dir": "ESE",
+    "swell_dir_deg": 120.0,
     "tier": "groundswell",
     "wind_dir": "N",
-    "wind_dir_deg": 3,
+    "wind_dir_deg": 350,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 8.7,
+    "wind_speed_kt": 4.5,
     "wvht_ft": 3.0
   },
   "thresholds": {
