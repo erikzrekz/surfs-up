@@ -7,7 +7,7 @@
     "sunrise_local": "5:36 AM",
     "sunset_local": "8:08 PM"
   },
-  "fetched_at": "2026-07-27T21:09:48.943929+00:00",
+  "fetched_at": "2026-07-27T22:17:48.503297+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -16,29 +16,30 @@
   },
   "nowcast": {
     "apd_s": 5.7,
-    "dpd_s": 7.0,
-    "face_ft": 0.9,
+    "dpd_s": 6.0,
+    "face_ft": 0.8,
     "is_good": false,
-    "observed_at": "2026-07-27T20:40:51+00:00",
+    "observed_at": "2026-07-27T22:10:53+00:00",
     "reasons": [
-      "WVHT 1.6 < 3.0ft"
+      "WVHT 1.6 < 3.0ft",
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "note": "~0.8ft face. Nothing to ride. Coffee instead."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "ESE",
-    "swell_dir_deg": 107.0,
+    "swell_dir": "E",
+    "swell_dir_deg": 97.0,
     "tier": null,
-    "wind_dir": "S",
-    "wind_dir_deg": 190,
+    "wind_dir": "SSW",
+    "wind_dir_deg": 197,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 8.1,
+    "wind_speed_kt": 7.9,
     "wvht_ft": 1.6
   },
   "thresholds": {
