@@ -7,70 +7,39 @@
     "sunrise_local": "5:38 AM",
     "sunset_local": "8:06 PM"
   },
-  "fetched_at": "2026-07-29T20:37:48.872927+00:00",
+  "fetched_at": "2026-07-29T21:37:13.939669+00:00",
   "forecast": {
-    "all_windows_72h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-07-30T09:00:00-04:00",
-        "end_utc": "2026-07-30T13:00:00+00:00",
-        "id": "0320acac7a71",
-        "peak_face_ft": 1.7,
-        "peak_period_s": 6.1,
-        "peak_swell_ft": 3.4,
-        "peak_wind_kt": 1.2,
-        "score": 19.03,
-        "start_local": "2026-07-30T06:00:00-04:00",
-        "start_utc": "2026-07-30T10:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "N"
-      }
-    ],
+    "all_windows_72h": [],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-07-30T09:00:00-04:00",
-      "end_utc": "2026-07-30T13:00:00+00:00",
-      "id": "0320acac7a71",
-      "peak_face_ft": 1.7,
-      "peak_period_s": 6.1,
-      "peak_swell_ft": 3.4,
-      "peak_wind_kt": 1.2,
-      "score": 19.03,
-      "start_local": "2026-07-30T06:00:00-04:00",
-      "start_utc": "2026-07-30T10:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "N"
-    }
+    "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.9,
+    "apd_s": 4.8,
     "dpd_s": 6.0,
-    "face_ft": 2.3,
+    "face_ft": 2.1,
     "is_good": false,
-    "observed_at": "2026-07-29T20:10:57+00:00",
+    "observed_at": "2026-07-29T21:10:55+00:00",
     "reasons": [
-      "DPD 6.0 < 7.0s",
-      "wind 17.7kt @ 94\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "2.3ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "2.1ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSW",
-    "swell_dir_deg": 194.0,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 165.0,
     "tier": null,
     "wind_dir": "E",
-    "wind_dir_deg": 94,
+    "wind_dir_deg": 87,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.7,
-    "wvht_ft": 4.6
+    "wind_speed_kt": 16.5,
+    "wvht_ft": 4.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
