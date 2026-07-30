@@ -7,7 +7,7 @@
     "sunrise_local": "5:26 AM",
     "sunset_local": "8:04 PM"
   },
-  "fetched_at": "2026-07-30T18:24:49.841545+00:00",
+  "fetched_at": "2026-07-30T20:01:54.378243+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 1.9,
         "peak_period_s": 7.4,
         "peak_swell_ft": 3.0,
-        "peak_wind_kt": 8.5,
+        "peak_wind_kt": 7.8,
         "score": 39.96,
         "start_local": "2026-07-31T13:00:00-04:00",
         "start_utc": "2026-07-31T17:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "SW"
+        "wind_dir": "SSW"
       }
     ],
     "lat": 43.708336,
@@ -36,35 +36,35 @@
       "peak_face_ft": 1.9,
       "peak_period_s": 7.4,
       "peak_swell_ft": 3.0,
-      "peak_wind_kt": 8.5,
+      "peak_wind_kt": 7.8,
       "score": 39.96,
       "start_local": "2026-07-31T13:00:00-04:00",
       "start_utc": "2026-07-31T17:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "SW"
+      "wind_dir": "SSW"
     }
   },
   "now": {
-    "face_ft": 1.8,
+    "face_ft": 1.7,
     "is_good": false,
-    "model_hour_utc": "2026-07-30T18:00:00+00:00",
-    "period_s": 5.3,
+    "model_hour_utc": "2026-07-30T20:00:00+00:00",
+    "period_s": 5.2,
     "reasons": [
-      "DPD 5.3 < 7.0s"
+      "DPD 5.15 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "1.8ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.7ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 112,
-    "swell_ft": 3.9,
+    "swell_dir_deg": 107,
+    "swell_ft": 3.7,
     "tier": null,
     "wind_dir": "NE",
-    "wind_dir_deg": 46,
-    "wind_speed_kt": 8.7
+    "wind_dir_deg": 49,
+    "wind_speed_kt": 6.7
   },
   "spot": {
     "lat": 43.7378,
