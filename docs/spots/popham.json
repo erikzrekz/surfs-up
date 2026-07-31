@@ -7,20 +7,50 @@
     "sunrise_local": "5:27 AM",
     "sunset_local": "8:03 PM"
   },
-  "fetched_at": "2026-07-31T16:12:00.562147+00:00",
+  "fetched_at": "2026-07-31T17:53:09.624958+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 3,
+        "end_local": "2026-08-04T09:00:00-04:00",
+        "end_utc": "2026-08-04T13:00:00+00:00",
+        "id": "1d1921a8cba2",
+        "peak_face_ft": 1.8,
+        "peak_period_s": 5.7,
+        "peak_swell_ft": 3.8,
+        "peak_wind_kt": 5.5,
+        "score": 19.84,
+        "start_local": "2026-08-04T06:00:00-04:00",
+        "start_utc": "2026-08-04T10:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 43.708336,
     "lon": -69.79166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 3,
+      "end_local": "2026-08-04T09:00:00-04:00",
+      "end_utc": "2026-08-04T13:00:00+00:00",
+      "id": "1d1921a8cba2",
+      "peak_face_ft": 1.8,
+      "peak_period_s": 5.7,
+      "peak_swell_ft": 3.8,
+      "peak_wind_kt": 5.5,
+      "score": 19.84,
+      "start_local": "2026-08-04T06:00:00-04:00",
+      "start_utc": "2026-08-04T10:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "NNE"
+    }
   },
   "now": {
     "face_ft": 1.4,
     "is_good": false,
-    "model_hour_utc": "2026-07-31T16:00:00+00:00",
-    "period_s": 7.7,
+    "model_hour_utc": "2026-07-31T17:00:00+00:00",
+    "period_s": 7.5,
     "reasons": [
-      "WVHT 2.2 < 3.0ft"
+      "WVHT 2.3 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
@@ -29,12 +59,12 @@
       "note": "1.4ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 154,
-    "swell_ft": 2.2,
+    "swell_dir_deg": 152,
+    "swell_ft": 2.3,
     "tier": null,
-    "wind_dir": "NNW",
-    "wind_dir_deg": 328,
-    "wind_speed_kt": 7.6
+    "wind_dir": "NW",
+    "wind_dir_deg": 317,
+    "wind_speed_kt": 4.0
   },
   "spot": {
     "lat": 43.7378,
