@@ -7,7 +7,7 @@
     "sunrise_local": "5:42 AM",
     "sunset_local": "8:01 PM"
   },
-  "fetched_at": "2026-08-02T12:02:23.261493+00:00",
+  "fetched_at": "2026-08-02T13:54:07.889286+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -15,11 +15,11 @@
         "end_local": "2026-08-04T11:00:00-04:00",
         "end_utc": "2026-08-04T15:00:00+00:00",
         "id": "9ed2c4731722",
-        "peak_face_ft": 1.8,
+        "peak_face_ft": 1.9,
         "peak_period_s": 6.3,
-        "peak_swell_ft": 3.5,
+        "peak_swell_ft": 3.7,
         "peak_wind_kt": 5.4,
-        "score": 34.02,
+        "score": 35.28,
         "start_local": "2026-08-04T06:00:00-04:00",
         "start_utc": "2026-08-04T10:00:00+00:00",
         "tier": "clean",
@@ -33,11 +33,11 @@
       "end_local": "2026-08-04T11:00:00-04:00",
       "end_utc": "2026-08-04T15:00:00+00:00",
       "id": "9ed2c4731722",
-      "peak_face_ft": 1.8,
+      "peak_face_ft": 1.9,
       "peak_period_s": 6.3,
-      "peak_swell_ft": 3.5,
+      "peak_swell_ft": 3.7,
       "peak_wind_kt": 5.4,
-      "score": 34.02,
+      "score": 35.28,
       "start_local": "2026-08-04T06:00:00-04:00",
       "start_utc": "2026-08-04T10:00:00+00:00",
       "tier": "clean",
@@ -45,11 +45,11 @@
     }
   },
   "nowcast": {
-    "apd_s": 5.1,
-    "dpd_s": 8.0,
-    "face_ft": 1.7,
+    "apd_s": 5.0,
+    "dpd_s": 7.0,
+    "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-08-02T11:40:28+00:00",
+    "observed_at": "2026-08-02T13:50:28+00:00",
     "reasons": [
       "WVHT 2.6 < 3.0ft"
     ],
@@ -57,18 +57,18 @@
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "1.7ft @ 8s, wind 6kt. Clean enough, sized right \u2014 go."
+      "note": "1.5ft @ 7s, wind 7kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
-    "swell_dir_deg": 187.0,
+    "swell_dir_deg": 174.0,
     "tier": null,
-    "wind_dir": "SSE",
-    "wind_dir_deg": 166,
+    "wind_dir": "S",
+    "wind_dir_deg": 172,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 5.8,
+    "wind_speed_kt": 6.7,
     "wvht_ft": 2.6
   },
   "thresholds": {
