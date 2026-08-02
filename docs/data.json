@@ -1,73 +1,73 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 8:03 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 9h30 (5:42 AM)",
+    "status": "night",
     "sunrise_local": "5:41 AM",
     "sunset_local": "8:03 PM"
   },
-  "fetched_at": "2026-08-01T23:13:11.299874+00:00",
+  "fetched_at": "2026-08-02T00:12:18.589241+00:00",
   "forecast": {
     "all_windows_72h": [
       {
-        "duration_h": 6,
-        "end_local": "2026-08-04T12:00:00-04:00",
-        "end_utc": "2026-08-04T16:00:00+00:00",
-        "id": "68c4fd93b51d",
-        "peak_face_ft": 1.5,
-        "peak_period_s": 5.2,
-        "peak_swell_ft": 3.4,
-        "peak_wind_kt": 5.7,
-        "score": 32.14,
+        "duration_h": 5,
+        "end_local": "2026-08-04T11:00:00-04:00",
+        "end_utc": "2026-08-04T15:00:00+00:00",
+        "id": "9ed2c4731722",
+        "peak_face_ft": 1.8,
+        "peak_period_s": 6.3,
+        "peak_swell_ft": 3.5,
+        "peak_wind_kt": 5.5,
+        "score": 34.02,
         "start_local": "2026-08-04T06:00:00-04:00",
         "start_utc": "2026-08-04T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NNW"
+        "wind_dir": "NE"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
-      "duration_h": 6,
-      "end_local": "2026-08-04T12:00:00-04:00",
-      "end_utc": "2026-08-04T16:00:00+00:00",
-      "id": "68c4fd93b51d",
-      "peak_face_ft": 1.5,
-      "peak_period_s": 5.2,
-      "peak_swell_ft": 3.4,
-      "peak_wind_kt": 5.7,
-      "score": 32.14,
+      "duration_h": 5,
+      "end_local": "2026-08-04T11:00:00-04:00",
+      "end_utc": "2026-08-04T15:00:00+00:00",
+      "id": "9ed2c4731722",
+      "peak_face_ft": 1.8,
+      "peak_period_s": 6.3,
+      "peak_swell_ft": 3.5,
+      "peak_wind_kt": 5.5,
+      "score": 34.02,
       "start_local": "2026-08-04T06:00:00-04:00",
       "start_utc": "2026-08-04T10:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NNW"
+      "wind_dir": "NE"
     }
   },
   "nowcast": {
     "apd_s": 5.0,
     "dpd_s": 8.0,
-    "face_ft": 2.0,
+    "face_ft": 2.2,
     "is_good": true,
-    "observed_at": "2026-08-01T23:10:28+00:00",
+    "observed_at": "2026-08-02T00:10:28+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.0ft @ 8s, wind 11kt. Clean enough, sized right \u2014 go."
+      "note": "2.2ft @ 8s, wind 11kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 163.0,
+    "swell_dir": "S",
+    "swell_dir_deg": 172.0,
     "tier": "groundswell",
     "wind_dir": "SSW",
-    "wind_dir_deg": 200,
+    "wind_dir_deg": 197,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.6,
-    "wvht_ft": 3.0
+    "wind_speed_kt": 11.0,
+    "wvht_ft": 3.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
