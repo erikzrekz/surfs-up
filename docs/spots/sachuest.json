@@ -7,7 +7,7 @@
     "sunrise_local": "5:42 AM",
     "sunset_local": "8:00 PM"
   },
-  "fetched_at": "2026-08-03T16:07:55.253482+00:00",
+  "fetched_at": "2026-08-03T18:04:41.968529+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.5,
         "peak_period_s": 6.3,
         "peak_swell_ft": 4.7,
-        "peak_wind_kt": 5.3,
+        "peak_wind_kt": 5.0,
         "score": 53.68,
         "start_local": "2026-08-04T06:00:00-04:00",
         "start_utc": "2026-08-04T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.5,
       "peak_period_s": 6.3,
       "peak_swell_ft": 4.7,
-      "peak_wind_kt": 5.3,
+      "peak_wind_kt": 5.0,
       "score": 53.68,
       "start_local": "2026-08-04T06:00:00-04:00",
       "start_utc": "2026-08-04T10:00:00+00:00",
@@ -45,28 +45,28 @@
     }
   },
   "now": {
-    "face_ft": 1.5,
+    "face_ft": 1.2,
     "is_good": false,
-    "model_hour_utc": "2026-08-03T16:00:00+00:00",
-    "period_s": 6.3,
+    "model_hour_utc": "2026-08-03T18:00:00+00:00",
+    "period_s": 6.2,
     "reasons": [
-      "WVHT 2.8 < 3.0ft",
-      "DPD 6.35 < 7.0s",
-      "wind 16.6kt @ 189\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "WVHT 2.4 < 3.0ft",
+      "DPD 6.25 < 7.0s",
+      "wind 15.3kt @ 200\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 15kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 153,
-    "swell_ft": 2.8,
+    "swell_dir_deg": 148,
+    "swell_ft": 2.4,
     "tier": null,
-    "wind_dir": "S",
-    "wind_dir_deg": 189,
-    "wind_speed_kt": 16.6
+    "wind_dir": "SSW",
+    "wind_dir_deg": 200,
+    "wind_speed_kt": 15.3
   },
   "spot": {
     "lat": 41.4824,
