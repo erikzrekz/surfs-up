@@ -7,7 +7,7 @@
     "sunrise_local": "5:43 AM",
     "sunset_local": "8:00 PM"
   },
-  "fetched_at": "2026-08-03T10:54:22.246086+00:00",
+  "fetched_at": "2026-08-03T13:40:46.408969+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -15,11 +15,11 @@
         "end_local": "2026-08-04T11:00:00-04:00",
         "end_utc": "2026-08-04T15:00:00+00:00",
         "id": "ae129f5fc754",
-        "peak_face_ft": 2.1,
-        "peak_period_s": 6.1,
-        "peak_swell_ft": 4.2,
+        "peak_face_ft": 2.3,
+        "peak_period_s": 6.3,
+        "peak_swell_ft": 4.3,
         "peak_wind_kt": 3.5,
-        "score": 23.42,
+        "score": 24.57,
         "start_local": "2026-08-04T08:00:00-04:00",
         "start_utc": "2026-08-04T12:00:00+00:00",
         "tier": "clean",
@@ -33,11 +33,11 @@
       "end_local": "2026-08-04T11:00:00-04:00",
       "end_utc": "2026-08-04T15:00:00+00:00",
       "id": "ae129f5fc754",
-      "peak_face_ft": 2.1,
-      "peak_period_s": 6.1,
-      "peak_swell_ft": 4.2,
+      "peak_face_ft": 2.3,
+      "peak_period_s": 6.3,
+      "peak_swell_ft": 4.3,
       "peak_wind_kt": 3.5,
-      "score": 23.42,
+      "score": 24.57,
       "start_local": "2026-08-04T08:00:00-04:00",
       "start_utc": "2026-08-04T12:00:00+00:00",
       "tier": "clean",
@@ -45,27 +45,27 @@
     }
   },
   "now": {
-    "face_ft": 1.3,
+    "face_ft": 1.6,
     "is_good": false,
-    "model_hour_utc": "2026-08-03T10:00:00+00:00",
-    "period_s": 6.2,
+    "model_hour_utc": "2026-08-03T13:00:00+00:00",
+    "period_s": 6.6,
     "reasons": [
-      "WVHT 2.5 < 3.0ft",
-      "DPD 6.15 < 7.0s"
+      "DPD 6.6 < 7.0s",
+      "wind 16.2kt @ 185\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
       "level": "marginal",
-      "note": "1.3ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 155,
-    "swell_ft": 2.5,
+    "swell_dir_deg": 149,
+    "swell_ft": 3.0,
     "tier": null,
     "wind_dir": "S",
-    "wind_dir_deg": 179,
-    "wind_speed_kt": 11.7
+    "wind_dir_deg": 185,
+    "wind_speed_kt": 16.2
   },
   "spot": {
     "lat": 41.4324,
