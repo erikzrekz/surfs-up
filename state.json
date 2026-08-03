@@ -1,7 +1,7 @@
 {
-  "forecast_last_sent_at": "2026-08-03T21:10:03.772729+00:00",
-  "forecast_last_window_id": "e9e16c8015ff",
-  "forecast_last_window_score": 21.887999999999998,
+  "forecast_last_sent_at": "2026-08-03T22:17:32.563617+00:00",
+  "forecast_last_window_id": "5bee4414e425",
+  "forecast_last_window_score": 29.927999999999997,
   "nowcast_last_sent_day_utc": "2026-08-03",
   "nowcast_was_good": false
 }

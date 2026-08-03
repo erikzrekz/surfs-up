@@ -7,7 +7,7 @@
     "sunrise_local": "5:43 AM",
     "sunset_local": "8:01 PM"
   },
-  "fetched_at": "2026-08-03T21:10:03.772729+00:00",
+  "fetched_at": "2026-08-03T22:17:32.563617+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 2.0,
         "peak_period_s": 6.5,
         "peak_swell_ft": 3.8,
-        "peak_wind_kt": 4.2,
+        "peak_wind_kt": 3.7,
         "score": 37.41,
         "start_local": "2026-08-04T06:00:00-04:00",
         "start_utc": "2026-08-04T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "NW"
+        "wind_dir": "W"
       }
     ],
     "lat": 41.291664,
@@ -36,36 +36,35 @@
       "peak_face_ft": 2.0,
       "peak_period_s": 6.5,
       "peak_swell_ft": 3.8,
-      "peak_wind_kt": 4.2,
+      "peak_wind_kt": 3.7,
       "score": 37.41,
       "start_local": "2026-08-04T06:00:00-04:00",
       "start_utc": "2026-08-04T10:00:00+00:00",
       "tier": "clean",
-      "wind_dir": "NW"
+      "wind_dir": "W"
     }
   },
   "now": {
-    "face_ft": 1.8,
+    "face_ft": 2.0,
     "is_good": false,
-    "model_hour_utc": "2026-08-03T21:00:00+00:00",
-    "period_s": 6.5,
+    "model_hour_utc": "2026-08-03T22:00:00+00:00",
+    "period_s": 6.2,
     "reasons": [
-      "DPD 6.5 < 7.0s",
-      "wind 17.1kt @ 192\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 6.15 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "1.8ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "2.0ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "S",
-    "swell_dir_deg": 174,
-    "swell_ft": 3.4,
+    "swell_dir_deg": 178,
+    "swell_ft": 3.9,
     "tier": null,
     "wind_dir": "SSW",
-    "wind_dir_deg": 192,
-    "wind_speed_kt": 17.1
+    "wind_dir_deg": 206,
+    "wind_speed_kt": 14.7
   },
   "spot": {
     "lat": 41.37378,
