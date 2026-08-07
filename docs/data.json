@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 38 min ago \u2014 golden hour",
-    "status": "dawn",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 7:56 PM",
+    "status": "day",
     "sunrise_local": "5:47 AM",
     "sunset_local": "7:56 PM"
   },
-  "fetched_at": "2026-08-07T10:25:17.757126+00:00",
+  "fetched_at": "2026-08-07T11:21:38.307127+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -16,30 +16,30 @@
   },
   "nowcast": {
     "apd_s": 4.5,
-    "dpd_s": 5.0,
-    "face_ft": 1.6,
+    "dpd_s": 6.0,
+    "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-08-07T10:20:29+00:00",
+    "observed_at": "2026-08-07T11:10:33+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s"
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.6ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.5ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 201.0,
+    "swell_dir_deg": 196.0,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 205,
+    "wind_dir": "SW",
+    "wind_dir_deg": 229,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 6.4,
-    "wvht_ft": 3.6
+    "wind_speed_kt": 8.8,
+    "wvht_ft": 3.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
