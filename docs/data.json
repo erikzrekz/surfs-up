@@ -7,7 +7,7 @@
     "sunrise_local": "5:48 AM",
     "sunset_local": "7:54 PM"
   },
-  "fetched_at": "2026-08-08T21:00:49.391079+00:00",
+  "fetched_at": "2026-08-08T21:45:20.999834+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -19,7 +19,7 @@
     "dpd_s": 6.0,
     "face_ft": 1.6,
     "is_good": false,
-    "observed_at": "2026-08-08T20:40:27+00:00",
+    "observed_at": "2026-08-08T21:40:25+00:00",
     "reasons": [
       "DPD 6.0 < 7.0s"
     ],
@@ -33,7 +33,7 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 196.0,
+    "swell_dir_deg": 203.0,
     "tier": null,
     "wind_dir": "SSW",
     "wind_dir_deg": 201,
