@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 41 min (5:53 AM)",
-    "status": "night",
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 36 min ago \u2014 golden hour",
+    "status": "dawn",
     "sunrise_local": "5:53 AM",
     "sunset_local": "7:48 PM"
   },
-  "fetched_at": "2026-08-13T09:11:54.540874+00:00",
+  "fetched_at": "2026-08-13T10:28:52.317109+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,30 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 3.1,
-    "dpd_s": 13.0,
-    "face_ft": 2.0,
+    "apd_s": 3.6,
+    "dpd_s": 3.0,
+    "face_ft": 0.9,
     "is_good": false,
-    "observed_at": "2026-08-13T09:00:56+00:00",
+    "observed_at": "2026-08-13T10:10:39+00:00",
     "reasons": [
-      "WVHT 2.0 < 3.0ft"
+      "WVHT 2.0 < 3.0ft",
+      "DPD 3.0 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "2.0ft @ 13s \u2014 small and forgiving. Good for practicing pop-ups."
+      "emoji": "\ud83e\udd71",
+      "label": "Flat",
+      "level": "flat",
+      "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "ESE",
-    "swell_dir_deg": 115.0,
+    "swell_dir": "WSW",
+    "swell_dir_deg": 256.0,
     "tier": null,
-    "wind_dir": "NNW",
-    "wind_dir_deg": 343,
+    "wind_dir": "SE",
+    "wind_dir_deg": 138,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.6,
+    "wind_speed_kt": 7.0,
     "wvht_ft": 2.0
   },
   "thresholds": {
