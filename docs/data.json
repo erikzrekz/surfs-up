@@ -7,7 +7,7 @@
     "sunrise_local": "5:53 AM",
     "sunset_local": "7:48 PM"
   },
-  "fetched_at": "2026-08-13T19:19:24.605612+00:00",
+  "fetched_at": "2026-08-13T20:03:31.550820+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -19,7 +19,7 @@
     "dpd_s": 3.0,
     "face_ft": 0.9,
     "is_good": false,
-    "observed_at": "2026-08-13T19:10:38+00:00",
+    "observed_at": "2026-08-13T19:45:40+00:00",
     "reasons": [
       "WVHT 2.0 < 3.0ft",
       "DPD 3.0 < 7.0s"
@@ -33,13 +33,13 @@
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "S",
-    "swell_dir_deg": 191.0,
+    "swell_dir": "SSW",
+    "swell_dir_deg": 198.0,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 210,
+    "wind_dir": "SW",
+    "wind_dir_deg": 218,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 11.4,
+    "wind_speed_kt": 10.8,
     "wvht_ft": 2.0
   },
   "thresholds": {
