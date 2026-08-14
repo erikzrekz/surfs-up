@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 3h55 (5:54 AM)",
+    "note": "Sunrise in 2h11 (5:54 AM)",
     "status": "night",
     "sunrise_local": "5:54 AM",
     "sunset_local": "7:46 PM"
   },
-  "fetched_at": "2026-08-14T05:58:58.971732+00:00",
+  "fetched_at": "2026-08-14T07:43:19.592315+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,11 +15,11 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.2,
+    "apd_s": 4.7,
     "dpd_s": 5.0,
     "face_ft": 0.9,
     "is_good": false,
-    "observed_at": "2026-08-14T05:50:41+00:00",
+    "observed_at": "2026-08-14T07:40:39+00:00",
     "reasons": [
       "WVHT 2.0 < 3.0ft",
       "DPD 5.0 < 7.0s"
@@ -33,13 +33,13 @@
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "WSW",
-    "swell_dir_deg": 238.0,
+    "swell_dir": "SW",
+    "swell_dir_deg": 235.0,
     "tier": null,
     "wind_dir": "W",
-    "wind_dir_deg": 263,
+    "wind_dir_deg": 281,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 6.1,
+    "wind_speed_kt": 5.9,
     "wvht_ft": 2.0
   },
   "thresholds": {
