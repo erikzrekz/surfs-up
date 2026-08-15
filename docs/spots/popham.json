@@ -7,42 +7,12 @@
     "sunrise_local": "5:43 AM",
     "sunset_local": "7:43 PM"
   },
-  "fetched_at": "2026-08-15T11:19:41.185771+00:00",
+  "fetched_at": "2026-08-15T11:44:59.340172+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-08-18T15:00:00-04:00",
-        "end_utc": "2026-08-18T19:00:00+00:00",
-        "id": "8047e5268fa1",
-        "peak_face_ft": 1.8,
-        "peak_period_s": 6.2,
-        "peak_swell_ft": 3.5,
-        "peak_wind_kt": 5.7,
-        "score": 19.88,
-        "start_local": "2026-08-18T12:00:00-04:00",
-        "start_utc": "2026-08-18T16:00:00+00:00",
-        "tier": "clean",
-        "wind_dir": "NE"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 43.708336,
     "lon": -69.79166,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-08-18T15:00:00-04:00",
-      "end_utc": "2026-08-18T19:00:00+00:00",
-      "id": "8047e5268fa1",
-      "peak_face_ft": 1.8,
-      "peak_period_s": 6.2,
-      "peak_swell_ft": 3.5,
-      "peak_wind_kt": 5.7,
-      "score": 19.88,
-      "start_local": "2026-08-18T12:00:00-04:00",
-      "start_utc": "2026-08-18T16:00:00+00:00",
-      "tier": "clean",
-      "wind_dir": "NE"
-    }
+    "next_window": null
   },
   "now": {
     "face_ft": 0.8,
