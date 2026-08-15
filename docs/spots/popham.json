@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf05",
     "label": "Dawn patrol",
-    "note": "Sunrise was 8 min ago \u2014 golden hour",
+    "note": "Sunrise was 39 min ago \u2014 golden hour",
     "status": "dawn",
     "sunrise_local": "5:43 AM",
     "sunset_local": "7:43 PM"
   },
-  "fetched_at": "2026-08-15T09:51:05.515965+00:00",
+  "fetched_at": "2026-08-15T10:21:50.028144+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -47,8 +47,8 @@
   "now": {
     "face_ft": 0.8,
     "is_good": false,
-    "model_hour_utc": "2026-08-15T09:00:00+00:00",
-    "period_s": 8.2,
+    "model_hour_utc": "2026-08-15T10:00:00+00:00",
+    "period_s": 8.0,
     "reasons": [
       "WVHT 1.2 < 3.0ft"
     ],
@@ -59,12 +59,12 @@
       "note": "~0.8ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 135,
+    "swell_dir_deg": 137,
     "swell_ft": 1.2,
     "tier": null,
     "wind_dir": "WNW",
-    "wind_dir_deg": 290,
-    "wind_speed_kt": 6.4
+    "wind_dir_deg": 301,
+    "wind_speed_kt": 7.2
   },
   "spot": {
     "lat": 43.7378,
