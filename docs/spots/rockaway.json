@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf05",
     "label": "Dawn patrol",
-    "note": "Sunrise was 15 min ago \u2014 golden hour",
+    "note": "Sunrise was 42 min ago \u2014 golden hour",
     "status": "dawn",
     "sunrise_local": "6:07 AM",
     "sunset_local": "7:51 PM"
   },
-  "fetched_at": "2026-08-16T10:22:10.466549+00:00",
+  "fetched_at": "2026-08-16T10:48:43.215208+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
