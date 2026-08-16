@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 10h10 (5:55 AM)",
+    "note": "Sunrise in 9h55 (5:55 AM)",
     "status": "night",
     "sunrise_local": "5:54 AM",
     "sunset_local": "7:44 PM"
   },
-  "fetched_at": "2026-08-15T23:44:52.896621+00:00",
+  "fetched_at": "2026-08-15T23:59:30.077443+00:00",
   "forecast": {
     "all_windows_120h": [
       {
