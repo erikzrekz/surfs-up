@@ -7,7 +7,7 @@
     "sunrise_local": "5:57 AM",
     "sunset_local": "7:42 PM"
   },
-  "fetched_at": "2026-08-17T17:28:50.480690+00:00",
+  "fetched_at": "2026-08-17T17:57:27.075822+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -16,18 +16,18 @@
   },
   "nowcast": {
     "apd_s": 4.0,
-    "dpd_s": 5.0,
-    "face_ft": 1.8,
+    "dpd_s": 6.0,
+    "face_ft": 1.9,
     "is_good": false,
-    "observed_at": "2026-08-17T17:10:44+00:00",
+    "observed_at": "2026-08-17T17:50:27+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s"
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "1.8ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "1.9ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
