@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf05",
-    "label": "Dawn patrol",
-    "note": "Sunrise was 5 min ago \u2014 golden hour",
-    "status": "dawn",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 7:41 PM",
+    "status": "day",
     "sunrise_local": "5:58 AM",
     "sunset_local": "7:41 PM"
   },
-  "fetched_at": "2026-08-18T10:03:27.545782+00:00",
+  "fetched_at": "2026-08-18T10:46:01.292980+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,24 +15,26 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.9,
-    "dpd_s": 7.0,
-    "face_ft": 2.1,
-    "is_good": true,
-    "observed_at": "2026-08-18T09:50:27+00:00",
-    "reasons": [],
+    "apd_s": 5.2,
+    "dpd_s": 6.0,
+    "face_ft": 1.8,
+    "is_good": false,
+    "observed_at": "2026-08-18T10:40:25+00:00",
+    "reasons": [
+      "DPD 6.0 < 7.0s"
+    ],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "2.1ft @ 7s, wind 8kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "1.8ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSE",
-    "swell_dir_deg": 166.0,
-    "tier": "groundswell",
+    "swell_dir_deg": 163.0,
+    "tier": null,
     "wind_dir": "NNW",
     "wind_dir_deg": 348,
     "wind_source": "open-meteo",
