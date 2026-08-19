@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 2h18 (5:59 AM)",
+    "note": "Sunrise in 1h43 (5:59 AM)",
     "status": "night",
     "sunrise_local": "5:59 AM",
     "sunset_local": "7:39 PM"
   },
-  "fetched_at": "2026-08-19T07:40:59.705903+00:00",
+  "fetched_at": "2026-08-19T08:15:47.415139+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -19,7 +19,7 @@
     "dpd_s": 7.0,
     "face_ft": 1.8,
     "is_good": true,
-    "observed_at": "2026-08-19T07:10:42+00:00",
+    "observed_at": "2026-08-19T08:10:43+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
@@ -31,10 +31,10 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
-    "swell_dir_deg": 172.0,
+    "swell_dir_deg": 174.0,
     "tier": "groundswell",
-    "wind_dir": "SSW",
-    "wind_dir_deg": 201,
+    "wind_dir": "S",
+    "wind_dir_deg": 184,
     "wind_source": "open-meteo",
     "wind_speed_kt": 6.0,
     "wvht_ft": 3.0
