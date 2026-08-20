@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 54 min (6:11 AM)",
+    "note": "Sunrise in 11 min (6:11 AM)",
     "status": "night",
     "sunrise_local": "6:11 AM",
     "sunset_local": "7:46 PM"
   },
-  "fetched_at": "2026-08-20T09:16:52.248717+00:00",
+  "fetched_at": "2026-08-20T09:59:43.294440+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
@@ -33,9 +33,9 @@
     "swell_dir_deg": 142,
     "swell_ft": 1.1,
     "tier": null,
-    "wind_dir": "WNW",
-    "wind_dir_deg": 284,
-    "wind_speed_kt": 5.8
+    "wind_dir": "W",
+    "wind_dir_deg": 270,
+    "wind_speed_kt": 6.0
   },
   "spot": {
     "lat": 40.5817,
