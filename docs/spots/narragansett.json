@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf07",
-    "label": "Last light",
-    "note": "Sunset in 27 min \u2014 burn-rate session",
-    "status": "dusk",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 10h20 (6:01 AM)",
+    "status": "night",
     "sunrise_local": "6:00 AM",
     "sunset_local": "7:38 PM"
   },
-  "fetched_at": "2026-08-20T23:10:41.926980+00:00",
+  "fetched_at": "2026-08-20T23:40:42.459746+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.375,
