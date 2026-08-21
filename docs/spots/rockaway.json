@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 36 min (6:12 AM)",
+    "note": "Sunrise in 4 min (6:12 AM)",
     "status": "night",
     "sunrise_local": "6:12 AM",
     "sunset_local": "7:44 PM"
   },
-  "fetched_at": "2026-08-21T09:35:35.859608+00:00",
+  "fetched_at": "2026-08-21T10:07:35.376997+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
@@ -17,11 +17,11 @@
   "now": {
     "face_ft": 0.6,
     "is_good": false,
-    "model_hour_utc": "2026-08-21T09:00:00+00:00",
-    "period_s": 4.5,
+    "model_hour_utc": "2026-08-21T10:00:00+00:00",
+    "period_s": 4.7,
     "reasons": [
       "WVHT 1.4 < 3.0ft",
-      "DPD 4.45 < 7.0s"
+      "DPD 4.7 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
@@ -30,11 +30,11 @@
       "note": "~0.6ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 148,
+    "swell_dir_deg": 152,
     "swell_ft": 1.4,
     "tier": null,
     "wind_dir": "N",
-    "wind_dir_deg": 2,
+    "wind_dir_deg": 360,
     "wind_speed_kt": 8.9
   },
   "spot": {
