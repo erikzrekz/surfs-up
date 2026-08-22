@@ -7,7 +7,7 @@
     "sunrise_local": "6:12 AM",
     "sunset_local": "7:43 PM"
   },
-  "fetched_at": "2026-08-22T10:59:05.719121+00:00",
+  "fetched_at": "2026-08-22T11:28:04.079953+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
@@ -15,27 +15,27 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 0.7,
+    "face_ft": 0.6,
     "is_good": false,
-    "model_hour_utc": "2026-08-22T10:00:00+00:00",
-    "period_s": 5.0,
+    "model_hour_utc": "2026-08-22T11:00:00+00:00",
+    "period_s": 4.9,
     "reasons": [
-      "WVHT 1.5 < 3.0ft",
-      "DPD 5.0 < 7.0s"
+      "WVHT 1.4 < 3.0ft",
+      "DPD 4.9 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.7ft face. Nothing to ride. Coffee instead."
+      "note": "~0.6ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 91,
-    "swell_ft": 1.5,
+    "swell_dir_deg": 90,
+    "swell_ft": 1.4,
     "tier": null,
     "wind_dir": "NE",
-    "wind_dir_deg": 43,
-    "wind_speed_kt": 4.3
+    "wind_dir_deg": 37,
+    "wind_speed_kt": 4.2
   },
   "spot": {
     "lat": 40.5817,
