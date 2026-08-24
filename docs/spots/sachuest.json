@@ -7,7 +7,7 @@
     "sunrise_local": "6:03 AM",
     "sunset_local": "7:31 PM"
   },
-  "fetched_at": "2026-08-24T20:02:23.543764+00:00",
+  "fetched_at": "2026-08-24T20:47:54.267333+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 41.458336,
@@ -33,9 +33,9 @@
     "swell_dir_deg": 152,
     "swell_ft": 1.6,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 192,
-    "wind_speed_kt": 8.7
+    "wind_dir": "S",
+    "wind_dir_deg": 190,
+    "wind_speed_kt": 7.5
   },
   "spot": {
     "lat": 41.4824,
