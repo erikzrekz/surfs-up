@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 7:27 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 10h14 (6:08 AM)",
+    "status": "night",
     "sunrise_local": "6:07 AM",
     "sunset_local": "7:27 PM"
   },
-  "fetched_at": "2026-08-27T14:27:42.550985+00:00",
+  "fetched_at": "2026-08-27T23:53:57.202266+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,11 +15,11 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.3,
-    "dpd_s": 9.0,
-    "face_ft": 2.0,
+    "apd_s": 5.0,
+    "dpd_s": 8.0,
+    "face_ft": 1.7,
     "is_good": false,
-    "observed_at": "2026-08-27T14:10:52+00:00",
+    "observed_at": "2026-08-27T23:40:25+00:00",
     "reasons": [
       "WVHT 2.6 < 3.0ft"
     ],
@@ -27,18 +27,18 @@
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.0ft @ 9s, wind 10kt. Clean enough, sized right \u2014 go."
+      "note": "1.7ft @ 8s, wind 7kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "ESE",
-    "swell_dir_deg": 120.0,
+    "swell_dir_deg": 121.0,
     "tier": null,
-    "wind_dir": "SE",
-    "wind_dir_deg": 143,
+    "wind_dir": "ESE",
+    "wind_dir_deg": 117,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 9.7,
+    "wind_speed_kt": 7.2,
     "wvht_ft": 2.6
   },
   "thresholds": {
