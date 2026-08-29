@@ -3,5 +3,5 @@
   "forecast_last_window_id": null,
   "forecast_last_window_score": null,
   "nowcast_last_sent_day_utc": "2026-08-29",
-  "nowcast_was_good": false
+  "nowcast_was_good": true
 }
