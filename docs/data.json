@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 9h20 (6:11 AM)",
+    "note": "Sunrise in 3h28 (6:11 AM)",
     "status": "night",
-    "sunrise_local": "6:10 AM",
-    "sunset_local": "7:22 PM"
+    "sunrise_local": "6:11 AM",
+    "sunset_local": "7:20 PM"
   },
-  "fetched_at": "2026-08-31T00:50:50.181330+00:00",
+  "fetched_at": "2026-08-31T06:42:41.929431+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,32 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.0,
+    "apd_s": 4.3,
     "dpd_s": 5.0,
-    "face_ft": 1.6,
+    "face_ft": 1.8,
     "is_good": false,
-    "observed_at": "2026-08-31T00:45:58+00:00",
+    "observed_at": "2026-08-31T06:40:54+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s",
-      "wind 17.3kt @ 213\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 5.0 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
-      "level": "marginal",
-      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "1.8ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SW",
-    "swell_dir_deg": 229.0,
+    "swell_dir_deg": 221.0,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 213,
+    "wind_dir": "WNW",
+    "wind_dir_deg": 284,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.3,
-    "wvht_ft": 3.6
+    "wind_speed_kt": 11.8,
+    "wvht_ft": 3.9
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
