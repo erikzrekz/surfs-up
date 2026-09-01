@@ -7,7 +7,7 @@
     "sunrise_local": "6:12 AM",
     "sunset_local": "7:19 PM"
   },
-  "fetched_at": "2026-09-01T14:32:58.465939+00:00",
+  "fetched_at": "2026-09-01T17:57:47.001577+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,32 +15,32 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 3.1,
-    "dpd_s": 3.0,
-    "face_ft": 0.9,
+    "apd_s": 3.6,
+    "dpd_s": 4.0,
+    "face_ft": 1.4,
     "is_good": false,
-    "observed_at": "2026-09-01T14:10:26+00:00",
+    "observed_at": "2026-09-01T17:10:27+00:00",
     "reasons": [
-      "WVHT 2.0 < 3.0ft",
-      "DPD 3.0 < 7.0s"
+      "DPD 4.0 < 7.0s",
+      "wind 19.4kt @ 113\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 19kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SE",
-    "swell_dir_deg": 142.0,
+    "swell_dir": "ESE",
+    "swell_dir_deg": 122.0,
     "tier": null,
-    "wind_dir": "SSE",
-    "wind_dir_deg": 156,
+    "wind_dir": "ESE",
+    "wind_dir_deg": 113,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.5,
-    "wvht_ft": 2.0
+    "wind_speed_kt": 19.4,
+    "wvht_ft": 3.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
