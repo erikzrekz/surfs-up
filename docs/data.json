@@ -1,16 +1,27 @@
 {
-  "daylight": null,
-  "fetched_at": "2026-09-02T23:28:53.764375+00:00",
-  "forecast": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 8h52 (6:14 AM)",
+    "status": "night",
+    "sunrise_local": "6:13 AM",
+    "sunset_local": "7:17 PM"
+  },
+  "fetched_at": "2026-09-03T01:22:13.615537+00:00",
+  "forecast": {
+    "all_windows_72h": [],
+    "lat": 41.291664,
+    "lon": -71.54166,
+    "next_window": null
+  },
   "nowcast": {
-    "apd_s": 4.3,
+    "apd_s": 4.2,
     "dpd_s": 6.0,
     "face_ft": 2.1,
     "is_good": false,
-    "observed_at": "2026-09-02T23:15:28+00:00",
+    "observed_at": "2026-09-03T01:15:30+00:00",
     "reasons": [
-      "DPD 6.0 < 7.0s",
-      "wind Nonekt @ None\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
@@ -22,12 +33,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 133.0,
+    "swell_dir_deg": 132.0,
     "tier": null,
-    "wind_dir": null,
-    "wind_dir_deg": null,
-    "wind_source": "44097",
-    "wind_speed_kt": null,
+    "wind_dir": "E",
+    "wind_dir_deg": 87,
+    "wind_source": "open-meteo",
+    "wind_speed_kt": 12.3,
     "wvht_ft": 4.3
   },
   "thresholds": {
