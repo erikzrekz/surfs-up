@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 7:14 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 9h57 (6:16 AM)",
+    "status": "night",
     "sunrise_local": "6:15 AM",
     "sunset_local": "7:14 PM"
   },
-  "fetched_at": "2026-09-04T22:27:56.503262+00:00",
+  "fetched_at": "2026-09-05T00:18:40.159518+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,11 +15,11 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 4.2,
+    "apd_s": 4.0,
     "dpd_s": 6.0,
     "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-09-04T22:15:29+00:00",
+    "observed_at": "2026-09-05T00:15:30+00:00",
     "reasons": [
       "DPD 6.0 < 7.0s"
     ],
@@ -33,12 +33,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 192.0,
+    "swell_dir_deg": 197.0,
     "tier": null,
     "wind_dir": "WNW",
-    "wind_dir_deg": 291,
+    "wind_dir_deg": 285,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.0,
+    "wind_speed_kt": 9.5,
     "wvht_ft": 3.0
   },
   "thresholds": {
