@@ -7,7 +7,7 @@
     "sunrise_local": "6:21 AM",
     "sunset_local": "7:03 PM"
   },
-  "fetched_at": "2026-09-10T15:55:10.114060+00:00",
+  "fetched_at": "2026-09-10T18:58:36.999526+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,14 +15,12 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 5.8,
+    "apd_s": 6.2,
     "dpd_s": 8.0,
-    "face_ft": 5.0,
-    "is_good": false,
-    "observed_at": "2026-09-10T15:45:32+00:00",
-    "reasons": [
-      "wind 17.7kt @ 242\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
-    ],
+    "face_ft": 5.3,
+    "is_good": true,
+    "observed_at": "2026-09-10T18:50:35+00:00",
+    "reasons": [],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
@@ -33,13 +31,13 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SW",
-    "swell_dir_deg": 222.0,
-    "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 242,
+    "swell_dir_deg": 219.0,
+    "tier": "groundswell",
+    "wind_dir": "SW",
+    "wind_dir_deg": 235,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.7,
-    "wvht_ft": 7.5
+    "wind_speed_kt": 14.7,
+    "wvht_ft": 7.9
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
