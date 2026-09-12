@@ -7,7 +7,7 @@
     "sunrise_local": "6:23 AM",
     "sunset_local": "7:00 PM"
   },
-  "fetched_at": "2026-09-12T17:10:13.378962+00:00",
+  "fetched_at": "2026-09-12T19:21:36.064865+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,11 +15,11 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 3.8,
+    "apd_s": 3.6,
     "dpd_s": 6.0,
     "face_ft": 0.8,
     "is_good": false,
-    "observed_at": "2026-09-12T16:50:39+00:00",
+    "observed_at": "2026-09-12T19:15:35+00:00",
     "reasons": [
       "WVHT 1.6 < 3.0ft",
       "DPD 6.0 < 7.0s"
@@ -34,12 +34,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
-    "swell_dir_deg": 177.0,
+    "swell_dir_deg": 170.0,
     "tier": null,
-    "wind_dir": "ESE",
-    "wind_dir_deg": 120,
+    "wind_dir": "S",
+    "wind_dir_deg": 171,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 5.8,
+    "wind_speed_kt": 5.1,
     "wvht_ft": 1.6
   },
   "thresholds": {
