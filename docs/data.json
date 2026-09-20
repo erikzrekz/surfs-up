@@ -7,7 +7,7 @@
     "sunrise_local": "6:31 AM",
     "sunset_local": "6:46 PM"
   },
-  "fetched_at": "2026-09-20T14:53:18.083770+00:00",
+  "fetched_at": "2026-09-20T18:00:09.381448+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.1,
         "peak_period_s": 7.2,
         "peak_swell_ft": 3.5,
-        "peak_wind_kt": 16.9,
+        "peak_wind_kt": 18.0,
         "score": 23.49,
         "start_local": "2026-09-23T16:00:00-04:00",
         "start_utc": "2026-09-23T20:00:00+00:00",
@@ -33,12 +33,12 @@
         "peak_face_ft": 3.2,
         "peak_period_s": 8.7,
         "peak_swell_ft": 4.4,
-        "peak_wind_kt": 18.1,
+        "peak_wind_kt": 20.8,
         "score": 151.55,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "ENE"
+        "wind_dir": "NE"
       }
     ],
     "lat": 41.291664,
@@ -51,7 +51,7 @@
       "peak_face_ft": 2.1,
       "peak_period_s": 7.2,
       "peak_swell_ft": 3.5,
-      "peak_wind_kt": 16.9,
+      "peak_wind_kt": 18.0,
       "score": 23.49,
       "start_local": "2026-09-23T16:00:00-04:00",
       "start_utc": "2026-09-23T20:00:00+00:00",
@@ -60,11 +60,11 @@
     }
   },
   "nowcast": {
-    "apd_s": 3.8,
+    "apd_s": 3.9,
     "dpd_s": 4.0,
     "face_ft": 1.5,
     "is_good": false,
-    "observed_at": "2026-09-20T14:45:50+00:00",
+    "observed_at": "2026-09-20T17:50:27+00:00",
     "reasons": [
       "DPD 4.0 < 7.0s"
     ],
@@ -78,12 +78,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "ESE",
-    "swell_dir_deg": 119.0,
+    "swell_dir_deg": 109.0,
     "tier": null,
-    "wind_dir": "SE",
-    "wind_dir_deg": 133,
+    "wind_dir": "ESE",
+    "wind_dir_deg": 114,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.2,
+    "wind_speed_kt": 12.4,
     "wvht_ft": 3.3
   },
   "thresholds": {
