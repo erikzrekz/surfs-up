@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 5h00 (6:31 AM)",
-    "status": "night",
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 36 min ago \u2014 golden hour",
+    "status": "dawn",
     "sunrise_local": "6:31 AM",
     "sunset_local": "6:43 PM"
   },
-  "fetched_at": "2026-09-21T05:30:46.108297+00:00",
+  "fetched_at": "2026-09-21T11:06:59.663731+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,27 +18,12 @@
         "peak_face_ft": 2.5,
         "peak_period_s": 8.0,
         "peak_swell_ft": 3.8,
-        "peak_wind_kt": 15.1,
+        "peak_wind_kt": 15.8,
         "score": 120.64,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
         "tier": "groundswell",
         "wind_dir": "NE"
-      },
-      {
-        "duration_h": 12,
-        "end_local": "2026-09-25T18:00:00-04:00",
-        "end_utc": "2026-09-25T22:00:00+00:00",
-        "id": "957fa00d5adf",
-        "peak_face_ft": 3.7,
-        "peak_period_s": 10.3,
-        "peak_swell_ft": 4.3,
-        "peak_wind_kt": 21.3,
-        "score": 163.94,
-        "start_local": "2026-09-25T06:00:00-04:00",
-        "start_utc": "2026-09-25T10:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "NNE"
       }
     ],
     "lat": 41.458336,
@@ -51,7 +36,7 @@
       "peak_face_ft": 2.5,
       "peak_period_s": 8.0,
       "peak_swell_ft": 3.8,
-      "peak_wind_kt": 15.1,
+      "peak_wind_kt": 15.8,
       "score": 120.64,
       "start_local": "2026-09-24T06:00:00-04:00",
       "start_utc": "2026-09-24T10:00:00+00:00",
@@ -60,27 +45,27 @@
     }
   },
   "now": {
-    "face_ft": 0.9,
+    "face_ft": 0.8,
     "is_good": false,
-    "model_hour_utc": "2026-09-21T05:00:00+00:00",
-    "period_s": 3.5,
+    "model_hour_utc": "2026-09-21T11:00:00+00:00",
+    "period_s": 5.1,
     "reasons": [
-      "WVHT 1.9 < 3.0ft",
-      "DPD 3.5 < 7.0s"
+      "WVHT 1.7 < 3.0ft",
+      "DPD 5.1 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.9ft face. Nothing to ride. Coffee instead."
+      "note": "~0.8ft face. Nothing to ride. Coffee instead."
     },
-    "swell_dir": "SSE",
-    "swell_dir_deg": 150,
-    "swell_ft": 1.9,
+    "swell_dir": "SE",
+    "swell_dir_deg": 141,
+    "swell_ft": 1.7,
     "tier": null,
-    "wind_dir": "ENE",
-    "wind_dir_deg": 73,
-    "wind_speed_kt": 4.1
+    "wind_dir": "N",
+    "wind_dir_deg": 4,
+    "wind_speed_kt": 15.0
   },
   "spot": {
     "lat": 41.4824,

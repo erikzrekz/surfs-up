@@ -1,7 +1,72 @@
 {
-  "fetched_at": "2026-09-21T05:30:46.108297+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 41 min ago \u2014 golden hour",
+    "status": "dawn",
+    "sunrise_local": "6:26 AM",
+    "sunset_local": "6:38 PM"
+  },
+  "fetched_at": "2026-09-21T11:06:59.663731+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 13,
+        "end_local": "2026-09-24T19:00:00-04:00",
+        "end_utc": "2026-09-24T23:00:00+00:00",
+        "id": "7ac9895467e9",
+        "peak_face_ft": 2.6,
+        "peak_period_s": 7.9,
+        "peak_swell_ft": 3.9,
+        "peak_wind_kt": 19.4,
+        "score": 123.24,
+        "start_local": "2026-09-24T06:00:00-04:00",
+        "start_utc": "2026-09-24T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "NE"
+      }
+    ],
+    "lat": 41.791664,
+    "lon": -69.95833,
+    "next_window": {
+      "duration_h": 13,
+      "end_local": "2026-09-24T19:00:00-04:00",
+      "end_utc": "2026-09-24T23:00:00+00:00",
+      "id": "7ac9895467e9",
+      "peak_face_ft": 2.6,
+      "peak_period_s": 7.9,
+      "peak_swell_ft": 3.9,
+      "peak_wind_kt": 19.4,
+      "score": 123.24,
+      "start_local": "2026-09-24T06:00:00-04:00",
+      "start_utc": "2026-09-24T10:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "NE"
+    }
+  },
+  "now": {
+    "face_ft": 0.4,
+    "is_good": false,
+    "model_hour_utc": "2026-09-21T11:00:00+00:00",
+    "period_s": 3.5,
+    "reasons": [
+      "WVHT 0.9 < 3.0ft",
+      "DPD 3.5 < 7.0s"
+    ],
+    "skill": {
+      "emoji": "\ud83e\udd71",
+      "label": "Flat",
+      "level": "flat",
+      "note": "~0.4ft face. Nothing to ride. Coffee instead."
+    },
+    "swell_dir": "SE",
+    "swell_dir_deg": 126,
+    "swell_ft": 0.9,
+    "tier": null,
+    "wind_dir": "N",
+    "wind_dir_deg": 359,
+    "wind_speed_kt": 8.7
+  },
   "spot": {
     "lat": 41.7902,
     "lon": -69.9387,
