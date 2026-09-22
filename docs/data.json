@@ -2,29 +2,14 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 10h26 (6:33 AM)",
+    "note": "Sunrise in 5h36 (6:33 AM)",
     "status": "night",
-    "sunrise_local": "6:32 AM",
-    "sunset_local": "6:44 PM"
+    "sunrise_local": "6:33 AM",
+    "sunset_local": "6:43 PM"
   },
-  "fetched_at": "2026-09-22T00:07:20.102100+00:00",
+  "fetched_at": "2026-09-22T04:56:44.490886+00:00",
   "forecast": {
     "all_windows_72h": [
-      {
-        "duration_h": 4,
-        "end_local": "2026-09-23T19:00:00-04:00",
-        "end_utc": "2026-09-23T23:00:00+00:00",
-        "id": "6919714a0a71",
-        "peak_face_ft": 2.6,
-        "peak_period_s": 7.3,
-        "peak_swell_ft": 4.3,
-        "peak_wind_kt": 17.8,
-        "score": 38.22,
-        "start_local": "2026-09-23T15:00:00-04:00",
-        "start_utc": "2026-09-23T19:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "NE"
-      },
       {
         "duration_h": 13,
         "end_local": "2026-09-24T19:00:00-04:00",
@@ -74,27 +59,27 @@
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-09-23T19:00:00-04:00",
-      "end_utc": "2026-09-23T23:00:00+00:00",
-      "id": "6919714a0a71",
-      "peak_face_ft": 2.6,
-      "peak_period_s": 7.3,
-      "peak_swell_ft": 4.3,
-      "peak_wind_kt": 17.8,
-      "score": 38.22,
-      "start_local": "2026-09-23T15:00:00-04:00",
-      "start_utc": "2026-09-23T19:00:00+00:00",
+      "duration_h": 13,
+      "end_local": "2026-09-24T19:00:00-04:00",
+      "end_utc": "2026-09-24T23:00:00+00:00",
+      "id": "7ac9895467e9",
+      "peak_face_ft": 4.0,
+      "peak_period_s": 8.9,
+      "peak_swell_ft": 5.4,
+      "peak_wind_kt": 17.6,
+      "score": 193.14,
+      "start_local": "2026-09-24T06:00:00-04:00",
+      "start_utc": "2026-09-24T10:00:00+00:00",
       "tier": "groundswell",
       "wind_dir": "NE"
     }
   },
   "nowcast": {
-    "apd_s": null,
+    "apd_s": 4.3,
     "dpd_s": 5.0,
     "face_ft": 2.2,
     "is_good": false,
-    "observed_at": "2026-09-21T23:50:51+00:00",
+    "observed_at": "2026-09-22T04:50:47+00:00",
     "reasons": [
       "DPD 5.0 < 7.0s"
     ],
@@ -107,13 +92,13 @@
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": null,
-    "swell_dir_deg": null,
+    "swell_dir": "E",
+    "swell_dir_deg": 85.0,
     "tier": null,
     "wind_dir": "NNE",
-    "wind_dir_deg": 32,
+    "wind_dir_deg": 29,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 17.1,
+    "wind_speed_kt": 15.7,
     "wvht_ft": 4.9
   },
   "thresholds": {
