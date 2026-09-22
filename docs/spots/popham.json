@@ -7,23 +7,23 @@
     "sunrise_local": "6:26 AM",
     "sunset_local": "6:36 PM"
   },
-  "fetched_at": "2026-09-22T18:06:44.218178+00:00",
+  "fetched_at": "2026-09-22T21:19:05.864291+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 10,
+        "duration_h": 11,
         "end_local": "2026-09-24T19:00:00-04:00",
         "end_utc": "2026-09-24T23:00:00+00:00",
-        "id": "8f6e769316fa",
+        "id": "36d07a849762",
         "peak_face_ft": 3.6,
         "peak_period_s": 7.3,
         "peak_swell_ft": 6.0,
-        "peak_wind_kt": 8.0,
-        "score": 134.32,
-        "start_local": "2026-09-24T09:00:00-04:00",
-        "start_utc": "2026-09-24T13:00:00+00:00",
+        "peak_wind_kt": 8.7,
+        "score": 147.75,
+        "start_local": "2026-09-24T08:00:00-04:00",
+        "start_utc": "2026-09-24T12:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "SE"
+        "wind_dir": "ESE"
       },
       {
         "duration_h": 13,
@@ -59,29 +59,29 @@
     "lat": 43.708336,
     "lon": -69.79166,
     "next_window": {
-      "duration_h": 10,
+      "duration_h": 11,
       "end_local": "2026-09-24T19:00:00-04:00",
       "end_utc": "2026-09-24T23:00:00+00:00",
-      "id": "8f6e769316fa",
+      "id": "36d07a849762",
       "peak_face_ft": 3.6,
       "peak_period_s": 7.3,
       "peak_swell_ft": 6.0,
-      "peak_wind_kt": 8.0,
-      "score": 134.32,
-      "start_local": "2026-09-24T09:00:00-04:00",
-      "start_utc": "2026-09-24T13:00:00+00:00",
+      "peak_wind_kt": 8.7,
+      "score": 147.75,
+      "start_local": "2026-09-24T08:00:00-04:00",
+      "start_utc": "2026-09-24T12:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "SE"
+      "wind_dir": "ESE"
     }
   },
   "now": {
     "face_ft": 1.0,
     "is_good": false,
-    "model_hour_utc": "2026-09-22T18:00:00+00:00",
-    "period_s": 4.8,
+    "model_hour_utc": "2026-09-22T21:00:00+00:00",
+    "period_s": 5.5,
     "reasons": [
       "WVHT 2.3 < 3.0ft",
-      "DPD 4.8 < 7.0s"
+      "DPD 5.45 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
@@ -89,13 +89,13 @@
       "level": "marginal",
       "note": "1.0ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
     },
-    "swell_dir": "E",
-    "swell_dir_deg": 99,
+    "swell_dir": "SE",
+    "swell_dir_deg": 125,
     "swell_ft": 2.3,
     "tier": null,
-    "wind_dir": "ENE",
-    "wind_dir_deg": 75,
-    "wind_speed_kt": 5.4
+    "wind_dir": "ESE",
+    "wind_dir_deg": 119,
+    "wind_speed_kt": 4.0
   },
   "spot": {
     "lat": 43.7378,
