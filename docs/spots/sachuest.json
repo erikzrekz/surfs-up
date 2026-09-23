@@ -7,7 +7,7 @@
     "sunrise_local": "6:33 AM",
     "sunset_local": "6:40 PM"
   },
-  "fetched_at": "2026-09-23T17:44:07.546048+00:00",
+  "fetched_at": "2026-09-23T20:42:06.856091+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 2.1,
         "peak_period_s": 7.2,
         "peak_swell_ft": 3.5,
-        "peak_wind_kt": 19.1,
+        "peak_wind_kt": 19.9,
         "score": 23.33,
         "start_local": "2026-09-23T16:00:00-04:00",
         "start_utc": "2026-09-23T20:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NE"
+        "wind_dir": "NNE"
       },
       {
         "duration_h": 13,
@@ -33,12 +33,12 @@
         "peak_face_ft": 2.9,
         "peak_period_s": 9.0,
         "peak_swell_ft": 3.9,
-        "peak_wind_kt": 18.6,
+        "peak_wind_kt": 18.4,
         "score": 140.4,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "NE"
       }
     ],
     "lat": 41.458336,
@@ -51,35 +51,33 @@
       "peak_face_ft": 2.1,
       "peak_period_s": 7.2,
       "peak_swell_ft": 3.5,
-      "peak_wind_kt": 19.1,
+      "peak_wind_kt": 19.9,
       "score": 23.33,
       "start_local": "2026-09-23T16:00:00-04:00",
       "start_utc": "2026-09-23T20:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "NE"
+      "wind_dir": "NNE"
     }
   },
   "now": {
-    "face_ft": 1.8,
-    "is_good": false,
-    "model_hour_utc": "2026-09-23T17:00:00+00:00",
-    "period_s": 6.7,
-    "reasons": [
-      "DPD 6.7 < 7.0s"
-    ],
+    "face_ft": 2.0,
+    "is_good": true,
+    "model_hour_utc": "2026-09-23T20:00:00+00:00",
+    "period_s": 7.0,
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "1.8ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 20kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 122,
-    "swell_ft": 3.3,
-    "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 35,
-    "wind_speed_kt": 19.2
+    "swell_dir_deg": 121,
+    "swell_ft": 3.4,
+    "tier": "groundswell",
+    "wind_dir": "NNE",
+    "wind_dir_deg": 29,
+    "wind_speed_kt": 19.9
   },
   "spot": {
     "lat": 41.4824,

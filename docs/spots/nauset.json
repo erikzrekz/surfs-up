@@ -7,7 +7,7 @@
     "sunrise_local": "6:28 AM",
     "sunset_local": "6:35 PM"
   },
-  "fetched_at": "2026-09-23T17:44:07.546048+00:00",
+  "fetched_at": "2026-09-23T20:42:06.856091+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,25 +18,10 @@
         "peak_face_ft": 2.5,
         "peak_period_s": 8.1,
         "peak_swell_ft": 3.7,
-        "peak_wind_kt": 20.8,
+        "peak_wind_kt": 19.9,
         "score": 120.04,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "NE"
-      },
-      {
-        "duration_h": 5,
-        "end_local": "2026-09-25T16:00:00-04:00",
-        "end_utc": "2026-09-25T20:00:00+00:00",
-        "id": "a9de16c354d5",
-        "peak_face_ft": 2.6,
-        "peak_period_s": 8.3,
-        "peak_swell_ft": 3.8,
-        "peak_wind_kt": 20.8,
-        "score": 48.43,
-        "start_local": "2026-09-25T11:00:00-04:00",
-        "start_utc": "2026-09-25T15:00:00+00:00",
         "tier": "groundswell",
         "wind_dir": "NE"
       },
@@ -66,7 +51,7 @@
       "peak_face_ft": 2.5,
       "peak_period_s": 8.1,
       "peak_swell_ft": 3.7,
-      "peak_wind_kt": 20.8,
+      "peak_wind_kt": 19.9,
       "score": 120.04,
       "start_local": "2026-09-24T06:00:00-04:00",
       "start_utc": "2026-09-24T10:00:00+00:00",
@@ -77,11 +62,10 @@
   "now": {
     "face_ft": 1.4,
     "is_good": false,
-    "model_hour_utc": "2026-09-23T17:00:00+00:00",
-    "period_s": 6.8,
+    "model_hour_utc": "2026-09-23T20:00:00+00:00",
+    "period_s": 7.2,
     "reasons": [
-      "WVHT 2.4 < 3.0ft",
-      "DPD 6.85 < 7.0s"
+      "WVHT 2.4 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83d\udca8",
@@ -90,11 +74,11 @@
       "note": "Wind 21kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 107,
+    "swell_dir_deg": 108,
     "swell_ft": 2.4,
     "tier": null,
     "wind_dir": "NE",
-    "wind_dir_deg": 37,
+    "wind_dir_deg": 34,
     "wind_speed_kt": 21.0
   },
   "spot": {

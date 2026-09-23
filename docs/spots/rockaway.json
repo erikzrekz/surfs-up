@@ -7,7 +7,7 @@
     "sunrise_local": "6:43 AM",
     "sunset_local": "6:50 PM"
   },
-  "fetched_at": "2026-09-23T17:44:07.546048+00:00",
+  "fetched_at": "2026-09-23T20:42:06.856091+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 3.9,
         "peak_period_s": 7.8,
         "peak_swell_ft": 6.0,
-        "peak_wind_kt": 15.5,
+        "peak_wind_kt": 15.6,
         "score": 128.58,
         "start_local": "2026-09-23T10:00:00-04:00",
         "start_utc": "2026-09-23T14:00:00+00:00",
@@ -33,7 +33,7 @@
         "peak_face_ft": 4.9,
         "peak_period_s": 8.4,
         "peak_swell_ft": 7.0,
-        "peak_wind_kt": 15.5,
+        "peak_wind_kt": 14.9,
         "score": 231.5,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
@@ -48,7 +48,7 @@
         "peak_face_ft": 4.0,
         "peak_period_s": 8.2,
         "peak_swell_ft": 5.9,
-        "peak_wind_kt": 19.4,
+        "peak_wind_kt": 18.3,
         "score": 190.71,
         "start_local": "2026-09-25T06:00:00-04:00",
         "start_utc": "2026-09-25T10:00:00+00:00",
@@ -81,7 +81,7 @@
       "peak_face_ft": 3.9,
       "peak_period_s": 7.8,
       "peak_swell_ft": 6.0,
-      "peak_wind_kt": 15.5,
+      "peak_wind_kt": 15.6,
       "score": 128.58,
       "start_local": "2026-09-23T10:00:00-04:00",
       "start_utc": "2026-09-23T14:00:00+00:00",
@@ -90,24 +90,24 @@
     }
   },
   "now": {
-    "face_ft": 3.1,
+    "face_ft": 3.7,
     "is_good": true,
-    "model_hour_utc": "2026-09-23T17:00:00+00:00",
+    "model_hour_utc": "2026-09-23T20:00:00+00:00",
     "period_s": 7.7,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83d\udca8",
-      "label": "Blown out",
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
       "level": "marginal",
-      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
+      "note": "3.7ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 105,
-    "swell_ft": 4.9,
+    "swell_dir_deg": 103,
+    "swell_ft": 5.8,
     "tier": "groundswell",
     "wind_dir": "NE",
-    "wind_dir_deg": 46,
-    "wind_speed_kt": 15.5
+    "wind_dir_deg": 45,
+    "wind_speed_kt": 14.6
   },
   "spot": {
     "lat": 40.5817,
