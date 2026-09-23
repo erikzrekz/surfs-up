@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:35 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 11h17 (6:29 AM)",
+    "status": "night",
     "sunrise_local": "6:28 AM",
     "sunset_local": "6:35 PM"
   },
-  "fetched_at": "2026-09-23T20:42:06.856091+00:00",
+  "fetched_at": "2026-09-23T23:12:04.517071+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -60,26 +60,26 @@
     }
   },
   "now": {
-    "face_ft": 1.4,
+    "face_ft": 1.7,
     "is_good": false,
-    "model_hour_utc": "2026-09-23T20:00:00+00:00",
-    "period_s": 7.2,
+    "model_hour_utc": "2026-09-23T23:00:00+00:00",
+    "period_s": 7.5,
     "reasons": [
-      "WVHT 2.4 < 3.0ft"
+      "WVHT 2.8 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 21kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 20kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 108,
-    "swell_ft": 2.4,
+    "swell_dir_deg": 107,
+    "swell_ft": 2.8,
     "tier": null,
     "wind_dir": "NE",
-    "wind_dir_deg": 34,
-    "wind_speed_kt": 21.0
+    "wind_dir_deg": 43,
+    "wind_speed_kt": 19.8
   },
   "spot": {
     "lat": 41.7902,

@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:41 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 11h23 (6:35 AM)",
+    "status": "night",
     "sunrise_local": "6:34 AM",
     "sunset_local": "6:41 PM"
   },
-  "fetched_at": "2026-09-23T20:42:06.856091+00:00",
+  "fetched_at": "2026-09-23T23:12:04.517071+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -45,31 +45,31 @@
     }
   },
   "nowcast": {
-    "apd_s": 6.0,
-    "dpd_s": 8.0,
-    "face_ft": 6.5,
+    "apd_s": 6.2,
+    "dpd_s": 9.0,
+    "face_ft": 7.6,
     "is_good": false,
-    "observed_at": "2026-09-23T20:20:45+00:00",
+    "observed_at": "2026-09-23T22:50:51+00:00",
     "reasons": [
-      "wind 28.3kt @ 37\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "wind 27.0kt @ 33\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
       "level": "out-of-range",
-      "note": "~6ft face \u2014 sit this one out and watch."
+      "note": "~8ft face \u2014 sit this one out and watch."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "E",
-    "swell_dir_deg": 99.0,
+    "swell_dir_deg": 98.0,
     "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 37,
+    "wind_dir": "NNE",
+    "wind_dir_deg": 33,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 28.3,
-    "wvht_ft": 9.8
+    "wind_speed_kt": 27.0,
+    "wvht_ft": 10.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
