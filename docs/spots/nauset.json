@@ -7,7 +7,7 @@
     "sunrise_local": "6:29 AM",
     "sunset_local": "6:33 PM"
   },
-  "fetched_at": "2026-09-24T12:13:24.901466+00:00",
+  "fetched_at": "2026-09-24T17:15:54.019061+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,23 +18,23 @@
         "peak_face_ft": 2.3,
         "peak_period_s": 8.0,
         "peak_swell_ft": 3.4,
-        "peak_wind_kt": 19.1,
+        "peak_wind_kt": 20.7,
         "score": 107.48,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "NE"
       },
       {
-        "duration_h": 6,
-        "end_local": "2026-09-25T12:00:00-04:00",
-        "end_utc": "2026-09-25T16:00:00+00:00",
-        "id": "1a8ffbfcd9ad",
+        "duration_h": 8,
+        "end_local": "2026-09-25T14:00:00-04:00",
+        "end_utc": "2026-09-25T18:00:00+00:00",
+        "id": "563b518bf8fe",
         "peak_face_ft": 2.7,
         "peak_period_s": 8.2,
         "peak_swell_ft": 3.9,
-        "peak_wind_kt": 21.2,
-        "score": 59.04,
+        "peak_wind_kt": 20.5,
+        "score": 79.2,
         "start_local": "2026-09-25T06:00:00-04:00",
         "start_utc": "2026-09-25T10:00:00+00:00",
         "tier": "groundswell",
@@ -66,33 +66,33 @@
       "peak_face_ft": 2.3,
       "peak_period_s": 8.0,
       "peak_swell_ft": 3.4,
-      "peak_wind_kt": 19.1,
+      "peak_wind_kt": 20.7,
       "score": 107.48,
       "start_local": "2026-09-24T06:00:00-04:00",
       "start_utc": "2026-09-24T10:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "NNE"
+      "wind_dir": "NE"
     }
   },
   "now": {
-    "face_ft": 2.0,
+    "face_ft": 2.2,
     "is_good": true,
-    "model_hour_utc": "2026-09-24T12:00:00+00:00",
+    "model_hour_utc": "2026-09-24T17:00:00+00:00",
     "period_s": 7.9,
     "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 19kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 108,
-    "swell_ft": 3.1,
+    "swell_dir_deg": 104,
+    "swell_ft": 3.4,
     "tier": "groundswell",
     "wind_dir": "NE",
-    "wind_dir_deg": 45,
-    "wind_speed_kt": 18.0
+    "wind_dir_deg": 34,
+    "wind_speed_kt": 19.0
   },
   "spot": {
     "lat": 41.7902,

@@ -2,6 +2,6 @@
   "forecast_last_sent_at": "2026-09-24T12:13:24.901466+00:00",
   "forecast_last_window_id": "b564cfc5ebfa",
   "forecast_last_window_score": 68.975,
-  "nowcast_last_sent_day_utc": "2026-09-22",
-  "nowcast_was_good": false
+  "nowcast_last_sent_day_utc": "2026-09-24",
+  "nowcast_was_good": true
 }

@@ -7,7 +7,7 @@
     "sunrise_local": "6:35 AM",
     "sunset_local": "6:39 PM"
   },
-  "fetched_at": "2026-09-24T12:13:24.901466+00:00",
+  "fetched_at": "2026-09-24T17:15:54.019061+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 3.9,
         "peak_period_s": 8.4,
         "peak_swell_ft": 5.5,
-        "peak_wind_kt": 16.1,
+        "peak_wind_kt": 16.4,
         "score": 183.46,
         "start_local": "2026-09-24T06:00:00-04:00",
         "start_utc": "2026-09-24T10:00:00+00:00",
@@ -33,7 +33,7 @@
         "peak_face_ft": 3.9,
         "peak_period_s": 8.3,
         "peak_swell_ft": 5.6,
-        "peak_wind_kt": 20.4,
+        "peak_wind_kt": 18.7,
         "score": 184.53,
         "start_local": "2026-09-25T06:00:00-04:00",
         "start_utc": "2026-09-25T10:00:00+00:00",
@@ -66,7 +66,7 @@
       "peak_face_ft": 3.9,
       "peak_period_s": 8.4,
       "peak_swell_ft": 5.5,
-      "peak_wind_kt": 16.1,
+      "peak_wind_kt": 16.4,
       "score": 183.46,
       "start_local": "2026-09-24T06:00:00-04:00",
       "start_utc": "2026-09-24T10:00:00+00:00",
@@ -75,24 +75,24 @@
     }
   },
   "now": {
-    "face_ft": 3.3,
+    "face_ft": 3.5,
     "is_good": true,
-    "model_hour_utc": "2026-09-24T12:00:00+00:00",
-    "period_s": 8.1,
+    "model_hour_utc": "2026-09-24T17:00:00+00:00",
+    "period_s": 8.3,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "3.3ft @ 8s, wind 11kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
     "swell_dir_deg": 116,
-    "swell_ft": 4.9,
+    "swell_ft": 5.1,
     "tier": "groundswell",
-    "wind_dir": "NNE",
-    "wind_dir_deg": 28,
-    "wind_speed_kt": 11.2
+    "wind_dir": "NE",
+    "wind_dir_deg": 38,
+    "wind_speed_kt": 15.5
   },
   "spot": {
     "lat": 41.37378,
