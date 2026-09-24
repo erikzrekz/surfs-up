@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:36 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 11h05 (6:33 AM)",
+    "status": "night",
     "sunrise_local": "6:32 AM",
     "sunset_local": "6:36 PM"
   },
-  "fetched_at": "2026-09-24T20:39:14.390546+00:00",
+  "fetched_at": "2026-09-24T23:28:26.044201+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -48,12 +48,12 @@
         "peak_face_ft": 3.4,
         "peak_period_s": 7.1,
         "peak_swell_ft": 5.8,
-        "peak_wind_kt": 5.3,
+        "peak_wind_kt": 6.2,
         "score": 37.49,
         "start_local": "2026-09-24T16:00:00-04:00",
         "start_utc": "2026-09-24T20:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "E"
+        "wind_dir": "ENE"
       },
       {
         "duration_h": 13,
@@ -134,25 +134,25 @@
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-09-24T19:00:00-04:00",
-      "end_utc": "2026-09-24T23:00:00+00:00",
-      "id": "2c0a30a2d8a1",
-      "peak_face_ft": 3.4,
-      "peak_period_s": 7.1,
-      "peak_swell_ft": 5.8,
-      "peak_wind_kt": 5.3,
-      "score": 37.49,
-      "start_local": "2026-09-24T16:00:00-04:00",
-      "start_utc": "2026-09-24T20:00:00+00:00",
+      "duration_h": 13,
+      "end_local": "2026-09-25T19:00:00-04:00",
+      "end_utc": "2026-09-25T23:00:00+00:00",
+      "id": "4cde40592cb8",
+      "peak_face_ft": 4.7,
+      "peak_period_s": 8.2,
+      "peak_swell_ft": 6.8,
+      "peak_wind_kt": 16.0,
+      "score": 220.94,
+      "start_local": "2026-09-25T06:00:00-04:00",
+      "start_utc": "2026-09-25T10:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "E"
+      "wind_dir": "NE"
     }
   },
   "now": {
     "face_ft": 3.3,
     "is_good": true,
-    "model_hour_utc": "2026-09-24T20:00:00+00:00",
+    "model_hour_utc": "2026-09-24T23:00:00+00:00",
     "period_s": 7.0,
     "reasons": [],
     "skill": {
@@ -162,12 +162,12 @@
       "note": "3.3ft @ 7s, wind 5kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 115,
+    "swell_dir_deg": 114,
     "swell_ft": 5.6,
     "tier": "groundswell",
-    "wind_dir": "E",
-    "wind_dir_deg": 86,
-    "wind_speed_kt": 5.3
+    "wind_dir": "ENE",
+    "wind_dir_deg": 59,
+    "wind_speed_kt": 5.2
   },
   "spot": {
     "lat": 43.145,
