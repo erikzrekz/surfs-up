@@ -3,5 +3,5 @@
   "forecast_last_window_id": "8eecaab4d5e9",
   "forecast_last_window_score": 55.279,
   "nowcast_last_sent_day_utc": "2026-09-25",
-  "nowcast_was_good": true
+  "nowcast_was_good": false
 }
