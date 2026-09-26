@@ -1,68 +1,41 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 1h03 (6:31 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 6:30 PM",
+    "status": "day",
     "sunrise_local": "6:31 AM",
     "sunset_local": "6:30 PM"
   },
-  "fetched_at": "2026-09-26T09:28:11.853179+00:00",
+  "fetched_at": "2026-09-26T13:51:52.233689+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-09-27T15:00:00-04:00",
-        "end_utc": "2026-09-27T19:00:00+00:00",
-        "id": "aa2f97505c22",
-        "peak_face_ft": 2.0,
-        "peak_period_s": 7.0,
-        "peak_swell_ft": 3.4,
-        "peak_wind_kt": 17.4,
-        "score": 22.0,
-        "start_local": "2026-09-27T12:00:00-04:00",
-        "start_utc": "2026-09-27T16:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "ENE"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 41.791664,
     "lon": -69.95833,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-09-27T15:00:00-04:00",
-      "end_utc": "2026-09-27T19:00:00+00:00",
-      "id": "aa2f97505c22",
-      "peak_face_ft": 2.0,
-      "peak_period_s": 7.0,
-      "peak_swell_ft": 3.4,
-      "peak_wind_kt": 17.4,
-      "score": 22.0,
-      "start_local": "2026-09-27T12:00:00-04:00",
-      "start_utc": "2026-09-27T16:00:00+00:00",
-      "tier": "groundswell",
-      "wind_dir": "ENE"
-    }
+    "next_window": null
   },
   "now": {
-    "face_ft": 2.3,
-    "is_good": true,
-    "model_hour_utc": "2026-09-26T09:00:00+00:00",
-    "period_s": 8.6,
-    "reasons": [],
+    "face_ft": 2.0,
+    "is_good": false,
+    "model_hour_utc": "2026-09-26T13:00:00+00:00",
+    "period_s": 8.4,
+    "reasons": [
+      "WVHT 2.8 < 3.0ft",
+      "wind 27.5kt @ 31\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+    ],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 25kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 28kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "E",
     "swell_dir_deg": 97,
-    "swell_ft": 3.2,
-    "tier": "groundswell",
-    "wind_dir": "NE",
-    "wind_dir_deg": 42,
-    "wind_speed_kt": 24.6
+    "swell_ft": 2.8,
+    "tier": null,
+    "wind_dir": "NNE",
+    "wind_dir_deg": 31,
+    "wind_speed_kt": 27.5
   },
   "spot": {
     "lat": 41.7902,
