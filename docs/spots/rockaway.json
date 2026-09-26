@@ -7,7 +7,7 @@
     "sunrise_local": "6:46 AM",
     "sunset_local": "6:45 PM"
   },
-  "fetched_at": "2026-09-26T13:51:52.233689+00:00",
+  "fetched_at": "2026-09-26T17:37:46.861291+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -33,7 +33,7 @@
         "peak_face_ft": 2.6,
         "peak_period_s": 7.7,
         "peak_swell_ft": 4.0,
-        "peak_wind_kt": 18.1,
+        "peak_wind_kt": 18.7,
         "score": 28.18,
         "start_local": "2026-09-27T06:00:00-04:00",
         "start_utc": "2026-09-27T10:00:00+00:00",
@@ -60,24 +60,24 @@
     }
   },
   "now": {
-    "face_ft": 5.1,
+    "face_ft": 4.1,
     "is_good": true,
-    "model_hour_utc": "2026-09-26T13:00:00+00:00",
-    "period_s": 9.2,
+    "model_hour_utc": "2026-09-26T17:00:00+00:00",
+    "period_s": 8.2,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udee0",
-      "label": "Too big for you",
-      "level": "out-of-range",
-      "note": "~5ft face \u2014 sit this one out and watch."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 99,
-    "swell_ft": 6.6,
+    "swell_dir_deg": 95,
+    "swell_ft": 6.0,
     "tier": "groundswell",
-    "wind_dir": "NNE",
-    "wind_dir_deg": 13,
-    "wind_speed_kt": 18.3
+    "wind_dir": "N",
+    "wind_dir_deg": 10,
+    "wind_speed_kt": 17.2
   },
   "spot": {
     "lat": 40.5817,
