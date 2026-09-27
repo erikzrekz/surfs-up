@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:30 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 11h32 (6:36 AM)",
+    "status": "night",
     "sunrise_local": "6:35 AM",
     "sunset_local": "6:30 PM"
   },
-  "fetched_at": "2026-09-27T20:10:45.216925+00:00",
+  "fetched_at": "2026-09-27T23:03:39.478798+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -43,41 +43,27 @@
     ],
     "lat": 43.125,
     "lon": -70.54166,
-    "next_window": {
-      "duration_h": 3,
-      "end_local": "2026-09-27T17:00:00-04:00",
-      "end_utc": "2026-09-27T21:00:00+00:00",
-      "id": "586e3515ac29",
-      "peak_face_ft": 3.9,
-      "peak_period_s": 7.3,
-      "peak_swell_ft": 6.4,
-      "peak_wind_kt": 21.3,
-      "score": 42.92,
-      "start_local": "2026-09-27T14:00:00-04:00",
-      "start_utc": "2026-09-27T18:00:00+00:00",
-      "tier": "groundswell",
-      "wind_dir": "NE"
-    }
+    "next_window": null
   },
   "now": {
-    "face_ft": 3.7,
+    "face_ft": 3.6,
     "is_good": true,
-    "model_hour_utc": "2026-09-27T20:00:00+00:00",
-    "period_s": 7.0,
+    "model_hour_utc": "2026-09-27T23:00:00+00:00",
+    "period_s": 7.2,
     "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 20kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
     },
-    "swell_dir": "E",
-    "swell_dir_deg": 99,
-    "swell_ft": 6.4,
+    "swell_dir": "ESE",
+    "swell_dir_deg": 102,
+    "swell_ft": 6.0,
     "tier": "groundswell",
     "wind_dir": "NE",
     "wind_dir_deg": 38,
-    "wind_speed_kt": 19.7
+    "wind_speed_kt": 17.5
   },
   "spot": {
     "lat": 43.145,
