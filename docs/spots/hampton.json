@@ -7,7 +7,7 @@
     "sunrise_local": "6:36 AM",
     "sunset_local": "6:31 PM"
   },
-  "fetched_at": "2026-09-27T17:13:02.724557+00:00",
+  "fetched_at": "2026-09-27T20:10:45.216925+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 3.5,
         "peak_period_s": 7.2,
         "peak_swell_ft": 5.8,
-        "peak_wind_kt": 20.9,
+        "peak_wind_kt": 21.1,
         "score": 38.45,
         "start_local": "2026-09-27T16:00:00-04:00",
         "start_utc": "2026-09-27T20:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 3.5,
       "peak_period_s": 7.2,
       "peak_swell_ft": 5.8,
-      "peak_wind_kt": 20.9,
+      "peak_wind_kt": 21.1,
       "score": 38.45,
       "start_local": "2026-09-27T16:00:00-04:00",
       "start_utc": "2026-09-27T20:00:00+00:00",
@@ -45,24 +45,24 @@
     }
   },
   "now": {
-    "face_ft": 3.7,
+    "face_ft": 3.5,
     "is_good": true,
-    "model_hour_utc": "2026-09-27T17:00:00+00:00",
-    "period_s": 7.3,
+    "model_hour_utc": "2026-09-27T20:00:00+00:00",
+    "period_s": 7.2,
     "reasons": [],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 23kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 21kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 95,
-    "swell_ft": 6.1,
+    "swell_dir_deg": 98,
+    "swell_ft": 5.8,
     "tier": "groundswell",
-    "wind_dir": "NNE",
-    "wind_dir_deg": 33,
-    "wind_speed_kt": 23.0
+    "wind_dir": "NE",
+    "wind_dir_deg": 38,
+    "wind_speed_kt": 21.1
   },
   "spot": {
     "lat": 42.9067,
