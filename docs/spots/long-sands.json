@@ -1,23 +1,39 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 2h57 (6:36 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 6:29 PM",
+    "status": "day",
     "sunrise_local": "6:36 AM",
     "sunset_local": "6:29 PM"
   },
-  "fetched_at": "2026-09-28T07:39:17.362566+00:00",
+  "fetched_at": "2026-09-28T15:59:13.858287+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-09-28T10:00:00-04:00",
+        "end_utc": "2026-09-28T14:00:00+00:00",
+        "id": "b6106cfac193",
+        "peak_face_ft": 3.3,
+        "peak_period_s": 7.0,
+        "peak_swell_ft": 5.6,
+        "peak_wind_kt": 19.0,
+        "score": 47.94,
+        "start_local": "2026-09-28T06:00:00-04:00",
+        "start_utc": "2026-09-28T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": null
   },
   "now": {
-    "face_ft": 3.5,
+    "face_ft": 3.1,
     "is_good": false,
-    "model_hour_utc": "2026-09-28T07:00:00+00:00",
+    "model_hour_utc": "2026-09-28T15:00:00+00:00",
     "period_s": 6.8,
     "reasons": [
       "DPD 6.85 < 7.0s"
@@ -26,15 +42,15 @@
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "3.5ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "3.1ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 100,
-    "swell_ft": 6.1,
+    "swell_dir_deg": 97,
+    "swell_ft": 5.4,
     "tier": null,
-    "wind_dir": "NE",
-    "wind_dir_deg": 34,
-    "wind_speed_kt": 16.7
+    "wind_dir": "NNE",
+    "wind_dir_deg": 32,
+    "wind_speed_kt": 17.4
   },
   "spot": {
     "lat": 43.145,
