@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 9h24 (6:43 AM)",
+    "note": "Sunrise in 3h23 (6:43 AM)",
     "status": "night",
-    "sunrise_local": "6:42 AM",
-    "sunset_local": "6:27 PM"
+    "sunrise_local": "6:43 AM",
+    "sunset_local": "6:26 PM"
   },
-  "fetched_at": "2026-10-02T01:19:12.056546+00:00",
+  "fetched_at": "2026-10-02T07:19:33.568005+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -16,30 +16,30 @@
   },
   "nowcast": {
     "apd_s": 4.6,
-    "dpd_s": 5.0,
-    "face_ft": 1.8,
+    "dpd_s": 6.0,
+    "face_ft": 2.1,
     "is_good": false,
-    "observed_at": "2026-10-02T01:15:25+00:00",
+    "observed_at": "2026-10-02T07:15:27+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s"
+      "DPD 6.0 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "1.8ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "2.1ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 213.0,
+    "swell_dir_deg": 202.0,
     "tier": null,
-    "wind_dir": "SSW",
-    "wind_dir_deg": 205,
+    "wind_dir": "SW",
+    "wind_dir_deg": 214,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 15.0,
-    "wvht_ft": 3.9
+    "wind_speed_kt": 12.5,
+    "wvht_ft": 4.3
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
