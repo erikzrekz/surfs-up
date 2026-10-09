@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 8h22 (6:51 AM)",
+    "note": "Sunrise in 1h20 (6:51 AM)",
     "status": "night",
-    "sunrise_local": "6:50 AM",
-    "sunset_local": "6:16 PM"
+    "sunrise_local": "6:51 AM",
+    "sunset_local": "6:14 PM"
   },
-  "fetched_at": "2026-10-09T02:28:36.240840+00:00",
+  "fetched_at": "2026-10-09T09:31:19.920371+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 2.6,
         "peak_period_s": 7.3,
         "peak_swell_ft": 4.3,
-        "peak_wind_kt": 11.4,
+        "peak_wind_kt": 13.6,
         "score": 47.77,
         "start_local": "2026-10-12T08:00:00-04:00",
         "start_utc": "2026-10-12T12:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 2.6,
       "peak_period_s": 7.3,
       "peak_swell_ft": 4.3,
-      "peak_wind_kt": 11.4,
+      "peak_wind_kt": 13.6,
       "score": 47.77,
       "start_local": "2026-10-12T08:00:00-04:00",
       "start_utc": "2026-10-12T12:00:00+00:00",
@@ -45,29 +45,31 @@
     }
   },
   "nowcast": {
-    "apd_s": 5.0,
+    "apd_s": null,
     "dpd_s": 6.0,
-    "face_ft": 2.1,
-    "is_good": true,
-    "observed_at": "2026-10-09T02:15:35+00:00",
-    "reasons": [],
+    "face_ft": 1.5,
+    "is_good": false,
+    "observed_at": "2026-10-09T09:15:33+00:00",
+    "reasons": [
+      "DPD 6.0 < 7.0s"
+    ],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "2.1ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.5ft @ 6s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SW",
-    "swell_dir_deg": 220.0,
-    "tier": "clean",
+    "swell_dir": null,
+    "swell_dir_deg": null,
+    "tier": null,
     "wind_dir": "WNW",
-    "wind_dir_deg": 303,
+    "wind_dir_deg": 291,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 5.5,
-    "wvht_ft": 4.3
+    "wind_speed_kt": 9.0,
+    "wvht_ft": 3.0
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
