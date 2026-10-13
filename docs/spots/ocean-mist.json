@@ -1,68 +1,38 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:09 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 10h42 (6:55 AM)",
+    "status": "night",
     "sunrise_local": "6:54 AM",
     "sunset_local": "6:09 PM"
   },
-  "fetched_at": "2026-10-12T17:54:07.948757+00:00",
+  "fetched_at": "2026-10-13T00:12:46.277241+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 12,
-        "end_local": "2026-10-12T19:00:00-04:00",
-        "end_utc": "2026-10-12T23:00:00+00:00",
-        "id": "098847a2faed",
-        "peak_face_ft": 2.9,
-        "peak_period_s": 7.6,
-        "peak_swell_ft": 4.6,
-        "peak_wind_kt": 12.4,
-        "score": 127.68,
-        "start_local": "2026-10-12T07:00:00-04:00",
-        "start_utc": "2026-10-12T11:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "N"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 12,
-      "end_local": "2026-10-12T19:00:00-04:00",
-      "end_utc": "2026-10-12T23:00:00+00:00",
-      "id": "098847a2faed",
-      "peak_face_ft": 2.9,
-      "peak_period_s": 7.6,
-      "peak_swell_ft": 4.6,
-      "peak_wind_kt": 12.4,
-      "score": 127.68,
-      "start_local": "2026-10-12T07:00:00-04:00",
-      "start_utc": "2026-10-12T11:00:00+00:00",
-      "tier": "groundswell",
-      "wind_dir": "N"
-    }
+    "next_window": null
   },
   "now": {
-    "face_ft": 2.4,
+    "face_ft": 2.0,
     "is_good": true,
-    "model_hour_utc": "2026-10-12T17:00:00+00:00",
-    "period_s": 7.5,
+    "model_hour_utc": "2026-10-13T00:00:00+00:00",
+    "period_s": 6.8,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "2.4ft @ 8s, wind 6kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "2.0ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "SSE",
-    "swell_dir_deg": 166,
-    "swell_ft": 3.8,
-    "tier": "groundswell",
-    "wind_dir": "N",
-    "wind_dir_deg": 350,
-    "wind_speed_kt": 6.5
+    "swell_dir_deg": 158,
+    "swell_ft": 3.5,
+    "tier": "clean",
+    "wind_dir": "NW",
+    "wind_dir_deg": 308,
+    "wind_speed_kt": 5.2
   },
   "spot": {
     "lat": 41.37378,
