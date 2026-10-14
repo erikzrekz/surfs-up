@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 6:01 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 12h52 (6:56 AM)",
+    "status": "night",
     "sunrise_local": "6:55 AM",
     "sunset_local": "6:01 PM"
   },
-  "fetched_at": "2026-10-14T18:54:26.618386+00:00",
+  "fetched_at": "2026-10-14T22:03:39.967418+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -23,7 +23,7 @@
         "start_local": "2026-10-14T06:00:00-04:00",
         "start_utc": "2026-10-14T10:00:00+00:00",
         "tier": "clean",
-        "wind_dir": "WNW"
+        "wind_dir": "W"
       }
     ],
     "lat": 43.125,
@@ -31,27 +31,27 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 1.1,
+    "face_ft": 0.9,
     "is_good": false,
-    "model_hour_utc": "2026-10-14T18:00:00+00:00",
-    "period_s": 5.4,
+    "model_hour_utc": "2026-10-14T22:00:00+00:00",
+    "period_s": 5.3,
     "reasons": [
-      "WVHT 2.5 < 3.0ft",
-      "DPD 5.4 < 7.0s"
+      "WVHT 2.0 < 3.0ft",
+      "DPD 5.35 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "1.1ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
+      "emoji": "\ud83e\udd71",
+      "label": "Flat",
+      "level": "flat",
+      "note": "~0.9ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 96,
-    "swell_ft": 2.5,
+    "swell_dir_deg": 95,
+    "swell_ft": 2.0,
     "tier": null,
     "wind_dir": "WNW",
-    "wind_dir_deg": 294,
-    "wind_speed_kt": 8.8
+    "wind_dir_deg": 298,
+    "wind_speed_kt": 6.2
   },
   "spot": {
     "lat": 43.145,
