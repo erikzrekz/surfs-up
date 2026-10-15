@@ -1,72 +1,7 @@
 {
-  "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 5h43 (6:57 AM)",
-    "status": "night",
-    "sunrise_local": "6:57 AM",
-    "sunset_local": "6:03 PM"
-  },
-  "fetched_at": "2026-10-15T05:14:27.344490+00:00",
-  "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 7,
-        "end_local": "2026-10-19T19:00:00-04:00",
-        "end_utc": "2026-10-19T23:00:00+00:00",
-        "id": "511c5ac8415b",
-        "peak_face_ft": 3.2,
-        "peak_period_s": 9.3,
-        "peak_swell_ft": 4.1,
-        "peak_wind_kt": 11.8,
-        "score": 82.47,
-        "start_local": "2026-10-19T12:00:00-04:00",
-        "start_utc": "2026-10-19T16:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "SW"
-      }
-    ],
-    "lat": 41.458336,
-    "lon": -71.20833,
-    "next_window": {
-      "duration_h": 7,
-      "end_local": "2026-10-19T19:00:00-04:00",
-      "end_utc": "2026-10-19T23:00:00+00:00",
-      "id": "511c5ac8415b",
-      "peak_face_ft": 3.2,
-      "peak_period_s": 9.3,
-      "peak_swell_ft": 4.1,
-      "peak_wind_kt": 11.8,
-      "score": 82.47,
-      "start_local": "2026-10-19T12:00:00-04:00",
-      "start_utc": "2026-10-19T16:00:00+00:00",
-      "tier": "groundswell",
-      "wind_dir": "SW"
-    }
-  },
-  "now": {
-    "face_ft": 1.1,
-    "is_good": false,
-    "model_hour_utc": "2026-10-15T05:00:00+00:00",
-    "period_s": 4.6,
-    "reasons": [
-      "WVHT 2.4 < 3.0ft",
-      "DPD 4.6 < 7.0s"
-    ],
-    "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "1.1ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
-    },
-    "swell_dir": "SSW",
-    "swell_dir_deg": 200,
-    "swell_ft": 2.4,
-    "tier": null,
-    "wind_dir": "NNW",
-    "wind_dir_deg": 331,
-    "wind_speed_kt": 9.6
-  },
+  "fetched_at": "2026-10-15T10:01:23.851018+00:00",
+  "forecast": null,
+  "now": null,
   "spot": {
     "lat": 41.4824,
     "lon": -71.2533,

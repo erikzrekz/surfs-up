@@ -2,42 +2,74 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 5h43 (6:57 AM)",
+    "note": "Sunrise in 56 min (6:57 AM)",
     "status": "night",
     "sunrise_local": "6:57 AM",
     "sunset_local": "6:05 PM"
   },
-  "fetched_at": "2026-10-15T05:14:27.344490+00:00",
+  "fetched_at": "2026-10-15T10:01:23.851018+00:00",
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-10-19T19:00:00-04:00",
+        "end_utc": "2026-10-19T23:00:00+00:00",
+        "id": "2eb68f7288f5",
+        "peak_face_ft": 3.4,
+        "peak_period_s": 9.2,
+        "peak_swell_ft": 4.4,
+        "peak_wind_kt": 10.9,
+        "score": 49.58,
+        "start_local": "2026-10-19T15:00:00-04:00",
+        "start_utc": "2026-10-19T19:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "SSW"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 4,
+      "end_local": "2026-10-19T19:00:00-04:00",
+      "end_utc": "2026-10-19T23:00:00+00:00",
+      "id": "2eb68f7288f5",
+      "peak_face_ft": 3.4,
+      "peak_period_s": 9.2,
+      "peak_swell_ft": 4.4,
+      "peak_wind_kt": 10.9,
+      "score": 49.58,
+      "start_local": "2026-10-19T15:00:00-04:00",
+      "start_utc": "2026-10-19T19:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "SSW"
+    }
   },
   "nowcast": {
-    "apd_s": 4.8,
-    "dpd_s": 7.0,
-    "face_ft": 2.3,
-    "is_good": true,
-    "observed_at": "2026-10-15T04:50:43+00:00",
-    "reasons": [],
+    "apd_s": null,
+    "dpd_s": 4.0,
+    "face_ft": 1.6,
+    "is_good": false,
+    "observed_at": "2026-10-15T09:15:40+00:00",
+    "reasons": [
+      "DPD 4.0 < 7.0s"
+    ],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
       "level": "marginal",
-      "note": "2.3ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSW",
-    "swell_dir_deg": 196.0,
-    "tier": "groundswell",
-    "wind_dir": "NNW",
-    "wind_dir_deg": 328,
+    "swell_dir": null,
+    "swell_dir_deg": null,
+    "tier": null,
+    "wind_dir": "N",
+    "wind_dir_deg": 355,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 13.8,
-    "wvht_ft": 3.9
+    "wind_speed_kt": 17.5,
+    "wvht_ft": 3.6
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
