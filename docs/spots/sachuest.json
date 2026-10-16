@@ -7,7 +7,7 @@
     "sunrise_local": "6:58 AM",
     "sunset_local": "6:02 PM"
   },
-  "fetched_at": "2026-10-16T14:34:09.936176+00:00",
+  "fetched_at": "2026-10-16T18:22:43.540552+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 3.2,
         "peak_period_s": 8.5,
         "peak_swell_ft": 4.5,
-        "peak_wind_kt": 16.8,
+        "peak_wind_kt": 16.4,
         "score": 93.84,
         "start_local": "2026-10-19T11:00:00-04:00",
         "start_utc": "2026-10-19T15:00:00+00:00",
@@ -33,7 +33,7 @@
         "peak_face_ft": 2.2,
         "peak_period_s": 8.1,
         "peak_swell_ft": 3.3,
-        "peak_wind_kt": 15.3,
+        "peak_wind_kt": 15.1,
         "score": 33.05,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
@@ -51,7 +51,7 @@
       "peak_face_ft": 3.2,
       "peak_period_s": 8.5,
       "peak_swell_ft": 4.5,
-      "peak_wind_kt": 16.8,
+      "peak_wind_kt": 16.4,
       "score": 93.84,
       "start_local": "2026-10-19T11:00:00-04:00",
       "start_utc": "2026-10-19T15:00:00+00:00",
@@ -60,27 +60,27 @@
     }
   },
   "now": {
-    "face_ft": 0.4,
+    "face_ft": 0.7,
     "is_good": false,
-    "model_hour_utc": "2026-10-16T14:00:00+00:00",
-    "period_s": 4.5,
+    "model_hour_utc": "2026-10-16T18:00:00+00:00",
+    "period_s": 4.3,
     "reasons": [
-      "WVHT 0.9 < 3.0ft",
-      "DPD 4.5 < 7.0s"
+      "WVHT 1.6 < 3.0ft",
+      "DPD 4.3 < 7.0s"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.4ft face. Nothing to ride. Coffee instead."
+      "note": "~0.7ft face. Nothing to ride. Coffee instead."
     },
-    "swell_dir": "SE",
-    "swell_dir_deg": 131,
-    "swell_ft": 0.9,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 148,
+    "swell_ft": 1.6,
     "tier": null,
-    "wind_dir": "S",
-    "wind_dir_deg": 182,
-    "wind_speed_kt": 10.2
+    "wind_dir": "SSW",
+    "wind_dir_deg": 198,
+    "wind_speed_kt": 14.9
   },
   "spot": {
     "lat": 41.4824,

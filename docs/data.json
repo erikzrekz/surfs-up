@@ -7,7 +7,7 @@
     "sunrise_local": "6:59 AM",
     "sunset_local": "6:03 PM"
   },
-  "fetched_at": "2026-10-16T14:34:09.936176+00:00",
+  "fetched_at": "2026-10-16T18:22:43.540552+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -23,7 +23,7 @@
         "start_local": "2026-10-19T15:00:00-04:00",
         "start_utc": "2026-10-19T19:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "NE"
       },
       {
         "duration_h": 13,
@@ -33,7 +33,7 @@
         "peak_face_ft": 2.9,
         "peak_period_s": 8.2,
         "peak_swell_ft": 4.3,
-        "peak_wind_kt": 17.7,
+        "peak_wind_kt": 18.5,
         "score": 140.71,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
@@ -56,35 +56,36 @@
       "start_local": "2026-10-19T15:00:00-04:00",
       "start_utc": "2026-10-19T19:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "NNE"
+      "wind_dir": "NE"
     }
   },
   "nowcast": {
-    "apd_s": 4.0,
-    "dpd_s": 5.0,
-    "face_ft": 2.2,
+    "apd_s": 5.3,
+    "dpd_s": 6.0,
+    "face_ft": 3.6,
     "is_good": false,
-    "observed_at": "2026-10-16T14:15:52+00:00",
+    "observed_at": "2026-10-16T18:15:44+00:00",
     "reasons": [
-      "DPD 5.0 < 7.0s"
+      "DPD 6.0 < 7.0s",
+      "wind 17.8kt @ 210\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
       "emoji": "\ud83d\ude24",
       "label": "You're gonna get worked",
       "level": "worked",
-      "note": "2.2ft @ 5s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "note": "3.6ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 150.0,
+    "swell_dir": "S",
+    "swell_dir_deg": 178.0,
     "tier": null,
     "wind_dir": "SSW",
-    "wind_dir_deg": 195,
+    "wind_dir_deg": 210,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.7,
-    "wvht_ft": 4.9
+    "wind_speed_kt": 17.8,
+    "wvht_ft": 7.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
