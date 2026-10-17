@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 7h45 (7:00 AM)",
+    "note": "Sunrise in 3h06 (7:00 AM)",
     "status": "night",
-    "sunrise_local": "6:59 AM",
-    "sunset_local": "6:03 PM"
+    "sunrise_local": "7:00 AM",
+    "sunset_local": "6:02 PM"
   },
-  "fetched_at": "2026-10-17T03:14:33.717585+00:00",
+  "fetched_at": "2026-10-17T07:53:32.161490+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 3.2,
         "peak_period_s": 8.8,
         "peak_swell_ft": 4.3,
-        "peak_wind_kt": 19.7,
+        "peak_wind_kt": 21.2,
         "score": 151.01,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
@@ -33,12 +33,12 @@
         "peak_face_ft": 2.2,
         "peak_period_s": 7.7,
         "peak_swell_ft": 3.5,
-        "peak_wind_kt": 18.7,
+        "peak_wind_kt": 19.9,
         "score": 32.44,
         "start_local": "2026-10-21T15:00:00-04:00",
         "start_utc": "2026-10-21T19:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "NE"
       }
     ],
     "lat": 41.291664,
@@ -51,7 +51,7 @@
       "peak_face_ft": 3.2,
       "peak_period_s": 8.8,
       "peak_swell_ft": 4.3,
-      "peak_wind_kt": 19.7,
+      "peak_wind_kt": 21.2,
       "score": 151.01,
       "start_local": "2026-10-20T06:00:00-04:00",
       "start_utc": "2026-10-20T10:00:00+00:00",
@@ -62,27 +62,27 @@
   "nowcast": {
     "apd_s": 5.4,
     "dpd_s": 7.0,
-    "face_ft": 4.0,
+    "face_ft": 4.2,
     "is_good": true,
-    "observed_at": "2026-10-17T02:50:42+00:00",
+    "observed_at": "2026-10-17T07:50:42+00:00",
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "4.0ft @ 7s, wind 11kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 164.0,
+    "swell_dir": "S",
+    "swell_dir_deg": 190.0,
     "tier": "groundswell",
-    "wind_dir": "W",
-    "wind_dir_deg": 268,
+    "wind_dir": "WNW",
+    "wind_dir_deg": 302,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 11.3,
-    "wvht_ft": 6.9
+    "wind_speed_kt": 17.4,
+    "wvht_ft": 7.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
