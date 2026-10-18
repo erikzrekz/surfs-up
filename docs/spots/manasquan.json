@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 6h36 (7:10 AM)",
+    "note": "Sunrise in 2h03 (7:10 AM)",
     "status": "night",
     "sunrise_local": "7:10 AM",
     "sunset_local": "6:12 PM"
   },
-  "fetched_at": "2026-10-18T04:33:52.799528+00:00",
+  "fetched_at": "2026-10-18T09:06:42.150410+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -33,7 +33,7 @@
         "peak_face_ft": 5.5,
         "peak_period_s": 8.1,
         "peak_swell_ft": 8.1,
-        "peak_wind_kt": 15.5,
+        "peak_wind_kt": 16.8,
         "score": 261.14,
         "start_local": "2026-10-21T06:00:00-04:00",
         "start_utc": "2026-10-21T10:00:00+00:00",
@@ -48,7 +48,7 @@
         "peak_face_ft": 4.7,
         "peak_period_s": 7.7,
         "peak_swell_ft": 7.3,
-        "peak_wind_kt": 12.8,
+        "peak_wind_kt": 12.3,
         "score": 220.78,
         "start_local": "2026-10-22T06:00:00-04:00",
         "start_utc": "2026-10-22T10:00:00+00:00",
@@ -75,27 +75,27 @@
     }
   },
   "now": {
-    "face_ft": 0.7,
+    "face_ft": 1.0,
     "is_good": false,
-    "model_hour_utc": "2026-10-18T04:00:00+00:00",
-    "period_s": 5.3,
+    "model_hour_utc": "2026-10-18T09:00:00+00:00",
+    "period_s": 5.4,
     "reasons": [
-      "WVHT 1.5 < 3.0ft",
-      "DPD 5.35 < 7.0s"
+      "WVHT 2.2 < 3.0ft",
+      "DPD 5.4 < 7.0s"
     ],
     "skill": {
-      "emoji": "\ud83e\udd71",
-      "label": "Flat",
-      "level": "flat",
-      "note": "~0.7ft face. Nothing to ride. Coffee instead."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "1.0ft @ 5s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ENE",
-    "swell_dir_deg": 72,
-    "swell_ft": 1.5,
+    "swell_dir_deg": 76,
+    "swell_ft": 2.2,
     "tier": null,
     "wind_dir": "N",
-    "wind_dir_deg": 349,
-    "wind_speed_kt": 12.9
+    "wind_dir_deg": 4,
+    "wind_speed_kt": 10.1
   },
   "spot": {
     "lat": 40.1018,
