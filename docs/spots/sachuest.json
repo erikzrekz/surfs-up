@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 3h28 (7:02 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 5:56 PM",
+    "status": "day",
     "sunrise_local": "7:02 AM",
     "sunset_local": "5:56 PM"
   },
-  "fetched_at": "2026-10-20T07:33:56.785459+00:00",
+  "fetched_at": "2026-10-20T13:00:22.718923+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -15,11 +15,11 @@
         "end_local": "2026-10-20T10:00:00-04:00",
         "end_utc": "2026-10-20T14:00:00+00:00",
         "id": "d8aaee4c3754",
-        "peak_face_ft": 2.5,
+        "peak_face_ft": 2.2,
         "peak_period_s": 8.7,
-        "peak_swell_ft": 3.5,
-        "peak_wind_kt": 15.9,
-        "score": 36.89,
+        "peak_swell_ft": 3.1,
+        "peak_wind_kt": 17.1,
+        "score": 33.22,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
         "tier": "groundswell",
@@ -33,11 +33,11 @@
       "end_local": "2026-10-20T10:00:00-04:00",
       "end_utc": "2026-10-20T14:00:00+00:00",
       "id": "d8aaee4c3754",
-      "peak_face_ft": 2.5,
+      "peak_face_ft": 2.2,
       "peak_period_s": 8.7,
-      "peak_swell_ft": 3.5,
-      "peak_wind_kt": 15.9,
-      "score": 36.89,
+      "peak_swell_ft": 3.1,
+      "peak_wind_kt": 17.1,
+      "score": 33.22,
       "start_local": "2026-10-20T06:00:00-04:00",
       "start_utc": "2026-10-20T10:00:00+00:00",
       "tier": "groundswell",
@@ -45,24 +45,24 @@
     }
   },
   "now": {
-    "face_ft": 2.7,
+    "face_ft": 2.1,
     "is_good": true,
-    "model_hour_utc": "2026-10-20T07:00:00+00:00",
-    "period_s": 9.1,
+    "model_hour_utc": "2026-10-20T13:00:00+00:00",
+    "period_s": 8.6,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "2.7ft @ 9s, wind 12kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
-    "swell_dir": "SE",
-    "swell_dir_deg": 128,
-    "swell_ft": 3.5,
+    "swell_dir": "ESE",
+    "swell_dir_deg": 123,
+    "swell_ft": 3.0,
     "tier": "groundswell",
     "wind_dir": "NNE",
     "wind_dir_deg": 16,
-    "wind_speed_kt": 11.7
+    "wind_speed_kt": 17.1
   },
   "spot": {
     "lat": 41.4824,
