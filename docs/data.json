@@ -2,24 +2,54 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 11h21 (7:03 AM)",
+    "note": "Sunrise in 8h56 (7:03 AM)",
     "status": "night",
     "sunrise_local": "7:02 AM",
     "sunset_local": "5:58 PM"
   },
-  "fetched_at": "2026-10-19T23:41:56.402674+00:00",
+  "fetched_at": "2026-10-20T02:07:01.348259+00:00",
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 5,
+        "end_local": "2026-10-20T11:00:00-04:00",
+        "end_utc": "2026-10-20T15:00:00+00:00",
+        "id": "cc4f18bb6b7d",
+        "peak_face_ft": 3.0,
+        "peak_period_s": 8.4,
+        "peak_swell_ft": 4.3,
+        "peak_wind_kt": 21.3,
+        "score": 55.77,
+        "start_local": "2026-10-20T06:00:00-04:00",
+        "start_utc": "2026-10-20T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 5,
+      "end_local": "2026-10-20T11:00:00-04:00",
+      "end_utc": "2026-10-20T15:00:00+00:00",
+      "id": "cc4f18bb6b7d",
+      "peak_face_ft": 3.0,
+      "peak_period_s": 8.4,
+      "peak_swell_ft": 4.3,
+      "peak_wind_kt": 21.3,
+      "score": 55.77,
+      "start_local": "2026-10-20T06:00:00-04:00",
+      "start_utc": "2026-10-20T10:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "NNE"
+    }
   },
   "nowcast": {
     "apd_s": 7.3,
     "dpd_s": 11.0,
-    "face_ft": 8.7,
+    "face_ft": 9.0,
     "is_good": true,
-    "observed_at": "2026-10-19T23:15:46+00:00",
+    "observed_at": "2026-10-20T01:45:41+00:00",
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udee0",
@@ -31,13 +61,13 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SE",
-    "swell_dir_deg": 142.0,
+    "swell_dir_deg": 141.0,
     "tier": "groundswell",
     "wind_dir": "NE",
-    "wind_dir_deg": 49,
+    "wind_dir_deg": 56,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 15.2,
-    "wvht_ft": 9.5
+    "wind_speed_kt": 18.1,
+    "wvht_ft": 9.8
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
