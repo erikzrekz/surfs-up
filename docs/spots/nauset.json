@@ -7,7 +7,7 @@
     "sunrise_local": "6:57 AM",
     "sunset_local": "5:50 PM"
   },
-  "fetched_at": "2026-10-20T13:00:22.718923+00:00",
+  "fetched_at": "2026-10-20T17:58:19.911152+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 1.9,
         "peak_period_s": 7.5,
         "peak_swell_ft": 3.1,
-        "peak_wind_kt": 15.5,
+        "peak_wind_kt": 15.7,
         "score": 28.01,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "N"
       },
       {
         "duration_h": 5,
@@ -33,25 +33,25 @@
         "peak_face_ft": 2.1,
         "peak_period_s": 8.0,
         "peak_swell_ft": 3.1,
-        "peak_wind_kt": 19.1,
+        "peak_wind_kt": 21.2,
         "score": 37.37,
         "start_local": "2026-10-21T14:00:00-04:00",
         "start_utc": "2026-10-21T18:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NE"
+        "wind_dir": "NNE"
       },
       {
-        "duration_h": 7,
+        "duration_h": 4,
         "end_local": "2026-10-22T13:00:00-04:00",
         "end_utc": "2026-10-22T17:00:00+00:00",
-        "id": "9d009ca8a8c2",
+        "id": "b5f9b50c2bf7",
         "peak_face_ft": 1.9,
-        "peak_period_s": 7.5,
+        "peak_period_s": 7.3,
         "peak_swell_ft": 3.1,
-        "peak_wind_kt": 19.5,
-        "score": 50.06,
-        "start_local": "2026-10-22T06:00:00-04:00",
-        "start_utc": "2026-10-22T10:00:00+00:00",
+        "peak_wind_kt": 20.4,
+        "score": 28.03,
+        "start_local": "2026-10-22T09:00:00-04:00",
+        "start_utc": "2026-10-22T13:00:00+00:00",
         "tier": "groundswell",
         "wind_dir": "NNE"
       }
@@ -59,40 +59,42 @@
     "lat": 41.791664,
     "lon": -69.95833,
     "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-10-20T10:00:00-04:00",
-      "end_utc": "2026-10-20T14:00:00+00:00",
-      "id": "d8aaee4c3754",
-      "peak_face_ft": 1.9,
-      "peak_period_s": 7.5,
+      "duration_h": 5,
+      "end_local": "2026-10-21T19:00:00-04:00",
+      "end_utc": "2026-10-21T23:00:00+00:00",
+      "id": "094fcdbc4926",
+      "peak_face_ft": 2.1,
+      "peak_period_s": 8.0,
       "peak_swell_ft": 3.1,
-      "peak_wind_kt": 15.5,
-      "score": 28.01,
-      "start_local": "2026-10-20T06:00:00-04:00",
-      "start_utc": "2026-10-20T10:00:00+00:00",
+      "peak_wind_kt": 21.2,
+      "score": 37.37,
+      "start_local": "2026-10-21T14:00:00-04:00",
+      "start_utc": "2026-10-21T18:00:00+00:00",
       "tier": "groundswell",
       "wind_dir": "NNE"
     }
   },
   "now": {
-    "face_ft": 1.9,
-    "is_good": true,
-    "model_hour_utc": "2026-10-20T13:00:00+00:00",
-    "period_s": 7.5,
-    "reasons": [],
+    "face_ft": 1.8,
+    "is_good": false,
+    "model_hour_utc": "2026-10-20T17:00:00+00:00",
+    "period_s": 7.4,
+    "reasons": [
+      "WVHT 2.9 < 3.0ft"
+    ],
     "skill": {
       "emoji": "\ud83d\udca8",
       "label": "Blown out",
       "level": "marginal",
-      "note": "Wind 16kt \u2014 surface will be choppy. Small and messy."
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 105,
-    "swell_ft": 3.0,
-    "tier": "groundswell",
-    "wind_dir": "NNE",
-    "wind_dir_deg": 24,
-    "wind_speed_kt": 15.5
+    "swell_dir_deg": 102,
+    "swell_ft": 2.9,
+    "tier": null,
+    "wind_dir": "N",
+    "wind_dir_deg": 8,
+    "wind_speed_kt": 17.7
   },
   "spot": {
     "lat": 41.7902,

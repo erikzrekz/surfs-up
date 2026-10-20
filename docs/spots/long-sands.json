@@ -7,7 +7,7 @@
     "sunrise_local": "7:02 AM",
     "sunset_local": "5:51 PM"
   },
-  "fetched_at": "2026-10-20T13:00:22.718923+00:00",
+  "fetched_at": "2026-10-20T17:58:19.911152+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 3.0,
         "peak_period_s": 7.8,
         "peak_swell_ft": 4.7,
-        "peak_wind_kt": 11.6,
+        "peak_wind_kt": 11.1,
         "score": 143.06,
         "start_local": "2026-10-20T06:00:00-04:00",
         "start_utc": "2026-10-20T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NE"
+        "wind_dir": "NNE"
       }
     ],
     "lat": 43.125,
@@ -36,33 +36,33 @@
       "peak_face_ft": 3.0,
       "peak_period_s": 7.8,
       "peak_swell_ft": 4.7,
-      "peak_wind_kt": 11.6,
+      "peak_wind_kt": 11.1,
       "score": 143.06,
       "start_local": "2026-10-20T06:00:00-04:00",
       "start_utc": "2026-10-20T10:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "NE"
+      "wind_dir": "NNE"
     }
   },
   "now": {
-    "face_ft": 2.9,
+    "face_ft": 3.0,
     "is_good": true,
-    "model_hour_utc": "2026-10-20T13:00:00+00:00",
-    "period_s": 7.7,
+    "model_hour_utc": "2026-10-20T17:00:00+00:00",
+    "period_s": 7.6,
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.9ft @ 8s, wind 8kt. Clean enough, sized right \u2014 go."
+      "note": "3.0ft @ 8s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 122,
-    "swell_ft": 4.5,
+    "swell_dir_deg": 116,
+    "swell_ft": 4.7,
     "tier": "groundswell",
     "wind_dir": "NNE",
-    "wind_dir_deg": 15,
-    "wind_speed_kt": 8.4
+    "wind_dir_deg": 29,
+    "wind_speed_kt": 10.4
   },
   "spot": {
     "lat": 43.145,
