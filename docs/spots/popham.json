@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 10h57 (7:01 AM)",
+    "note": "Sunrise in 6h14 (7:01 AM)",
     "status": "night",
-    "sunrise_local": "6:59 AM",
-    "sunset_local": "5:47 PM"
+    "sunrise_local": "7:01 AM",
+    "sunset_local": "5:45 PM"
   },
-  "fetched_at": "2026-10-21T00:04:26.655474+00:00",
+  "fetched_at": "2026-10-21T04:46:52.019466+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 2.6,
         "peak_period_s": 7.7,
         "peak_swell_ft": 4.1,
-        "peak_wind_kt": 7.3,
+        "peak_wind_kt": 7.6,
         "score": 38.81,
         "start_local": "2026-10-21T06:00:00-04:00",
         "start_utc": "2026-10-21T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "N"
       },
       {
         "duration_h": 4,
@@ -33,12 +33,12 @@
         "peak_face_ft": 3.4,
         "peak_period_s": 7.2,
         "peak_swell_ft": 5.7,
-        "peak_wind_kt": 7.4,
+        "peak_wind_kt": 7.6,
         "score": 49.76,
         "start_local": "2026-10-22T06:00:00-04:00",
         "start_utc": "2026-10-22T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "NNE"
+        "wind_dir": "N"
       }
     ],
     "lat": 43.708336,
@@ -51,33 +51,33 @@
       "peak_face_ft": 2.6,
       "peak_period_s": 7.7,
       "peak_swell_ft": 4.1,
-      "peak_wind_kt": 7.3,
+      "peak_wind_kt": 7.6,
       "score": 38.81,
       "start_local": "2026-10-21T06:00:00-04:00",
       "start_utc": "2026-10-21T10:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "NNE"
+      "wind_dir": "N"
     }
   },
   "now": {
-    "face_ft": 2.9,
+    "face_ft": 2.6,
     "is_good": true,
-    "model_hour_utc": "2026-10-21T00:00:00+00:00",
-    "period_s": 7.8,
+    "model_hour_utc": "2026-10-21T04:00:00+00:00",
+    "period_s": 7.5,
     "reasons": [],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "2.9ft @ 8s, wind 7kt. Clean enough, sized right \u2014 go."
+      "note": "2.6ft @ 8s, wind 10kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 123,
-    "swell_ft": 4.5,
+    "swell_dir_deg": 122,
+    "swell_ft": 4.1,
     "tier": "groundswell",
-    "wind_dir": "NE",
-    "wind_dir_deg": 36,
-    "wind_speed_kt": 6.6
+    "wind_dir": "N",
+    "wind_dir_deg": 7,
+    "wind_speed_kt": 9.6
   },
   "spot": {
     "lat": 43.7378,
