@@ -1,7 +1,84 @@
 {
-  "fetched_at": "2026-10-21T04:46:52.019466+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 1h22 (7:13 AM)",
+    "status": "night",
+    "sunrise_local": "7:13 AM",
+    "sunset_local": "6:07 PM"
+  },
+  "fetched_at": "2026-10-21T09:50:36.196578+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 13,
+        "end_local": "2026-10-21T19:00:00-04:00",
+        "end_utc": "2026-10-21T23:00:00+00:00",
+        "id": "8bde39d63632",
+        "peak_face_ft": 5.8,
+        "peak_period_s": 9.3,
+        "peak_swell_ft": 7.5,
+        "peak_wind_kt": 14.8,
+        "score": 277.13,
+        "start_local": "2026-10-21T06:00:00-04:00",
+        "start_utc": "2026-10-21T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "N"
+      },
+      {
+        "duration_h": 13,
+        "end_local": "2026-10-22T19:00:00-04:00",
+        "end_utc": "2026-10-22T23:00:00+00:00",
+        "id": "3a8af331ba1d",
+        "peak_face_ft": 4.6,
+        "peak_period_s": 7.8,
+        "peak_swell_ft": 7.0,
+        "peak_wind_kt": 11.6,
+        "score": 218.39,
+        "start_local": "2026-10-22T06:00:00-04:00",
+        "start_utc": "2026-10-22T10:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "NNW"
+      }
+    ],
+    "lat": 40.125,
+    "lon": -73.87499,
+    "next_window": {
+      "duration_h": 13,
+      "end_local": "2026-10-21T19:00:00-04:00",
+      "end_utc": "2026-10-21T23:00:00+00:00",
+      "id": "8bde39d63632",
+      "peak_face_ft": 5.8,
+      "peak_period_s": 9.3,
+      "peak_swell_ft": 7.5,
+      "peak_wind_kt": 14.8,
+      "score": 277.13,
+      "start_local": "2026-10-21T06:00:00-04:00",
+      "start_utc": "2026-10-21T10:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "N"
+    }
+  },
+  "now": {
+    "face_ft": 4.1,
+    "is_good": true,
+    "model_hour_utc": "2026-10-21T09:00:00+00:00",
+    "period_s": 8.2,
+    "reasons": [],
+    "skill": {
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "4.1ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
+    },
+    "swell_dir": "E",
+    "swell_dir_deg": 98,
+    "swell_ft": 6.0,
+    "tier": "groundswell",
+    "wind_dir": "NNE",
+    "wind_dir_deg": 21,
+    "wind_speed_kt": 13.1
+  },
   "spot": {
     "lat": 40.1018,
     "lon": -74.0337,
