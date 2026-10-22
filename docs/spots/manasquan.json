@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 5h27 (7:14 AM)",
-    "status": "night",
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 1 min ago \u2014 golden hour",
+    "status": "dawn",
     "sunrise_local": "7:14 AM",
     "sunset_local": "6:06 PM"
   },
-  "fetched_at": "2026-10-22T05:47:11.035131+00:00",
+  "fetched_at": "2026-10-22T11:15:08.137018+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,7 +18,7 @@
         "peak_face_ft": 5.1,
         "peak_period_s": 8.1,
         "peak_swell_ft": 7.5,
-        "peak_wind_kt": 11.8,
+        "peak_wind_kt": 11.6,
         "score": 242.19,
         "start_local": "2026-10-22T06:00:00-04:00",
         "start_utc": "2026-10-22T10:00:00+00:00",
@@ -36,7 +36,7 @@
       "peak_face_ft": 5.1,
       "peak_period_s": 8.1,
       "peak_swell_ft": 7.5,
-      "peak_wind_kt": 11.8,
+      "peak_wind_kt": 11.6,
       "score": 242.19,
       "start_local": "2026-10-22T06:00:00-04:00",
       "start_utc": "2026-10-22T10:00:00+00:00",
@@ -45,24 +45,24 @@
     }
   },
   "now": {
-    "face_ft": 5.0,
+    "face_ft": 4.9,
     "is_good": true,
-    "model_hour_utc": "2026-10-22T05:00:00+00:00",
-    "period_s": 7.8,
+    "model_hour_utc": "2026-10-22T11:00:00+00:00",
+    "period_s": 8.1,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udee0",
-      "label": "Too big for you",
-      "level": "out-of-range",
-      "note": "~5ft face \u2014 sit this one out and watch."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "4.9ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 86,
-    "swell_ft": 7.7,
+    "swell_dir_deg": 85,
+    "swell_ft": 7.3,
     "tier": "groundswell",
-    "wind_dir": "N",
-    "wind_dir_deg": 2,
-    "wind_speed_kt": 8.2
+    "wind_dir": "NNW",
+    "wind_dir_deg": 343,
+    "wind_speed_kt": 7.3
   },
   "spot": {
     "lat": 40.1018,
