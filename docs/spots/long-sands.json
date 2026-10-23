@@ -7,32 +7,50 @@
     "sunrise_local": "7:06 AM",
     "sunset_local": "5:47 PM"
   },
-  "fetched_at": "2026-10-23T11:55:36.219564+00:00",
+  "fetched_at": "2026-10-23T16:37:24.678867+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-10-23T11:00:00-04:00",
+        "end_utc": "2026-10-23T15:00:00+00:00",
+        "id": "3e012de39034",
+        "peak_face_ft": 2.5,
+        "peak_period_s": 7.7,
+        "peak_swell_ft": 3.9,
+        "peak_wind_kt": 10.0,
+        "score": 36.34,
+        "start_local": "2026-10-23T07:00:00-04:00",
+        "start_utc": "2026-10-23T11:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "N"
+      }
+    ],
     "lat": 43.125,
     "lon": -70.54166,
     "next_window": null
   },
   "now": {
-    "face_ft": 1.9,
-    "is_good": true,
-    "model_hour_utc": "2026-10-23T11:00:00+00:00",
-    "period_s": 7.0,
-    "reasons": [],
+    "face_ft": 2.2,
+    "is_good": false,
+    "model_hour_utc": "2026-10-23T16:00:00+00:00",
+    "period_s": 6.5,
+    "reasons": [
+      "DPD 6.5 < 7.0s"
+    ],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "1.9ft @ 7s, wind 8kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "2.2ft @ 6s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
-    "swell_dir": "E",
-    "swell_dir_deg": 84,
-    "swell_ft": 3.2,
-    "tier": "groundswell",
-    "wind_dir": "N",
-    "wind_dir_deg": 350,
-    "wind_speed_kt": 7.8
+    "swell_dir": "ENE",
+    "swell_dir_deg": 77,
+    "swell_ft": 4.0,
+    "tier": null,
+    "wind_dir": "NNE",
+    "wind_dir_deg": 19,
+    "wind_speed_kt": 9.1
   },
   "spot": {
     "lat": 43.145,
