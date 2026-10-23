@@ -2,55 +2,37 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 12h04 (7:03 AM)",
+    "note": "Sunrise in 9h40 (7:03 AM)",
     "status": "night",
     "sunrise_local": "7:02 AM",
     "sunset_local": "5:44 PM"
   },
-  "fetched_at": "2026-10-22T22:58:41.821955+00:00",
+  "fetched_at": "2026-10-23T01:23:15.754358+00:00",
   "forecast": {
-    "all_windows_120h": [
-      {
-        "duration_h": 8,
-        "end_local": "2026-10-22T14:00:00-04:00",
-        "end_utc": "2026-10-22T18:00:00+00:00",
-        "id": "4f3494f4bd6b",
-        "peak_face_ft": 3.2,
-        "peak_period_s": 7.2,
-        "peak_swell_ft": 5.4,
-        "peak_wind_kt": 11.7,
-        "score": 95.62,
-        "start_local": "2026-10-22T06:00:00-04:00",
-        "start_utc": "2026-10-22T10:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "N"
-      }
-    ],
+    "all_windows_120h": [],
     "lat": 43.708336,
     "lon": -69.79166,
     "next_window": null
   },
   "now": {
-    "face_ft": 2.5,
-    "is_good": false,
-    "model_hour_utc": "2026-10-22T22:00:00+00:00",
-    "period_s": 6.8,
-    "reasons": [
-      "DPD 6.85 < 7.0s"
-    ],
+    "face_ft": 2.4,
+    "is_good": true,
+    "model_hour_utc": "2026-10-23T01:00:00+00:00",
+    "period_s": 7.1,
+    "reasons": [],
     "skill": {
-      "emoji": "\ud83d\ude24",
-      "label": "You're gonna get worked",
-      "level": "worked",
-      "note": "2.5ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "2.4ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 109,
-    "swell_ft": 4.4,
-    "tier": null,
+    "swell_dir_deg": 107,
+    "swell_ft": 4.0,
+    "tier": "groundswell",
     "wind_dir": "N",
-    "wind_dir_deg": 3,
-    "wind_speed_kt": 8.8
+    "wind_dir_deg": 9,
+    "wind_speed_kt": 12.2
   },
   "spot": {
     "lat": 43.7378,
