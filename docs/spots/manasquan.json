@@ -7,77 +7,62 @@
     "sunrise_local": "7:16 AM",
     "sunset_local": "6:03 PM"
   },
-  "fetched_at": "2026-10-24T14:47:09.861809+00:00",
+  "fetched_at": "2026-10-24T17:52:34.725716+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 6,
-        "end_local": "2026-10-24T12:00:00-04:00",
-        "end_utc": "2026-10-24T16:00:00+00:00",
-        "id": "bd0523d4edc3",
+        "duration_h": 13,
+        "end_local": "2026-10-24T19:00:00-04:00",
+        "end_utc": "2026-10-24T23:00:00+00:00",
+        "id": "a7ce5c27d938",
         "peak_face_ft": 2.1,
         "peak_period_s": 7.8,
         "peak_swell_ft": 3.3,
-        "peak_wind_kt": 5.1,
-        "score": 47.43,
+        "peak_wind_kt": 5.5,
+        "score": 102.77,
         "start_local": "2026-10-24T06:00:00-04:00",
         "start_utc": "2026-10-24T10:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "WNW"
-      },
-      {
-        "duration_h": 5,
-        "end_local": "2026-10-24T19:00:00-04:00",
-        "end_utc": "2026-10-24T23:00:00+00:00",
-        "id": "3a539d840af5",
-        "peak_face_ft": 1.8,
-        "peak_period_s": 7.1,
-        "peak_swell_ft": 3.1,
-        "peak_wind_kt": 5.8,
-        "score": 33.37,
-        "start_local": "2026-10-24T14:00:00-04:00",
-        "start_utc": "2026-10-24T18:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "E"
+        "wind_dir": "NW"
       }
     ],
     "lat": 40.125,
     "lon": -73.87499,
     "next_window": {
-      "duration_h": 6,
-      "end_local": "2026-10-24T12:00:00-04:00",
-      "end_utc": "2026-10-24T16:00:00+00:00",
-      "id": "bd0523d4edc3",
+      "duration_h": 13,
+      "end_local": "2026-10-24T19:00:00-04:00",
+      "end_utc": "2026-10-24T23:00:00+00:00",
+      "id": "a7ce5c27d938",
       "peak_face_ft": 2.1,
       "peak_period_s": 7.8,
       "peak_swell_ft": 3.3,
-      "peak_wind_kt": 5.1,
-      "score": 47.43,
+      "peak_wind_kt": 5.5,
+      "score": 102.77,
       "start_local": "2026-10-24T06:00:00-04:00",
       "start_utc": "2026-10-24T10:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "WNW"
+      "wind_dir": "NW"
     }
   },
   "now": {
-    "face_ft": 1.9,
+    "face_ft": 1.8,
     "is_good": true,
-    "model_hour_utc": "2026-10-24T14:00:00+00:00",
-    "period_s": 7.1,
+    "model_hour_utc": "2026-10-24T17:00:00+00:00",
+    "period_s": 6.9,
     "reasons": [],
     "skill": {
-      "emoji": "\ud83e\udd19",
-      "label": "This is your wave",
-      "level": "manageable",
-      "note": "1.9ft @ 7s, wind 5kt. Clean enough, sized right \u2014 go."
+      "emoji": "\ud83d\ude24",
+      "label": "You're gonna get worked",
+      "level": "worked",
+      "note": "1.8ft @ 7s \u2014 short-period windswell. Expect a beating on the paddle-out."
     },
     "swell_dir": "E",
     "swell_dir_deg": 89,
-    "swell_ft": 3.2,
-    "tier": "groundswell",
-    "wind_dir": "NW",
-    "wind_dir_deg": 321,
-    "wind_speed_kt": 4.6
+    "swell_ft": 3.1,
+    "tier": "clean",
+    "wind_dir": "N",
+    "wind_dir_deg": 3,
+    "wind_speed_kt": 3.8
   },
   "spot": {
     "lat": 40.1018,
