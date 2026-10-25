@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 1h08 (7:08 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 5:44 PM",
+    "status": "day",
     "sunrise_local": "7:08 AM",
     "sunset_local": "5:44 PM"
   },
-  "fetched_at": "2026-10-25T10:00:07.728769+00:00",
+  "fetched_at": "2026-10-25T14:21:51.982738+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 43.125,
@@ -15,10 +15,10 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 1.1,
+    "face_ft": 1.0,
     "is_good": false,
-    "model_hour_utc": "2026-10-25T10:00:00+00:00",
-    "period_s": 9.2,
+    "model_hour_utc": "2026-10-25T14:00:00+00:00",
+    "period_s": 8.9,
     "reasons": [
       "WVHT 1.4 < 3.0ft"
     ],
@@ -26,15 +26,15 @@
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.1ft @ 9s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.0ft @ 9s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 95,
+    "swell_dir_deg": 94,
     "swell_ft": 1.4,
     "tier": null,
-    "wind_dir": "NW",
-    "wind_dir_deg": 314,
-    "wind_speed_kt": 5.9
+    "wind_dir": "WNW",
+    "wind_dir_deg": 284,
+    "wind_speed_kt": 4.9
   },
   "spot": {
     "lat": 43.145,
