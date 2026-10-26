@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 5h54 (7:18 AM)",
-    "status": "night",
+    "emoji": "\ud83c\udf05",
+    "label": "Dawn patrol",
+    "note": "Sunrise was 5 min ago \u2014 golden hour",
+    "status": "dawn",
     "sunrise_local": "7:18 AM",
     "sunset_local": "6:00 PM"
   },
-  "fetched_at": "2026-10-26T05:24:27.097467+00:00",
+  "fetched_at": "2026-10-26T11:23:17.983913+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.125,
@@ -15,26 +15,26 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 1.9,
+    "face_ft": 1.7,
     "is_good": false,
-    "model_hour_utc": "2026-10-26T05:00:00+00:00",
-    "period_s": 8.1,
+    "model_hour_utc": "2026-10-26T11:00:00+00:00",
+    "period_s": 7.8,
     "reasons": [
-      "WVHT 2.8 < 3.0ft"
+      "WVHT 2.6 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83e\udd19",
       "label": "This is your wave",
       "level": "manageable",
-      "note": "1.9ft @ 8s, wind 5kt. Clean enough, sized right \u2014 go."
+      "note": "1.7ft @ 8s, wind 6kt. Clean enough, sized right \u2014 go."
     },
     "swell_dir": "E",
-    "swell_dir_deg": 95,
-    "swell_ft": 2.8,
+    "swell_dir_deg": 97,
+    "swell_ft": 2.6,
     "tier": null,
-    "wind_dir": "WNW",
-    "wind_dir_deg": 285,
-    "wind_speed_kt": 5.1
+    "wind_dir": "W",
+    "wind_dir_deg": 266,
+    "wind_speed_kt": 5.5
   },
   "spot": {
     "lat": 40.1018,
