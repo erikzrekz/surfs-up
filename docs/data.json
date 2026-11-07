@@ -2,42 +2,87 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 11h01 (6:24 AM)",
+    "note": "Sunrise in 5h01 (6:24 AM)",
     "status": "night",
-    "sunrise_local": "6:23 AM",
-    "sunset_local": "4:35 PM"
+    "sunrise_local": "6:24 AM",
+    "sunset_local": "4:34 PM"
   },
-  "fetched_at": "2026-11-07T00:22:58.921677+00:00",
+  "fetched_at": "2026-11-07T06:23:01.654652+00:00",
   "forecast": {
-    "all_windows_72h": [],
+    "all_windows_72h": [
+      {
+        "duration_h": 3,
+        "end_local": "2026-11-07T09:00:00-05:00",
+        "end_utc": "2026-11-07T14:00:00+00:00",
+        "id": "1c060e26e777",
+        "peak_face_ft": 1.8,
+        "peak_period_s": 5.3,
+        "peak_swell_ft": 3.9,
+        "peak_wind_kt": 5.5,
+        "score": 18.76,
+        "start_local": "2026-11-07T06:00:00-05:00",
+        "start_utc": "2026-11-07T11:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "W"
+      },
+      {
+        "duration_h": 5,
+        "end_local": "2026-11-07T15:00:00-05:00",
+        "end_utc": "2026-11-07T20:00:00+00:00",
+        "id": "7a5678751842",
+        "peak_face_ft": 1.6,
+        "peak_period_s": 5.5,
+        "peak_swell_ft": 3.4,
+        "peak_wind_kt": 5.1,
+        "score": 28.86,
+        "start_local": "2026-11-07T10:00:00-05:00",
+        "start_utc": "2026-11-07T15:00:00+00:00",
+        "tier": "clean",
+        "wind_dir": "NNE"
+      }
+    ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": null
+    "next_window": {
+      "duration_h": 3,
+      "end_local": "2026-11-07T09:00:00-05:00",
+      "end_utc": "2026-11-07T14:00:00+00:00",
+      "id": "1c060e26e777",
+      "peak_face_ft": 1.8,
+      "peak_period_s": 5.3,
+      "peak_swell_ft": 3.9,
+      "peak_wind_kt": 5.5,
+      "score": 18.76,
+      "start_local": "2026-11-07T06:00:00-05:00",
+      "start_utc": "2026-11-07T11:00:00+00:00",
+      "tier": "clean",
+      "wind_dir": "W"
+    }
   },
   "nowcast": {
-    "apd_s": 5.5,
+    "apd_s": 5.2,
     "dpd_s": 7.0,
-    "face_ft": 3.3,
+    "face_ft": 3.0,
     "is_good": true,
-    "observed_at": "2026-11-07T00:15:27+00:00",
+    "observed_at": "2026-11-07T06:15:32+00:00",
     "reasons": [],
     "skill": {
-      "emoji": "\ud83c\udf0a",
-      "label": "Mushy fun",
-      "level": "marginal",
-      "note": "3.3ft @ 7s \u2014 small and forgiving. Good for practicing pop-ups."
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "3.0ft @ 7s, wind 11kt. Clean enough, sized right \u2014 go."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "S",
-    "swell_dir_deg": 185.0,
+    "swell_dir": "SSW",
+    "swell_dir_deg": 194.0,
     "tier": "groundswell",
-    "wind_dir": "S",
-    "wind_dir_deg": 191,
+    "wind_dir": "W",
+    "wind_dir_deg": 272,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 14.4,
-    "wvht_ft": 5.6
+    "wind_speed_kt": 10.6,
+    "wvht_ft": 5.2
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
