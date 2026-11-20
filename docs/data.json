@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 42 min (6:40 AM)",
-    "status": "night",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 4:22 PM",
+    "status": "day",
     "sunrise_local": "6:40 AM",
     "sunset_local": "4:22 PM"
   },
-  "fetched_at": "2026-11-20T10:57:39.443819+00:00",
+  "fetched_at": "2026-11-20T19:01:11.120953+00:00",
   "forecast": {
     "all_windows_72h": [
       {
@@ -15,15 +15,15 @@
         "end_local": "2026-11-23T19:00:00-05:00",
         "end_utc": "2026-11-24T00:00:00+00:00",
         "id": "d8da1c188811",
-        "peak_face_ft": 4.1,
-        "peak_period_s": 9.3,
-        "peak_swell_ft": 5.3,
-        "peak_wind_kt": 16.7,
-        "score": 195.86,
+        "peak_face_ft": 6.2,
+        "peak_period_s": 8.5,
+        "peak_swell_ft": 8.7,
+        "peak_wind_kt": 9.5,
+        "score": 293.93,
         "start_local": "2026-11-23T06:00:00-05:00",
         "start_utc": "2026-11-23T11:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "WNW"
+        "wind_dir": "W"
       }
     ],
     "lat": 41.291664,
@@ -33,23 +33,23 @@
       "end_local": "2026-11-23T19:00:00-05:00",
       "end_utc": "2026-11-24T00:00:00+00:00",
       "id": "d8da1c188811",
-      "peak_face_ft": 4.1,
-      "peak_period_s": 9.3,
-      "peak_swell_ft": 5.3,
-      "peak_wind_kt": 16.7,
-      "score": 195.86,
+      "peak_face_ft": 6.2,
+      "peak_period_s": 8.5,
+      "peak_swell_ft": 8.7,
+      "peak_wind_kt": 9.5,
+      "score": 293.93,
       "start_local": "2026-11-23T06:00:00-05:00",
       "start_utc": "2026-11-23T11:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "WNW"
+      "wind_dir": "W"
     }
   },
   "nowcast": {
-    "apd_s": 3.1,
+    "apd_s": 3.4,
     "dpd_s": 4.0,
     "face_ft": 0.9,
     "is_good": false,
-    "observed_at": "2026-11-20T10:50:28+00:00",
+    "observed_at": "2026-11-20T18:50:48+00:00",
     "reasons": [
       "WVHT 2.0 < 3.0ft",
       "DPD 4.0 < 7.0s"
@@ -63,13 +63,13 @@
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "WSW",
-    "swell_dir_deg": 241.0,
+    "swell_dir": "SW",
+    "swell_dir_deg": 236.0,
     "tier": null,
-    "wind_dir": "WNW",
-    "wind_dir_deg": 282,
+    "wind_dir": "W",
+    "wind_dir_deg": 259,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 10.5,
+    "wind_speed_kt": 12.3,
     "wvht_ft": 2.0
   },
   "thresholds": {
