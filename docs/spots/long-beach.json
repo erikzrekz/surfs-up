@@ -2,12 +2,12 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 11h01 (6:48 AM)",
+    "note": "Sunrise in 3h47 (6:48 AM)",
     "status": "night",
-    "sunrise_local": "6:47 AM",
-    "sunset_local": "4:33 PM"
+    "sunrise_local": "6:48 AM",
+    "sunset_local": "4:32 PM"
   },
-  "fetched_at": "2026-11-21T00:47:17.134408+00:00",
+  "fetched_at": "2026-11-21T08:00:54.143987+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -18,12 +18,12 @@
         "peak_face_ft": 3.7,
         "peak_period_s": 7.8,
         "peak_swell_ft": 5.7,
-        "peak_wind_kt": 13.4,
+        "peak_wind_kt": 16.2,
         "score": 176.44,
         "start_local": "2026-11-23T06:00:00-05:00",
         "start_utc": "2026-11-23T11:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "WNW"
+        "wind_dir": "W"
       }
     ],
     "lat": 40.625,
@@ -36,19 +36,19 @@
       "peak_face_ft": 3.7,
       "peak_period_s": 7.8,
       "peak_swell_ft": 5.7,
-      "peak_wind_kt": 13.4,
+      "peak_wind_kt": 16.2,
       "score": 176.44,
       "start_local": "2026-11-23T06:00:00-05:00",
       "start_utc": "2026-11-23T11:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "WNW"
+      "wind_dir": "W"
     }
   },
   "now": {
     "face_ft": 0.5,
     "is_good": false,
-    "model_hour_utc": "2026-11-21T00:00:00+00:00",
-    "period_s": 8.8,
+    "model_hour_utc": "2026-11-21T08:00:00+00:00",
+    "period_s": 8.6,
     "reasons": [
       "WVHT 0.7 < 3.0ft"
     ],
@@ -62,9 +62,9 @@
     "swell_dir_deg": 136,
     "swell_ft": 0.7,
     "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 238,
-    "wind_speed_kt": 4.0
+    "wind_dir": "NNE",
+    "wind_dir_deg": 17,
+    "wind_speed_kt": 5.2
   },
   "spot": {
     "lat": 40.586,
