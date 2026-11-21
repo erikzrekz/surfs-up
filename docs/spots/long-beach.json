@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 4:33 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 11h01 (6:48 AM)",
+    "status": "night",
     "sunrise_local": "6:47 AM",
     "sunset_local": "4:33 PM"
   },
-  "fetched_at": "2026-11-20T19:01:11.120953+00:00",
+  "fetched_at": "2026-11-21T00:47:17.134408+00:00",
   "forecast": {
     "all_windows_120h": [
       {
@@ -15,11 +15,11 @@
         "end_local": "2026-11-23T19:00:00-05:00",
         "end_utc": "2026-11-24T00:00:00+00:00",
         "id": "d8da1c188811",
-        "peak_face_ft": 4.8,
-        "peak_period_s": 8.7,
-        "peak_swell_ft": 6.6,
-        "peak_wind_kt": 12.4,
-        "score": 226.2,
+        "peak_face_ft": 3.7,
+        "peak_period_s": 7.8,
+        "peak_swell_ft": 5.7,
+        "peak_wind_kt": 13.4,
+        "score": 176.44,
         "start_local": "2026-11-23T06:00:00-05:00",
         "start_utc": "2026-11-23T11:00:00+00:00",
         "tier": "groundswell",
@@ -33,11 +33,11 @@
       "end_local": "2026-11-23T19:00:00-05:00",
       "end_utc": "2026-11-24T00:00:00+00:00",
       "id": "d8da1c188811",
-      "peak_face_ft": 4.8,
-      "peak_period_s": 8.7,
-      "peak_swell_ft": 6.6,
-      "peak_wind_kt": 12.4,
-      "score": 226.2,
+      "peak_face_ft": 3.7,
+      "peak_period_s": 7.8,
+      "peak_swell_ft": 5.7,
+      "peak_wind_kt": 13.4,
+      "score": 176.44,
       "start_local": "2026-11-23T06:00:00-05:00",
       "start_utc": "2026-11-23T11:00:00+00:00",
       "tier": "groundswell",
@@ -45,26 +45,26 @@
     }
   },
   "now": {
-    "face_ft": 0.4,
+    "face_ft": 0.5,
     "is_good": false,
-    "model_hour_utc": "2026-11-20T19:00:00+00:00",
-    "period_s": 8.5,
+    "model_hour_utc": "2026-11-21T00:00:00+00:00",
+    "period_s": 8.8,
     "reasons": [
-      "WVHT 0.5 < 3.0ft"
+      "WVHT 0.7 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83e\udd71",
       "label": "Flat",
       "level": "flat",
-      "note": "~0.4ft face. Nothing to ride. Coffee instead."
+      "note": "~0.5ft face. Nothing to ride. Coffee instead."
     },
     "swell_dir": "SE",
-    "swell_dir_deg": 131,
-    "swell_ft": 0.5,
+    "swell_dir_deg": 136,
+    "swell_ft": 0.7,
     "tier": null,
     "wind_dir": "WSW",
-    "wind_dir_deg": 241,
-    "wind_speed_kt": 5.9
+    "wind_dir_deg": 238,
+    "wind_speed_kt": 4.0
   },
   "spot": {
     "lat": 40.586,
