@@ -1,16 +1,57 @@
 {
-  "daylight": null,
-  "fetched_at": "2026-11-22T01:35:29.209460+00:00",
-  "forecast": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 2h51 (6:42 AM)",
+    "status": "night",
+    "sunrise_local": "6:42 AM",
+    "sunset_local": "4:21 PM"
+  },
+  "fetched_at": "2026-11-22T08:51:21.669527+00:00",
+  "forecast": {
+    "all_windows_72h": [
+      {
+        "duration_h": 6,
+        "end_local": "2026-11-23T12:00:00-05:00",
+        "end_utc": "2026-11-23T17:00:00+00:00",
+        "id": "9b59baa484a3",
+        "peak_face_ft": 4.0,
+        "peak_period_s": 8.3,
+        "peak_swell_ft": 5.7,
+        "peak_wind_kt": 15.6,
+        "score": 87.17,
+        "start_local": "2026-11-23T06:00:00-05:00",
+        "start_utc": "2026-11-23T11:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "NW"
+      }
+    ],
+    "lat": 41.291664,
+    "lon": -71.54166,
+    "next_window": {
+      "duration_h": 6,
+      "end_local": "2026-11-23T12:00:00-05:00",
+      "end_utc": "2026-11-23T17:00:00+00:00",
+      "id": "9b59baa484a3",
+      "peak_face_ft": 4.0,
+      "peak_period_s": 8.3,
+      "peak_swell_ft": 5.7,
+      "peak_wind_kt": 15.6,
+      "score": 87.17,
+      "start_local": "2026-11-23T06:00:00-05:00",
+      "start_utc": "2026-11-23T11:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "NW"
+    }
+  },
   "nowcast": {
-    "apd_s": 5.5,
+    "apd_s": 5.3,
     "dpd_s": 9.0,
     "face_ft": 1.2,
     "is_good": false,
-    "observed_at": "2026-11-22T01:15:44+00:00",
+    "observed_at": "2026-11-22T08:15:43+00:00",
     "reasons": [
-      "WVHT 1.6 < 3.0ft",
-      "wind Nonekt @ None\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "WVHT 1.6 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
@@ -22,12 +63,12 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "S",
-    "swell_dir_deg": 190.0,
+    "swell_dir_deg": 182.0,
     "tier": null,
-    "wind_dir": null,
-    "wind_dir_deg": null,
-    "wind_source": "44097",
-    "wind_speed_kt": null,
+    "wind_dir": "N",
+    "wind_dir_deg": 2,
+    "wind_source": "open-meteo",
+    "wind_speed_kt": 2.4,
     "wvht_ft": 1.6
   },
   "thresholds": {
