@@ -1,7 +1,86 @@
 {
-  "fetched_at": "2026-11-22T16:54:47.819740+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 13h26 (6:44 AM)",
+    "status": "night",
+    "sunrise_local": "6:42 AM",
+    "sunset_local": "4:21 PM"
+  },
+  "fetched_at": "2026-11-22T22:17:56.616534+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 13,
+        "end_local": "2026-11-23T19:00:00-05:00",
+        "end_utc": "2026-11-24T00:00:00+00:00",
+        "id": "d8da1c188811",
+        "peak_face_ft": 4.2,
+        "peak_period_s": 8.6,
+        "peak_swell_ft": 5.8,
+        "peak_wind_kt": 10.5,
+        "score": 199.0,
+        "start_local": "2026-11-23T06:00:00-05:00",
+        "start_utc": "2026-11-23T11:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "WSW"
+      },
+      {
+        "duration_h": 3,
+        "end_local": "2026-11-26T17:00:00-05:00",
+        "end_utc": "2026-11-26T22:00:00+00:00",
+        "id": "f083071fc843",
+        "peak_face_ft": 2.7,
+        "peak_period_s": 7.5,
+        "peak_swell_ft": 4.3,
+        "peak_wind_kt": 19.4,
+        "score": 29.7,
+        "start_local": "2026-11-26T14:00:00-05:00",
+        "start_utc": "2026-11-26T19:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "ENE"
+      }
+    ],
+    "lat": 41.291664,
+    "lon": -71.54166,
+    "next_window": {
+      "duration_h": 13,
+      "end_local": "2026-11-23T19:00:00-05:00",
+      "end_utc": "2026-11-24T00:00:00+00:00",
+      "id": "d8da1c188811",
+      "peak_face_ft": 4.2,
+      "peak_period_s": 8.6,
+      "peak_swell_ft": 5.8,
+      "peak_wind_kt": 10.5,
+      "score": 199.0,
+      "start_local": "2026-11-23T06:00:00-05:00",
+      "start_utc": "2026-11-23T11:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "WSW"
+    }
+  },
+  "now": {
+    "face_ft": 1.5,
+    "is_good": false,
+    "model_hour_utc": "2026-11-22T22:00:00+00:00",
+    "period_s": 8.3,
+    "reasons": [
+      "WVHT 2.2 < 3.0ft"
+    ],
+    "skill": {
+      "emoji": "\ud83e\udd19",
+      "label": "This is your wave",
+      "level": "manageable",
+      "note": "1.5ft @ 8s, wind 5kt. Clean enough, sized right \u2014 go."
+    },
+    "swell_dir": "S",
+    "swell_dir_deg": 176,
+    "swell_ft": 2.2,
+    "tier": null,
+    "wind_dir": "ENE",
+    "wind_dir_deg": 76,
+    "wind_speed_kt": 5.4
+  },
   "spot": {
     "lat": 41.37378,
     "lon": -71.5447,
