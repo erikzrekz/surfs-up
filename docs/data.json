@@ -1,33 +1,33 @@
 {
   "daylight": null,
-  "fetched_at": "2026-11-23T23:53:23.852098+00:00",
+  "fetched_at": "2026-11-24T08:41:15.007968+00:00",
   "forecast": null,
   "nowcast": {
-    "apd_s": 7.3,
+    "apd_s": 5.4,
     "dpd_s": 10.0,
-    "face_ft": 6.2,
+    "face_ft": 4.9,
     "is_good": false,
-    "observed_at": "2026-11-23T23:45:53+00:00",
+    "observed_at": "2026-11-24T08:15:43+00:00",
     "reasons": [
       "wind Nonekt @ None\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
-      "emoji": "\ud83e\udee0",
-      "label": "Too big for you",
-      "level": "out-of-range",
-      "note": "~6ft face \u2014 sit this one out and watch."
+      "emoji": "\ud83c\udf0a",
+      "label": "Mushy fun",
+      "level": "marginal",
+      "note": "4.9ft @ 10s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSE",
-    "swell_dir_deg": 152.0,
+    "swell_dir_deg": 155.0,
     "tier": null,
     "wind_dir": null,
     "wind_dir_deg": null,
     "wind_source": "44097",
     "wind_speed_kt": null,
-    "wvht_ft": 7.5
+    "wvht_ft": 5.9
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
