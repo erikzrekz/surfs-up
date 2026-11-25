@@ -1,100 +1,85 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 8h36 (6:47 AM)",
-    "status": "night",
-    "sunrise_local": "6:46 AM",
-    "sunset_local": "4:13 PM"
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 4:12 PM",
+    "status": "day",
+    "sunrise_local": "6:47 AM",
+    "sunset_local": "4:12 PM"
   },
-  "fetched_at": "2026-11-25T03:11:03.458267+00:00",
+  "fetched_at": "2026-11-25T12:57:35.438749+00:00",
   "forecast": {
     "all_windows_120h": [
       {
-        "duration_h": 9,
-        "end_local": "2026-11-27T15:00:00-05:00",
-        "end_utc": "2026-11-27T20:00:00+00:00",
-        "id": "639ed0acff3a",
+        "duration_h": 13,
+        "end_local": "2026-11-27T19:00:00-05:00",
+        "end_utc": "2026-11-28T00:00:00+00:00",
+        "id": "a73b3135c89c",
         "peak_face_ft": 4.4,
-        "peak_period_s": 7.8,
-        "peak_swell_ft": 6.8,
-        "peak_wind_kt": 13.2,
-        "score": 146.95,
+        "peak_period_s": 7.6,
+        "peak_swell_ft": 7.0,
+        "peak_wind_kt": 15.3,
+        "score": 211.43,
         "start_local": "2026-11-27T06:00:00-05:00",
         "start_utc": "2026-11-27T11:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "S"
+        "wind_dir": "N"
       },
       {
         "duration_h": 3,
-        "end_local": "2026-11-27T19:00:00-05:00",
-        "end_utc": "2026-11-28T00:00:00+00:00",
-        "id": "580776994a92",
-        "peak_face_ft": 3.7,
-        "peak_period_s": 7.5,
-        "peak_swell_ft": 6.0,
-        "peak_wind_kt": 13.3,
-        "score": 40.68,
-        "start_local": "2026-11-27T16:00:00-05:00",
-        "start_utc": "2026-11-27T21:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "SW"
-      },
-      {
-        "duration_h": 4,
-        "end_local": "2026-11-28T10:00:00-05:00",
-        "end_utc": "2026-11-28T15:00:00+00:00",
-        "id": "5f3d447cfb2f",
-        "peak_face_ft": 2.3,
-        "peak_period_s": 7.8,
-        "peak_swell_ft": 3.5,
-        "peak_wind_kt": 9.1,
-        "score": 32.86,
+        "end_local": "2026-11-28T09:00:00-05:00",
+        "end_utc": "2026-11-28T14:00:00+00:00",
+        "id": "f7616dd8b87a",
+        "peak_face_ft": 2.1,
+        "peak_period_s": 7.7,
+        "peak_swell_ft": 3.3,
+        "peak_wind_kt": 11.5,
+        "score": 23.1,
         "start_local": "2026-11-28T06:00:00-05:00",
         "start_utc": "2026-11-28T11:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "WNW"
+        "wind_dir": "W"
       }
     ],
     "lat": 42.958336,
     "lon": -70.70833,
     "next_window": {
-      "duration_h": 9,
-      "end_local": "2026-11-27T15:00:00-05:00",
-      "end_utc": "2026-11-27T20:00:00+00:00",
-      "id": "639ed0acff3a",
+      "duration_h": 13,
+      "end_local": "2026-11-27T19:00:00-05:00",
+      "end_utc": "2026-11-28T00:00:00+00:00",
+      "id": "a73b3135c89c",
       "peak_face_ft": 4.4,
-      "peak_period_s": 7.8,
-      "peak_swell_ft": 6.8,
-      "peak_wind_kt": 13.2,
-      "score": 146.95,
+      "peak_period_s": 7.6,
+      "peak_swell_ft": 7.0,
+      "peak_wind_kt": 15.3,
+      "score": 211.43,
       "start_local": "2026-11-27T06:00:00-05:00",
       "start_utc": "2026-11-27T11:00:00+00:00",
       "tier": "groundswell",
-      "wind_dir": "S"
+      "wind_dir": "N"
     }
   },
   "now": {
-    "face_ft": 1.3,
+    "face_ft": 1.2,
     "is_good": false,
-    "model_hour_utc": "2026-11-25T03:00:00+00:00",
-    "period_s": 8.3,
+    "model_hour_utc": "2026-11-25T12:00:00+00:00",
+    "period_s": 8.2,
     "reasons": [
-      "WVHT 1.9 < 3.0ft"
+      "WVHT 1.8 < 3.0ft"
     ],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "1.3ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "1.2ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
     "swell_dir": "ESE",
     "swell_dir_deg": 120,
-    "swell_ft": 1.9,
+    "swell_ft": 1.8,
     "tier": null,
-    "wind_dir": "NW",
-    "wind_dir_deg": 314,
-    "wind_speed_kt": 6.3
+    "wind_dir": "N",
+    "wind_dir_deg": 354,
+    "wind_speed_kt": 4.6
   },
   "spot": {
     "lat": 42.9067,
