@@ -1,73 +1,61 @@
 {
   "daylight": {
-    "emoji": "\u2600\ufe0f",
-    "label": "Daylight",
-    "note": "Sunset 4:19 PM",
-    "status": "day",
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 12h50 (6:49 AM)",
+    "status": "night",
     "sunrise_local": "6:48 AM",
     "sunset_local": "4:19 PM"
   },
-  "fetched_at": "2026-11-27T14:43:44.727976+00:00",
+  "fetched_at": "2026-11-27T22:59:18.593895+00:00",
   "forecast": {
     "all_windows_72h": [
       {
-        "duration_h": 4,
-        "end_local": "2026-11-27T10:00:00-05:00",
-        "end_utc": "2026-11-27T15:00:00+00:00",
-        "id": "f788b20d6952",
+        "duration_h": 3,
+        "end_local": "2026-11-27T09:00:00-05:00",
+        "end_utc": "2026-11-27T14:00:00+00:00",
+        "id": "4e84097a279e",
         "peak_face_ft": 5.1,
         "peak_period_s": 8.3,
         "peak_swell_ft": 7.4,
         "peak_wind_kt": 13.5,
-        "score": 75.03,
+        "score": 56.27,
         "start_local": "2026-11-27T06:00:00-05:00",
         "start_utc": "2026-11-27T11:00:00+00:00",
         "tier": "groundswell",
-        "wind_dir": "S"
+        "wind_dir": "ESE"
       }
     ],
     "lat": 41.291664,
     "lon": -71.54166,
-    "next_window": {
-      "duration_h": 4,
-      "end_local": "2026-11-27T10:00:00-05:00",
-      "end_utc": "2026-11-27T15:00:00+00:00",
-      "id": "f788b20d6952",
-      "peak_face_ft": 5.1,
-      "peak_period_s": 8.3,
-      "peak_swell_ft": 7.4,
-      "peak_wind_kt": 13.5,
-      "score": 75.03,
-      "start_local": "2026-11-27T06:00:00-05:00",
-      "start_utc": "2026-11-27T11:00:00+00:00",
-      "tier": "groundswell",
-      "wind_dir": "S"
-    }
+    "next_window": null
   },
   "nowcast": {
-    "apd_s": 7.3,
-    "dpd_s": 10.0,
-    "face_ft": 8.2,
-    "is_good": true,
-    "observed_at": "2026-11-27T14:20:50+00:00",
-    "reasons": [],
+    "apd_s": 7.9,
+    "dpd_s": 11.0,
+    "face_ft": 13.8,
+    "is_good": false,
+    "observed_at": "2026-11-27T22:45:52+00:00",
+    "reasons": [
+      "wind 24.9kt @ 229\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+    ],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
       "level": "out-of-range",
-      "note": "~8ft face \u2014 sit this one out and watch."
+      "note": "~14ft face \u2014 sit this one out and watch."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
-    "swell_dir": "SSE",
-    "swell_dir_deg": 150.0,
-    "tier": "groundswell",
-    "wind_dir": "SSW",
-    "wind_dir_deg": 200,
+    "swell_dir": "SSW",
+    "swell_dir_deg": 199.0,
+    "tier": null,
+    "wind_dir": "SW",
+    "wind_dir_deg": 229,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 12.5,
-    "wvht_ft": 9.8
+    "wind_speed_kt": 24.9,
+    "wvht_ft": 15.1
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
