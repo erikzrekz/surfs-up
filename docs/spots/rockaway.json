@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 7h00 (6:55 AM)",
-    "status": "night",
-    "sunrise_local": "6:54 AM",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 4:30 PM",
+    "status": "day",
+    "sunrise_local": "6:55 AM",
     "sunset_local": "4:30 PM"
   },
-  "fetched_at": "2026-11-27T04:55:04.825203+00:00",
+  "fetched_at": "2026-11-27T14:43:44.727976+00:00",
   "forecast": {
     "all_windows_120h": [],
     "lat": 40.541664,
@@ -15,23 +15,25 @@
     "next_window": null
   },
   "now": {
-    "face_ft": 5.5,
-    "is_good": true,
-    "model_hour_utc": "2026-11-27T04:00:00+00:00",
-    "period_s": 9.8,
-    "reasons": [],
+    "face_ft": 4.3,
+    "is_good": false,
+    "model_hour_utc": "2026-11-27T14:00:00+00:00",
+    "period_s": 8.7,
+    "reasons": [
+      "wind 16.6kt @ 205\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+    ],
     "skill": {
-      "emoji": "\ud83e\udee0",
-      "label": "Too big for you",
-      "level": "out-of-range",
-      "note": "~6ft face \u2014 sit this one out and watch."
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 17kt \u2014 surface will be choppy. Small and messy."
     },
     "swell_dir": "ESE",
-    "swell_dir_deg": 121,
-    "swell_ft": 6.8,
-    "tier": "groundswell",
-    "wind_dir": "ENE",
-    "wind_dir_deg": 72,
+    "swell_dir_deg": 116,
+    "swell_ft": 6.0,
+    "tier": null,
+    "wind_dir": "SSW",
+    "wind_dir_deg": 205,
     "wind_speed_kt": 16.6
   },
   "spot": {
