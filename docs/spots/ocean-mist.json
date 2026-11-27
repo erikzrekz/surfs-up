@@ -1,7 +1,84 @@
 {
-  "fetched_at": "2026-11-26T23:00:00.096018+00:00",
-  "forecast": null,
-  "now": null,
+  "daylight": {
+    "emoji": "\ud83c\udf19",
+    "label": "Dark",
+    "note": "Sunrise in 6h53 (6:48 AM)",
+    "status": "night",
+    "sunrise_local": "6:47 AM",
+    "sunset_local": "4:19 PM"
+  },
+  "fetched_at": "2026-11-27T04:55:04.825203+00:00",
+  "forecast": {
+    "all_windows_120h": [
+      {
+        "duration_h": 4,
+        "end_local": "2026-11-28T19:00:00-05:00",
+        "end_utc": "2026-11-29T00:00:00+00:00",
+        "id": "5df4cf029648",
+        "peak_face_ft": 3.3,
+        "peak_period_s": 8.3,
+        "peak_swell_ft": 4.7,
+        "peak_wind_kt": 13.0,
+        "score": 47.14,
+        "start_local": "2026-11-28T15:00:00-05:00",
+        "start_utc": "2026-11-28T20:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "W"
+      },
+      {
+        "duration_h": 3,
+        "end_local": "2026-11-30T19:00:00-05:00",
+        "end_utc": "2026-12-01T00:00:00+00:00",
+        "id": "a6f254b2186e",
+        "peak_face_ft": 2.6,
+        "peak_period_s": 7.6,
+        "peak_swell_ft": 4.1,
+        "peak_wind_kt": 14.9,
+        "score": 28.73,
+        "start_local": "2026-11-30T16:00:00-05:00",
+        "start_utc": "2026-11-30T21:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "WNW"
+      }
+    ],
+    "lat": 41.291664,
+    "lon": -71.54166,
+    "next_window": {
+      "duration_h": 4,
+      "end_local": "2026-11-28T19:00:00-05:00",
+      "end_utc": "2026-11-29T00:00:00+00:00",
+      "id": "5df4cf029648",
+      "peak_face_ft": 3.3,
+      "peak_period_s": 8.3,
+      "peak_swell_ft": 4.7,
+      "peak_wind_kt": 13.0,
+      "score": 47.14,
+      "start_local": "2026-11-28T15:00:00-05:00",
+      "start_utc": "2026-11-28T20:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "W"
+    }
+  },
+  "now": {
+    "face_ft": 3.2,
+    "is_good": true,
+    "model_hour_utc": "2026-11-27T04:00:00+00:00",
+    "period_s": 8.8,
+    "reasons": [],
+    "skill": {
+      "emoji": "\ud83d\udca8",
+      "label": "Blown out",
+      "level": "marginal",
+      "note": "Wind 18kt \u2014 surface will be choppy. Small and messy."
+    },
+    "swell_dir": "SE",
+    "swell_dir_deg": 138,
+    "swell_ft": 4.4,
+    "tier": "groundswell",
+    "wind_dir": "ENE",
+    "wind_dir_deg": 62,
+    "wind_speed_kt": 18.3
+  },
   "spot": {
     "lat": 41.37378,
     "lon": -71.5447,
