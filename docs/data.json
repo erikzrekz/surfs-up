@@ -1,13 +1,13 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 7h09 (6:49 AM)",
-    "status": "night",
-    "sunrise_local": "6:48 AM",
-    "sunset_local": "4:19 PM"
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 4:18 PM",
+    "status": "day",
+    "sunrise_local": "6:49 AM",
+    "sunset_local": "4:18 PM"
   },
-  "fetched_at": "2026-11-28T04:40:21.292547+00:00",
+  "fetched_at": "2026-11-28T13:38:45.495858+00:00",
   "forecast": {
     "all_windows_72h": [],
     "lat": 41.291664,
@@ -15,31 +15,31 @@
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 7.7,
-    "dpd_s": 11.0,
-    "face_ft": 13.6,
+    "apd_s": 7.6,
+    "dpd_s": 12.0,
+    "face_ft": 12.1,
     "is_good": false,
-    "observed_at": "2026-11-28T04:20:47+00:00",
+    "observed_at": "2026-11-28T13:15:51+00:00",
     "reasons": [
-      "wind 27.8kt @ 251\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "wind 22.5kt @ 265\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
       "emoji": "\ud83e\udee0",
       "label": "Too big for you",
       "level": "out-of-range",
-      "note": "~14ft face \u2014 sit this one out and watch."
+      "note": "~12ft face \u2014 sit this one out and watch."
     },
     "source_url": "https://www.ndbc.noaa.gov/data/latest_obs/44097.rss",
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 193.0,
+    "swell_dir_deg": 194.0,
     "tier": null,
-    "wind_dir": "WSW",
-    "wind_dir_deg": 251,
+    "wind_dir": "W",
+    "wind_dir_deg": 265,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 27.8,
-    "wvht_ft": 14.8
+    "wind_speed_kt": 22.5,
+    "wvht_ft": 12.1
   },
   "thresholds": {
     "clean_dpd_s": 5.0,

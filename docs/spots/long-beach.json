@@ -1,38 +1,68 @@
 {
   "daylight": {
-    "emoji": "\ud83c\udf19",
-    "label": "Dark",
-    "note": "Sunrise in 7h15 (6:55 AM)",
-    "status": "night",
-    "sunrise_local": "6:54 AM",
+    "emoji": "\u2600\ufe0f",
+    "label": "Daylight",
+    "note": "Sunset 4:29 PM",
+    "status": "day",
+    "sunrise_local": "6:55 AM",
     "sunset_local": "4:29 PM"
   },
-  "fetched_at": "2026-11-28T04:40:21.292547+00:00",
+  "fetched_at": "2026-11-28T13:38:45.495858+00:00",
   "forecast": {
-    "all_windows_120h": [],
+    "all_windows_120h": [
+      {
+        "duration_h": 5,
+        "end_local": "2026-11-28T11:00:00-05:00",
+        "end_utc": "2026-11-28T16:00:00+00:00",
+        "id": "e44e0f7c6b76",
+        "peak_face_ft": 2.1,
+        "peak_period_s": 7.9,
+        "peak_swell_ft": 3.2,
+        "peak_wind_kt": 13.3,
+        "score": 38.71,
+        "start_local": "2026-11-28T06:00:00-05:00",
+        "start_utc": "2026-11-28T11:00:00+00:00",
+        "tier": "groundswell",
+        "wind_dir": "WSW"
+      }
+    ],
     "lat": 40.625,
     "lon": -73.62499,
-    "next_window": null
+    "next_window": {
+      "duration_h": 5,
+      "end_local": "2026-11-28T11:00:00-05:00",
+      "end_utc": "2026-11-28T16:00:00+00:00",
+      "id": "e44e0f7c6b76",
+      "peak_face_ft": 2.1,
+      "peak_period_s": 7.9,
+      "peak_swell_ft": 3.2,
+      "peak_wind_kt": 13.3,
+      "score": 38.71,
+      "start_local": "2026-11-28T06:00:00-05:00",
+      "start_utc": "2026-11-28T11:00:00+00:00",
+      "tier": "groundswell",
+      "wind_dir": "WSW"
+    }
   },
   "now": {
-    "face_ft": 2.9,
+    "face_ft": 2.0,
     "is_good": true,
-    "model_hour_utc": "2026-11-28T04:00:00+00:00",
+    "model_hour_utc": "2026-11-28T13:00:00+00:00",
     "period_s": 7.8,
     "reasons": [],
     "skill": {
       "emoji": "\ud83c\udf0a",
       "label": "Mushy fun",
       "level": "marginal",
-      "note": "2.9ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
+      "note": "2.0ft @ 8s \u2014 small and forgiving. Good for practicing pop-ups."
     },
-    "swell_dir": "S",
-    "swell_dir_deg": 170,
-    "swell_ft": 4.5,
+    "swell_dir": "SSE",
+    "swell_dir_deg": 167,
+    "swell_ft": 3.1,
     "tier": "groundswell",
     "wind_dir": "WSW",
     "wind_dir_deg": 255,
-    "wind_speed_kt": 13.7
+    "wind_speed_kt": 12.8
   },
   "spot": {
     "lat": 40.586,
