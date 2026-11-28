@@ -2,42 +2,26 @@
   "daylight": {
     "emoji": "\ud83c\udf19",
     "label": "Dark",
-    "note": "Sunrise in 12h50 (6:49 AM)",
+    "note": "Sunrise in 7h09 (6:49 AM)",
     "status": "night",
     "sunrise_local": "6:48 AM",
     "sunset_local": "4:19 PM"
   },
-  "fetched_at": "2026-11-27T22:59:18.593895+00:00",
+  "fetched_at": "2026-11-28T04:40:21.292547+00:00",
   "forecast": {
-    "all_windows_72h": [
-      {
-        "duration_h": 3,
-        "end_local": "2026-11-27T09:00:00-05:00",
-        "end_utc": "2026-11-27T14:00:00+00:00",
-        "id": "4e84097a279e",
-        "peak_face_ft": 5.1,
-        "peak_period_s": 8.3,
-        "peak_swell_ft": 7.4,
-        "peak_wind_kt": 13.5,
-        "score": 56.27,
-        "start_local": "2026-11-27T06:00:00-05:00",
-        "start_utc": "2026-11-27T11:00:00+00:00",
-        "tier": "groundswell",
-        "wind_dir": "ESE"
-      }
-    ],
+    "all_windows_72h": [],
     "lat": 41.291664,
     "lon": -71.54166,
     "next_window": null
   },
   "nowcast": {
-    "apd_s": 7.9,
+    "apd_s": 7.7,
     "dpd_s": 11.0,
-    "face_ft": 13.8,
+    "face_ft": 13.6,
     "is_good": false,
-    "observed_at": "2026-11-27T22:45:52+00:00",
+    "observed_at": "2026-11-28T04:20:47+00:00",
     "reasons": [
-      "wind 24.9kt @ 229\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
+      "wind 27.8kt @ 251\u00b0 (need \u226415.0kt or offshore \u226425.0kt)"
     ],
     "skill": {
       "emoji": "\ud83e\udee0",
@@ -49,13 +33,13 @@
     "stale": false,
     "station": 44097,
     "swell_dir": "SSW",
-    "swell_dir_deg": 199.0,
+    "swell_dir_deg": 193.0,
     "tier": null,
-    "wind_dir": "SW",
-    "wind_dir_deg": 229,
+    "wind_dir": "WSW",
+    "wind_dir_deg": 251,
     "wind_source": "open-meteo",
-    "wind_speed_kt": 24.9,
-    "wvht_ft": 15.1
+    "wind_speed_kt": 27.8,
+    "wvht_ft": 14.8
   },
   "thresholds": {
     "clean_dpd_s": 5.0,
